@@ -1,0 +1,16 @@
+/* Table styling (replaces deprecated HTML4 border/cellpadding attributes
+   that org-mode skips when exporting to HTML5) */
+table {
+  border-collapse: collapse;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  margin: 1em 0;
+}
+
+thead {
+  border-bottom: 2px solid;
+}
+
+td, th {
+  padding: 6px;
+}

@@ -1,0 +1,98 @@
+#+TITLE: Twilight — Elliott Smith
+#+SUBTITLE: Piano Cheat Sheet for a haunting song.
+
+* Introduction
+
+Oh, wow.
+What a hauntingly beautiful song from Elliott Smith's final studio album, /From a Basement on the Hill/ (2004).
+You can listen to the [[https://youtu.be/Uw01bVaNd7s?si=MOEbMW_Gph2pGqNw][song here]].
+
+The cheat sheet here provides some simplified chords for playing this song on the piano.
+It stays in a fairly ~C major~ scale, but with a sad ~A minor~ feel.
+
+* Chords
+
+| Chord   | Degree | Notes    | Voicing (Low → High) |
+|---------+--------+----------+----------------------|
+| Fmaj7/C | IVmaj7 | F A C E  | C (bass) / F A C E   |
+| Am      | vi     | A C E    | A (bass) / A C E     |
+| G       | V      | G B D    | G (bass) / G B D     |
+| F       | IV     | F A C    | F (bass) / F A C     |
+| C/G     | I      | C E G    | G (bass) / C E G     |
+| D7      | V7/V * | D F# A C | D (bass) / F# A C    |
+
+D7 is a secondary dominant: borrows F# from outside C major to pull toward the G chord.
+
+* Key & theory
+
+- Key: C major / A minor
+- Feel: Bittersweet, suspended, introspective
+- The Fmaj7/C is the emotional anchor, that E on top gives it an airy, unresolved quality
+- D7 is the tension chord; the F# pulls hard toward resolution
+- C/G acts as a passing chord — the G bass creates forward motion without a full cadence
+
+* Scales & Improvisation
+
+** Primary Scales
+
+| Scale              | Notes           | Use When                      |
+|--------------------+-----------------+-------------------------------|
+| A natural minor    | A B C D E F G   | Whole song — default          |
+| A minor pentatonic | A C D E G       | Safest starting point         |
+| C major            | C D E F G A B   | Same notes, brighter emphasis |
+
+** Notes to Emphasize Over Each Chord
+
+- Fmaj7/C :: F, A, C, E — the E on top is the most distinctive note; lean on it
+- Am :: A, C, E — home base; anything in the minor scale sounds right
+- G :: G, B, D — B natural is outside the minor pentatonic but essential here
+- F :: F, A, C — warm and grounded; A and C are safe landing notes
+- C/G :: C, E, G — E sounds bright; land on G for a gentle passing feel
+- D7 :: D, A — safe anchors; F# (the raised 7th) adds tension — use sparingly
+
+** The D7 Exception
+
+D7 contains F#, which sits outside A natural minor. Two options:
+
+1. Avoid F# — stay on D, A, C. It still works.
+2. Use F# as a brief passing note rising to G — it pulls hard upward and resolves beautifully.
+
+** Improvisation Tips for Beginners
+
+- Start with A minor pentatonic (A C D E G) — only 5 notes, all safe, all sound good
+- Play slowly and leave gaps — Elliott Smith's melodic style is sparse, not busy
+- Land on chord tones at the end of phrases (the notes of whichever chord is playing)
+- The note E is especially resonant over Fmaj7/C — return to it often
+- Avoid rushing to fill silence; the rests are part of the melody
+
+* Song Structure
+
+- Verse :: Fmaj7/C → Am → G progression
+- The chord movement stays close — voice lead smoothly, minimal hand movement
+- Note on the D7 :: sheet says you can substitute something on this chord; let it breathe
+
+* Style Notes
+
+** Elliott Smith Piano Approach
+- Sparse > dense. Leave space.
+- Let bass notes sustain while inner voices move
+- Avoid heavy attack — aim for a soft, almost hesitant touch
+- The melody sits on top; chord tones underneath, not competing
+
+** Voicing Tips
+- Drop the 5th from most chords — it still sounds full on piano
+- Fmaj7/C: left hand C alone, right hand F-A-E is especially open and lovely
+- Keep right hand voicings in the middle register (not too high)
+
+** Dynamics
+- Stay mostly in the p to mp range
+- Swell slightly on the G chord resolutions
+- D7 can have a little more weight to emphasize the tension
+
+* Practice Notes
+
+- [ ] Learn bass notes in left hand alone first
+- [ ] Add right hand chord voicings
+- [ ] Work on smooth voice leading between Fmaj7/C and Am
+- [ ] Practice D7 → resolution feel
+- [ ] Add melody on top once chord changes are comfortable

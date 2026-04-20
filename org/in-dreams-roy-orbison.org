@@ -1,0 +1,184 @@
+#+TITLE: In Dreams — Piano Cheat Sheet
+#+AUTHOR: Roy Orbison
+#+STARTUP: overview
+
+* Chord Reference
+  :PROPERTIES:
+  :NOTE: All chords in key of C major
+  :END:
+
+| Chord | Notes          | Fingering (RH) |
+|-------+----------------+----------------|
+| C     | C – E – G      | 1 – 3 – 5      |
+| Am    | A – C – E      | 1 – 3 – 5      |
+| Dm    | D – F – A      | 1 – 3 – 5      |
+| Dm7   | D – F – A – C  | 1 – 2 – 4 – 5  |
+| F     | F – A – C      | 1 – 3 – 5      |
+| Fm    | F – Ab – C     | 1 – 2 – 5      |
+| G     | G – B – D      | 1 – 3 – 5      |
+| G7    | G – B – D – F  | 1 – 2 – 4 – 5  |
+| D7    | D – F# – A – C | 1 – 2 – 4 – 5  |
+
+** Tips
+
+- LH plays root note in bass; RH plays full chord
+- Fm adds dark color — the Ab is the key note (black key, one semitone below A)
+- G7 resolves strongly to C; lean into that pull
+- D7 is a secondary dominant — it pulls toward G/G7
+
+* Advanced Techniques
+
+** Inversions
+
+Inversions keep the LH bass moving smoothly instead of jumping around.  Use these as voice-leading substitutes for root-position chords.
+
+| Chord | Inversion      | Notes (low → high) | When to Use                        |
+|-------+----------------+--------------------+------------------------------------|
+| C/E   | C first inv.   | E – G – C          | Walking bass up to F               |
+| C/G   | C second inv.  | G – C – E          | Pedal-tone feel; C over G bass     |
+| F/A   | F first inv.   | A – C – F          | Smooth voice leading from Am       |
+| F/C   | F second inv.  | C – F – A          | Approaching G7 from above          |
+| G7/B  | G7 first inv.  | B – D – F – G      | Connects C → G7 with stepwise bass |
+| G7/D  | G7 second inv. | D – F – G – B      | Floatier, less resolved feel       |
+| Dm/F  | Dm first inv.  | F – A – D          | Smooth descent from F chord        |
+
+
+Voice leading tip:
+
+In the verse progression C → Dm → G7 → C, try this bass line:
+
+- C (root) → D (root) → G (root) → C (root)
+- Or the smoother: C → F (Dm/F) → G → E (C/E)
+
+** Extended & Substitution Chords
+
+These add color without changing the harmonic function.
+
+   | Original | Extended Version | Added Notes | Character                       |
+   |----------+------------------+-------------+---------------------------------|
+   | G7       | G9               | + A above F | Warmer, more open dominant      |
+   | G7       | G13              | + E above A | Full jazz dominant; very lush   |
+   | C        | Cmaj7            | + B natural | Dreamy, slightly suspended      |
+   | C        | C6               | + A         | Vintage feel; common in 50s/60s |
+   | Dm       | Dm9              | + E above C | Richer minor color              |
+   | Am       | Am7              | + G natural | Softer; blurs the Am → Dm move  |
+   | F        | Fmaj7            | + E natural | Adds shimmer to the F chord     |
+
+*** G13 Voicing for Piano (RH only)
+   
+       #+BEGIN_EXAMPLE
+       LH: G (bass)
+       RH: B – F – A – E   (3rd, 7th, 13th, stacked from bottom)
+       #+END_EXAMPLE
+       Drop the D and G from RH entirely — the ear fills them in from context.
+
+*** Cmaj7 as an Opener
+
+Try starting Verse 1 on Cmaj7 instead of plain C: C – E – G – B
+
+It gives the opening that wistful, half-awake quality that suits the lyric.
+
+** Rhythmic/Textural Ideas
+
+- *Arpeggiate the chords* (broken chord, LH): root → 5th → octave while RH holds the triad
+- *Ballad pattern* (LH): root on beat 1, chord on beats 2 and 3 (waltz-feel variation)
+- *Sustained pedal tone*: hold G in the bass through the Bridge (Fm sections) for a suspended, unresolved tension that releases when C returns
+- *Bridge dynamics*: drop to pp on "But just before the dawn," swell into the Fm, then pull back again on "if I cry." The Dm there is most effective when quiet
+
+* Song Structure Note
+
+No conventional verse/chorus — the song flows continuously through a suite of sections. Play through in order.
+
+* Verse 1
+
+  #+BEGIN_EXAMPLE
+  [C]
+  A candy colored clown they call the
+  [Am]
+  sandman
+  [Dm]                         [G7]
+  Tiptoes to my room every night
+  [C]
+  Just to sprinkle stardust and to
+  [Am]
+  whisper
+       [F]          [G7]         [C]
+  Go to sleep, everything is all right
+  #+END_EXAMPLE
+
+* Verse 2
+
+  #+BEGIN_EXAMPLE
+       [C]
+  I close my eyes
+                [Dm]
+  Then I drift away
+            [G7]
+  Into the magic night
+            [C]
+  I softly say
+  #+END_EXAMPLE
+
+* Verse 3
+
+  #+BEGIN_EXAMPLE
+       [C]
+  A silent prayer
+                [Dm]
+  Like dreamers do
+            [G7]
+  Then I fall asleep to dream
+            [C]
+  My dreams of you
+  #+END_EXAMPLE
+
+* Verse 4
+
+  #+BEGIN_EXAMPLE
+       [C]                        [G7]
+  In dreams I walk with you
+       [F]         [G7]         [C]
+  In dreams I talk to you
+       [C]
+  In dreams you're mine
+  [D7]
+  All of the time, we're
+       [C] [Dm] [G] [C]       [Dm] [G7]
+  Together in dreams, in dreams
+  #+END_EXAMPLE
+
+* Bridge
+
+  #+BEGIN_EXAMPLE
+            [C]       [Fm]        [C]
+  But just before the dawn
+      [C]             [Fm]              [C]
+  I awake and find you're gone
+                    [C]                       [C]
+  I can't help it... I can't help it...
+          [Dm]
+  if I cry
+                [G7]      [G7]              [C]
+  I remember that you said goodbye
+  #+END_EXAMPLE
+
+Bridge Note:
+
+The [Fm] chord is the emotional gut-punch of the song.  The Ab gives it that minor/bittersweet color against the C major key.  Let it ring and don't rush it.
+
+* Verse 5 (Finale)
+
+  #+BEGIN_EXAMPLE
+              [C]        [F]             [G7]
+  It's too bad that all these things
+            [C]  [F]          [G7]
+  Can only happen in my dreams
+  [C]            [D7]
+  Only in dreams
+       [Dm7] [G7]   [C]
+  In beautiful dreams
+  #+END_EXAMPLE
+
+Finale note:
+
+The ending [Dm7] → [G7] → [C] is a classic ii7–V7–I jazz cadence.  Play it slowly and let [C] ring out as a final resolution.

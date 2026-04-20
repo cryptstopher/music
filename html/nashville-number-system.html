@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-04-20 Mon 14:12 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Nashville Number System</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">The Nashville Number System</h1>
+<p class="subtitle" role="doc-subtitle">A Practical Guide for Song Composition</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org14713c8">1. What Is the Nashville Number System?</a></li>
+<li><a href="#orgdb6b6d9">2. The Basics</a>
+<ul>
+<li><a href="#org647d427">2.1. Scale Degrees</a></li>
+<li><a href="#org13d4ac1">2.2. How to Read a Number</a></li>
+</ul>
+</li>
+<li><a href="#org6fe3f76">3. Notation Conventions</a>
+<ul>
+<li><a href="#org362d957">3.1. Rhythm and Duration</a></li>
+<li><a href="#orgb2de125">3.2. Repeated Sections</a></li>
+<li><a href="#orgadd9a35">3.3. Other Markings</a></li>
+</ul>
+</li>
+<li><a href="#orgdc9e2ab">4. Chord Reference Table by Key</a></li>
+<li><a href="#org3a35fbe">5. Common Progressions</a>
+<ul>
+<li><a href="#orgf5f98e1">5.1. Pop / Rock Staples</a></li>
+<li><a href="#org376af9a">5.2. Country / Folk</a></li>
+<li><a href="#orgfe5f0c3">5.3. Singer-Songwriter / Emotional</a></li>
+<li><a href="#orgab1c1ea">5.4. Blues</a></li>
+<li><a href="#orgef66f49">5.5. Progressions Using Non-Diatonic Chords</a></li>
+</ul>
+</li>
+<li><a href="#org8aa2c49">6. Parallel Minor and Borrowed Chords</a>
+<ul>
+<li><a href="#org92cdf30">6.1. What Is a Parallel Minor?</a></li>
+<li><a href="#org66b8e29">6.2. Comparing Major and Parallel Minor Chords</a></li>
+<li><a href="#org52b8a34">6.3. Most Commonly Borrowed Chords</a></li>
+<li><a href="#org539a9bc">6.4. Notation in NNS</a></li>
+<li><a href="#org4c97162">6.5. Example Progressions Using Parallel Minor Borrowing</a></li>
+<li><a href="#org83c223b">6.6. Why Borrowing Works</a></li>
+</ul>
+</li>
+<li><a href="#org6dfcb83">7. Writing a Chart: Putting It All Together</a></li>
+<li><a href="#org5ebc451">8. Quick Reference: Transposing with Numbers</a></li>
+<li><a href="#orge5848e5">9. Tips for Composition</a></li>
+</ul>
+</div>
+</nav>
+<div id="outline-container-org14713c8" class="outline-2">
+<h2 id="org14713c8"><span class="section-number-2">1.</span> What Is the Nashville Number System?</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The Nashville Number System (NNS) is a shorthand method of writing chord
+charts using numbers instead of chord letter names. Each number represents
+a scale degree of the major scale in whatever key you're playing in.
+</p>
+
+<p>
+It was developed by studio musicians in Nashville who needed to transpose
+songs on the fly during recording sessions. Instead of rewriting a chart
+in every new key, a number chart works in <b>all</b> keys&#x2014;you just announce
+the key and play.
+</p>
+</div>
+</div>
+<div id="outline-container-orgdb6b6d9" class="outline-2">
+<h2 id="orgdb6b6d9"><span class="section-number-2">2.</span> The Basics</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org647d427" class="outline-3">
+<h3 id="org647d427"><span class="section-number-3">2.1.</span> Scale Degrees</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+In any major key, the seven notes of the scale each get a number:
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">1</th>
+<th scope="col" class="org-left">2</th>
+<th scope="col" class="org-left">3</th>
+<th scope="col" class="org-left">4</th>
+<th scope="col" class="org-left">5</th>
+<th scope="col" class="org-left">6</th>
+<th scope="col" class="org-left">7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Role</td>
+<td class="org-left">I</td>
+<td class="org-left">ii</td>
+<td class="org-left">iii</td>
+<td class="org-left">IV</td>
+<td class="org-left">V</td>
+<td class="org-left">vi</td>
+<td class="org-left">vii°</td>
+</tr>
+
+<tr>
+<td class="org-left">Quality</td>
+<td class="org-left">Major</td>
+<td class="org-left">minor</td>
+<td class="org-left">minor</td>
+<td class="org-left">Major</td>
+<td class="org-left">Major</td>
+<td class="org-left">minor</td>
+<td class="org-left">diminished</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><b>1, 4, 5</b> are major chords.</li>
+<li><b>2, 3, 6</b> are minor chords.</li>
+<li><b>7</b> is diminished (rarely used as-is in pop/country).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org13d4ac1" class="outline-3">
+<h3 id="org13d4ac1"><span class="section-number-3">2.2.</span> How to Read a Number</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>A plain number (e.g. <code>1</code>) means a major chord built on that scale degree.</li>
+<li>A dash after a number (e.g. <code>2-</code>) means minor. Some writers use a
+lowercase <code>m</code> instead: <code>2m</code>.</li>
+<li>A superscript or caret for seventh chords: <code>5^7</code> or <code>57</code> means a
+dominant 7th on the 5.</li>
+</ul>
+
+<p>
+Because the default chord qualities of the major scale are so well known,
+many charts omit the minor symbol on 2, 3, and 6 entirely&#x2014;it is implied.
+If a chord <b>deviates</b> from the expected quality, it is always marked
+(e.g. <code>4-</code> for a minor 4 chord, or <code>2</code> with no dash to indicate a major 2).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6fe3f76" class="outline-2">
+<h2 id="org6fe3f76"><span class="section-number-2">3.</span> Notation Conventions</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org362d957" class="outline-3">
+<h3 id="org362d957"><span class="section-number-3">3.1.</span> Rhythm and Duration</h3>
+<div class="outline-text-3" id="text-3-1">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>1  4</code></td>
+<td class="org-left">Each number gets equal time (usually one bar)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>1  4  5  1</code></td>
+<td class="org-left">Four bars, one chord per bar</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>1 . 4 .</code></td>
+<td class="org-left">Dots split a bar: two beats on 1, two beats on 4</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>1 . . 4</code></td>
+<td class="org-left">Three beats on 1, one beat on 4</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>&lt;&gt;</code></td>
+<td class="org-left">Diamond&#x2014;hit and let ring (whole note feel)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>&gt;</code></td>
+<td class="org-left">Push&#x2014;play the chord an eighth note early</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orgb2de125" class="outline-3">
+<h3 id="orgb2de125"><span class="section-number-3">3.2.</span> Repeated Sections</h3>
+<div class="outline-text-3" id="text-3-2">
+<dl class="org-dl">
+<dt><code>%</code></dt><dd>Repeat the previous bar.</dd>
+<dt>(no term)</dt><dd>Draw a box or bracket around a section and write <code>x3</code> to repeat 3 times.</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgadd9a35" class="outline-3">
+<h3 id="orgadd9a35"><span class="section-number-3">3.3.</span> Other Markings</h3>
+<div class="outline-text-3" id="text-3-3">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>#</code></td>
+<td class="org-left">Sharp the root (e.g. <code>#4</code> = raised 4th)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>b</code></td>
+<td class="org-left">Flat the root (e.g. <code>b7</code> = flatted 7th)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>sus</code></td>
+<td class="org-left">Suspended 4th (e.g. <code>1sus</code>)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>add9</code></td>
+<td class="org-left">Add the 9th (e.g. <code>1add9</code>)</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>2-7</code></td>
+<td class="org-left">Minor 7th chord on the 2</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>5/7</code></td>
+<td class="org-left">5 chord with the 7th scale degree in bass</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>/5</code> (standalone)</td>
+<td class="org-left">Just a bass note (5) with no chord above</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdc9e2ab" class="outline-2">
+<h2 id="orgdc9e2ab"><span class="section-number-2">4.</span> Chord Reference Table by Key</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+The following table shows the letter-name chord for each Nashville number
+in all 12 major keys. Minor quality is shown with "m" and diminished
+with "dim".
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">1</th>
+<th scope="col" class="org-left">2m</th>
+<th scope="col" class="org-left">3m</th>
+<th scope="col" class="org-left">4</th>
+<th scope="col" class="org-left">5</th>
+<th scope="col" class="org-left">6m</th>
+<th scope="col" class="org-left">7dim</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">C</td>
+<td class="org-left">Dm</td>
+<td class="org-left">Em</td>
+<td class="org-left">F</td>
+<td class="org-left">G</td>
+<td class="org-left">Am</td>
+<td class="org-left">Bdim</td>
+</tr>
+
+<tr>
+<td class="org-left">Db</td>
+<td class="org-left">Db</td>
+<td class="org-left">Ebm</td>
+<td class="org-left">Fm</td>
+<td class="org-left">Gb</td>
+<td class="org-left">Ab</td>
+<td class="org-left">Bbm</td>
+<td class="org-left">Cdim</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">D</td>
+<td class="org-left">Em</td>
+<td class="org-left">F#m</td>
+<td class="org-left">G</td>
+<td class="org-left">A</td>
+<td class="org-left">Bm</td>
+<td class="org-left">C#dim</td>
+</tr>
+
+<tr>
+<td class="org-left">Eb</td>
+<td class="org-left">Eb</td>
+<td class="org-left">Fm</td>
+<td class="org-left">Gm</td>
+<td class="org-left">Ab</td>
+<td class="org-left">Bb</td>
+<td class="org-left">Cm</td>
+<td class="org-left">Ddim</td>
+</tr>
+
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">E</td>
+<td class="org-left">F#m</td>
+<td class="org-left">G#m</td>
+<td class="org-left">A</td>
+<td class="org-left">B</td>
+<td class="org-left">C#m</td>
+<td class="org-left">D#dim</td>
+</tr>
+
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">F</td>
+<td class="org-left">Gm</td>
+<td class="org-left">Am</td>
+<td class="org-left">Bb</td>
+<td class="org-left">C</td>
+<td class="org-left">Dm</td>
+<td class="org-left">Edim</td>
+</tr>
+
+<tr>
+<td class="org-left">Gb</td>
+<td class="org-left">Gb</td>
+<td class="org-left">Abm</td>
+<td class="org-left">Bbm</td>
+<td class="org-left">Cb</td>
+<td class="org-left">Db</td>
+<td class="org-left">Ebm</td>
+<td class="org-left">Fdim</td>
+</tr>
+
+<tr>
+<td class="org-left">G</td>
+<td class="org-left">G</td>
+<td class="org-left">Am</td>
+<td class="org-left">Bm</td>
+<td class="org-left">C</td>
+<td class="org-left">D</td>
+<td class="org-left">Em</td>
+<td class="org-left">F#dim</td>
+</tr>
+
+<tr>
+<td class="org-left">Ab</td>
+<td class="org-left">Ab</td>
+<td class="org-left">Bbm</td>
+<td class="org-left">Cm</td>
+<td class="org-left">Db</td>
+<td class="org-left">Eb</td>
+<td class="org-left">Fm</td>
+<td class="org-left">Gdim</td>
+</tr>
+
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">A</td>
+<td class="org-left">Bm</td>
+<td class="org-left">C#m</td>
+<td class="org-left">D</td>
+<td class="org-left">E</td>
+<td class="org-left">F#m</td>
+<td class="org-left">G#dim</td>
+</tr>
+
+<tr>
+<td class="org-left">Bb</td>
+<td class="org-left">Bb</td>
+<td class="org-left">Cm</td>
+<td class="org-left">Dm</td>
+<td class="org-left">Eb</td>
+<td class="org-left">F</td>
+<td class="org-left">Gm</td>
+<td class="org-left">Adim</td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-left">B</td>
+<td class="org-left">C#m</td>
+<td class="org-left">D#m</td>
+<td class="org-left">E</td>
+<td class="org-left">F#</td>
+<td class="org-left">G#m</td>
+<td class="org-left">A#dim</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org3a35fbe" class="outline-2">
+<h2 id="org3a35fbe"><span class="section-number-2">5.</span> Common Progressions</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgf5f98e1" class="outline-3">
+<h3 id="orgf5f98e1"><span class="section-number-3">5.1.</span> Pop / Rock Staples</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-org414450a" class="outline-4">
+<h4 id="org414450a"><span class="section-number-4">5.1.1.</span> 1 - 5 - 6- - 4 (The "Axis" Progression)</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<p>
+The most ubiquitous progression in modern pop music.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-right">Bar 2</th>
+<th scope="col" class="org-right">Bar 3</th>
+<th scope="col" class="org-right">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">5</td>
+<td class="org-right">6-</td>
+<td class="org-right">4</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of G: G - D - Em - C</li>
+<li>Key of C: C - G - Am - F</li>
+<li>Songs: "Let It Be," "No Woman No Cry," "With or Without You"</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd6f3bf6" class="outline-4">
+<h4 id="orgd6f3bf6"><span class="section-number-4">5.1.2.</span> 1 - 4 - 5 - 4</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<p>
+A driving, anthemic rock progression.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-right">Bar 2</th>
+<th scope="col" class="org-right">Bar 3</th>
+<th scope="col" class="org-right">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">4</td>
+<td class="org-right">5</td>
+<td class="org-right">4</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of A: A - D - E - D</li>
+<li>Key of E: E - A - B - A</li>
+<li>Songs: "Louie Louie," "Wild Thing"</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org376af9a" class="outline-3">
+<h3 id="org376af9a"><span class="section-number-3">5.2.</span> Country / Folk</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-org92c426d" class="outline-4">
+<h4 id="org92c426d"><span class="section-number-4">5.2.1.</span> 1 - 4 - 1 - 5</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<p>
+The backbone of countless country and folk songs.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-right">Bar 2</th>
+<th scope="col" class="org-right">Bar 3</th>
+<th scope="col" class="org-right">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">4</td>
+<td class="org-right">1</td>
+<td class="org-right">5</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of G: G - C - G - D</li>
+<li>Key of D: D - G - D - A</li>
+<li>Songs: "Jambalaya," "Ring of Fire" (verse)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga7485bf" class="outline-4">
+<h4 id="orga7485bf"><span class="section-number-4">5.2.2.</span> 1 - 4 - 5 - 1 (Basic Three-Chord)</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-right">Bar 2</th>
+<th scope="col" class="org-right">Bar 3</th>
+<th scope="col" class="org-right">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">4</td>
+<td class="org-right">5</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of E: E - A - B - E</li>
+<li>Key of C: C - F - G - C</li>
+<li>Songs: "Twist and Shout," "La Bamba"</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfe5f0c3" class="outline-3">
+<h3 id="orgfe5f0c3"><span class="section-number-3">5.3.</span> Singer-Songwriter / Emotional</h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<div id="outline-container-org7a704cc" class="outline-4">
+<h4 id="org7a704cc"><span class="section-number-4">5.3.1.</span> 1 - 6- - 4 - 5</h4>
+<div class="outline-text-4" id="text-5-3-1">
+<p>
+Classic doo-wop and ballad progression.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-right">Bar 2</th>
+<th scope="col" class="org-right">Bar 3</th>
+<th scope="col" class="org-right">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">6-</td>
+<td class="org-right">4</td>
+<td class="org-right">5</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of C: C - Am - F - G</li>
+<li>Key of G: G - Em - C - D</li>
+<li>Songs: "Stand By Me," "Every Breath You Take"</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc8230cb" class="outline-4">
+<h4 id="orgc8230cb"><span class="section-number-4">5.3.2.</span> 6- - 4 - 1 - 5</h4>
+<div class="outline-text-4" id="text-5-3-2">
+<p>
+Same chords, starting on the minor. Creates a darker, more urgent feel.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-right">Bar 2</th>
+<th scope="col" class="org-right">Bar 3</th>
+<th scope="col" class="org-right">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">6-</td>
+<td class="org-right">4</td>
+<td class="org-right">1</td>
+<td class="org-right">5</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of C: Am - F - C - G</li>
+<li>Key of E: C#m - A - E - B</li>
+<li>Songs: "Save Tonight," "Numb"</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgab1c1ea" class="outline-3">
+<h3 id="orgab1c1ea"><span class="section-number-3">5.4.</span> Blues</h3>
+<div class="outline-text-3" id="text-5-4">
+</div>
+<div id="outline-container-orgd809937" class="outline-4">
+<h4 id="orgd809937"><span class="section-number-4">5.4.1.</span> 12-Bar Blues: 1 - 1 - 1 - 1 | 4 - 4 - 1 - 1 | 5 - 4 - 1 - 5</h4>
+<div class="outline-text-4" id="text-5-4-1">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-right">Bar 2</th>
+<th scope="col" class="org-right">Bar 3</th>
+<th scope="col" class="org-right">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">4</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-right">4</td>
+<td class="org-right">1</td>
+<td class="org-right">5</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+With dominant 7ths (standard blues feel): use <code>17</code>, <code>47</code>, <code>57</code> throughout.
+</p>
+
+<ul class="org-ul">
+<li>Key of E: E7 - E7 - E7 - E7 | A7 - A7 - E7 - E7 | B7 - A7 - E7 - B7</li>
+<li>Key of A: A7 - A7 - A7 - A7 | D7 - D7 - A7 - A7 | E7 - D7 - A7 - E7</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgef66f49" class="outline-3">
+<h3 id="orgef66f49"><span class="section-number-3">5.5.</span> Progressions Using Non-Diatonic Chords</h3>
+<div class="outline-text-3" id="text-5-5">
+</div>
+<div id="outline-container-org7683b23" class="outline-4">
+<h4 id="org7683b23"><span class="section-number-4">5.5.1.</span> 1 - b7 - 4 - 1 (Mixolydian / "Hey Jude" Ending)</h4>
+<div class="outline-text-4" id="text-5-5-1">
+<p>
+The b7 is borrowed from the parallel minor (mixolydian mode). Written
+with a flat sign to show it is <b>not</b> the diatonic 7dim.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-left">Bar 2</th>
+<th scope="col" class="org-right">Bar 3</th>
+<th scope="col" class="org-right">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">b7</td>
+<td class="org-right">4</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of C: C - Bb - F - C</li>
+<li>Key of D: D - C - G - D</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9ae4431" class="outline-4">
+<h4 id="org9ae4431"><span class="section-number-4">5.5.2.</span> 1 - 4 - b6 - b7 (Borrowed Chords)</h4>
+<div class="outline-text-4" id="text-5-5-2">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-right">Bar 2</th>
+<th scope="col" class="org-left">Bar 3</th>
+<th scope="col" class="org-left">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">4</td>
+<td class="org-left">b6</td>
+<td class="org-left">b7</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of C: C - F - Ab - Bb</li>
+<li>Key of G: G - C - Eb - F</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8aa2c49" class="outline-2">
+<h2 id="org8aa2c49"><span class="section-number-2">6.</span> Parallel Minor and Borrowed Chords</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org92cdf30" class="outline-3">
+<h3 id="org92cdf30"><span class="section-number-3">6.1.</span> What Is a Parallel Minor?</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+Every major key has a <b>parallel minor</b>&#x2014;a minor key that shares the same
+root note. For example, C major and C minor are parallel keys. They start
+on the same note but use different scales, which produces a different set
+of chord qualities.
+</p>
+
+<p>
+In the Nashville Number System, the major scale is the default frame of
+reference. When you "borrow" a chord from the parallel minor, you are
+temporarily using a chord that belongs to the minor scale built on the
+same root. These borrowed chords are marked with flats (<code>b3</code>, <code>b6</code>, <code>b7</code>)
+to distinguish them from the diatonic major-scale chords.
+</p>
+</div>
+</div>
+<div id="outline-container-org66b8e29" class="outline-3">
+<h3 id="org66b8e29"><span class="section-number-3">6.2.</span> Comparing Major and Parallel Minor Chords</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+The following table shows the diatonic chords for a major key and its
+parallel natural minor side by side:
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Major Key</th>
+<th scope="col" class="org-left">Parallel Minor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">1 (Major)</td>
+<td class="org-left">1- (minor)</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">2- (minor)</td>
+<td class="org-left">2dim (diminished)</td>
+</tr>
+
+<tr>
+<td class="org-right">b3</td>
+<td class="org-left">---</td>
+<td class="org-left">b3 (Major)</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">3- (minor)</td>
+<td class="org-left">---</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">4 (Major)</td>
+<td class="org-left">4- (minor)</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">5 (Major)</td>
+<td class="org-left">5- (minor)</td>
+</tr>
+
+<tr>
+<td class="org-right">b6</td>
+<td class="org-left">---</td>
+<td class="org-left">b6 (Major)</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">6- (minor)</td>
+<td class="org-left">---</td>
+</tr>
+
+<tr>
+<td class="org-right">b7</td>
+<td class="org-left">---</td>
+<td class="org-left">b7 (Major)</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">7dim (diminished)</td>
+<td class="org-left">---</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+In the key of C, for example:
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Major Key</th>
+<th scope="col" class="org-left">Parallel Minor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">C</td>
+<td class="org-left">Cm</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Dm</td>
+<td class="org-left">Ddim</td>
+</tr>
+
+<tr>
+<td class="org-right">b3/3</td>
+<td class="org-left">Em</td>
+<td class="org-left">Eb</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">F</td>
+<td class="org-left">Fm</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">G</td>
+<td class="org-left">Gm</td>
+</tr>
+
+<tr>
+<td class="org-right">b6/6</td>
+<td class="org-left">Am</td>
+<td class="org-left">Ab</td>
+</tr>
+
+<tr>
+<td class="org-right">b7/7</td>
+<td class="org-left">Bdim</td>
+<td class="org-left">Bb</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org52b8a34" class="outline-3">
+<h3 id="org52b8a34"><span class="section-number-3">6.3.</span> Most Commonly Borrowed Chords</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+Not all parallel minor chords are borrowed equally. In rough order of
+frequency in pop, rock, and country music:
+</p>
+
+<dl class="org-dl">
+<dt><b>b7</b> (e.g. Bb in the key of C)</dt><dd>The single most common borrowed chord.
+Gives a grounded, mixolydian flavor. Found in countless rock outros and
+verse turnarounds.</dd>
+
+<dt><b>b6</b> (e.g. Ab in the key of C)</dt><dd>Creates a dramatic, cinematic quality.
+Often paired with b7 in a plagal-style cadence: <code>b6 - b7 - 1</code>.</dd>
+
+<dt><b>b3</b> (e.g. Eb in the key of C)</dt><dd>Adds a bluesy, earthy sound. Common
+in classic rock and singer-songwriter music.</dd>
+
+<dt><b>4-</b> (minor 4, e.g. Fm in the key of C)</dt><dd>The iconic "minor four." Its
+bittersweet quality is a favorite for emotional pre-choruses and
+bridges. Written <code>4-</code> in NNS.</dd>
+
+<dt><b>5-</b> (minor 5, e.g. Gm in the key of C)</dt><dd>Less common but
+distinctive. Often used in passing or as a surprise substitution.</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org539a9bc" class="outline-3">
+<h3 id="org539a9bc"><span class="section-number-3">6.4.</span> Notation in NNS</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+Borrowed chords are written with accidentals to signal that they deviate
+from the major-scale default:
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">NNS Symbol</th>
+<th scope="col" class="org-left">Meaning</th>
+<th scope="col" class="org-left">In Key of G</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>b7</code></td>
+<td class="org-left">Major chord on the flatted 7th degree</td>
+<td class="org-left">F</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>b6</code></td>
+<td class="org-left">Major chord on the flatted 6th degree</td>
+<td class="org-left">Eb</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>b3</code></td>
+<td class="org-left">Major chord on the flatted 3rd degree</td>
+<td class="org-left">Bb</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>4-</code></td>
+<td class="org-left">Minor chord on the 4th degree</td>
+<td class="org-left">Cm</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>5-</code></td>
+<td class="org-left">Minor chord on the 5th degree</td>
+<td class="org-left">Dm</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+If a borrowed chord needs a seventh, write it as you would any other:
+<code>b77</code> or <code>b7^7</code> for a dominant 7th on the b7, <code>4-7</code> for a minor 7th on
+the minor 4, and so on.
+</p>
+</div>
+</div>
+<div id="outline-container-org4c97162" class="outline-3">
+<h3 id="org4c97162"><span class="section-number-3">6.5.</span> Example Progressions Using Parallel Minor Borrowing</h3>
+<div class="outline-text-3" id="text-6-5">
+</div>
+<div id="outline-container-org77fd192" class="outline-4">
+<h4 id="org77fd192"><span class="section-number-4">6.5.1.</span> 1 - b3 - 4 - 1 (Rock Borrowing)</h4>
+<div class="outline-text-4" id="text-6-5-1">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-left">Bar 2</th>
+<th scope="col" class="org-right">Bar 3</th>
+<th scope="col" class="org-right">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">b3</td>
+<td class="org-right">4</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of A: A - C - D - A</li>
+<li>Key of E: E - G - A - E</li>
+<li>Songs: "Sympathy for the Devil" (verse vamp)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgded9344" class="outline-4">
+<h4 id="orgded9344"><span class="section-number-4">6.5.2.</span> 1 - 4- - 1 (The Minor Four Resolution)</h4>
+<div class="outline-text-4" id="text-6-5-2">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-right">Bar 2</th>
+<th scope="col" class="org-right">Bar 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">4-</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of C: C - Fm - C</li>
+<li>Key of D: D - Gm - D</li>
+<li>Songs: "Creep" (Radiohead, uses 4- in the progression), "Space Oddity"</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org08dc680" class="outline-4">
+<h4 id="org08dc680"><span class="section-number-4">6.5.3.</span> 1 - b6 - b7 - 1 (Aeolian Cadence)</h4>
+<div class="outline-text-4" id="text-6-5-3">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bar 1</th>
+<th scope="col" class="org-left">Bar 2</th>
+<th scope="col" class="org-left">Bar 3</th>
+<th scope="col" class="org-right">Bar 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">b6</td>
+<td class="org-left">b7</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Key of G: G - Eb - F - G</li>
+<li>Key of C: C - Ab - Bb - C</li>
+<li>Songs: "Stairway to Heaven" (ending section feel)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org83c223b" class="outline-3">
+<h3 id="org83c223b"><span class="section-number-3">6.6.</span> Why Borrowing Works</h3>
+<div class="outline-text-3" id="text-6-6">
+<p>
+Borrowed chords work because they share the same tonal center as the
+major key. The root note (1) stays "home," so the listener still feels
+grounded even when a foreign chord appears. The ear interprets borrowed
+chords as colorful <b>inflections</b> rather than key changes, which is why
+they can add emotional weight without sounding jarring.
+</p>
+
+<p>
+A practical rule of thumb: if a chord has the same root as one of your
+diatonic chords but a different quality (major instead of minor or vice
+versa), it is likely a borrowed chord from the parallel minor. In NNS,
+just mark it with the appropriate accidental or quality change and any
+musician will know what to do.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6dfcb83" class="outline-2">
+<h2 id="org6dfcb83"><span class="section-number-2">7.</span> Writing a Chart: Putting It All Together</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Here is an example chart for a simple song in the style of a Nashville
+number chart:
+</p>
+
+<pre class="example" id="orgf755bff">
+Title: Example Song
+Key: G
+Tempo: 120 BPM
+Time: 4/4
+
+INTRO:
+| 1     | 4     |
+
+VERSE:
+| 1     | 4     | 1     | 5     |
+| 1     | 4     | 5     | 1     |
+
+CHORUS:
+| 4     | 1     | 5     | 6-    |
+| 4     | 1     | 5     | 1     |
+
+BRIDGE:
+| 4     | 4     | 1     | 1     |
+| 2-    | 5     | &lt;5&gt;   |
+
+TAG:
+| 1     |
+</pre>
+
+<p>
+Reading this chart:
+</p>
+<ul class="org-ul">
+<li>The <code>&lt;5&gt;</code> in the bridge means hit the 5 chord and let it ring (diamond).</li>
+<li>Any musician can play this in the key of G, or the leader can call a
+new key and the chart works without any changes.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5ebc451" class="outline-2">
+<h2 id="org5ebc451"><span class="section-number-2">8.</span> Quick Reference: Transposing with Numbers</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+To transpose, simply change the key and look up new letter names in the
+reference table. The numbers never change.
+</p>
+
+<p>
+<b>Example:</b> Move <code>1 - 5 - 6- - 4</code> from the key of G to the key of Bb.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Number</th>
+<th scope="col" class="org-left">Key of G</th>
+<th scope="col" class="org-left">Key of Bb</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">G</td>
+<td class="org-left">Bb</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">D</td>
+<td class="org-left">F</td>
+</tr>
+
+<tr>
+<td class="org-right">6-</td>
+<td class="org-left">Em</td>
+<td class="org-left">Gm</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">C</td>
+<td class="org-left">Eb</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+That's the entire point of the system&#x2014;learn the numbers once, play in
+any key forever.
+</p>
+</div>
+</div>
+<div id="outline-container-orge5848e5" class="outline-2">
+<h2 id="orge5848e5"><span class="section-number-2">9.</span> Tips for Composition</h2>
+<div class="outline-text-2" id="text-9">
+<ol class="org-ol">
+<li><b>Start with a feel, not a key.</b> Write your progression as numbers
+first, then pick the key that suits the singer's range.</li>
+
+<li><b>Borrow from parallel minor.</b> Using b3, b6, and b7 chords adds color
+without leaving the tonal center. These are the most common
+non-diatonic chords in pop music.</li>
+
+<li><b>Use the 5 chord to create tension.</b> The 5 (and especially 57) wants
+to resolve to 1. Place it before your tonic for a strong resolution.</li>
+
+<li><b>Swap 5 for 5sus.</b> A <code>5sus</code> resolving to <code>5</code> then <code>1</code> adds drama
+and is a staple of worship and anthemic music.</li>
+
+<li><b>Try starting on a chord other than 1.</b> Beginning on 4 or 6- can
+create immediate emotional interest before "arriving home" at 1.</li>
+
+<li><b>Secondary dominants.</b> Writing <code>5/5</code> (the 5 of 5) or <code>5/2</code> gives
+you strong pull toward chords other than the tonic. In the key of C,
+<code>5/5</code> is D major (which pulls toward G).</li>
+
+<li><b>Keep it simple.</b> Many of the greatest songs ever written use only
+three or four chords. The Nashville Number System makes it obvious
+just how much mileage you can get from 1, 4, 5, and 6-.</li>
+</ol>
+</div>
+</div>
+</div>
+</body>
+</html>

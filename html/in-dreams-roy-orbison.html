@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-04-20 Mon 14:12 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>In Dreams — Piano Cheat Sheet</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">In Dreams — Piano Cheat Sheet</h1>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgabd6a8b">Chord Reference</a>
+<ul>
+<li><a href="#org7678f44">Tips</a></li>
+</ul>
+</li>
+<li><a href="#org89175f4">Advanced Techniques</a>
+<ul>
+<li><a href="#org09ccada">Inversions</a></li>
+<li><a href="#org667cd7c">Extended &amp; Substitution Chords</a></li>
+<li><a href="#orga7ae0a1">Rhythmic/Textural Ideas</a></li>
+</ul>
+</li>
+<li><a href="#org586cfcb">Song Structure Note</a></li>
+<li><a href="#orgcf2cf8f">Verse 1</a></li>
+<li><a href="#org64d7942">Verse 2</a></li>
+<li><a href="#org0cbccaf">Verse 3</a></li>
+<li><a href="#org06b7465">Verse 4</a></li>
+<li><a href="#org6b60f28">Bridge</a></li>
+<li><a href="#orgd5ef6a5">Verse 5 (Finale)</a></li>
+</ul>
+</div>
+</nav>
+<div id="outline-container-orgabd6a8b" class="outline-2">
+<h2 id="orgabd6a8b">Chord Reference</h2>
+<div class="outline-text-2" id="text-orgabd6a8b">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Fingering (RH)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">C – E – G</td>
+<td class="org-left">1 – 3 – 5</td>
+</tr>
+
+<tr>
+<td class="org-left">Am</td>
+<td class="org-left">A – C – E</td>
+<td class="org-left">1 – 3 – 5</td>
+</tr>
+
+<tr>
+<td class="org-left">Dm</td>
+<td class="org-left">D – F – A</td>
+<td class="org-left">1 – 3 – 5</td>
+</tr>
+
+<tr>
+<td class="org-left">Dm7</td>
+<td class="org-left">D – F – A – C</td>
+<td class="org-left">1 – 2 – 4 – 5</td>
+</tr>
+
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">F – A – C</td>
+<td class="org-left">1 – 3 – 5</td>
+</tr>
+
+<tr>
+<td class="org-left">Fm</td>
+<td class="org-left">F – Ab – C</td>
+<td class="org-left">1 – 2 – 5</td>
+</tr>
+
+<tr>
+<td class="org-left">G</td>
+<td class="org-left">G – B – D</td>
+<td class="org-left">1 – 3 – 5</td>
+</tr>
+
+<tr>
+<td class="org-left">G7</td>
+<td class="org-left">G – B – D – F</td>
+<td class="org-left">1 – 2 – 4 – 5</td>
+</tr>
+
+<tr>
+<td class="org-left">D7</td>
+<td class="org-left">D – F# – A – C</td>
+<td class="org-left">1 – 2 – 4 – 5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-org7678f44" class="outline-3">
+<h3 id="org7678f44">Tips</h3>
+<div class="outline-text-3" id="text-org7678f44">
+<ul class="org-ul">
+<li>LH plays root note in bass; RH plays full chord</li>
+<li>Fm adds dark color — the Ab is the key note (black key, one semitone below A)</li>
+<li>G7 resolves strongly to C; lean into that pull</li>
+<li>D7 is a secondary dominant — it pulls toward G/G7</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org89175f4" class="outline-2">
+<h2 id="org89175f4">Advanced Techniques</h2>
+<div class="outline-text-2" id="text-org89175f4">
+</div>
+<div id="outline-container-org09ccada" class="outline-3">
+<h3 id="org09ccada">Inversions</h3>
+<div class="outline-text-3" id="text-org09ccada">
+<p>
+Inversions keep the LH bass moving smoothly instead of jumping around.
+Use these as voice-leading substitutes for root-position chords.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Inversion</th>
+<th scope="col" class="org-left">Notes (low → high)</th>
+<th scope="col" class="org-left">When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">C/E</td>
+<td class="org-left">C first inv.</td>
+<td class="org-left">E – G – C</td>
+<td class="org-left">Walking bass up to F</td>
+</tr>
+
+<tr>
+<td class="org-left">C/G</td>
+<td class="org-left">C second inv.</td>
+<td class="org-left">G – C – E</td>
+<td class="org-left">Pedal-tone feel; C over G bass</td>
+</tr>
+
+<tr>
+<td class="org-left">F/A</td>
+<td class="org-left">F first inv.</td>
+<td class="org-left">A – C – F</td>
+<td class="org-left">Smooth voice leading from Am</td>
+</tr>
+
+<tr>
+<td class="org-left">F/C</td>
+<td class="org-left">F second inv.</td>
+<td class="org-left">C – F – A</td>
+<td class="org-left">Approaching G7 from above</td>
+</tr>
+
+<tr>
+<td class="org-left">G7/B</td>
+<td class="org-left">G7 first inv.</td>
+<td class="org-left">B – D – F – G</td>
+<td class="org-left">Connects C → G7 with stepwise bass</td>
+</tr>
+
+<tr>
+<td class="org-left">G7/D</td>
+<td class="org-left">G7 second inv.</td>
+<td class="org-left">D – F – G – B</td>
+<td class="org-left">Floatier, less resolved feel</td>
+</tr>
+
+<tr>
+<td class="org-left">Dm/F</td>
+<td class="org-left">Dm first inv.</td>
+<td class="org-left">F – A – D</td>
+<td class="org-left">Smooth descent from F chord</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>*</b> Voice Leading Tip
+    In the verse progression C → Dm → G7 → C, try this bass line:
+    C (root) → D (root) → G (root) → C (root)
+    Or the smoother: C → F (Dm/F) → G → E (C/E)
+</p>
+</div>
+</div>
+<div id="outline-container-org667cd7c" class="outline-3">
+<h3 id="org667cd7c">Extended &amp; Substitution Chords</h3>
+<div class="outline-text-3" id="text-org667cd7c">
+<p>
+These add color without changing the harmonic function.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Original</th>
+<th scope="col" class="org-left">Extended Version</th>
+<th scope="col" class="org-left">Added Notes</th>
+<th scope="col" class="org-left">Character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">G7</td>
+<td class="org-left">G9</td>
+<td class="org-left">+ A above F</td>
+<td class="org-left">Warmer, more open dominant</td>
+</tr>
+
+<tr>
+<td class="org-left">G7</td>
+<td class="org-left">G13</td>
+<td class="org-left">+ E above A</td>
+<td class="org-left">Full jazz dominant; very lush</td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">Cmaj7</td>
+<td class="org-left">+ B natural</td>
+<td class="org-left">Dreamy, slightly suspended</td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">C6</td>
+<td class="org-left">+ A</td>
+<td class="org-left">Vintage feel; common in 50s/60s</td>
+</tr>
+
+<tr>
+<td class="org-left">Dm</td>
+<td class="org-left">Dm9</td>
+<td class="org-left">+ E above C</td>
+<td class="org-left">Richer minor color</td>
+</tr>
+
+<tr>
+<td class="org-left">Am</td>
+<td class="org-left">Am7</td>
+<td class="org-left">+ G natural</td>
+<td class="org-left">Softer; blurs the Am → Dm move</td>
+</tr>
+
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">Fmaj7</td>
+<td class="org-left">+ E natural</td>
+<td class="org-left">Adds shimmer to the F chord</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>*</b> G13 Voicing for Piano (RH only)
+</p>
+<pre class="example" id="org561b448">
+LH: G (bass)
+RH: B – F – A – E   (3rd, 7th, 13th, stacked from bottom)
+</pre>
+<p>
+Drop the D and G from RH entirely — the ear fills them in from context.
+</p>
+
+<p>
+<b>*</b> Cmaj7 as an Opener
+    Try starting Verse 1 on Cmaj7 instead of plain C.
+    Notes: C – E – G – B
+    It gives the opening that wistful, half-awake quality that suits the lyric.
+</p>
+</div>
+</div>
+<div id="outline-container-orga7ae0a1" class="outline-3">
+<h3 id="orga7ae0a1">Rhythmic/Textural Ideas</h3>
+<div class="outline-text-3" id="text-orga7ae0a1">
+<ul class="org-ul">
+<li><b>Arpeggiate the chords</b> (broken chord, LH): root → 5th → octave while RH holds the triad</li>
+<li><b>Ballad pattern</b> (LH): root on beat 1, chord on beats 2 and 3 (waltz-feel variation)</li>
+<li><b>Sustained pedal tone</b>: hold G in the bass through the Bridge (Fm sections) for a
+suspended, unresolved tension that releases when C returns</li>
+<li><b>Bridge dynamics</b>: drop to pp on "But just before the dawn," swell into the Fm,
+then pull back again on "if I cry" — the Dm there is most effective when quiet</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org586cfcb" class="outline-2">
+<h2 id="org586cfcb">Song Structure Note</h2>
+<div class="outline-text-2" id="text-org586cfcb">
+<p>
+No conventional verse/chorus — the song flows continuously
+through a suite of sections. Play through in order.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcf2cf8f" class="outline-2">
+<h2 id="orgcf2cf8f">Verse 1</h2>
+<div class="outline-text-2" id="text-orgcf2cf8f">
+<pre class="example" id="orge1c84ec">
+[C]
+A candy colored clown they call the
+[Am]
+sandman
+[Dm]                         [G7]
+Tiptoes to my room every night
+[C]
+Just to sprinkle stardust and to
+[Am]
+whisper
+     [F]          [G7]         [C]
+Go to sleep, everything is all right
+</pre>
+</div>
+</div>
+<div id="outline-container-org64d7942" class="outline-2">
+<h2 id="org64d7942">Verse 2</h2>
+<div class="outline-text-2" id="text-org64d7942">
+<pre class="example" id="org2a1564b">
+     [C]
+I close my eyes
+              [Dm]
+Then I drift away
+          [G7]
+Into the magic night
+          [C]
+I softly say
+</pre>
+</div>
+</div>
+<div id="outline-container-org0cbccaf" class="outline-2">
+<h2 id="org0cbccaf">Verse 3</h2>
+<div class="outline-text-2" id="text-org0cbccaf">
+<pre class="example" id="org6483d7d">
+     [C]
+A silent prayer
+              [Dm]
+Like dreamers do
+          [G7]
+Then I fall asleep to dream
+          [C]
+My dreams of you
+</pre>
+</div>
+</div>
+<div id="outline-container-org06b7465" class="outline-2">
+<h2 id="org06b7465">Verse 4</h2>
+<div class="outline-text-2" id="text-org06b7465">
+<pre class="example" id="org6e0f939">
+     [C]                        [G7]
+In dreams I walk with you
+     [F]         [G7]         [C]
+In dreams I talk to you
+     [C]
+In dreams you're mine
+[D7]
+All of the time, we're
+     [C] [Dm] [G] [C]       [Dm] [G7]
+Together in dreams, in dreams
+</pre>
+</div>
+</div>
+<div id="outline-container-org6b60f28" class="outline-2">
+<h2 id="org6b60f28">Bridge</h2>
+<div class="outline-text-2" id="text-org6b60f28">
+<pre class="example" id="orge508a8b">
+          [C]       [Fm]        [C]
+But just before the dawn
+    [C]             [Fm]              [C]
+I awake and find you're gone
+                  [C]                       [C]
+I can't help it... I can't help it...
+        [Dm]
+if I cry
+              [G7]      [G7]              [C]
+I remember that you said goodbye
+</pre>
+
+<p>
+** Bridge Note
+   The [Fm] chord is the emotional gut-punch of the song.
+   The Ab gives it that minor/bittersweet color against the C major key.
+   Let it ring and don't rush it.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd5ef6a5" class="outline-2">
+<h2 id="orgd5ef6a5">Verse 5 (Finale)</h2>
+<div class="outline-text-2" id="text-orgd5ef6a5">
+<pre class="example" id="org46be389">
+            [C]        [F]             [G7]
+It's too bad that all these things
+          [C]  [F]          [G7]
+Can only happen in my dreams
+[C]            [D7]
+Only in dreams
+     [Dm7] [G7]   [C]
+In beautiful dreams
+</pre>
+
+<p>
+** Finale Note
+</p>
+
+<p>
+The ending [Dm7] → [G7] → [C] is a classic ii7–V7–I jazz cadence.
+Play it slowly and let [C] ring out as a final resolution.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

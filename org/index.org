@@ -1,0 +1,28 @@
+#+TITLE: Music Theory for Hairy Apes 🎵🦍
+#+OPTIONS: toc:nil
+
+* Introductions - start here
+
+Oh my, music theory is a vast, expansive field, and it can be overwhelming.
+That is why I have created this "distributed notebook."
+That's a fancy way of saying "basic website where I attempt to explain complicated topics to myself in a way that might help others."
+Something like that.
+
+Here's my thinking.
+I figured that if music is like just about everything, it looks complicated from the outside but when you break it down it's a rather intuitive system.
+You just need to find the system in all that noise.
+
+So I'm going to start out like this:
+
+- i. Learn the notes of your preferred instrument.
+- ii. Learn [[file:triads.org][triads]], because if you know learn the chords in a major scale, you get the scale degrees and notes as well.
+- Does that make sense?
+- For songwriting, try using the [[file:~/deep_thoughts/8080_music/org/nashville-number-system.org][Nashville number system]].
+  
+I'm going to start here and add more as I go.
+
+* Cheat sheets
+
+- "[[file:twilight-elliott-smith.org][Twilight]]" by Elliott Smith
+- "[[file:against-all-odds-phil-collins.org][Against All Odds]]" by Phil Collins
+- "[[file:~/deep_thoughts/8080_music/org/in-dreams-roy-orbison.org][In Dreams]]" by Roy Orbison

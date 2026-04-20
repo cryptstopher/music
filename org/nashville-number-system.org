@@ -1,0 +1,417 @@
+#+TITLE: The Nashville Number System
+#+SUBTITLE: A Practical Guide for Song Composition
+#+OPTIONS: toc:2 num:t
+
+* What Is the Nashville Number System?
+
+The Nashville Number System (NNS) is a shorthand method of writing chord
+charts using numbers instead of chord letter names. Each number represents
+a scale degree of the major scale in whatever key you're playing in.
+
+It was developed by studio musicians in Nashville who needed to transpose
+songs on the fly during recording sessions. Instead of rewriting a chart
+in every new key, a number chart works in *all* keys---you just announce
+the key and play.
+
+* The Basics
+
+** Scale Degrees
+
+In any major key, the seven notes of the scale each get a number:
+
+| Degree | 1    | 2     | 3     | 4    | 5    | 6     | 7         |
+|--------+------+-------+-------+------+------+-------+-----------|
+| Role   | I    | ii    | iii   | IV   | V    | vi    | vii°      |
+| Quality| Major| minor | minor | Major| Major| minor | diminished|
+
+- *1, 4, 5* are major chords.
+- *2, 3, 6* are minor chords.
+- *7* is diminished (rarely used as-is in pop/country).
+
+** How to Read a Number
+
+- A plain number (e.g. =1=) means a major chord built on that scale degree.
+- A dash after a number (e.g. =2-=) means minor. Some writers use a
+  lowercase =m= instead: =2m=.
+- A superscript or caret for seventh chords: =5^7= or =57= means a
+  dominant 7th on the 5.
+
+Because the default chord qualities of the major scale are so well known,
+many charts omit the minor symbol on 2, 3, and 6 entirely---it is implied.
+If a chord *deviates* from the expected quality, it is always marked
+(e.g. =4-= for a minor 4 chord, or =2= with no dash to indicate a major 2).
+
+* Notation Conventions
+
+** Rhythm and Duration
+
+| Symbol       | Meaning                                          |
+|--------------+--------------------------------------------------|
+| =1  4=       | Each number gets equal time (usually one bar)    |
+| =1  4  5  1= | Four bars, one chord per bar                     |
+| =1 . 4 .=    | Dots split a bar: two beats on 1, two beats on 4 |
+| =1 . . 4=    | Three beats on 1, one beat on 4                  |
+| =<>=         | Diamond---hit and let ring (whole note feel)     |
+| =>=          | Push---play the chord an eighth note early       |
+
+** Repeated Sections
+
+- =%= :: Repeat the previous bar.
+- Draw a box or bracket around a section and write =x3= to repeat 3 times.
+
+** Other Markings
+
+| Symbol            | Meaning                                   |
+|-------------------+-------------------------------------------|
+| =#=               | Sharp the root (e.g. =#4= = raised 4th)   |
+| =b=               | Flat the root (e.g. =b7= = flatted 7th)   |
+| =sus=             | Suspended 4th (e.g. =1sus=)               |
+| =add9=            | Add the 9th (e.g. =1add9=)                |
+| =2-7=             | Minor 7th chord on the 2                  |
+| =5/7=             | 5 chord with the 7th scale degree in bass |
+| =/5= (standalone) | Just a bass note (5) with no chord above  |
+
+* Chord Reference Table by Key
+
+The following table shows the letter-name chord for each Nashville number
+in all 12 major keys. Minor quality is shown with "m" and diminished
+with "dim".
+
+| Key | 1  | 2m   | 3m   | 4  | 5  | 6m   | 7dim  |
+|-----+----+------+------+----+----+------+-------|
+| C   | C  | Dm   | Em   | F  | G  | Am   | Bdim  |
+| Db  | Db | Ebm  | Fm   | Gb | Ab | Bbm  | Cdim  |
+| D   | D  | Em   | F#m  | G  | A  | Bm   | C#dim |
+| Eb  | Eb | Fm   | Gm   | Ab | Bb | Cm   | Ddim  |
+| E   | E  | F#m  | G#m  | A  | B  | C#m  | D#dim |
+| F   | F  | Gm   | Am   | Bb | C  | Dm   | Edim  |
+| Gb  | Gb | Abm  | Bbm  | Cb | Db | Ebm  | Fdim  |
+| G   | G  | Am   | Bm   | C  | D  | Em   | F#dim |
+| Ab  | Ab | Bbm  | Cm   | Db | Eb | Fm   | Gdim  |
+| A   | A  | Bm   | C#m  | D  | E  | F#m  | G#dim |
+| Bb  | Bb | Cm   | Dm   | Eb | F  | Gm   | Adim  |
+| B   | B  | C#m  | D#m  | E  | F# | G#m  | A#dim |
+
+* Common Progressions
+
+** Pop / Rock Staples
+
+*** 1 - 5 - 6- - 4 (The "Axis" Progression)
+
+The most ubiquitous progression in modern pop music.
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 1     | 5     | 6-    | 4     |
+
+- Key of G: G - D - Em - C
+- Key of C: C - G - Am - F
+- Songs: "Let It Be," "No Woman No Cry," "With or Without You"
+
+*** 1 - 4 - 5 - 4
+
+A driving, anthemic rock progression.
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 1     | 4     | 5     | 4     |
+
+- Key of A: A - D - E - D
+- Key of E: E - A - B - A
+- Songs: "Louie Louie," "Wild Thing"
+
+** Country / Folk
+
+*** 1 - 4 - 1 - 5
+
+The backbone of countless country and folk songs.
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 1     | 4     | 1     | 5     |
+
+- Key of G: G - C - G - D
+- Key of D: D - G - D - A
+- Songs: "Jambalaya," "Ring of Fire" (verse)
+
+*** 1 - 4 - 5 - 1 (Basic Three-Chord)
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 1     | 4     | 5     | 1     |
+
+- Key of E: E - A - B - E
+- Key of C: C - F - G - C
+- Songs: "Twist and Shout," "La Bamba"
+
+** Singer-Songwriter / Emotional
+
+*** 1 - 6- - 4 - 5
+
+Classic doo-wop and ballad progression.
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 1     | 6-    | 4     | 5     |
+
+- Key of C: C - Am - F - G
+- Key of G: G - Em - C - D
+- Songs: "Stand By Me," "Every Breath You Take"
+
+*** 6- - 4 - 1 - 5
+
+Same chords, starting on the minor. Creates a darker, more urgent feel.
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 6-    | 4     | 1     | 5     |
+
+- Key of C: Am - F - C - G
+- Key of E: C#m - A - E - B
+- Songs: "Save Tonight," "Numb"
+
+** Blues
+
+*** 12-Bar Blues: 1 - 1 - 1 - 1 | 4 - 4 - 1 - 1 | 5 - 4 - 1 - 5
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 1     | 1     | 1     | 1     |
+| 4     | 4     | 1     | 1     |
+| 5     | 4     | 1     | 5     |
+
+With dominant 7ths (standard blues feel): use =17=, =47=, =57= throughout.
+
+- Key of E: E7 - E7 - E7 - E7 | A7 - A7 - E7 - E7 | B7 - A7 - E7 - B7
+- Key of A: A7 - A7 - A7 - A7 | D7 - D7 - A7 - A7 | E7 - D7 - A7 - E7
+
+** Progressions Using Non-Diatonic Chords
+
+*** 1 - b7 - 4 - 1 (Mixolydian / "Hey Jude" Ending)
+
+The b7 is borrowed from the parallel minor (mixolydian mode). Written
+with a flat sign to show it is *not* the diatonic 7dim.
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 1     | b7    | 4     | 1     |
+
+- Key of C: C - Bb - F - C
+- Key of D: D - C - G - D
+
+*** 1 - 4 - b6 - b7 (Borrowed Chords)
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 1     | 4     | b6    | b7    |
+
+- Key of C: C - F - Ab - Bb
+- Key of G: G - C - Eb - F
+
+* Parallel Minor and Borrowed Chords
+
+** What Is a Parallel Minor?
+
+Every major key has a *parallel minor*---a minor key that shares the same
+root note. For example, C major and C minor are parallel keys. They start
+on the same note but use different scales, which produces a different set
+of chord qualities.
+
+In the Nashville Number System, the major scale is the default frame of
+reference. When you "borrow" a chord from the parallel minor, you are
+temporarily using a chord that belongs to the minor scale built on the
+same root. These borrowed chords are marked with flats (=b3=, =b6=, =b7=)
+to distinguish them from the diatonic major-scale chords.
+
+** Comparing Major and Parallel Minor Chords
+
+The following table shows the diatonic chords for a major key and its
+parallel natural minor side by side:
+
+| Degree | Major Key     | Parallel Minor  |
+|--------+---------------+-----------------|
+|      1 | 1 (Major)     | 1- (minor)      |
+|      2 | 2- (minor)    | 2dim (diminished)|
+|     b3 | ---           | b3 (Major)      |
+|      3 | 3- (minor)    | ---             |
+|      4 | 4 (Major)     | 4- (minor)      |
+|      5 | 5 (Major)     | 5- (minor)      |
+|     b6 | ---           | b6 (Major)      |
+|      6 | 6- (minor)    | ---             |
+|     b7 | ---           | b7 (Major)      |
+|      7 | 7dim (diminished) | ---         |
+
+In the key of C, for example:
+
+| Degree | Major Key | Parallel Minor |
+|--------+-----------+----------------|
+|      1 | C         | Cm             |
+|      2 | Dm        | Ddim           |
+|   b3/3 | Em        | Eb             |
+|      4 | F         | Fm             |
+|      5 | G         | Gm             |
+|   b6/6 | Am        | Ab             |
+|   b7/7 | Bdim      | Bb             |
+
+** Most Commonly Borrowed Chords
+
+Not all parallel minor chords are borrowed equally. In rough order of
+frequency in pop, rock, and country music:
+
+- *b7* (e.g. Bb in the key of C) :: The single most common borrowed chord.
+  Gives a grounded, mixolydian flavor. Found in countless rock outros and
+  verse turnarounds.
+
+- *b6* (e.g. Ab in the key of C) :: Creates a dramatic, cinematic quality.
+  Often paired with b7 in a plagal-style cadence: =b6 - b7 - 1=.
+
+- *b3* (e.g. Eb in the key of C) :: Adds a bluesy, earthy sound. Common
+  in classic rock and singer-songwriter music.
+
+- *4-* (minor 4, e.g. Fm in the key of C) :: The iconic "minor four." Its
+  bittersweet quality is a favorite for emotional pre-choruses and
+  bridges. Written =4-= in NNS.
+
+- *5-* (minor 5, e.g. Gm in the key of C) :: Less common but
+  distinctive. Often used in passing or as a surprise substitution.
+
+** Notation in NNS
+
+Borrowed chords are written with accidentals to signal that they deviate
+from the major-scale default:
+
+| NNS Symbol | Meaning                               | In Key of G |
+|------------+---------------------------------------+-------------|
+| =b7=       | Major chord on the flatted 7th degree | F           |
+| =b6=       | Major chord on the flatted 6th degree | Eb          |
+| =b3=       | Major chord on the flatted 3rd degree | Bb          |
+| =4-=       | Minor chord on the 4th degree         | Cm          |
+| =5-=       | Minor chord on the 5th degree         | Dm          |
+
+If a borrowed chord needs a seventh, write it as you would any other:
+=b77= or =b7^7= for a dominant 7th on the b7, =4-7= for a minor 7th on
+the minor 4, and so on.
+
+** Example Progressions Using Parallel Minor Borrowing
+
+*** 1 - b3 - 4 - 1 (Rock Borrowing)
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 1     | b3    | 4     | 1     |
+
+- Key of A: A - C - D - A
+- Key of E: E - G - A - E
+- Songs: "Sympathy for the Devil" (verse vamp)
+
+*** 1 - 4- - 1 (The Minor Four Resolution)
+
+| Bar 1   | Bar 2 | Bar 3 |
+|---------+-------+-------|
+| 1       | 4-    | 1     |
+
+- Key of C: C - Fm - C
+- Key of D: D - Gm - D
+- Songs: "Creep" (Radiohead, uses 4- in the progression), "Space Oddity"
+
+*** 1 - b6 - b7 - 1 (Aeolian Cadence)
+
+| Bar 1 | Bar 2 | Bar 3 | Bar 4 |
+|-------+-------+-------+-------|
+| 1     | b6    | b7    | 1     |
+
+- Key of G: G - Eb - F - G
+- Key of C: C - Ab - Bb - C
+- Songs: "Stairway to Heaven" (ending section feel)
+
+** Why Borrowing Works
+
+Borrowed chords work because they share the same tonal center as the
+major key. The root note (1) stays "home," so the listener still feels
+grounded even when a foreign chord appears. The ear interprets borrowed
+chords as colorful *inflections* rather than key changes, which is why
+they can add emotional weight without sounding jarring.
+
+A practical rule of thumb: if a chord has the same root as one of your
+diatonic chords but a different quality (major instead of minor or vice
+versa), it is likely a borrowed chord from the parallel minor. In NNS,
+just mark it with the appropriate accidental or quality change and any
+musician will know what to do.
+
+* Writing a Chart: Putting It All Together
+
+Here is an example chart for a simple song in the style of a Nashville
+number chart:
+
+#+BEGIN_EXAMPLE
+Title: Example Song
+Key: G
+Tempo: 120 BPM
+Time: 4/4
+
+INTRO:
+| 1     | 4     |
+
+VERSE:
+| 1     | 4     | 1     | 5     |
+| 1     | 4     | 5     | 1     |
+
+CHORUS:
+| 4     | 1     | 5     | 6-    |
+| 4     | 1     | 5     | 1     |
+
+BRIDGE:
+| 4     | 4     | 1     | 1     |
+| 2-    | 5     | <5>   |
+
+TAG:
+| 1     |
+#+END_EXAMPLE
+
+Reading this chart:
+- The =<5>= in the bridge means hit the 5 chord and let it ring (diamond).
+- Any musician can play this in the key of G, or the leader can call a
+  new key and the chart works without any changes.
+
+* Quick Reference: Transposing with Numbers
+
+To transpose, simply change the key and look up new letter names in the
+reference table. The numbers never change.
+
+*Example:* Move =1 - 5 - 6- - 4= from the key of G to the key of Bb.
+
+| Number | Key of G | Key of Bb |
+|--------+----------+-----------|
+|      1 | G        | Bb        |
+|      5 | D        | F         |
+|     6- | Em       | Gm        |
+|      4 | C        | Eb        |
+
+That's the entire point of the system---learn the numbers once, play in
+any key forever.
+
+* Tips for Composition
+
+1. *Start with a feel, not a key.* Write your progression as numbers
+   first, then pick the key that suits the singer's range.
+
+2. *Borrow from parallel minor.* Using b3, b6, and b7 chords adds color
+   without leaving the tonal center. These are the most common
+   non-diatonic chords in pop music.
+
+3. *Use the 5 chord to create tension.* The 5 (and especially 57) wants
+   to resolve to 1. Place it before your tonic for a strong resolution.
+
+4. *Swap 5 for 5sus.* A =5sus= resolving to =5= then =1= adds drama
+   and is a staple of worship and anthemic music.
+
+5. *Try starting on a chord other than 1.* Beginning on 4 or 6- can
+   create immediate emotional interest before "arriving home" at 1.
+
+6. *Secondary dominants.* Writing =5/5= (the 5 of 5) or =5/2= gives
+   you strong pull toward chords other than the tonic. In the key of C,
+   =5/5= is D major (which pulls toward G).
+
+7. *Keep it simple.* Many of the greatest songs ever written use only
+   three or four chords. The Nashville Number System makes it obvious
+   just how much mileage you can get from 1, 4, 5, and 6-.

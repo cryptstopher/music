@@ -1,0 +1,158 @@
+#+TITLE: Major Triads — Major Key Reference
+#+SUBTITLE: Learning the triad for each scale degree in all 12 keys
+#+OPTIONS: toc:2 num:t
+
+* What Is a Triad?
+
+A triad is a chord built from three notes stacked in thirds---root, third, and fifth.
+That's it.
+Every chord you play in a major key starts as a triad.
+
+The *root* is the note the chord is named after.
+The *third* determines whether the chord feels major or minor.
+The *fifth* stabilizes the sound.
+
+* The Four Triad Types
+
+In this table, the "R" stands for root, "M" stands for major, "m" stands for minor, and "P" stands for perfect.
+The scale degree from I to V is a perfect fifth?
+
+| Type        | Formula            | Interval Stack      | Example (root C) |
+|-------------+--------------------+---------------------+------------------|
+| Major       | R + M3 + P5        | 4 semitones, then 3 | C  E  G          |
+| minor       | R + m3 + P5        | 3 semitones, then 4 | C  Eb G          |
+| diminished  | R + m3 + d5        | 3 semitones, then 3 | C  Eb Gb         |
+| augmented   | R + M3 + A5        | 4 semitones, then 4 | C  E  G#         |
+
+- *Major* sounds bright and stable.
+- *minor* sounds darker, but still stable.
+- *diminished* sounds tense and unstable — it wants to resolve.
+- *augmented* is rare in diatonic harmony; you'll mostly encounter it in chromatic passages.
+
+* Triads in a Major Key
+
+Every major key produces the same pattern of triad types across its seven scale degrees.
+Learn this pattern once and it applies to all 12 keys.
+
+| Degree | Roman | Quality    | Formula reminder   |
+|--------+-------+------------+--------------------|
+|      1 | I     | Major      | R M3 P5            |
+|      2 | ii    | minor      | R m3 P5            |
+|      3 | iii   | minor      | R m3 P5            |
+|      4 | IV    | Major      | R M3 P5            |
+|      5 | V     | Major      | R M3 P5            |
+|      6 | vi    | minor      | R m3 P5            |
+|      7 | vii°  | diminished | R m3 d5            |
+
+The pattern is: *Major minor minor Major Major minor diminished.*
+Say it until it sticks---it unlocks every key at once.
+
+- Degrees 1, 4, and 5 are always major.
+- Degrees 2, 3, and 6 are always minor.
+- Degree 7 is always diminished.
+
+* How Semitone Distances Work Between Degrees
+
+Music counts intervals *inclusively* — it includes the note you start on.
+A "third" means you count C(1) D(2) E(3): three note names, but only two steps of motion.
+This makes every interval name one higher than its arithmetic distance.
+
+** The Major Scale Step Pattern
+
+A major scale is not evenly spaced. It follows a fixed pattern of whole steps (W = 2 semitones)
+and half steps (H = 1 semitone):
+
+#+BEGIN_EXAMPLE
+C   D   E   F   G   A   B   C
+  W   W   H   W   W   W   H
+  2   2   1   2   2   2   1   semitones per step
+#+END_EXAMPLE
+
+The half steps fall at iii→IV (E to F) and vii→I (B to C).
+Everything else is a whole step.
+That uneven spacing is why the semitone distances between degrees are not uniform.
+
+** Semitones From I to Each Degree (in C major)
+
+| Degree | Roman | Note | Semitones from I | Interval Name |
+|--------+-------+------+------------------+---------------|
+|      1 | I     | C    |                0 | Unison        |
+|      2 | ii    | D    |                2 | Major 2nd     |
+|      3 | iii   | E    |                4 | Major 3rd     |
+|      4 | IV    | F    |                5 | Perfect 4th   |
+|      5 | V     | G    |                7 | Perfect 5th   |
+|      6 | vi    | A    |                9 | Major 6th     |
+|      7 | vii°  | B    |               11 | Major 7th     |
+
+- The Roman numeral tells you the *interval name* (4th, 5th…), not the semitone count.
+- To find the semitone distance: count every piano key — white and black — between the two roots.
+- The chord quality (major or minor) does not change the root's semitone distance.
+  I to IV and I to iv both have the root F five semitones above C.
+
+** "Major interval" vs "minor chord" — two different uses of the same word
+
+The word major/minor appears in two separate systems and means something different in each.
+
+- *Interval quality* describes the size of the gap between two notes.
+- *Chord quality* describes the internal structure of a chord — whether its third is raised or lowered.
+
+When you measure from the tonic of a major scale up to any note within that scale,
+every interval is either major or perfect — never minor.
+That is not a coincidence: it is the definition of a major scale.
+
+| From C to | Semitones | Interval name | Chord at that degree |
+|-----------+-----------+---------------+----------------------|
+| D         |         2 | Major 2nd     | Dm — a minor chord   |
+| E         |         4 | Major 3rd     | Em — a minor chord   |
+| A         |         9 | Major 6th     | Am — a minor chord   |
+
+The chord built on D is minor because its internal third (D to F) is a minor third (3 semitones).
+That has nothing to do with how far D sits above C.
+Lowering D to Db would give you a minor 2nd from C — but Db is not in C major.
+
+* Chord Chart by Key
+
+The letter names of each diatonic triad across all 12 major keys.
+Minor chords shown with "m", diminished with "dim".
+
+| Key   | I     | ii      | iii     | IV    | V     | vi      | vii°        |
+|-------+-------+---------+---------+-------+-------+---------+-------------|
+| C     | C     | Dm      | Em      | F     | G     | Am      | Bdim        |
+| Db/C# | Db/C# | Ebm/D#m | Fm/E#m  | Gb/F# | Ab/G# | Bbm/A#m | Cdim/B#dim  |
+| D     | D     | Em      | F#m     | G     | A     | Bm      | C#dim       |
+| Eb/D# | Eb/D# | Fm/E#m  | Gm      | Ab/G# | Bb/A# | Cm/B#m  | Ddim        |
+| E/Fb  | E/Fb  | F#m/Gbm | G#m/Abm | A     | B/Cb  | C#m/Dbm | D#dim       |
+| F     | F     | Gm      | Am      | Bb    | C     | Dm      | Edim        |
+| Gb/F# | Gb/F# | G#m/Abm | Bbm/A#m | B/Cb  | Db/C# | Ebm/D#m | Fdim/E#dim  |
+| G     | G     | Am      | Bm      | C     | D     | Em      | F#dim       |
+| Ab/G# | Ab/G# | Bbm/A#m | Cm/B#m  | Db/C# | Eb/D# | Fm/E#m  | Gdim        |
+| A     | A     | Bm      | C#m     | D     | E     | F#m     | G#dim       |
+| Bb    | Bb    | Cm      | Dm      | Eb    | F     | Gm      | Adim        |
+| B/Cb  | B/Cb  | C#m/Dbm | D#m/Ebm | E/Fb  | F#/Gb | G#m/Abm | A#dim/Bbdim |
+
+* Root Position and Inversions
+
+A triad can be played three ways — same three notes, different note on the bottom.
+
+| Name           | Bottom Note | Example (C major) | Use                            |
+|----------------+-------------+-------------------+--------------------------------|
+| Root position  | Root        | C E G             | Clearest, most grounded        |
+| First inversion| Third       | E G C             | Smooth bass movement           |
+| Second inversion| Fifth      | G C E             | Passing chord, cadential 6/4   |
+
+- Root position is your default. Learn all 12 major I chords in root position first.
+- First inversion is how you connect chords without jumping around in the bass.
+- Second inversion sounds less stable — use it deliberately, not as a default.
+
+The notes are always the same. Only the voicing changes.
+
+* Practice Notes
+
+- [ ] Memorise the quality pattern: Major minor minor Major Major minor dim
+- [ ] Play all 12 root-position I (tonic) triads up the chromatic scale — C Db D Eb…
+- [ ] In one key (start with C), play all 7 triads in root position, hands together
+- [ ] Say the note names aloud as you play each triad (builds the muscle–theory link)
+- [ ] Practice the I–IV–V triads in G, C, D, and F — these cover most beginner songs
+- [ ] Add first inversions: play I then I/3 (first inversion) to hear the difference
+- [ ] Run the 6 most common keys (C G D F Bb Eb) through all 7 triads in one session
+- [ ] Pick one song from your repertoire and identify every chord as a scale degree
