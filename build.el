@@ -1,10 +1,10 @@
-;;; build.el --- Export all org/ files to HTML in html/
+;;; build.el --- Export all org/ files to HTML in docs/
 ;;
 ;; Usage:
 ;;   emacs --batch --load build.el
 ;;
-;; Exports every .org file in org/ to html/.
-;; Static assets (css, js, images) in static/ are copied to html/static/.
+;; Exports every .org file in org/ to docs/.
+;; Static assets (css, js, images) in static/ are copied to docs/static/.
 
 (require 'ox-publish)
 
@@ -20,8 +20,8 @@
   (file-name-base (directory-file-name build-root))
   "Short name used to label ox-publish components.")
 
-;; Delete html/ output so every build starts completely fresh.
-(let ((html-dir (expand-file-name "html" build-root)))
+;; Delete docs/ output so every build starts completely fresh.
+(let ((html-dir (expand-file-name "docs" build-root)))
   (when (file-directory-p html-dir)
     (delete-directory html-dir t))
   (make-directory html-dir t))
@@ -30,7 +30,7 @@
       `((,(concat build-project-name "-notes")
          :base-directory      ,(expand-file-name "org"    build-root)
          :base-extension      "org"
-         :publishing-directory ,(expand-file-name "html"  build-root)
+         :publishing-directory ,(expand-file-name "docs"  build-root)
          :publishing-function  org-html-publish-to-html
          :recursive            nil
 
@@ -49,7 +49,7 @@
         (,(concat build-project-name "-static")
          :base-directory       ,(expand-file-name "static" build-root)
          :base-extension       "css\\|js\\|png\\|jpg\\|svg\\|ico\\|woff2\\|woff"
-         :publishing-directory ,(expand-file-name "html/static" build-root)
+         :publishing-directory ,(expand-file-name "docs/static" build-root)
          :publishing-function  org-publish-attachment
          :recursive            t)
 
@@ -60,10 +60,10 @@
 ;; Force full re-export on every run (ignore the publish cache).
 (org-publish build-project-name t)
 
-(message "\nBuild complete → %s" (expand-file-name "html" build-root))
+(message "\nBuild complete → %s" (expand-file-name "docs" build-root))
 
 ;; Start simple-httpd server serving html/ and open browser.
-(let* ((html-dir (expand-file-name "html" build-root))
+(let* ((html-dir (expand-file-name "docs" build-root))
        (port 8080))
   (if (not noninteractive)
       ;; Interactive Emacs: start the server in this process.
