@@ -1,0 +1,3 @@
+#+TITLE: Music Theory for Hairy Apes 🎵🦍
+
+A plain HTML resource for music-related nonsense and cheat sheets.
