@@ -2,6 +2,8 @@
 #+AUTHOR: Roy Orbison
 #+STARTUP: overview
 
+[[file:index.org][← Back to Index]]
+
 * Chord Reference
   :PROPERTIES:
   :NOTE: All chords in key of C major
@@ -30,18 +32,59 @@
 
 ** Inversions
 
-Inversions keep the LH bass moving smoothly instead of jumping around.  Use these as voice-leading substitutes for root-position chords.
+Inversions keep the LH bass moving smoothly instead of jumping around.  Use these as voice-leading substitutes for root-position chords.  *LH plays the bass (lowest) note; RH plays all listed notes.*
 
-| Chord | Inversion      | Notes (low → high) | When to Use                        |
-|-------+----------------+--------------------+------------------------------------|
-| C/E   | C first inv.   | E – G – C          | Walking bass up to F               |
-| C/G   | C second inv.  | G – C – E          | Pedal-tone feel; C over G bass     |
-| F/A   | F first inv.   | A – C – F          | Smooth voice leading from Am       |
-| F/C   | F second inv.  | C – F – A          | Approaching G7 from above          |
-| G7/B  | G7 first inv.  | B – D – F – G      | Connects C → G7 with stepwise bass |
-| G7/D  | G7 second inv. | D – F – G – B      | Floatier, less resolved feel       |
-| Dm/F  | Dm first inv.  | F – A – D          | Smooth descent from F chord        |
+*** Triads
 
+| Chord  | Position  | Notes (low → high) | RH Fingering | When to Use                                  |
+|--------+-----------+--------------------+--------------+----------------------------------------------|
+| C      | Root      | C – E – G          | 1 – 3 – 5    | Default tonic landing                        |
+| C/E    | 1st inv.  | E – G – C          | 1 – 2 – 5    | Bass walks up E → F; connects smoothly to F  |
+| C/G    | 2nd inv.  | G – C – E          | 1 – 3 – 5    | Pedal-tone feel; flows naturally into G7     |
+|--------+-----------+--------------------+--------------+----------------------------------------------|
+| Am     | Root      | A – C – E          | 1 – 3 – 5    | Default vi chord                             |
+| Am/C   | 1st inv.  | C – E – A          | 1 – 3 – 5    | C in bass ties Am to surrounding C chords   |
+| Am/E   | 2nd inv.  | E – A – C          | 1 – 3 – 5    | Floating feel; E bass gives unresolved color |
+|--------+-----------+--------------------+--------------+----------------------------------------------|
+| Dm     | Root      | D – F – A          | 1 – 3 – 5    | Default ii chord                             |
+| Dm/F   | 1st inv.  | F – A – D          | 1 – 3 – 5    | F in bass walks smoothly into G7            |
+| Dm/A   | 2nd inv.  | A – D – F          | 1 – 3 – 5    | A in bass; pivot toward Am or G7             |
+|--------+-----------+--------------------+--------------+----------------------------------------------|
+| F      | Root      | F – A – C          | 1 – 3 – 5    | Default IV chord                             |
+| F/A    | 1st inv.  | A – C – F          | 1 – 2 – 5    | A in bass stays from Am; smooth voice leading|
+| F/C    | 2nd inv.  | C – F – A          | 1 – 3 – 5    | C in bass; leads naturally into G7           |
+|--------+-----------+--------------------+--------------+----------------------------------------------|
+| Fm     | Root      | F – Ab – C         | 1 – 2 – 5    | Gut-punch iv minor; Ab is the dark note      |
+| Fm/Ab  | 1st inv.  | Ab – C – F         | 2 – 3 – 5    | Starts on black key Ab — use index, not thumb|
+| Fm/C   | 2nd inv.  | C – F – Ab         | 1 – 3 – 5    | C in bass; softer, less harsh entry into Fm  |
+|--------+-----------+--------------------+--------------+----------------------------------------------|
+| G      | Root      | G – B – D          | 1 – 3 – 5    | Default V chord                              |
+| G/B    | 1st inv.  | B – D – G          | 1 – 2 – 5    | B in bass; stepwise descent from C           |
+| G/D    | 2nd inv.  | D – G – B          | 1 – 3 – 5    | D in bass; lighter V; less final-sounding    |
+
+*** 7th Chords
+
+| Chord   | Position  | Notes (low → high) | RH Fingering  | When to Use                                     |
+|---------+-----------+--------------------+---------------+-------------------------------------------------|
+| Dm7     | Root      | D – F – A – C      | 1 – 2 – 4 – 5 | Rich ii7; classic setup for G7 resolution       |
+| Dm7/F   | 1st inv.  | F – A – C – D      | 1 – 2 – 3 – 5 | F in bass; smooth step down from G7/F           |
+| Dm7/A   | 2nd inv.  | A – C – D – F      | 1 – 2 – 3 – 5 | A in bass; connected from Am7                   |
+| Dm7/C   | 3rd inv.  | C – D – F – A      | 1 – 2 – 4 – 5 | C in bass; jazzy and unresolved; good for outros|
+|---------+-----------+--------------------+---------------+-------------------------------------------------|
+| G7      | Root      | G – B – D – F      | 1 – 2 – 4 – 5 | Default V7; strong pull to C                    |
+| G7/B    | 1st inv.  | B – D – F – G      | 1 – 2 – 3 – 5 | B in bass; stepwise descent C → B → A → G      |
+| G7/D    | 2nd inv.  | D – F – G – B      | 1 – 2 – 3 – 5 | D in bass; floatier dominant, less resolved     |
+| G7/F    | 3rd inv.  | F – G – B – D      | 1 – 2 – 4 – 5 | F in bass; most urgent — pulls hardest to C     |
+|---------+-----------+--------------------+---------------+-------------------------------------------------|
+| D7      | Root      | D – F# – A – C     | 1 – 2 – 4 – 5 | Secondary dominant; V7 of G                     |
+| D7/F#   | 1st inv.  | F# – A – C – D     | 1 – 2 – 3 – 5 | F# in bass; chromatic bass line rising into G   |
+| D7/A    | 2nd inv.  | A – C – D – F#     | 1 – 2 – 3 – 5 | A in bass; lighter feel; F# on top is bright    |
+| D7/C    | 3rd inv.  | C – D – F# – A     | 1 – 2 – 4 – 5 | C in bass; most dissonant; tense before G7      |
+
+Fingering notes:
+- *1–2–5 on a first inversion triad*: the minor 3rd at the bottom (e.g., E–G, A–C) sits naturally under fingers 1 and 2; pinky stretches to the octave note
+- *2–3–5 for Fm/Ab*: avoid putting the thumb on the black key Ab — index on Ab gives a more stable anchor
+- *D7/F# (1st inv.)*: thumb on black key F# is acceptable here; the 3–5 stretch across C–D at the top is tight — keep the hand relaxed and let the pinky fall naturally
 
 Voice leading tip:
 
@@ -52,31 +95,102 @@ In the verse progression C → Dm → G7 → C, try this bass line:
 
 ** Extended & Substitution Chords
 
-These add color without changing the harmonic function.
+These add color without changing the harmonic function.  Drop them in wherever the base chord appears — the substitution is always optional and additive.
 
-   | Original | Extended Version | Added Notes | Character                       |
-   |----------+------------------+-------------+---------------------------------|
-   | G7       | G9               | + A above F | Warmer, more open dominant      |
-   | G7       | G13              | + E above A | Full jazz dominant; very lush   |
-   | C        | Cmaj7            | + B natural | Dreamy, slightly suspended      |
-   | C        | C6               | + A         | Vintage feel; common in 50s/60s |
-   | Dm       | Dm9              | + E above C | Richer minor color              |
-   | Am       | Am7              | + G natural | Softer; blurs the Am → Dm move  |
-   | F        | Fmaj7            | + E natural | Adds shimmer to the F chord     |
+| Original | Extended | Full Notes              | Key Addition   | Character                          |
+|----------+----------+-------------------------+----------------+------------------------------------|
+| G7       | G9       | G – B – D – F – A       | A (major 9th)  | Warmer, more open dominant         |
+| G7       | G13      | G – B – D – F – A – E   | E (major 13th) | Full jazz dominant; very lush      |
+| C        | Cmaj7    | C – E – G – B           | B (major 7th)  | Dreamy, half-suspended             |
+| C        | C6       | C – E – G – A           | A (major 6th)  | Vintage warmth; common in 50s/60s  |
+| Dm       | Dm9      | D – F – A – C – E       | E (major 9th)  | Richer minor; more open            |
+| Am       | Am7      | A – C – E – G           | G (minor 7th)  | Softer; blurs the Am → Dm boundary |
+| F        | Fmaj7    | F – A – C – E           | E (major 7th)  | Shimmering, slightly suspended IV  |
 
-*** G13 Voicing for Piano (RH only)
-   
-       #+BEGIN_EXAMPLE
-       LH: G (bass)
-       RH: B – F – A – E   (3rd, 7th, 13th, stacked from bottom)
-       #+END_EXAMPLE
-       Drop the D and G from RH entirely — the ear fills them in from context.
+*** G9
 
-*** Cmaj7 as an Opener
+G9 takes G7 and adds the 9th (A) — one whole step above the octave.  The A softens the harshness of the tritone inside G7 (B against F) without removing it.
 
-Try starting Verse 1 on Cmaj7 instead of plain C: C – E – G – B
+  #+BEGIN_EXAMPLE
+  LH: G (bass)
+  RH: B – F – A    (3rd, 7th, 9th — omit D)
+  Fingering: 1 – 3 – 5
+  #+END_EXAMPLE
 
-It gives the opening that wistful, half-awake quality that suits the lyric.
+The D is omitted — context supplies it.  B is the most critical note (it forms the tritone with F), and A on top opens the chord up.  The interval B–F is a tritone (6 semitones), so fingers 1–3 need a slight spread.  Use anywhere G7 appears for a warmer, less abrupt resolution into C.
+
+*** G13
+
+G13 adds the 13th (E) — count up every other note from G: G–B–D–F–A–C–E, and E is the 13th.  In practice you drop most of the middle to make it playable.
+
+  #+BEGIN_EXAMPLE
+  LH: G (bass)
+  RH: B – F – A – E    (3rd, 7th, 9th, 13th — omit D and C entirely)
+  #+END_EXAMPLE
+
+B and F are the tritone core; A and E are the color tones stacked on top.  The span B → E is a major 7th above a tritone — if the stretch is uncomfortable, arpeggiate upward (B–F–A–E) rather than holding all four simultaneously.  Save this for the climactic G7 before the Bridge's return to C; it makes the resolution feel enormous.
+
+*** Cmaj7
+
+Cmaj7 adds B natural — the leading tone, one semitone below the root.  Because B hovers so close to C it creates gentle suspension without real dissonance.  It doesn't pull; it floats.
+
+  #+BEGIN_EXAMPLE
+  LH: C (bass)
+  RH: E – G – B    (3rd, 5th, major 7th)
+  Fingering: 1 – 2 – 4
+  #+END_EXAMPLE
+
+This is the recommended opener for Verse 1 ("A candy colored clown").  Plain C is stable and awake; Cmaj7 sounds half-dreaming.  Let the B ring — it is the most distinctive note.
+
+For a fuller sound across both hands: LH plays C–E, RH plays G–B.  The B on top gives the chord its airy, unresolved quality.
+
+*** C6
+
+C6 adds A natural — the major 6th above C.  A already lives inside Am and Dm, so C6 has a nostalgic, blended quality, as if the chord hasn't quite committed to plain C major.
+
+  #+BEGIN_EXAMPLE
+  LH: C (bass)
+  RH: E – G – A    (3rd, 5th, 6th)
+  Fingering: 1 – 3 – 4
+  #+END_EXAMPLE
+
+Note: C6 (C–E–G–A) contains the exact same four notes as Am7 (A–C–E–G).  The only difference is the bass note.  C6 over a C bass feels like a warm, settled tonic.  Am7 over an A bass feels like a soft minor.  Use C6 at phrase endings where you want warmth without the suspension of Cmaj7.
+
+*** Dm9
+
+Dm9 adds E above the Dm7 chord — the major 9th.  E is a bright, open note that lifts the otherwise closed minor sound of Dm7.
+
+  #+BEGIN_EXAMPLE
+  LH: D (bass)
+  RH: F – A – C – E    (minor 3rd, 5th, minor 7th, major 9th)
+  Fingering: 1 – 2 – 3 – 5
+  #+END_EXAMPLE
+
+Most effective on the Dm7 in the Finale cadence (Dm7 → G7 → C).  Try the extended version: Dm9 → G13 → Cmaj7.  That is a full ii9–V13–Imaj7 jazz resolution — the most sophisticated ending available in this song.
+
+*** Am7
+
+Am7 adds G natural — the minor 7th above A.  G is the root of the dominant chord and appears throughout the key, so Am7 sounds like it belongs everywhere.
+
+  #+BEGIN_EXAMPLE
+  LH: A (bass)
+  RH: C – E – G    (minor 3rd, 5th, minor 7th)
+  Fingering: 1 – 3 – 5
+  #+END_EXAMPLE
+
+Note: Am7 (A–C–E–G) is the same four notes as C6 (C–E–G–A) — see C6 above.  Over an A bass it sounds fluid and minor; over a C bass it sounds like a warm tonic.  Am7 softens the vi chord and blurs the boundary of the Am → Dm movement, which suits the dreamlike quality of the song.
+
+*** Fmaj7
+
+Fmaj7 adds E natural — one semitone below the root F.  Like Cmaj7, this creates shimmer rather than tension.  E is also the 3rd of C major, so Fmaj7 shares notes with C and has a luminous, blended quality.
+
+  #+BEGIN_EXAMPLE
+  LH: F (bass)
+  RH: A – C – E    (major 3rd, 5th, major 7th)
+  Fingering: 1 – 2 – 5
+  #+END_EXAMPLE
+
+Most effective when F appears just before G7 ("Go to sleep, everything is all right").  The E on top of Fmaj7 sits one semitone below F, creating a close shimmer; the chord then releases into G7 and resolves to C.  The A–C–E in RH is also an Am triad, which reinforces the key's vi feeling even over an F bass.
 
 ** Rhythmic/Textural Ideas
 

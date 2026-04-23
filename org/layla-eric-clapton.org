@@ -1,0 +1,254 @@
+#+TITLE: Layla — Eric Clapton (Derek and the Dominos)
+#+SUBTITLE: Piano Cheat Sheet
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Key & Theory
+
+The song lives in two tonal worlds:
+
+- *Intro / Chorus / Instrumental*: D minor (D – E – F – G – A – Bb – C)
+- *Verses*: C# minor (C# – D# – E – F# – G# – A – B)
+
+The intro riff is the song's anchor.  The verse shifts down a semitone to C# minor, giving it a raw, desperate quality.  The chorus pulls back into D minor to reunite the two worlds.
+
+** D Natural Minor Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | D    |
+| 2      | E    |
+| 3      | F    |
+| 4      | G    |
+| 5      | A    |
+| 6      | Bb   |
+| 7      | C    |
+
+** D Harmonic Minor Scale (raises the 7th)
+
+| Degree | Note |
+|--------+------|
+| 1      | D    |
+| 2      | E    |
+| 3      | F    |
+| 4      | G    |
+| 5      | A    |
+| 6      | Bb   |
+| 7      | C#   |
+
+The raised 7th (C#) creates a leading tone that pulls strongly back to D.  This is why the A major chord (with C# inside it) sounds so natural in D minor — it borrows from the harmonic minor.
+
+** D Minor Pentatonic (best for improvisation)
+
+| Degree | Note |
+|--------+------|
+| 1      | D    |
+| b3     | F    |
+| 4      | G    |
+| 5      | A    |
+| b7     | C    |
+
+Use the pentatonic as your safe zone over the intro/chorus/instrumental.  Add Bb and E when you want to color outside the lines.
+
+** C# Natural Minor Scale (for Verse improvisation)
+
+| Degree | Note |
+|--------+------|
+| 1      | C#   |
+| 2      | D#   |
+| b3     | E    |
+| 4      | F#   |
+| 5      | G#   |
+| b6     | A    |
+| b7     | B    |
+
+** Notes to Emphasize Over Each Verse Chord
+
+- C#m7 :: C#, E, G#, B — linger on B (the 7th) for a brooding, unresolved feel
+- G#7 :: G#, C (=B#), D#, F# — C natural is the tension note; it aches to resolve up to C#
+- F#m :: F#, A, C# — A is the warm middle note; C# connects back to the key center
+- B :: B, D#, F# — D# is bright against the minor surroundings
+- E :: E, G#, B — stable and open; G# is shared with G#7, smooth voice leading
+- E7 :: E, G#, B, D — the D is the dissonant pull; resolve it down to C# on the next chord
+
+* Chord Reference
+
+** Intro / Chorus / Instrumental Chords (D minor world)
+
+| Chord | Notes          | Function in Dm            |
+|-------+----------------+---------------------------|
+| Dm    | D – F – A      | i (tonic minor)           |
+| Bb    | Bb – D – F     | VI (major subtonic)       |
+| C     | C – E – G      | VII (natural major)       |
+| A     | A – C# – E     | V (borrowed from harm. minor) |
+
+The Bb → C → Dm motion is the engine of the riff.  A major is a surprise — C# is not in D natural minor, but D harmonic minor supplies it.  That C# is what gives the A chord its urgency.
+
+** Verse / Bridge Chords (C# minor world)
+
+| Chord | Notes              | Function in C#m         |
+|-------+--------------------+-------------------------|
+| C#m7  | C# – E – G# – B   | i7 (tonic minor seventh)|
+| G#7   | G# – C – D# – F#  | V7 (dominant seventh; C = B#, raised 7th) |
+| F#m   | F# – A – C#       | iv (subdominant minor)  |
+| B     | B – D# – F#       | VII (natural major)     |
+| E     | E – G# – B        | III (relative major)    |
+| E7    | E – G# – B – D    | III7 (dominant of VI?)  |
+| D     | D – F# – A        | bII (Neapolitan-adjacent, passing) |
+| A     | A – C# – E        | VI (major submediant)   |
+
+Note: G#7's "C" is enharmonically B# — the raised 7th in C# harmonic minor.  This is what gives the G#7 its classical dominant-seventh pull back to C#m.
+
+* Advanced Inversions
+
+Inversions let you voice-lead smoothly between chords instead of jumping around the keyboard.
+
+** Intro / Chorus Chord Inversions
+
+| Chord    | Inversion      | Notes (low → high)  | When to Use                              |
+|----------+----------------+---------------------+------------------------------------------|
+| Dm       | Root           | D – F – A           | Default; strong landing on the i chord   |
+| Dm/F     | 1st inversion  | F – A – D           | Coming from Bb; F in bass is a smooth step |
+| Dm/A     | 2nd inversion  | A – D – F           | Pedal-like; A in bass anticipates A chord |
+| Bb       | Root           | Bb – D – F          | Default; Bb is the big resonant VI       |
+| Bb/D     | 1st inversion  | D – F – Bb          | Walking bass D → E(b) → F; keeps motion  |
+| Bb/F     | 2nd inversion  | F – Bb – D          | Floaty; connects C/G to Dm via stepwise F |
+| C        | Root           | C – E – G           | Default for VII                          |
+| C/E      | 1st inversion  | E – G – C           | Bass rises E → F → (Dm root); elegant    |
+| C/G      | 2nd inversion  | G – C – E           | Pedal G under the VII chord              |
+| A        | Root           | A – C# – E          | Full V resolution to Dm                 |
+| A/C#     | 1st inversion  | C# – E – A          | C# in bass — dramatic chromatic descent to D |
+| A/E      | 2nd inversion  | E – A – C#          | Lighter dominant; less resolved feel     |
+
+** Verse / Bridge Chord Inversions
+
+| Chord      | Inversion       | Notes (low → high)      | When to Use                                      |
+|------------+-----------------+-------------------------+--------------------------------------------------|
+| C#m7       | Root            | C# – E – G# – B         | Default; rich tonic                              |
+| C#m7/E     | 1st inversion   | E – G# – B – C#         | E in bass connects to E major chord naturally    |
+| C#m7/G#    | 2nd inversion   | G# – B – C# – E         | G# bass echoes G#7; nice pivot point             |
+| C#m7/B     | 3rd inversion   | B – C# – E – G#         | B in bass walks down toward A or G#              |
+| G#7        | Root            | G# – C – D# – F#        | Strong dominant pull to C#m                      |
+| G#7/C      | 1st inversion   | C – D# – F# – G#        | C (=B#) in bass for a chromatic inner voice      |
+| G#7/D#     | 2nd inversion   | D# – F# – G# – C        | Mid-range color; less resolved                   |
+| G#7/F#     | 3rd inversion   | F# – G# – C – D#        | F# in bass creates a descending line from F#m    |
+| F#m        | Root            | F# – A – C#             | Default; solid subdominant                       |
+| F#m/A      | 1st inversion   | A – C# – F#             | A in bass — smooth step from A major chord       |
+| F#m/C#     | 2nd inversion   | C# – F# – A             | C# connects back to C#m; cyclical feel           |
+| B          | Root            | B – D# – F#             | Default VII chord                                |
+| B/D#       | 1st inversion   | D# – F# – B             | D# in bass, ascending line from D                |
+| B/F#       | 2nd inversion   | F# – B – D#             | Pedal-like; F# shared with F#m                   |
+| E          | Root            | E – G# – B              | Default III chord                                |
+| E/G#       | 1st inversion   | G# – B – E              | G# bass connects to G#7 smoothly                 |
+| E/B        | 2nd inversion   | B – E – G#              | B in bass; voice-leads into B major chord        |
+| E7         | Root            | E – G# – B – D          | Default; the D adds tension                      |
+| E7/G#      | 1st inversion   | G# – B – D – E          | Smooth from E root; inner voice motion           |
+| E7/B       | 2nd inversion   | B – D – E – G#          | Walking bass feel                                |
+| E7/D       | 3rd inversion   | D – E – G# – B          | D in bass resolves down to C#; voice-leading gem |
+
+Voice-leading tip for the verse:
+
+The bass line C# → G# → F# → B → E → E → C# forms a powerful descending pattern.  Play inversions to keep bass motion as stepwise as possible rather than jumping in octaves.
+
+* Song Structure
+
+** Intro
+
+  #+BEGIN_EXAMPLE
+  [Dm]  [Bb]  [C]  [Dm]   × 5
+  [Dm]  [Bb]  [C]  [A]  [C]
+  #+END_EXAMPLE
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+  [C#m7]                   [G#7]
+  What will you do when you get lonely?
+  [C#m7]      [C]   [D]   [E]   [E7]
+  No one waiting by your side
+  [F#m]        [B]      [E]         [A]
+  You've been runnin' and hiding much too long
+  [F#m]        [B]               [E]
+  You know it's just your foolish pride
+  #+END_EXAMPLE
+
+** Chorus
+
+  #+BEGIN_EXAMPLE
+  [A]     [Dm]   [Bb]
+  Layla
+          [C]             [Dm]      [Dm]   [Bb]
+  Got me on my knees, Layla
+          [C]              [Dm]      [Dm]   [Bb]
+  I'm beggin' darling please, Layla
+  [C]               [Dm]           [Dm]   [Bb]   [C]   [A]   [C]
+  Darling won't you ease my worried mind?
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+  [C#m7]                        [G#7]
+  I tried to give you consolation
+  [C#m7]      [C]  [D]  [E]   [E7]
+  Your old man had let you down
+  [F#m]      [B]       [E]           [A]
+  Like a fool, I fell in love with you
+  [F#m]      [B]                    [E]
+  You turned my whole world upside down
+  #+END_EXAMPLE
+
+** Verse 3
+
+  #+BEGIN_EXAMPLE
+  [C#m7]                    [G#7]
+  Make the best of the situation
+  [C#m7]      [C]  [D]   [E]   [E7]
+  Before I finally go insane
+  [F#m]       [B]     [E]              [A]
+  Please don't say we'll never find a way
+  [F#m]       [B]                [E]
+  Tell me all my love's in vain
+  #+END_EXAMPLE
+
+** Instrumental (Piano Coda)
+
+  #+BEGIN_EXAMPLE
+  [Dm]  [Bb]  [C]  [Dm]   × 8
+  #+END_EXAMPLE
+
+The famous piano coda — the Dm riff plays underneath the outro choruses that follow.
+
+** Outro
+
+Two final chorus repetitions over the piano coda.  The penultimate iteration ends with the full Dm tail; the very last line of the song resolves to a bare Dm with no tail.
+
+  #+BEGIN_EXAMPLE
+  [Dm]   [Bb]
+  Layla
+          [C]              [Dm]       [Dm]   [Bb]
+  You've got me on my knees, Layla
+          [C]              [Dm]       [Dm]   [Bb]
+  I'm beggin' darling please, Layla
+  [C]                [Dm]          [Dm]   [Bb]   [C]   [Dm]
+  Darling won't you ease my worried mind?
+
+  [Dm]   [Bb]
+  Layla
+          [C]              [Dm]       [Dm]   [Bb]
+  You've got me on my knees, Layla
+          [C]              [Dm]       [Dm]   [Bb]
+  I'm beggin' darling please, Layla
+  [C]                              [Dm]
+  Darling won't you ease my worried mind?
+  #+END_EXAMPLE
+
+* Performance Notes
+
+- *Intro riff*: The Bb → C → Dm pattern is everything.  LH holds roots, RH plays the melody line over the top.  Keep the C chord crisp — don't blur it into Dm.
+- *The A major chord*: That C# is a surprise.  Let it ring.  It resolves the tension built by Bb and C before landing on Dm.
+- *Verse dynamic*: The C#m7 verse should feel tighter and more urgent than the open D minor sections.  Pedal use here is minimal.
+- *G#7 → C#m7*: Classic V7 → i resolution.  The C natural inside G#7 is the knife-edge.  Let it resolve cleanly to C#.
+- *The chorus pivot*: Going from A major (in C# minor, that's the VI) back to Dm for the chorus is a key change up a semitone.  The A chord is the bridge between both keys — it's the V of Dm *and* the VI of C#m.
+- *Piano coda / Outro*: The Dm riff slows and opens up under the final chorus repeats.  Let Bb breathe and ring.  The last line strips back to a bare C → Dm — hold that final Dm and let it decay.

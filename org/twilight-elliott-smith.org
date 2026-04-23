@@ -1,6 +1,8 @@
 #+TITLE: Twilight — Elliott Smith
 #+SUBTITLE: Piano Cheat Sheet for a haunting song.
 
+[[file:index.org][← Back to Index]]
+
 * Introduction
 
 Oh, wow.

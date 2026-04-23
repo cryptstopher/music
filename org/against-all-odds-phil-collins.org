@@ -1,4 +1,6 @@
 #+TITLE: Against All Odds — Phil Collins
 #+SUBTITLE: Piano Cheat Sheet for the ultimate ballad.
 
+[[file:index.org][← Back to Index]]
+
 Needs a full rewrite.
