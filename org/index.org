@@ -27,3 +27,4 @@ I'm going to start here and add more as I go.
 - "[[file:against-all-odds-phil-collins.org][Against All Odds]]" by Phil Collins
 - "[[file:~/deep_thoughts/8080_music/org/in-dreams-roy-orbison.org][In Dreams]]" by Roy Orbison
 - "[[file:layla-eric-clapton.org][Layla]]" by Eric Clapton (Derek and the Dominos)
+- "[[file:hurt-nine-inch-nails.org][Hurt]]" by Nine Inch Nails

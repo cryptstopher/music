@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-04-27 Mon 08:02 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hurt — Nine Inch Nails</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Hurt — Nine Inch Nails</h1>
+<p class="subtitle" role="doc-subtitle">Piano Cheat Sheet</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org461a553">Key &amp; Theory</a>
+<ul>
+<li><a href="#org15aa17f">B Natural Minor Scale</a></li>
+<li><a href="#org9e55ed0">B Dorian Scale (raises the 6th)</a></li>
+<li><a href="#org5c00db9">B Minor Pentatonic (best for improvisation)</a></li>
+<li><a href="#org7033066">Notes to Emphasize Over Each Chord</a></li>
+</ul>
+</li>
+<li><a href="#orgda40f4b">Chord Reference</a>
+<ul>
+<li><a href="#org68115df">Tips</a></li>
+</ul>
+</li>
+<li><a href="#org50e2a3e">Advanced Inversions</a>
+<ul>
+<li><a href="#orgbfb151f">Verse Chord Inversions (Bm – D – E)</a></li>
+<li><a href="#org4c64bc1">Chorus Chord Inversions (Bm – G – D – A)</a></li>
+<li><a href="#org4dd39ec">The Final B Major Chord</a></li>
+</ul>
+</li>
+<li><a href="#org30d1abb">Performance Notes</a></li>
+<li><a href="#org7361991">Song Structure</a>
+<ul>
+<li><a href="#orgfb7b699">Verse 1</a></li>
+<li><a href="#org730a14d">Pre-Chorus Turn</a></li>
+<li><a href="#org8f7b817">Chorus</a></li>
+<li><a href="#org196e2d1">Bridge Turn</a></li>
+<li><a href="#org3d89491">Verse 2</a></li>
+<li><a href="#orgcfc1b50">Chorus 2</a></li>
+<li><a href="#org1ad7a28">Outro</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<p>
+<a href="index.html">← Back to Index</a>
+</p>
+<div id="outline-container-org461a553" class="outline-2">
+<h2 id="org461a553">Key &amp; Theory</h2>
+<div class="outline-text-2" id="text-org461a553">
+<p>
+The song lives in <b>B minor</b>, but with two telling departures from the natural minor scale:
+</p>
+
+<ul class="org-ul">
+<li><b>E major</b> (instead of Em) — borrowed from B Dorian.  The G# inside E major is foreign to B natural minor; it brightens the iv chord without breaking the gloom.</li>
+<li><b>B major</b> on the very last chord — a Picardy third.  The minor i becomes major I at the moment of resolution.  The whole song has been promising to fall apart, and instead it lifts.</li>
+</ul>
+
+<p>
+The chord palette is small (six chords) and the same handful of voicings carry the whole song.  The emotional weight comes from how the chords are played — slow, sustained, arpeggiated — not from harmonic complexity.
+</p>
+</div>
+<div id="outline-container-org15aa17f" class="outline-3">
+<h3 id="org15aa17f">B Natural Minor Scale</h3>
+<div class="outline-text-3" id="text-org15aa17f">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">C#</td>
+</tr>
+
+<tr>
+<td class="org-right">b3</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">b6</td>
+<td class="org-left">G</td>
+</tr>
+
+<tr>
+<td class="org-right">b7</td>
+<td class="org-left">A</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org9e55ed0" class="outline-3">
+<h3 id="org9e55ed0">B Dorian Scale (raises the 6th)</h3>
+<div class="outline-text-3" id="text-org9e55ed0">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">C#</td>
+</tr>
+
+<tr>
+<td class="org-right">b3</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">G#</td>
+</tr>
+
+<tr>
+<td class="org-right">b7</td>
+<td class="org-left">A</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The raised 6th (G#) is what turns Em into E major.  G# is not in B natural minor — it is borrowed from Dorian.  That single note is the source of the song's strange, bittersweet brightness inside an otherwise dark progression.
+</p>
+</div>
+</div>
+<div id="outline-container-org5c00db9" class="outline-3">
+<h3 id="org5c00db9">B Minor Pentatonic (best for improvisation)</h3>
+<div class="outline-text-3" id="text-org5c00db9">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">b3</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">b7</td>
+<td class="org-left">A</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Use the pentatonic as the default safe zone.  Add C# and G for natural-minor color, or G# briefly when sitting on the E major chord.
+</p>
+</div>
+</div>
+<div id="outline-container-org7033066" class="outline-3">
+<h3 id="org7033066">Notes to Emphasize Over Each Chord</h3>
+<div class="outline-text-3" id="text-org7033066">
+<dl class="org-dl">
+<dt>Bm</dt><dd>B, D, F# — D is the most distinctive (the minor 3rd); land on it to anchor the mood</dd>
+<dt>D</dt><dd>D, F#, A — F# bridges Bm and D smoothly; A on top is bright and open</dd>
+<dt>E</dt><dd>E, G#, B — <b>G# is the magic note</b> — the raised 6th from Dorian; it lifts the chord</dd>
+<dt>A</dt><dd>A, C#, E — C# is fresh and outside the minor pentatonic; use it for forward motion</dd>
+<dt>G</dt><dd>G, B, D — G is the b6 and the heaviest note in the song; lean on it for weight</dd>
+<dt>B (final chord)</dt><dd>B, D#, F# — D# is the Picardy third; let it ring as a reveal</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="outline-container-orgda40f4b" class="outline-2">
+<h2 id="orgda40f4b">Chord Reference</h2>
+<div class="outline-text-2" id="text-orgda40f4b">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Function in Bm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bm</td>
+<td class="org-left">B – D – F#</td>
+<td class="org-left">i (tonic minor)</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">D – F# – A</td>
+<td class="org-left">III (relative major)</td>
+</tr>
+
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">E – G# – B</td>
+<td class="org-left">IV (borrowed from B Dorian; G# is key)</td>
+</tr>
+
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">A – C# – E</td>
+<td class="org-left">VII (natural major subtonic)</td>
+</tr>
+
+<tr>
+<td class="org-left">G</td>
+<td class="org-left">G – B – D</td>
+<td class="org-left">VI (natural major submediant)</td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-left">B – D# – F#</td>
+<td class="org-left">I (Picardy third — final chord only)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-org68115df" class="outline-3">
+<h3 id="org68115df">Tips</h3>
+<div class="outline-text-3" id="text-org68115df">
+<ul class="org-ul">
+<li>LH plays the root in bass; RH holds or arpeggiates the triad</li>
+<li>The whole song is built from the first four chords (Bm, D, E, A); G enters only at the chorus; B major appears only once, on the final hold</li>
+<li>E major is the chord most likely to sound "wrong" if you forget the G# — make sure the middle note is G natural sharp, not G natural</li>
+<li>Bm → D → E is the verse engine.  The bass walks up: B → D → E</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org50e2a3e" class="outline-2">
+<h2 id="org50e2a3e">Advanced Inversions</h2>
+<div class="outline-text-2" id="text-org50e2a3e">
+<p>
+Inversions let you keep the bass line moving stepwise instead of leaping around the keyboard.  This is especially useful in the chorus, where Bm → G → D → A would otherwise jump in big intervals.
+</p>
+</div>
+<div id="outline-container-orgbfb151f" class="outline-3">
+<h3 id="orgbfb151f">Verse Chord Inversions (Bm – D – E)</h3>
+<div class="outline-text-3" id="text-orgbfb151f">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Inversion</th>
+<th scope="col" class="org-left">Notes (low → high)</th>
+<th scope="col" class="org-left">When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bm</td>
+<td class="org-left">Root</td>
+<td class="org-left">B – D – F#</td>
+<td class="org-left">Default; strong landing on i</td>
+</tr>
+
+<tr>
+<td class="org-left">Bm/D</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">D – F# – B</td>
+<td class="org-left">D in bass connects directly into the next D chord</td>
+</tr>
+
+<tr>
+<td class="org-left">Bm/F#</td>
+<td class="org-left">2nd inversion</td>
+<td class="org-left">F# – B – D</td>
+<td class="org-left">Pedal-like; F# in bass anticipates F#m feel</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">Root</td>
+<td class="org-left">D – F# – A</td>
+<td class="org-left">Default III chord</td>
+</tr>
+
+<tr>
+<td class="org-left">D/F#</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">F# – A – D</td>
+<td class="org-left">F# in bass walks up smoothly toward E</td>
+</tr>
+
+<tr>
+<td class="org-left">D/A</td>
+<td class="org-left">2nd inversion</td>
+<td class="org-left">A – D – F#</td>
+<td class="org-left">A in bass; floatier; ties into A chord later</td>
+</tr>
+
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">Root</td>
+<td class="org-left">E – G# – B</td>
+<td class="org-left">Default; the lift moment of the verse</td>
+</tr>
+
+<tr>
+<td class="org-left">E/G#</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">G# – B – E</td>
+<td class="org-left">G# in bass — bright, leading-tone color back to A</td>
+</tr>
+
+<tr>
+<td class="org-left">E/B</td>
+<td class="org-left">2nd inversion</td>
+<td class="org-left">B – E – G#</td>
+<td class="org-left">B pedal; ties E back to the Bm tonic</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org4c64bc1" class="outline-3">
+<h3 id="org4c64bc1">Chorus Chord Inversions (Bm – G – D – A)</h3>
+<div class="outline-text-3" id="text-org4c64bc1">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Inversion</th>
+<th scope="col" class="org-left">Notes (low → high)</th>
+<th scope="col" class="org-left">When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bm</td>
+<td class="org-left">Root</td>
+<td class="org-left">B – D – F#</td>
+<td class="org-left">Default chorus opening</td>
+</tr>
+
+<tr>
+<td class="org-left">Bm/D</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">D – F# – B</td>
+<td class="org-left">D in bass walks down toward G</td>
+</tr>
+
+<tr>
+<td class="org-left">G</td>
+<td class="org-left">Root</td>
+<td class="org-left">G – B – D</td>
+<td class="org-left">Default; the heaviest chord in the song</td>
+</tr>
+
+<tr>
+<td class="org-left">G/B</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">B – D – G</td>
+<td class="org-left">B in bass — minimal motion from Bm; very smooth</td>
+</tr>
+
+<tr>
+<td class="org-left">G/D</td>
+<td class="org-left">2nd inversion</td>
+<td class="org-left">D – G – B</td>
+<td class="org-left">D pedal underneath; ties G to the next D chord</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">Root</td>
+<td class="org-left">D – F# – A</td>
+<td class="org-left">Default</td>
+</tr>
+
+<tr>
+<td class="org-left">D/F#</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">F# – A – D</td>
+<td class="org-left">F# in bass walks up toward A</td>
+</tr>
+
+<tr>
+<td class="org-left">D/A</td>
+<td class="org-left">2nd inversion</td>
+<td class="org-left">A – D – F#</td>
+<td class="org-left">A pedal; voice-leads directly into the A chord</td>
+</tr>
+
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">Root</td>
+<td class="org-left">A – C# – E</td>
+<td class="org-left">Default VII chord</td>
+</tr>
+
+<tr>
+<td class="org-left">A/C#</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">C# – E – A</td>
+<td class="org-left">C# in bass; chromatic descent back toward B (Bm)</td>
+</tr>
+
+<tr>
+<td class="org-left">A/E</td>
+<td class="org-left">2nd inversion</td>
+<td class="org-left">E – A – C#</td>
+<td class="org-left">E pedal; lighter, less resolved feel</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Voice-leading tip for the chorus:
+</p>
+
+<p>
+The bass line <b>B → G → D → A → B</b> is a series of leaps.  To smooth it out, try <b>B → B (G/B) → D → A → B</b>, which keeps the bass on B for the first two chords, then walks D → A → B.  This is closer to how the song often gets played on piano — minimal LH motion, RH doing all the harmonic work.
+</p>
+</div>
+</div>
+<div id="outline-container-org4dd39ec" class="outline-3">
+<h3 id="org4dd39ec">The Final B Major Chord</h3>
+<div class="outline-text-3" id="text-org4dd39ec">
+<p>
+The song ends on a held <b>B major</b> (B – D# – F#).  D# is foreign to every other chord in the piece — it is the only sharp in B major that is not also in the B minor / Dorian palette.  When this chord lands, three things happen at once:
+</p>
+
+<ul class="org-ul">
+<li>the minor 3rd D resolves up a half-step to D# (the Picardy third)</li>
+<li>the F# stays put (common tone)</li>
+<li>the bass stays on B (common tone)</li>
+</ul>
+
+<p>
+Only one note moves, and it changes everything.  Hold the chord with the sustain pedal down and let it ring — this is the entire emotional payoff of the song.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org30d1abb" class="outline-2">
+<h2 id="org30d1abb">Performance Notes</h2>
+<div class="outline-text-2" id="text-org30d1abb">
+<ul class="org-ul">
+<li><b>Tempo</b>: very slow, around 60–70 BPM.  Resist the urge to push forward.  The song breathes between chords.</li>
+<li><b>Touch</b>: soft.  Even at the loudest moments (the chorus climax and the final B), don't pound — let the sustain pedal do the work.</li>
+<li><b>Pedal</b>: change pedal on every chord; let each chord ring fully before the next one enters.</li>
+<li><b>Arpeggiation</b>: the original is built on a sparse, repeating arpeggiated figure.  On piano, try LH on the root, RH rolling root → 5th → octave → 3rd, then holding.</li>
+<li><b>The G chord in the chorus</b>: this is the song's gravitational low point.  Lean into it.  The G is the b6 of B minor — the most "hopeless" interval in the scale.</li>
+<li><b>The E chord in the verse</b>: opposite of the G.  The G# inside E major is the only ray of light.  Voice it in the middle of the right hand so it can be heard clearly.</li>
+<li><b>Final B major</b>: hold it.  Hold it longer than feels natural.  The whole song has been waiting to lift, and this is the moment.  Don't release the pedal until the sound has fully decayed.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7361991" class="outline-2">
+<h2 id="org7361991">Song Structure</h2>
+<div class="outline-text-2" id="text-org7361991">
+</div>
+<div id="outline-container-orgfb7b699" class="outline-3">
+<h3 id="orgfb7b699">Verse 1</h3>
+<div class="outline-text-3" id="text-orgfb7b699">
+<pre class="example" id="orgcd68030">
+[Bm]   [D]   [E]      [Bm]  [D]  [E]   [Bm]
+I  hurt myself today, to see if I still feel
+[D]  [E]    [Bm]            [D]    [E]      [Bm]
+I focus on the pain, the only thing that's real
+[D]   [E]    [Bm]           [D]      [E]    [Bm]
+The needle tears a hole, the old familiar sting
+      [D]    [E]   [Bm]              [D]   [E]    [A]
+Try to kill it all away, but I remember everything
+</pre>
+</div>
+</div>
+<div id="outline-container-org730a14d" class="outline-3">
+<h3 id="org730a14d">Pre-Chorus Turn</h3>
+<div class="outline-text-3" id="text-org730a14d">
+<pre class="example" id="org8d162ad">
+([A])  [Bm]  [G]  [D]
+[A]    [Bm]  [G]  [D]
+</pre>
+
+<p>
+This four-chord cell sets up the chorus.  It is also the chord motion underneath the chorus itself.
+</p>
+</div>
+</div>
+<div id="outline-container-org8f7b817" class="outline-3">
+<h3 id="org8f7b817">Chorus</h3>
+<div class="outline-text-3" id="text-org8f7b817">
+<pre class="example" id="orgb1ce2c3">
+[A]   [Bm]              [G]   [D]            [A]
+      What have I become,    my sweetest friend
+[Bm]            [G]      [D]        [A]
+Everyone I know, goes away in the end
+[Bm]                [G]   [A]
+You could have it all, my empire of dirt
+[Bm]               [G]   [A]              [Bm]
+I will let you down, I will make you hurt
+</pre>
+</div>
+</div>
+<div id="outline-container-org196e2d1" class="outline-3">
+<h3 id="org196e2d1">Bridge Turn</h3>
+<div class="outline-text-3" id="text-org196e2d1">
+<pre class="example" id="org745254e">
+([Bm])  [D]  [E]
+[Bm]    [D]  [E]
+</pre>
+
+<p>
+Returns the song to verse texture.
+</p>
+</div>
+</div>
+<div id="outline-container-org3d89491" class="outline-3">
+<h3 id="org3d89491">Verse 2</h3>
+<div class="outline-text-3" id="text-org3d89491">
+<pre class="example" id="org7d517c5">
+[Bm]   [D]    [E]       [Bm]   [D]   [E]    [Bm]
+   I wear this crown of shit, upon my liar's chair
+[D]   [E]   [Bm]            [D]    [E]   [Bm]
+Full of broken thoughts, I cannot repair
+[D]    [E]    [Bm]            [D]    [E]      [Bm]
+Beneath the stains of time, the feelings disappear
+[D]   [E]    [Bm]            [D]    [A]
+You are someone else, I am still right here
+</pre>
+</div>
+</div>
+<div id="outline-container-orgcfc1b50" class="outline-3">
+<h3 id="orgcfc1b50">Chorus 2</h3>
+<div class="outline-text-3" id="text-orgcfc1b50">
+<pre class="example" id="org7f55fa3">
+[Bm]              [G]   [D]            [A]
+What have I become,    my sweetest friend
+[Bm]            [G]      [D]        [A]
+Everyone I know, goes away in the end
+[Bm]                    [G]   [A]
+And you could have it all, my empire of dirt
+[Bm]               [G]   [A]
+I will let you down, I will make you hurt
+</pre>
+</div>
+</div>
+<div id="outline-container-org1ad7a28" class="outline-3">
+<h3 id="org1ad7a28">Outro</h3>
+<div class="outline-text-3" id="text-org1ad7a28">
+<pre class="example" id="org8104097">
+[Bm]                       [G]    [A]
+If I could start again, a million miles away
+[Bm]                  [G]   [A]   [D]   [B (hold)]
+I would keep myself, I would find a way
+</pre>
+
+<p>
+Outro note:
+</p>
+
+<p>
+The very last chord is <b>B major</b> — held.  This is the only place in the song where B is major.  Up to that moment everything has lived in B minor (with brief Dorian color on the E chord).  The final D becomes a half-step pivot — its F# stays for B major, but its D rises to D#.  Let the chord ring out fully before lifting the pedal.  This is the entire emotional arc of the song compressed into one note's worth of motion.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
