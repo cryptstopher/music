@@ -1,0 +1,244 @@
+#+TITLE: Shooting For the Moon, Amy Holland
+#+SUBTITLE: Piano Cheat Sheet
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Introduction
+
+From the soundtrack to /Teen Wolf/ (1985), played during the climactic basketball-game scene where Scott Howard finally chooses to play as himself instead of the wolf.  Pure 80s pop optimism, big chord stabs, ringing major chords, a bridge that hammers the progression home like a victory lap.  If "Life Fades Away" is funeral music, this is the opposite: a song built to make you believe everything is going to work out.
+
+* Key & Theory
+
+The song lives in *E major*.  The chord palette is small and almost entirely diatonic, six chords plus one borrowed surprise:
+
+| Chord    | Role          | Comment                              |
+|----------+---------------+--------------------------------------|
+| E        | I             | tonic, the home base                 |
+| F#m      | ii            | gentle pivot inside the chorus       |
+| G#m      | iii           | brief tension before C#m             |
+| A        | IV            | the lifting chord                    |
+| B        | V             | dominant, pulls back to E            |
+| C#m      | vi            | relative minor, used heavily         |
+| C#maj7   | borrowed      | one-time substitution in Chorus 2    |
+
+The song's harmonic engine is the *I, vi, IV, V* loop, =E, C#m, A, B=, also known as the "doo-wop" or "50s" progression.  Almost every section either runs the loop, a fragment of it, or a closely related variant.  The bridge is literally the loop repeated four times in a row at double speed.
+
+The one moment of harmonic surprise is *C#maj7* in the second chorus, where C#m would be expected.  Raising the minor 3rd of C# (E natural) to a major 3rd (E#) for one beat creates a brief shimmer before the line resolves through A and B back to E.  Tiny detail, big lift.
+
+** E Major Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | E    |
+| 2      | F#   |
+| 3      | G#   |
+| 4      | A    |
+| 5      | B    |
+| 6      | C#   |
+| 7      | D#   |
+
+** Diatonic Triads in E Major
+
+| Degree | Chord  | Notes        | Used in song? |
+|--------+--------+--------------+---------------|
+| I      | E      | E, G#, B     | yes           |
+| ii     | F#m    | F#, A, C#    | yes           |
+| iii    | G#m    | G#, B, D#    | yes           |
+| IV     | A      | A, C#, E     | yes           |
+| V      | B      | B, D#, F#    | yes           |
+| vi     | C#m    | C#, E, G#    | yes           |
+| vii°   | D#dim  | D#, F#, A    | no            |
+
+All six common diatonic chords appear.  Only the diminished vii° is missing, which is typical for upbeat pop in a major key.
+
+* Chord Reference
+
+| Chord   | Notes              | Fingering (RH)    | Role             |
+|---------+--------------------+-------------------+------------------|
+| E       | E, G#, B           | 1, 3, 5           | I                |
+| F#m     | F#, A, C#          | 1, 3, 5           | ii               |
+| G#m     | G#, B, D#          | 1, 3, 5           | iii              |
+| A       | A, C#, E           | 1, 3, 5           | IV               |
+| B       | B, D#, F#          | 1, 3, 5           | V                |
+| C#m     | C#, E, G#          | 1, 3, 5           | vi               |
+| C#maj7  | C#, E#, G#, B#     | 1, 2, 3, 5        | borrowed (once)  |
+
+** Tips
+
+- LH plays the root in the bass; RH holds the triad
+- Most chords have at least one black key.  Use *1, 3, 5* on root-position triads even when the bottom note is a black key (C#, F#, G#), the hand drops naturally onto the keys
+- *E to C#m* and *C#m to A* are voice-leading cousins.  Going E to C#m, only one note moves (B drops to C#).  Going C#m to A, only one note moves (G# drops to A).  Three-chord motion, two single-note shifts, very smooth
+- The chorus runs *G#m to C#m*.  This is iii to vi, a jazz/pop turnaround that adds harmonic depth at the end of the chorus phrase.  Voice it carefully: G#m (G# B D#) shares the G# with C#m (C# E G#), so keep G# as a common tone in the right hand and let the bass do the work
+- *C#maj7* appears once, in Chorus 2, where C#m normally sits.  See below
+
+** The C#maj7 Substitution
+
+The chord *C#maj7* is built C# E# G# B# (which on the piano is C# F G# C).  It is one half-step away from C#m7 (C# E G# B), the only difference is *E natural becomes E# (F)* and *B natural becomes B# (C)*.
+
+  #+BEGIN_EXAMPLE
+  C#m7:    C#, E,  G#, B    (the diatonic version)
+  C#maj7:  C#, E#, G#, B#   (the borrowed version)
+  #+END_EXAMPLE
+
+In E major, the natural chord at C# is *C#m*, the relative minor (vi).  Substituting *C#maj7* turns vi into a major-7 chord and introduces two notes (E# and B#) that are foreign to the key.  The effect is a momentary brightening, the line "Isn't that the way you do it?" suddenly lifts, and then settles back when A follows.
+
+  #+BEGIN_EXAMPLE
+  LH: C# (bass)
+  RH: E#, G#, B#    (3rd, 5th, 7th)
+  Fingering: 1, 2, 3, 5
+  #+END_EXAMPLE
+
+This is sometimes called "borrowing from the parallel major", treating the C# of C#m as a major-key tonic for one beat.  It is a small move with a big harmonic punch.  Use it only on the second chorus, exactly where the chart calls for it.  Plain C#m on every other repeat keeps the surprise fresh when the substitution finally arrives.
+
+* Inversions for Voice Leading
+
+The chorus moves *B, E, A, F#m, B* in close succession, which means the bass jumps around: B, E, A, F#, B.  Smoothing this with inversions tightens the right hand and keeps the line singing.
+
+| Chord   | Position  | Notes (low to high)| When to Use                                       |
+|---------+-----------+--------------------+---------------------------------------------------|
+| E       | Root      | E, G#, B           | Default tonic                                     |
+| E/G#    | 1st inv.  | G#, B, E           | G# in bass walks down toward F#m                  |
+| E/B     | 2nd inv.  | B, E, G#           | B in bass holds from preceding B chord            |
+|---------+-----------+--------------------+---------------------------------------------------|
+| F#m     | Root      | F#, A, C#          | Default ii                                        |
+| F#m/A   | 1st inv.  | A, C#, F#          | A in bass continues from A chord                  |
+| F#m/C#  | 2nd inv.  | C#, F#, A          | C# pedal, voice-leads from A or C#m               |
+|---------+-----------+--------------------+---------------------------------------------------|
+| A       | Root      | A, C#, E           | Default IV                                        |
+| A/C#    | 1st inv.  | C#, E, A           | C# in bass continues from C#m                     |
+| A/E     | 2nd inv.  | E, A, C#           | E pedal; ties A back to E tonic                   |
+|---------+-----------+--------------------+---------------------------------------------------|
+| B       | Root      | B, D#, F#          | Default V                                         |
+| B/D#    | 1st inv.  | D#, F#, B          | D# rising to E creates a chromatic step           |
+| B/F#    | 2nd inv.  | F#, B, D#          | F# pedal                                          |
+|---------+-----------+--------------------+---------------------------------------------------|
+| C#m     | Root      | C#, E, G#          | Default vi                                        |
+| C#m/E   | 1st inv.  | E, G#, C#          | E in bass keeps the tonic note alive under C#m    |
+| C#m/G#  | 2nd inv.  | G#, C#, E          | G# pedal, extremely smooth from E (root)          |
+|---------+-----------+--------------------+---------------------------------------------------|
+| G#m     | Root      | G#, B, D#          | Default iii                                       |
+| G#m/B   | 1st inv.  | B, D#, G#          | B pedal, ties G#m to surrounding B chord          |
+| G#m/D#  | 2nd inv.  | D#, G#, B          | D# in bass; rare, but striking                    |
+
+Voice-leading tip:
+
+The most common chorus phrase is *A, F#m, B, E*.  Try this bass line: A, A (F#m/A), B, E.  Pedal the A through both A and F#m chords by using F#m's first inversion, the bass holds steady, only the inner voices shift.
+
+* Performance Notes
+
+- *Tempo*: bright and bouncy, around 130 BPM.  This is a victory song, do not drag it
+- *Touch*: full and ringing.  Major chords with the sustain pedal down, let them shine
+- *Pedal*: change on every chord, no smearing.  The chord changes are the whole texture
+- *The Bridge*: =E, C#m, A, B= played four times in rapid succession.  Make sure the bass clearly walks E, C#, A, B each time, the listener should hear the descent
+- *The C#maj7*: hold this chord one beat longer than the surrounding chords.  The substitution only works if it is heard.  Lean into it
+- *The Outro*: the chart shows a dense single-note melodic line, this is the lead guitar riff over a sustained progression.  On piano, you have two options: (1) play the riff as a single-note melody in the right hand while the left hand holds whole-bar chord roots, or (2) skip the riff and just play the implied chord progression =E, A, B, E= as ringing chords until the song fades.  Both work
+
+* Song Structure
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+  [E]              [A]
+  Funny how sometimes life
+  [B]                          [E]
+  Just changes overnight
+       [C#m]              [A]                  [B]          [E]
+  Magically everything you do turns out so right
+  [E]              [C#m]               [A]                  [B]
+  Just like that, you pull rabbits out of your hat
+  [C#m]                  [A]              [B]               [E]
+  You've got the charm that even wizards can't explain
+       [C#m]                [A]                [B]          [E]
+  How to make rainbows from a single drop of rain
+       [C#m]
+  Who can say?
+            [A]                      [B]
+  It's a trick you learn how to play
+  #+END_EXAMPLE
+
+** Chorus 1
+
+  #+BEGIN_EXAMPLE
+                [B]                                     [E]
+  When you're Shooting for the Moon and finally make it
+  [A]                          [F#m]
+  Guess a lucky star is shining on you
+                  [B]                              [E]
+  The candle on the cake is yours so take it
+  [A]                              [F#m]                [B]
+  Make another wish it's sure to come true
+       [G#m]                       [C#m]
+  Isn't that the way you do it?
+            [A]                          [B]
+  Tell me I can do it too
+                [B]                                     [E]
+  There's a candle on the cake it's yours so take it
+  [A]                              [F#m]                [B]
+  Make another wish it's sure to come true
+       [G#m]                              [C#m]
+  You say there's really nothing to it?
+                          [B]
+  Maybe I can do it too
+  #+END_EXAMPLE
+
+** Bridge
+
+  #+BEGIN_EXAMPLE
+  [E] [C#m] [A] [B] [E] [C#m] [A] [B] [E] [C#m] [A] [B] [C#m] [A]
+
+  [C#m]                          [A]
+  Who could believe one day
+  [B]                  [E]
+  You'd learn to walk on air
+       [C#m]                  [A]                [B]          [E]
+  Everyone said "no way, you haven't got a prayer"
+  [C#m]
+  Click your heels
+            [A]                                   [B]
+  That's how up and happy it feels
+  #+END_EXAMPLE
+
+Bridge note:
+
+The opening of the Bridge runs the I, vi, IV, V loop four times in rapid succession (the chart shows =E, C#m, A, B= repeated, with the last cell ending on =C#m, A= as a half-cadence into the lyric).  Play these as quick chord stabs, one chord per beat, no sustain pedal.  The bass walks *E, C#, A, B* over and over, which gives the section its drive.  When the lyric enters on =C#m=, drop into a slower, fuller texture.
+
+** Chorus 2
+
+  #+BEGIN_EXAMPLE
+                [B]                                     [B]
+  When you're Shooting for the Moon and finally make it
+  [A]                          [F#m]
+  Guess a lucky star is shining on you
+                  [B]                              [E]
+  The candle on the cake is yours so take it
+  [A]                              [F#m]                [B]
+  Make another wish it's sure to come true
+       [G#m]                       [C#maj7]
+  Isn't that the way you do it?
+            [A]                          [B]
+  Tell me I can do it too
+  #+END_EXAMPLE
+
+Chorus 2 note:
+
+The only difference from Chorus 1 is the *C#maj7* in place of C#m on "do it?"  This is the song's single harmonic surprise.  See "The C#maj7 Substitution" above.
+
+** Outro
+
+  #+BEGIN_EXAMPLE
+  [E] [G#m] [E] [F#] [G#m] [E] [F#] [B] [G#m] [G#m] [E] [F#] [G#m]
+  [E] [F#] [B] [G#m] [E] [F#] [B] [G#m] [E] [F#] [E] [F#] [B] [E] [C#m]
+  [E] [C#m] [F#] [D#m] [G#m] [E] [F#] [E] [F#] [E] [B] [F#]
+  [F#] [B] [E]
+  #+END_EXAMPLE
+
+Outro note:
+
+The chart shows a dense melodic line, single notes (or close-position chord stabs) cycling through the same diatonic palette.  This is the lead-guitar fade-out, not really a chord progression you would play as a piano part.  Three options for solo piano:
+
+1. *Play it as a melodic line*.  Treat each label as a single note in the right hand: E, G#, E, F#, G#, E, F#, B, G#, G#, etc.  Hold a sustained E in the left hand throughout
+2. *Reduce it to a chord vamp*.  Play =E, A, B, E= or =E, C#m, A, B= as ringing chords with the sustain pedal, ignoring the melodic detail
+3. *Mix*.  Hold a chord in the left hand and improvise a melody on top using the E major scale
+
+The song fades out, so there is no defined end, just keep the energy up until you fade your own volume to zero.

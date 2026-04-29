@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-04-29 Wed 15:34 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shooting For the Moon, Amy Holland</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Shooting For the Moon, Amy Holland</h1>
+<p class="subtitle" role="doc-subtitle">Piano Cheat Sheet</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org3cb4c26">Introduction</a></li>
+<li><a href="#org6b24193">Key &amp; Theory</a>
+<ul>
+<li><a href="#org0f82cfd">E Major Scale</a></li>
+<li><a href="#orga306eab">Diatonic Triads in E Major</a></li>
+</ul>
+</li>
+<li><a href="#org0a9789c">Chord Reference</a>
+<ul>
+<li><a href="#orga25317f">Tips</a></li>
+<li><a href="#orgf53bc76">The C#maj7 Substitution</a></li>
+</ul>
+</li>
+<li><a href="#org6925fa1">Inversions for Voice Leading</a></li>
+<li><a href="#org65d9370">Performance Notes</a></li>
+<li><a href="#orga211dfa">Song Structure</a>
+<ul>
+<li><a href="#orgb86eb5d">Verse 1</a></li>
+<li><a href="#orgf40acc4">Chorus 1</a></li>
+<li><a href="#orga7c7b63">Bridge</a></li>
+<li><a href="#org38c14cc">Chorus 2</a></li>
+<li><a href="#org05bf015">Outro</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<p>
+<a href="index.html">← Back to Index</a>
+</p>
+<div id="outline-container-org3cb4c26" class="outline-2">
+<h2 id="org3cb4c26">Introduction</h2>
+<div class="outline-text-2" id="text-org3cb4c26">
+<p>
+From the soundtrack to <i>Teen Wolf</i> (1985), played during the climactic basketball-game scene where Scott Howard finally chooses to play as himself instead of the wolf.  Pure 80s pop optimism, big chord stabs, ringing major chords, a bridge that hammers the progression home like a victory lap.  If "Life Fades Away" is funeral music, this is the opposite: a song built to make you believe everything is going to work out.
+</p>
+</div>
+</div>
+<div id="outline-container-org6b24193" class="outline-2">
+<h2 id="org6b24193">Key &amp; Theory</h2>
+<div class="outline-text-2" id="text-org6b24193">
+<p>
+The song lives in <b>E major</b>.  The chord palette is small and almost entirely diatonic, six chords plus one borrowed surprise:
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Role</th>
+<th scope="col" class="org-left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">I</td>
+<td class="org-left">tonic, the home base</td>
+</tr>
+
+<tr>
+<td class="org-left">F#m</td>
+<td class="org-left">ii</td>
+<td class="org-left">gentle pivot inside the chorus</td>
+</tr>
+
+<tr>
+<td class="org-left">G#m</td>
+<td class="org-left">iii</td>
+<td class="org-left">brief tension before C#m</td>
+</tr>
+
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">IV</td>
+<td class="org-left">the lifting chord</td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-left">V</td>
+<td class="org-left">dominant, pulls back to E</td>
+</tr>
+
+<tr>
+<td class="org-left">C#m</td>
+<td class="org-left">vi</td>
+<td class="org-left">relative minor, used heavily</td>
+</tr>
+
+<tr>
+<td class="org-left">C#maj7</td>
+<td class="org-left">borrowed</td>
+<td class="org-left">one-time substitution in Chorus 2</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The song's harmonic engine is the <b>I, vi, IV, V</b> loop, <code>E, C#m, A, B</code>, also known as the "doo-wop" or "50s" progression.  Almost every section either runs the loop, a fragment of it, or a closely related variant.  The bridge is literally the loop repeated four times in a row at double speed.
+</p>
+
+<p>
+The one moment of harmonic surprise is <b>C#maj7</b> in the second chorus, where C#m would be expected.  Raising the minor 3rd of C# (E natural) to a major 3rd (E#) for one beat creates a brief shimmer before the line resolves through A and B back to E.  Tiny detail, big lift.
+</p>
+</div>
+<div id="outline-container-org0f82cfd" class="outline-3">
+<h3 id="org0f82cfd">E Major Scale</h3>
+<div class="outline-text-3" id="text-org0f82cfd">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">G#</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">C#</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">D#</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orga306eab" class="outline-3">
+<h3 id="orga306eab">Diatonic Triads in E Major</h3>
+<div class="outline-text-3" id="text-orga306eab">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Used in song?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">I</td>
+<td class="org-left">E</td>
+<td class="org-left">E, G#, B</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">ii</td>
+<td class="org-left">F#m</td>
+<td class="org-left">F#, A, C#</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">iii</td>
+<td class="org-left">G#m</td>
+<td class="org-left">G#, B, D#</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">IV</td>
+<td class="org-left">A</td>
+<td class="org-left">A, C#, E</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">V</td>
+<td class="org-left">B</td>
+<td class="org-left">B, D#, F#</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">vi</td>
+<td class="org-left">C#m</td>
+<td class="org-left">C#, E, G#</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">vii°</td>
+<td class="org-left">D#dim</td>
+<td class="org-left">D#, F#, A</td>
+<td class="org-left">no</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+All six common diatonic chords appear.  Only the diminished vii° is missing, which is typical for upbeat pop in a major key.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org0a9789c" class="outline-2">
+<h2 id="org0a9789c">Chord Reference</h2>
+<div class="outline-text-2" id="text-org0a9789c">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Fingering (RH)</th>
+<th scope="col" class="org-left">Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">E, G#, B</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">I</td>
+</tr>
+
+<tr>
+<td class="org-left">F#m</td>
+<td class="org-left">F#, A, C#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">ii</td>
+</tr>
+
+<tr>
+<td class="org-left">G#m</td>
+<td class="org-left">G#, B, D#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">iii</td>
+</tr>
+
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">A, C#, E</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">IV</td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-left">B, D#, F#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">V</td>
+</tr>
+
+<tr>
+<td class="org-left">C#m</td>
+<td class="org-left">C#, E, G#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">vi</td>
+</tr>
+
+<tr>
+<td class="org-left">C#maj7</td>
+<td class="org-left">C#, E#, G#, B#</td>
+<td class="org-left">1, 2, 3, 5</td>
+<td class="org-left">borrowed (once)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-orga25317f" class="outline-3">
+<h3 id="orga25317f">Tips</h3>
+<div class="outline-text-3" id="text-orga25317f">
+<ul class="org-ul">
+<li>LH plays the root in the bass; RH holds the triad</li>
+<li>Most chords have at least one black key.  Use <b>1, 3, 5</b> on root-position triads even when the bottom note is a black key (C#, F#, G#), the hand drops naturally onto the keys</li>
+<li><b>E to C#m</b> and <b>C#m to A</b> are voice-leading cousins.  Going E to C#m, only one note moves (B drops to C#).  Going C#m to A, only one note moves (G# drops to A).  Three-chord motion, two single-note shifts, very smooth</li>
+<li>The chorus runs <b>G#m to C#m</b>.  This is iii to vi, a jazz/pop turnaround that adds harmonic depth at the end of the chorus phrase.  Voice it carefully: G#m (G# B D#) shares the G# with C#m (C# E G#), so keep G# as a common tone in the right hand and let the bass do the work</li>
+<li><b>C#maj7</b> appears once, in Chorus 2, where C#m normally sits.  See below</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf53bc76" class="outline-3">
+<h3 id="orgf53bc76">The C#maj7 Substitution</h3>
+<div class="outline-text-3" id="text-orgf53bc76">
+<p>
+The chord <b>C#maj7</b> is built C# E# G# B# (which on the piano is C# F G# C).  It is one half-step away from C#m7 (C# E G# B), the only difference is <b>E natural becomes E# (F)</b> and <b>B natural becomes B# (C)</b>.
+</p>
+
+<pre class="example" id="org6acb3a6">
+C#m7:    C#, E,  G#, B    (the diatonic version)
+C#maj7:  C#, E#, G#, B#   (the borrowed version)
+</pre>
+
+<p>
+In E major, the natural chord at C# is <b>C#m</b>, the relative minor (vi).  Substituting <b>C#maj7</b> turns vi into a major-7 chord and introduces two notes (E# and B#) that are foreign to the key.  The effect is a momentary brightening, the line "Isn't that the way you do it?" suddenly lifts, and then settles back when A follows.
+</p>
+
+<pre class="example" id="orgda8164e">
+LH: C# (bass)
+RH: E#, G#, B#    (3rd, 5th, 7th)
+Fingering: 1, 2, 3, 5
+</pre>
+
+<p>
+This is sometimes called "borrowing from the parallel major", treating the C# of C#m as a major-key tonic for one beat.  It is a small move with a big harmonic punch.  Use it only on the second chorus, exactly where the chart calls for it.  Plain C#m on every other repeat keeps the surprise fresh when the substitution finally arrives.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6925fa1" class="outline-2">
+<h2 id="org6925fa1">Inversions for Voice Leading</h2>
+<div class="outline-text-2" id="text-org6925fa1">
+<p>
+The chorus moves <b>B, E, A, F#m, B</b> in close succession, which means the bass jumps around: B, E, A, F#, B.  Smoothing this with inversions tightens the right hand and keeps the line singing.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Position</th>
+<th scope="col" class="org-left">Notes (low to high)</th>
+<th scope="col" class="org-left">When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">Root</td>
+<td class="org-left">E, G#, B</td>
+<td class="org-left">Default tonic</td>
+</tr>
+
+<tr>
+<td class="org-left">E/G#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">G#, B, E</td>
+<td class="org-left">G# in bass walks down toward F#m</td>
+</tr>
+
+<tr>
+<td class="org-left">E/B</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">B, E, G#</td>
+<td class="org-left">B in bass holds from preceding B chord</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">F#m</td>
+<td class="org-left">Root</td>
+<td class="org-left">F#, A, C#</td>
+<td class="org-left">Default ii</td>
+</tr>
+
+<tr>
+<td class="org-left">F#m/A</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">A, C#, F#</td>
+<td class="org-left">A in bass continues from A chord</td>
+</tr>
+
+<tr>
+<td class="org-left">F#m/C#</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">C#, F#, A</td>
+<td class="org-left">C# pedal, voice-leads from A or C#m</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">Root</td>
+<td class="org-left">A, C#, E</td>
+<td class="org-left">Default IV</td>
+</tr>
+
+<tr>
+<td class="org-left">A/C#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">C#, E, A</td>
+<td class="org-left">C# in bass continues from C#m</td>
+</tr>
+
+<tr>
+<td class="org-left">A/E</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">E, A, C#</td>
+<td class="org-left">E pedal; ties A back to E tonic</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">B</td>
+<td class="org-left">Root</td>
+<td class="org-left">B, D#, F#</td>
+<td class="org-left">Default V</td>
+</tr>
+
+<tr>
+<td class="org-left">B/D#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">D#, F#, B</td>
+<td class="org-left">D# rising to E creates a chromatic step</td>
+</tr>
+
+<tr>
+<td class="org-left">B/F#</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">F#, B, D#</td>
+<td class="org-left">F# pedal</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">C#m</td>
+<td class="org-left">Root</td>
+<td class="org-left">C#, E, G#</td>
+<td class="org-left">Default vi</td>
+</tr>
+
+<tr>
+<td class="org-left">C#m/E</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">E, G#, C#</td>
+<td class="org-left">E in bass keeps the tonic note alive under C#m</td>
+</tr>
+
+<tr>
+<td class="org-left">C#m/G#</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">G#, C#, E</td>
+<td class="org-left">G# pedal, extremely smooth from E (root)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">G#m</td>
+<td class="org-left">Root</td>
+<td class="org-left">G#, B, D#</td>
+<td class="org-left">Default iii</td>
+</tr>
+
+<tr>
+<td class="org-left">G#m/B</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">B, D#, G#</td>
+<td class="org-left">B pedal, ties G#m to surrounding B chord</td>
+</tr>
+
+<tr>
+<td class="org-left">G#m/D#</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">D#, G#, B</td>
+<td class="org-left">D# in bass; rare, but striking</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Voice-leading tip:
+</p>
+
+<p>
+The most common chorus phrase is <b>A, F#m, B, E</b>.  Try this bass line: A, A (F#m/A), B, E.  Pedal the A through both A and F#m chords by using F#m's first inversion, the bass holds steady, only the inner voices shift.
+</p>
+</div>
+</div>
+<div id="outline-container-org65d9370" class="outline-2">
+<h2 id="org65d9370">Performance Notes</h2>
+<div class="outline-text-2" id="text-org65d9370">
+<ul class="org-ul">
+<li><b>Tempo</b>: bright and bouncy, around 130 BPM.  This is a victory song, do not drag it</li>
+<li><b>Touch</b>: full and ringing.  Major chords with the sustain pedal down, let them shine</li>
+<li><b>Pedal</b>: change on every chord, no smearing.  The chord changes are the whole texture</li>
+<li><b>The Bridge</b>: <code>E, C#m, A, B</code> played four times in rapid succession.  Make sure the bass clearly walks E, C#, A, B each time, the listener should hear the descent</li>
+<li><b>The C#maj7</b>: hold this chord one beat longer than the surrounding chords.  The substitution only works if it is heard.  Lean into it</li>
+<li><b>The Outro</b>: the chart shows a dense single-note melodic line, this is the lead guitar riff over a sustained progression.  On piano, you have two options: (1) play the riff as a single-note melody in the right hand while the left hand holds whole-bar chord roots, or (2) skip the riff and just play the implied chord progression <code>E, A, B, E</code> as ringing chords until the song fades.  Both work</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga211dfa" class="outline-2">
+<h2 id="orga211dfa">Song Structure</h2>
+<div class="outline-text-2" id="text-orga211dfa">
+</div>
+<div id="outline-container-orgb86eb5d" class="outline-3">
+<h3 id="orgb86eb5d">Verse 1</h3>
+<div class="outline-text-3" id="text-orgb86eb5d">
+<pre class="example" id="org0ce8578">
+[E]              [A]
+Funny how sometimes life
+[B]                          [E]
+Just changes overnight
+     [C#m]              [A]                  [B]          [E]
+Magically everything you do turns out so right
+[E]              [C#m]               [A]                  [B]
+Just like that, you pull rabbits out of your hat
+[C#m]                  [A]              [B]               [E]
+You've got the charm that even wizards can't explain
+     [C#m]                [A]                [B]          [E]
+How to make rainbows from a single drop of rain
+     [C#m]
+Who can say?
+          [A]                      [B]
+It's a trick you learn how to play
+</pre>
+</div>
+</div>
+<div id="outline-container-orgf40acc4" class="outline-3">
+<h3 id="orgf40acc4">Chorus 1</h3>
+<div class="outline-text-3" id="text-orgf40acc4">
+<pre class="example" id="org1e05481">
+              [B]                                     [E]
+When you're Shooting for the Moon and finally make it
+[A]                          [F#m]
+Guess a lucky star is shining on you
+                [B]                              [E]
+The candle on the cake is yours so take it
+[A]                              [F#m]                [B]
+Make another wish it's sure to come true
+     [G#m]                       [C#m]
+Isn't that the way you do it?
+          [A]                          [B]
+Tell me I can do it too
+              [B]                                     [E]
+There's a candle on the cake it's yours so take it
+[A]                              [F#m]                [B]
+Make another wish it's sure to come true
+     [G#m]                              [C#m]
+You say there's really nothing to it?
+                        [B]
+Maybe I can do it too
+</pre>
+</div>
+</div>
+<div id="outline-container-orga7c7b63" class="outline-3">
+<h3 id="orga7c7b63">Bridge</h3>
+<div class="outline-text-3" id="text-orga7c7b63">
+<pre class="example" id="org0c720d7">
+[E] [C#m] [A] [B] [E] [C#m] [A] [B] [E] [C#m] [A] [B] [C#m] [A]
+
+[C#m]                          [A]
+Who could believe one day
+[B]                  [E]
+You'd learn to walk on air
+     [C#m]                  [A]                [B]          [E]
+Everyone said "no way, you haven't got a prayer"
+[C#m]
+Click your heels
+          [A]                                   [B]
+That's how up and happy it feels
+</pre>
+
+<p>
+Bridge note:
+</p>
+
+<p>
+The opening of the Bridge runs the I, vi, IV, V loop four times in rapid succession (the chart shows <code>E, C#m, A, B</code> repeated, with the last cell ending on <code>C#m, A</code> as a half-cadence into the lyric).  Play these as quick chord stabs, one chord per beat, no sustain pedal.  The bass walks <b>E, C#, A, B</b> over and over, which gives the section its drive.  When the lyric enters on <code>C#m</code>, drop into a slower, fuller texture.
+</p>
+</div>
+</div>
+<div id="outline-container-org38c14cc" class="outline-3">
+<h3 id="org38c14cc">Chorus 2</h3>
+<div class="outline-text-3" id="text-org38c14cc">
+<pre class="example" id="org4afc4ec">
+              [B]                                     [B]
+When you're Shooting for the Moon and finally make it
+[A]                          [F#m]
+Guess a lucky star is shining on you
+                [B]                              [E]
+The candle on the cake is yours so take it
+[A]                              [F#m]                [B]
+Make another wish it's sure to come true
+     [G#m]                       [C#maj7]
+Isn't that the way you do it?
+          [A]                          [B]
+Tell me I can do it too
+</pre>
+
+<p>
+Chorus 2 note:
+</p>
+
+<p>
+The only difference from Chorus 1 is the <b>C#maj7</b> in place of C#m on "do it?"  This is the song's single harmonic surprise.  See "The C#maj7 Substitution" above.
+</p>
+</div>
+</div>
+<div id="outline-container-org05bf015" class="outline-3">
+<h3 id="org05bf015">Outro</h3>
+<div class="outline-text-3" id="text-org05bf015">
+<pre class="example" id="org4107599">
+[E] [G#m] [E] [F#] [G#m] [E] [F#] [B] [G#m] [G#m] [E] [F#] [G#m]
+[E] [F#] [B] [G#m] [E] [F#] [B] [G#m] [E] [F#] [E] [F#] [B] [E] [C#m]
+[E] [C#m] [F#] [D#m] [G#m] [E] [F#] [E] [F#] [E] [B] [F#]
+[F#] [B] [E]
+</pre>
+
+<p>
+Outro note:
+</p>
+
+<p>
+The chart shows a dense melodic line, single notes (or close-position chord stabs) cycling through the same diatonic palette.  This is the lead-guitar fade-out, not really a chord progression you would play as a piano part.  Three options for solo piano:
+</p>
+
+<ol class="org-ol">
+<li><b>Play it as a melodic line</b>.  Treat each label as a single note in the right hand: E, G#, E, F#, G#, E, F#, B, G#, G#, etc.  Hold a sustained E in the left hand throughout</li>
+<li><b>Reduce it to a chord vamp</b>.  Play <code>E, A, B, E</code> or <code>E, C#m, A, B</code> as ringing chords with the sustain pedal, ignoring the melodic detail</li>
+<li><b>Mix</b>.  Hold a chord in the left hand and improvise a melody on top using the E major scale</li>
+</ol>
+
+<p>
+The song fades out, so there is no defined end, just keep the energy up until you fade your own volume to zero.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
