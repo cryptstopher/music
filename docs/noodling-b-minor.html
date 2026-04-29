@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-04-29 Wed 14:59 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Noodling in B Minor</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Noodling in B Minor</h1>
+<p class="subtitle" role="doc-subtitle">A Guide to the Brooding Key</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4e6f921">1. Why B Minor?</a></li>
+<li><a href="#orgb84d9eb">2. The Notes</a>
+<ul>
+<li><a href="#orgac9780d">2.1. B Natural Minor</a></li>
+<li><a href="#orge577886">2.2. B Harmonic Minor (raises the 7th)</a></li>
+<li><a href="#org4aaa45a">2.3. B Dorian (raises only the 6th)</a></li>
+<li><a href="#org288ff62">2.4. B Minor Pentatonic (the safest five notes)</a></li>
+<li><a href="#orgfe5533b">2.5. B Blues Scale (pentatonic + the b5)</a></li>
+</ul>
+</li>
+<li><a href="#org2dcc207">3. The Chords</a>
+<ul>
+<li><a href="#org8fe8208">3.1. Diatonic Triads in B Natural Minor</a></li>
+<li><a href="#org1b16d09">3.2. Harmonic Minor Adjustments</a></li>
+<li><a href="#org66590f4">3.3. Dorian Adjustments</a></li>
+<li><a href="#org7d776d6">3.4. Common 7th-Chord Voicings</a></li>
+</ul>
+</li>
+<li><a href="#orgf982041">4. Common Progressions</a>
+<ul>
+<li><a href="#org407a7d6">4.1. i – VI – III – VII  (the rock-anthem)</a></li>
+<li><a href="#org17e9c71">4.2. i – VII – VI – VII  (the rock minor)</a></li>
+<li><a href="#org44db593">4.3. i – iv – VII – III  (folk modal)</a></li>
+<li><a href="#org522f6c5">4.4. i – iv – V7 – i  (classical / harmonic minor)</a></li>
+<li><a href="#orgd32974e">4.5. Dorian: i – IV  (the <i>Hurt</i> engine)</a></li>
+<li><a href="#org21d2025">4.6. i – VI – iv – V7  (the descending lament)</a></li>
+<li><a href="#org1bf5ddb">4.7. Modulation: i (Bm) → I (D)</a></li>
+</ul>
+</li>
+<li><a href="#org6490519">5. Style and Genre Associations</a>
+<ul>
+<li><a href="#org577f10e">5.1. Rock and indie</a></li>
+<li><a href="#org3e24b24">5.2. Classical</a></li>
+<li><a href="#org07b2aff">5.3. Cinematic / film score</a></li>
+<li><a href="#org805ca70">5.4. Folk</a></li>
+<li><a href="#orgcf6d985">5.5. Soul / R&amp;B</a></li>
+</ul>
+</li>
+<li><a href="#org78cd79e">6. Famous Songs in B Minor</a></li>
+<li><a href="#org6e347d5">7. Tips for Noodling</a>
+<ul>
+<li><a href="#orged5a6ea">7.1. Anchor on D</a></li>
+<li><a href="#org999b54e">7.2. Use the open-string trick (even on piano)</a></li>
+<li><a href="#orgde725b2">7.3. Lean into the F# vs A# distinction</a></li>
+<li><a href="#org3d7edcf">7.4. Borrow E major for instant <i>Hurt</i></a></li>
+<li><a href="#org6b19fce">7.5. Practice the Bm → D → G → A loop</a></li>
+<li><a href="#org4f3401f">7.6. Always try the Picardy third</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<p>
+<a href="index.html">← Back to Index</a>
+</p>
+<div id="outline-container-org4e6f921" class="outline-2">
+<h2 id="org4e6f921"><span class="section-number-2">1.</span> Why B Minor?</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+If D minor is the saddest key, B minor is the <b>brooding</b> one, heavier, more mature, less openly mournful.  Schubert's "Unfinished" Symphony is in B minor.  So is Tchaikovsky's "Pathétique."  In modern music, B minor is the natural home of guitar-centered melancholy: "Hurt" by Nine Inch Nails, "Hotel California," large stretches of Radiohead.  The reason is partly mechanical, B minor on guitar gives you the open D string ringing inside the i chord, the open A string inside the iv, and the open low E inside the III.  Half the work is already done.
+</p>
+
+<p>
+On piano the key is less ergonomic, two sharps in the tonic triad (F# and a black-key D# in the harmonic-minor V), but the harmonic possibilities are rich.  This guide treats B minor as a noodling sandbox: how the scale behaves, which chords pull where, and what the key sounds like in different stylistic settings.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb84d9eb" class="outline-2">
+<h2 id="orgb84d9eb"><span class="section-number-2">2.</span> The Notes</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgac9780d" class="outline-3">
+<h3 id="orgac9780d"><span class="section-number-3">2.1.</span> B Natural Minor</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+B natural minor uses two black keys (F# and C#) and five white keys.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">C#</td>
+</tr>
+
+<tr>
+<td class="org-right">b3</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">b6</td>
+<td class="org-left">G</td>
+</tr>
+
+<tr>
+<td class="org-right">b7</td>
+<td class="org-left">A</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+B natural minor is the <b>relative minor</b> of D major.  Same notes, different home.  If you already play in D major, you know B minor, you just need to hear B as the resting tone instead of D.
+</p>
+
+<p>
+The defining notes of the key are <b>B, D, F#</b>, the tonic triad.  Land on those at phrase endings and the ear hears B minor.  Land on D and the ear pulls toward D major.  This dual-citizenship is useful: you can drift between the two keys without changing scales.
+</p>
+</div>
+</div>
+<div id="outline-container-orge577886" class="outline-3">
+<h3 id="orge577886"><span class="section-number-3">2.2.</span> B Harmonic Minor (raises the 7th)</h3>
+<div class="outline-text-3" id="text-2-2">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">C#</td>
+</tr>
+
+<tr>
+<td class="org-right">b3</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">b6</td>
+<td class="org-left">G</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">A#</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The raised 7th (<b>A#</b>, sometimes written as Bb in casual notation but theoretically A#) creates the strong dominant chord.  <b>F# major</b> (with A# as its 3rd) becomes the V chord, and <b>F#7</b> (F# – A# – C# – E) becomes V7.  Either resolves powerfully back to Bm.
+</p>
+
+<p>
+The G-to-A# gap is an augmented 2nd (three semitones), the same Middle-Eastern flavor as in D harmonic minor.  Useful as a coloristic detail, awkward as a stepwise melody.
+</p>
+</div>
+</div>
+<div id="outline-container-org4aaa45a" class="outline-3">
+<h3 id="org4aaa45a"><span class="section-number-3">2.3.</span> B Dorian (raises only the 6th)</h3>
+<div class="outline-text-3" id="text-2-3">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">C#</td>
+</tr>
+
+<tr>
+<td class="org-right">b3</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">G#</td>
+</tr>
+
+<tr>
+<td class="org-right">b7</td>
+<td class="org-left">A</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+B Dorian replaces G with G#.  This is the mode used in <i>Hurt</i> by Nine Inch Nails, it is <b>the</b> alternate B-minor flavor in modern rock.  The single change turns the iv chord from <b>Em</b> into <b>E major</b>.  An E major chord inside a B minor song is brighter than the natural minor would predict; it is what gives Dorian its "minor with light coming in" quality.
+</p>
+
+<p>
+If you have read the <a href="hurt-nine-inch-nails.html">Hurt cheat sheet</a>, you have already seen this in action.
+</p>
+</div>
+</div>
+<div id="outline-container-org288ff62" class="outline-3">
+<h3 id="org288ff62"><span class="section-number-3">2.4.</span> B Minor Pentatonic (the safest five notes)</h3>
+<div class="outline-text-3" id="text-2-4">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">b3</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">b7</td>
+<td class="org-left">A</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Five notes, no half-steps, never wrong.  This is the rock and blues default, every guitar solo in a B minor song is mostly built from these five notes.  Add C# for natural-minor color, G for full natural minor, G# for Dorian brightness, A# for harmonic-minor lift.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfe5533b" class="outline-3">
+<h3 id="orgfe5533b"><span class="section-number-3">2.5.</span> B Blues Scale (pentatonic + the b5)</h3>
+<div class="outline-text-3" id="text-2-5">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-left">b3</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-left">4</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-left">b5</td>
+<td class="org-left">F</td>
+</tr>
+
+<tr>
+<td class="org-left">5</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-left">b7</td>
+<td class="org-left">A</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <b>F natural</b> (the flat-5, between E and F#) and the pentatonic becomes the blues scale.  F is dissonant against everything in the key, that's the point.  Use it as a passing tone between E and F#, not as a landing note.  Lean on it for one beat and slide off; the discomfort is the flavor.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org2dcc207" class="outline-2">
+<h2 id="org2dcc207"><span class="section-number-2">3.</span> The Chords</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org8fe8208" class="outline-3">
+<h3 id="org8fe8208"><span class="section-number-3">3.1.</span> Diatonic Triads in B Natural Minor</h3>
+<div class="outline-text-3" id="text-3-1">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Quality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">i</td>
+<td class="org-left">Bm</td>
+<td class="org-left">B – D – F#</td>
+<td class="org-left">minor</td>
+</tr>
+
+<tr>
+<td class="org-left">ii°</td>
+<td class="org-left">C#dim</td>
+<td class="org-left">C# – E – G</td>
+<td class="org-left">diminished</td>
+</tr>
+
+<tr>
+<td class="org-left">III</td>
+<td class="org-left">D</td>
+<td class="org-left">D – F# – A</td>
+<td class="org-left">Major</td>
+</tr>
+
+<tr>
+<td class="org-left">iv</td>
+<td class="org-left">Em</td>
+<td class="org-left">E – G – B</td>
+<td class="org-left">minor</td>
+</tr>
+
+<tr>
+<td class="org-left">v</td>
+<td class="org-left">F#m</td>
+<td class="org-left">F# – A – C#</td>
+<td class="org-left">minor</td>
+</tr>
+
+<tr>
+<td class="org-left">VI</td>
+<td class="org-left">G</td>
+<td class="org-left">G – B – D</td>
+<td class="org-left">Major</td>
+</tr>
+
+<tr>
+<td class="org-left">VII</td>
+<td class="org-left">A</td>
+<td class="org-left">A – C# – E</td>
+<td class="org-left">Major</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The standard minor-key palette: i, III, iv, v, VI, VII.  Three minors, three majors, one diminished.
+</p>
+
+<p>
+Notice that <b>D major</b> (III) shares two notes with <b>Bm</b> (D and F#), the relationship between B minor and D major is so close that the III chord almost feels like a second tonic.
+</p>
+</div>
+</div>
+<div id="outline-container-org1b16d09" class="outline-3">
+<h3 id="org1b16d09"><span class="section-number-3">3.2.</span> Harmonic Minor Adjustments</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+When you raise the 7th to A#, the v chord gains weight:
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Replaces</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">V</td>
+<td class="org-left">F#</td>
+<td class="org-left">F# – A# – C#</td>
+<td class="org-left">F#m (v)</td>
+</tr>
+
+<tr>
+<td class="org-left">V7</td>
+<td class="org-left">F#7</td>
+<td class="org-left">F# – A# – C# – E</td>
+<td class="org-left">F#m</td>
+</tr>
+
+<tr>
+<td class="org-left">vii°</td>
+<td class="org-left">A#dim</td>
+<td class="org-left">A# – C# – E</td>
+<td class="org-left">A (VII)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>F#7</b> is the strongest chord in the key.  <code>Em → F#7 → Bm</code> is a classic minor cadence, iv → V7 → i, that lands harder than any natural-minor progression can.
+</p>
+</div>
+</div>
+<div id="outline-container-org66590f4" class="outline-3">
+<h3 id="org66590f4"><span class="section-number-3">3.3.</span> Dorian Adjustments</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+When you raise the 6th from G to G#, the iv chord becomes major:
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Replaces</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">IV</td>
+<td class="org-left">E</td>
+<td class="org-left">E – G# – B</td>
+<td class="org-left">Em (iv)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>This is the single most distinctive sound in B minor music.</b>  <code>Bm → E → Bm</code> or <code>Bm → D → E → Bm</code> immediately tells the ear "this is Dorian, not minor."  <i>Hurt</i>, <i>Mad World</i> (in F#m, but same concept), and a thousand folk songs live on this substitution.
+</p>
+</div>
+</div>
+<div id="outline-container-org7d776d6" class="outline-3">
+<h3 id="org7d776d6"><span class="section-number-3">3.4.</span> Common 7th-Chord Voicings</h3>
+<div class="outline-text-3" id="text-3-4">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bm7</td>
+<td class="org-left">B – D – F# – A</td>
+<td class="org-left">Default minor 7 tonic</td>
+</tr>
+
+<tr>
+<td class="org-left">Bm(maj7)</td>
+<td class="org-left">B – D – F# – A#</td>
+<td class="org-left">Tense; brief moments only</td>
+</tr>
+
+<tr>
+<td class="org-left">Dmaj7</td>
+<td class="org-left">D – F# – A – C#</td>
+<td class="org-left">Lush III; shares 3 notes with Bm</td>
+</tr>
+
+<tr>
+<td class="org-left">Em7</td>
+<td class="org-left">E – G – B – D</td>
+<td class="org-left">iv7 (natural minor)</td>
+</tr>
+
+<tr>
+<td class="org-left">F#m7</td>
+<td class="org-left">F# – A – C# – E</td>
+<td class="org-left">natural-minor v7</td>
+</tr>
+
+<tr>
+<td class="org-left">F#7</td>
+<td class="org-left">F# – A# – C# – E</td>
+<td class="org-left">V7, strongest pull back to Bm</td>
+</tr>
+
+<tr>
+<td class="org-left">Gmaj7</td>
+<td class="org-left">G – B – D – F#</td>
+<td class="org-left">warm VI; shares 3 notes with Bm</td>
+</tr>
+
+<tr>
+<td class="org-left">A7</td>
+<td class="org-left">A – C# – E – G</td>
+<td class="org-left">V7 of D, pulls toward III</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The shared-tone relationships are striking: <b>Bm7</b>, <b>Dmaj7</b>, and <b>Gmaj7</b> each share three of their four notes with the others.  You can move between them with almost no voice motion in the right hand.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf982041" class="outline-2">
+<h2 id="orgf982041"><span class="section-number-2">4.</span> Common Progressions</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org407a7d6" class="outline-3">
+<h3 id="org407a7d6"><span class="section-number-3">4.1.</span> i – VI – III – VII  (the rock-anthem)</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+<code>Bm – G – D – A</code>
+</p>
+
+<p>
+The progression of countless rock and pop hits.  <i>With or Without You</i>, <i>Don't Stop Believin'</i> (transposed), <i>Save Tonight</i>, half of every rock ballad in the last 40 years.  All four chords are major or minor triads with no tension; the <b>order</b> (descending bass-line motion) is what carries it.
+</p>
+</div>
+</div>
+<div id="outline-container-org17e9c71" class="outline-3">
+<h3 id="org17e9c71"><span class="section-number-3">4.2.</span> i – VII – VI – VII  (the rock minor)</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+<code>Bm – A – G – A</code>
+</p>
+
+<p>
+A descending–ascending walk.  Sits naturally on guitar (Bm → A → G → A all use open-string voicings).  Loops indefinitely without resolving.
+</p>
+</div>
+</div>
+<div id="outline-container-org44db593" class="outline-3">
+<h3 id="org44db593"><span class="section-number-3">4.3.</span> i – iv – VII – III  (folk modal)</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+<code>Bm – Em – A – D</code>
+</p>
+
+<p>
+The "Wagon Wheel" / "Knockin' on Heaven's Door" shape, in minor.  Resolves to <b>D major</b> rather than back to <b>Bm</b>, which is why these songs feel hopeful even when they're sad.  Use it when you want B minor to keep promising D major.
+</p>
+</div>
+</div>
+<div id="outline-container-org522f6c5" class="outline-3">
+<h3 id="org522f6c5"><span class="section-number-3">4.4.</span> i – iv – V7 – i  (classical / harmonic minor)</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+<code>Bm – Em – F#7 – Bm</code>
+</p>
+
+<p>
+The textbook minor cadence with harmonic-minor V7.  Heavier than the natural-minor version (which would be <code>Bm – Em – F#m – Bm</code>).  The A# inside F#7 is the leading tone, half a step below B.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd32974e" class="outline-3">
+<h3 id="orgd32974e"><span class="section-number-3">4.5.</span> Dorian: i – IV  (the <i>Hurt</i> engine)</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+<code>Bm – D – E – Bm</code>
+</p>
+
+<p>
+The verse cycle of <i>Hurt</i>.  <b>E major</b> (not Em) is the Dorian giveaway.  This progression is the most distinctive sound in B minor because the major IV chord doesn't belong in natural minor, borrowing it from Dorian creates that strange, half-bright tension that defines a whole subgenre of moody rock.
+</p>
+</div>
+</div>
+<div id="outline-container-org21d2025" class="outline-3">
+<h3 id="org21d2025"><span class="section-number-3">4.6.</span> i – VI – iv – V7  (the descending lament)</h3>
+<div class="outline-text-3" id="text-4-6">
+<p>
+<code>Bm – G – Em – F#7</code>
+</p>
+
+<p>
+Closer to classical balladry.  The bass walks down: B → G → E → F#.  Useful for verses that want to feel like they're falling, with the F#7 catching them at the last moment and tossing them back to Bm.
+</p>
+</div>
+</div>
+<div id="outline-container-org1bf5ddb" class="outline-3">
+<h3 id="org1bf5ddb"><span class="section-number-3">4.7.</span> Modulation: i (Bm) → I (D)</h3>
+<div class="outline-text-3" id="text-4-7">
+<p>
+B minor and D major are <b>relative keys</b>, same notes, different home base.  You can pivot between them with almost no warning by simply landing a phrase on D instead of B.  The reverse, sliding from D major back into Bm, is a single-chord move: end on Bm and the ear immediately hears the new tonal center.  Use this freely when noodling; it doubles your harmonic territory at zero cost.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6490519" class="outline-2">
+<h2 id="org6490519"><span class="section-number-2">5.</span> Style and Genre Associations</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org577f10e" class="outline-3">
+<h3 id="org577f10e"><span class="section-number-3">5.1.</span> Rock and indie</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+B minor is the unofficial home key of melancholy guitar music.  Open chord shapes on guitar make Bm, D, G, and A trivially easy.  Dorian inflection (E major instead of Em) is endemic, every other song in the genre uses it.  See: Radiohead, Elliott Smith (often), Nine Inch Nails, Coldplay, The National.
+</p>
+</div>
+</div>
+<div id="outline-container-org3e24b24" class="outline-3">
+<h3 id="org3e24b24"><span class="section-number-3">5.2.</span> Classical</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+Schubert's "Unfinished" Symphony, Tchaikovsky's "Pathétique", B minor as the key of weighty, serious gloom.  The harmonic minor V (F#7) is the default cadence; modulations to D major (relative) or to F# minor (dominant minor) are common.
+</p>
+</div>
+</div>
+<div id="outline-container-org07b2aff" class="outline-3">
+<h3 id="org07b2aff"><span class="section-number-3">5.3.</span> Cinematic / film score</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+B minor lands somewhere between D minor's funeral weight and A minor's unease.  It is the key of "the protagonist is in trouble but will probably make it", somber but not hopeless.  Often used with sustained pedal tones (B in the bass) and slow harmonic motion above.
+</p>
+</div>
+</div>
+<div id="outline-container-org805ca70" class="outline-3">
+<h3 id="org805ca70"><span class="section-number-3">5.4.</span> Folk</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+Less common than D minor in folk because B minor is harder on guitar than Dm or Am, but when it appears, it tends to lean Dorian.  Sea shanties, Celtic ballads, and English folk often live in B Dorian.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcf6d985" class="outline-3">
+<h3 id="orgcf6d985"><span class="section-number-3">5.5.</span> Soul / R&amp;B</h3>
+<div class="outline-text-3" id="text-5-5">
+<p>
+B minor with the natural 6th (G#) and the b7 (A) gets you into Dorian, which is the mode of much classic soul.  <i>Killing Me Softly</i> (in F minor, but same concept) and many Stevie Wonder verses use minor Dorian patterns that transpose easily to B.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org78cd79e" class="outline-2">
+<h2 id="org78cd79e"><span class="section-number-2">6.</span> Famous Songs in B Minor</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li><i>Hurt</i>, Nine Inch Nails / Johnny Cash (B Dorian, with Picardy-third ending in B major), see the <a href="hurt-nine-inch-nails.html">Hurt cheat sheet</a></li>
+<li><i>Hotel California</i>, Eagles</li>
+<li><i>Stairway to Heaven</i>, Led Zeppelin (Am, but Bm voicings on guitar are the same shape transposed)</li>
+<li><i>Symphony No. 8 "Unfinished"</i>, Schubert</li>
+<li><i>Symphony No. 6 "Pathétique"</i>, Tchaikovsky</li>
+<li><i>Mad World</i>, Tears for Fears (in F#m, near-relative)</li>
+<li><i>Wish You Were Here</i>, Pink Floyd (G major, but the verse leans heavily on B-minor color)</li>
+<li><i>Don't Fear the Reaper</i>, Blue Öyster Cult (A minor, but Bm-like shape)</li>
+<li><i>Black</i>, Pearl Jam (E minor, but the same descending lament logic)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6e347d5" class="outline-2">
+<h2 id="org6e347d5"><span class="section-number-2">7.</span> Tips for Noodling</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orged5a6ea" class="outline-3">
+<h3 id="orged5a6ea"><span class="section-number-3">7.1.</span> Anchor on D</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+Because B minor and D major share all their notes, <b>D</b> is a magnetic note inside the key.  Hold a Bm chord in the right hand and let your improvising hand drift to D, the phrase will sound resolved even though you didn't land on B.  Use this when you want minor color without the heaviness of always returning home.
+</p>
+</div>
+</div>
+<div id="outline-container-org999b54e" class="outline-3">
+<h3 id="org999b54e"><span class="section-number-3">7.2.</span> Use the open-string trick (even on piano)</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+On guitar, B minor benefits from open-string drones.  You can simulate this on piano by holding the <b>low B</b> in the left hand throughout a section while the right hand wanders.  The pedal tone keeps everything tethered.  Try <code>Bm – D – G – A</code> over a sustained low B and notice how the harmony continues to make sense even when the bass refuses to move.
+</p>
+</div>
+</div>
+<div id="outline-container-orgde725b2" class="outline-3">
+<h3 id="orgde725b2"><span class="section-number-3">7.3.</span> Lean into the F# vs A# distinction</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+The whole emotional range of B minor lives in this one note.  <b>F#7</b> (with A#) sounds formal, strong, classical.  <b>F#m</b> (with A natural) sounds folk-modal, gentle, unresolved.  Try the same phrase twice, once cadencing to F#7 → Bm, once cadencing to F#m → Bm, and notice how different they feel.  Both are correct; they belong to different songs.
+</p>
+</div>
+</div>
+<div id="outline-container-org3d7edcf" class="outline-3">
+<h3 id="org3d7edcf"><span class="section-number-3">7.4.</span> Borrow E major for instant <i>Hurt</i></h3>
+<div class="outline-text-3" id="text-7-4">
+<p>
+Anywhere a chord progression has Em, try playing E major instead.  The G# inside E major is the Dorian raised 6th, foreign to natural minor, but distinctive enough to redefine the whole mood.  Use it sparingly; if every chord is borrowed, nothing sounds borrowed anymore.
+</p>
+</div>
+</div>
+<div id="outline-container-org6b19fce" class="outline-3">
+<h3 id="org6b19fce"><span class="section-number-3">7.5.</span> Practice the Bm → D → G → A loop</h3>
+<div class="outline-text-3" id="text-7-5">
+<p>
+Loop these four chords with no melody, just the changes, until the bass line walks itself: B → D → G → A → B → D → G → A.  Once the loop feels automatic, start improvising over it with the pentatonic.  This is the most-used progression in B minor pop music; if it lives in your hands, you can sit in on most rock songs in this key.
+</p>
+</div>
+</div>
+<div id="outline-container-org4f3401f" class="outline-3">
+<h3 id="org4f3401f"><span class="section-number-3">7.6.</span> Always try the Picardy third</h3>
+<div class="outline-text-3" id="text-7-6">
+<p>
+B minor songs frequently end on <b>B major</b>, the Picardy third, raising the minor 3rd (D) to a major 3rd (D#).  Every other note stays the same.  <i>Hurt</i> does this; <i>Layla</i> does this; many classical pieces in B minor do this.  When you're noodling and you reach a final cadence, try landing on Bmaj instead of Bm.  The single semitone of change is one of the most powerful gestures in the key.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

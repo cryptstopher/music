@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-04-29 Wed 14:59 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Funky Noodling on Electric Piano</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Funky Noodling on Electric Piano</h1>
+<p class="subtitle" role="doc-subtitle">A Guide to Comping, Vamping, and Soloing in Multiple Keys</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgfa2bca9">1. What Makes Electric Piano Funky</a></li>
+<li><a href="#org1eefc96">2. The Core Funk Voicing: The Rootless Shell</a>
+<ul>
+<li><a href="#org15139a2">2.1. The Two-Hand Default</a></li>
+<li><a href="#orgf622bcd">2.2. Why Rootless Voicings Work</a></li>
+</ul>
+</li>
+<li><a href="#orgdcae779">3. The Rhythmic Engine</a>
+<ul>
+<li><a href="#orgf42c1b6">3.1. The Sixteenth-Note Grid</a></li>
+<li><a href="#orgfa15c3b">3.2. Ghost Notes and Mutes</a></li>
+</ul>
+</li>
+<li><a href="#org7395642">4. Common Funk Keys and Their Sound</a>
+<ul>
+<li><a href="#org60ab5b6">4.1. D Minor / D Dorian, the Miles Davis key</a></li>
+<li><a href="#orgfd6e315">4.2. F Major, the horn-section key</a></li>
+<li><a href="#org39ccc63">4.3. G Minor / G Dorian, the gritty groove key</a></li>
+<li><a href="#org2715762">4.4. E Minor / E Dorian, the guitar key</a></li>
+<li><a href="#org3b56135">4.5. A Minor / A Dorian, the everywhere key</a></li>
+</ul>
+</li>
+<li><a href="#org63da27b">5. Funk Chord Types and Their Voicings</a>
+<ul>
+<li><a href="#orga9986f5">5.1. The Minor 9th (m9)</a></li>
+<li><a href="#orgf4114f1">5.2. The Dominant 9th (9) and 13th (13)</a></li>
+<li><a href="#orgcef76d1">5.3. The Sharp 9th (7#9), the Hendrix Chord</a></li>
+<li><a href="#orge45c9e6">5.4. The Suspended Dominant (7sus4)</a></li>
+</ul>
+</li>
+<li><a href="#orgfbfa3b0">6. Common Funk Progressions and Vamps</a>
+<ul>
+<li><a href="#orga13998c">6.1. The One-Chord Vamp</a></li>
+<li><a href="#org955168c">6.2. The i7 → IV7 (Dorian funk)</a></li>
+<li><a href="#org0c0bb5a">6.3. The Static Dominant</a></li>
+<li><a href="#orga25ff61">6.4. The ii–V (in funk style)</a></li>
+<li><a href="#org1c4ab74">6.5. The James Brown One</a></li>
+<li><a href="#org9cca366">6.6. The Stevie Wonder Cycle</a></li>
+</ul>
+</li>
+<li><a href="#org872f49f">7. Style Notes</a>
+<ul>
+<li><a href="#orgf4325f0">7.1. Touch and Dynamics</a></li>
+<li><a href="#orgb2875d5">7.2. Pedal</a></li>
+<li><a href="#orgcc51f01">7.3. Octave Doubling and Bass</a></li>
+<li><a href="#org44c8756">7.4. The Clavinet Approach</a></li>
+<li><a href="#org0c73d6b">7.5. The Wurlitzer Approach</a></li>
+</ul>
+</li>
+<li><a href="#org842d271">8. Tips for Funky Noodling</a>
+<ul>
+<li><a href="#org64393c3">8.1. Start with the rhythm, not the notes</a></li>
+<li><a href="#org90db0a1">8.2. Use the chromatic approach</a></li>
+<li><a href="#org20522a0">8.3. Sit on Dorian</a></li>
+<li><a href="#orgcb10283">8.4. Drop the 5th, keep the 3rd and 7th</a></li>
+<li><a href="#org2fc65fe">8.5. Listen to the silence</a></li>
+<li><a href="#org50f03f8">8.6. Steal one lick at a time</a></li>
+<li><a href="#orgdc0c991">8.7. Play along with records</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<p>
+<a href="index.html">← Back to Index</a>
+</p>
+<div id="outline-container-orgfa2bca9" class="outline-2">
+<h2 id="orgfa2bca9"><span class="section-number-2">1.</span> What Makes Electric Piano Funky</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Funk is not a chord progression, it is a <b>texture</b>.  Most funk loops are one or two chords held for many bars, sometimes the entire song.  What carries the music is rhythm, syncopation, and the specific way the notes are voiced.  The harmony stays still while everything else dances on top.
+</p>
+
+<p>
+The electric piano (Rhodes, Wurlitzer, Clav, or a software emulation of any of the three) is the funk keyboard for two reasons.  First, the <b>bell-like attack</b> cuts through a band, you can play softly and still be heard.  Second, the slight pitch wobble and tine-decay of a Rhodes mean every chord shimmers slightly even when held; you don't have to do as much to make the harmony interesting.
+</p>
+
+<p>
+This guide is about <b>how</b> to noodle funky on these instruments.  It assumes you already know basic chord shapes; the focus here is on voicing, rhythm, and which scales actually work in funk contexts across different keys.
+</p>
+</div>
+</div>
+<div id="outline-container-org1eefc96" class="outline-2">
+<h2 id="org1eefc96"><span class="section-number-2">2.</span> The Core Funk Voicing: The Rootless Shell</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Funk piano almost never plays the root in the right hand.  The bass player has the root.  Your job is to imply the harmony with the <b>3rd, 7th, and color tones</b>, the notes that define the chord's character without doubling what the bass is already doing.
+</p>
+</div>
+<div id="outline-container-org15139a2" class="outline-3">
+<h3 id="org15139a2"><span class="section-number-3">2.1.</span> The Two-Hand Default</h3>
+<div class="outline-text-3" id="text-2-1">
+<pre class="example" id="org8004f03">
+LH: octave or single root note (when no bass player), or silent
+RH: 3rd, 7th, and an extension (9, 11, or 13), three notes, no root
+</pre>
+
+<p>
+For a <b>Dm9</b> chord:
+</p>
+<ul class="org-ul">
+<li>Full notes: D – F – A – C – E</li>
+<li>Rootless RH voicing: F – A – C – E  (3rd, 5th, 7th, 9th)</li>
+<li>Tighter rootless voicing: F – C – E  (3rd, 7th, 9th, drop the 5th)</li>
+</ul>
+
+<p>
+For a <b>G13</b> chord (the funk dominant):
+</p>
+<ul class="org-ul">
+<li>Full notes: G – B – D – F – A – E</li>
+<li>Rootless RH voicing: B – F – A – E  (3rd, 7th, 9th, 13th)</li>
+<li>Tighter: B – F – E  (3rd, 7th, 13th)</li>
+</ul>
+
+<p>
+The 3rd and 7th alone, the <b>guide tones</b>, already carry 80% of the chord's identity.  Add one extension on top for color.  Three notes is plenty.  Four is luxurious.  Five is too many.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf622bcd" class="outline-3">
+<h3 id="orgf622bcd"><span class="section-number-3">2.2.</span> Why Rootless Voicings Work</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+A chord's root is the most predictable note in it.  The bass plays it; the listener's ear fills it in.  Putting the root in your right hand is wasted real estate, that finger could be playing a 9th or a 13th instead, which actually <b>adds</b> something to the harmony.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdcae779" class="outline-2">
+<h2 id="orgdcae779"><span class="section-number-2">3.</span> The Rhythmic Engine</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Funk rhythm is built on <b>syncopation</b>, playing on the off-beats, the spaces between the metronome clicks.  Most funk piano lives on the <b>and</b> of each beat:
+</p>
+
+<pre class="example" id="org71058b4">
+Beat:    1   &amp;   2   &amp;   3   &amp;   4   &amp;
+On-beat: X       X       X       X
+Off-beat:    X       X       X       X
+</pre>
+
+<p>
+A common funk comping pattern:
+</p>
+
+<pre class="example" id="orgcca3f7c">
+Beat:    1   &amp;   2   &amp;   3   &amp;   4   &amp;
+Chord:       X       X   X       X
+</pre>
+
+<p>
+Three hits per bar, all on off-beats except one.  The silences are as important as the hits, they give the bass and drums room to breathe.
+</p>
+</div>
+<div id="outline-container-orgf42c1b6" class="outline-3">
+<h3 id="orgf42c1b6"><span class="section-number-3">3.1.</span> The Sixteenth-Note Grid</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Funk usually subdivides into 16ths, not 8ths.  Count "1-e-and-a, 2-e-and-a" instead of "1-and-2-and."  Each beat has four possible attack points:
+</p>
+
+<pre class="example" id="orga568bcf">
+Beat:  1   e   &amp;   a   2   e   &amp;   a   ...
+Slot:  1   2   3   4   5   6   7   8   ...
+</pre>
+
+<p>
+A chord stab on slot 4 ("the a of 1") is one of the most distinctive funk attacks, it lands a sixteenth-note before the next beat, pulling the listener forward.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfa15c3b" class="outline-3">
+<h3 id="orgfa15c3b"><span class="section-number-3">3.2.</span> Ghost Notes and Mutes</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+On Rhodes/Wurlitzer, light touch produces a softer, almost muted sound.  <b>Ghost notes</b>, barely-audible chord stabs between the loud ones, fill in the rhythmic texture without overpowering it.  Try a pattern of one loud hit followed by two ghost hits: <code>LOUD ghost ghost LOUD ghost ghost</code>.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org7395642" class="outline-2">
+<h2 id="org7395642"><span class="section-number-2">4.</span> Common Funk Keys and Their Sound</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Different keys have different physical feels on a keyboard, which shapes what you naturally play.  Funk has a few favorite keys for historical reasons (horn-friendly keys, guitar-friendly keys, vocal-friendly keys).
+</p>
+</div>
+<div id="outline-container-org60ab5b6" class="outline-3">
+<h3 id="org60ab5b6"><span class="section-number-3">4.1.</span> D Minor / D Dorian, the Miles Davis key</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+D Dorian is <b>the</b> modal funk and jazz key.  <i>So What</i> is in D Dorian.  <i>Cantaloupe Island</i> uses it.  Almost every modal jazz tune of the 1960s sat here at some point.
+</p>
+
+<p>
+Notes: <code>D E F G A B C</code>
+</p>
+
+<p>
+The single distinguishing note vs. natural minor is <b>B natural</b>, the raised 6th.  This is what gives Dorian its open, hopeful-but-still-minor flavor.  Funk loves Dorian because the <b>Dm7</b> tonic has a built-in 9th (E) and 11th (G) that all sound great over it; you can essentially noodle on the white keys and never play a wrong note.
+</p>
+
+<p>
+Default vamp:
+</p>
+
+<p>
+<code>Dm9  ||  Dm9  ||  Em9  ||  Dm9</code>
+</p>
+
+<p>
+That's it.  Two chords, both minor 9ths, holding for whole bars.  Solo over the top using D Dorian.  <i>So What</i> is built on this.
+</p>
+
+<p>
+Funky one-chord vamp:
+</p>
+
+<p>
+<code>Dm9  (held forever)</code>
+</p>
+
+<p>
+Just sit on Dm9 and improvise.  Use D Dorian.  Lean on B natural for brightness, F for darkness.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfd6e315" class="outline-3">
+<h3 id="orgfd6e315"><span class="section-number-3">4.2.</span> F Major, the horn-section key</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+F is friendly to horns (Bb tenor sax, Bb trumpet, Eb alto sax all read F as a comfortable key).  Most James Brown tunes sat in F or near it.  <i>Cold Sweat</i>, <i>Get Up (I Feel Like Being a Sex Machine)</i>.
+</p>
+
+<p>
+Notes: <code>F G A Bb C D E</code>
+</p>
+
+<p>
+In funk, F major usually means <b>F Mixolydian</b>, F major with the 7th flatted to Eb.
+</p>
+
+<p>
+Mixolydian: <code>F G A Bb C D Eb</code>
+</p>
+
+<p>
+The flat-7 (<b>Eb</b>) is the funk note.  It turns the F major chord into <b>F7</b>, which is the dominant 7, and dominant 7 chords are the engine of funk.  Almost every James Brown one-chord vamp is built on a static dominant 7.
+</p>
+
+<p>
+Default vamp:
+</p>
+
+<p>
+<code>F7  (held forever)</code>
+</p>
+
+<p>
+Or with a brief move:
+</p>
+
+<p>
+<code>F7  ||  F7  ||  Bb7  ||  F7</code>
+</p>
+
+<p>
+Use F Mixolydian.  Play the b7 (Eb) often, it's the chord tone, and it's also the blues note.
+</p>
+</div>
+</div>
+<div id="outline-container-org39ccc63" class="outline-3">
+<h3 id="org39ccc63"><span class="section-number-3">4.3.</span> G Minor / G Dorian, the gritty groove key</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+G minor is funk's slightly grittier alternative to D Dorian.  <i>Chameleon</i> by Herbie Hancock is in Bb Dorian (which is one step away), but G Dorian is similar territory.
+</p>
+
+<p>
+Notes: <code>G A Bb C D E F</code>
+</p>
+
+<p>
+The raised 6th (<b>E natural</b>) is what makes it Dorian rather than minor.
+</p>
+
+<p>
+Default vamp:
+</p>
+
+<p>
+<code>Gm7  ||  C7  ||  Gm7  ||  C7</code>
+</p>
+
+<p>
+This <code>i7 → IV7</code> pattern is one of the most-used funk loops.  Both chords sit naturally in G Dorian.  Solo using the G Dorian scale; the C7 is just a momentary shift in chord but it doesn't change the scale you're using.
+</p>
+</div>
+</div>
+<div id="outline-container-org2715762" class="outline-3">
+<h3 id="org2715762"><span class="section-number-3">4.4.</span> E Minor / E Dorian, the guitar key</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+E is the guitar's home key (open low E, open high E).  Funk that's guitar-driven, Sly Stone, Funkadelic, often sits in E or near it.
+</p>
+
+<p>
+Notes: <code>E F# G A B C# D</code>
+</p>
+
+<p>
+The C# is the Dorian 6th.
+</p>
+
+<p>
+Default vamp:
+</p>
+
+<p>
+<code>Em7  ||  A7</code>  (back and forth)
+</p>
+
+<p>
+Or the Stevie Wonder–style move:
+</p>
+
+<p>
+<code>Em9  ||  Em9  ||  A13  ||  A13</code>
+</p>
+
+<p>
+Use E Dorian; the chord tones of both Em7 and A7 live inside the scale.
+</p>
+</div>
+</div>
+<div id="outline-container-org3b56135" class="outline-3">
+<h3 id="org3b56135"><span class="section-number-3">4.5.</span> A Minor / A Dorian, the everywhere key</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+A minor is the easiest key on piano (no sharps, no flats).  As a Dorian it raises F to F#:
+</p>
+
+<p>
+Notes: <code>A B C D E F# G</code>
+</p>
+
+<p>
+Default vamp:
+</p>
+
+<p>
+<code>Am7  ||  D7  ||  Am7  ||  D7</code>
+</p>
+
+<p>
+The <code>Am7 → D7</code> pattern (i7 → IV7 in Dorian) is the cousin of the G minor vamp above, in a different key.  Use A Dorian throughout.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org63da27b" class="outline-2">
+<h2 id="org63da27b"><span class="section-number-2">5.</span> Funk Chord Types and Their Voicings</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orga9986f5" class="outline-3">
+<h3 id="orga9986f5"><span class="section-number-3">5.1.</span> The Minor 9th (m9)</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+The default funk minor chord.  Adds the 9th on top of a minor 7.
+</p>
+
+<pre class="example" id="orga8896f7">
+Dm9: D – F – A – C – E
+Rootless RH: F – A – C – E    (3rd, 5th, 7th, 9th)
+Tight rootless: F – C – E      (3rd, 7th, 9th)
+Funky two-handed:
+  LH: D – C    (root and b7, sounds huge)
+  RH: F – A – E  (3rd, 5th, 9th)
+</pre>
+
+<p>
+Use anywhere a Dm or Dm7 would normally sit.  More open, more modal.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf4114f1" class="outline-3">
+<h3 id="orgf4114f1"><span class="section-number-3">5.2.</span> The Dominant 9th (9) and 13th (13)</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+The funk dominant.  <i>Superstition</i> and <i>Higher Ground</i> live on dominant 9 chords.
+</p>
+
+<pre class="example" id="org6e92d90">
+G9: G – B – D – F – A
+Rootless RH: B – F – A         (3rd, 7th, 9th)
+Or:           F – A – B – D     (closer voicing, 7th, 9th, 3rd, 5th)
+
+G13: G – B – D – F – A – E
+Rootless RH: B – F – A – E    (3rd, 7th, 9th, 13th)
+Tight: B – F – E              (3rd, 7th, 13th)
+</pre>
+
+<p>
+The G13 voicing <b>B – F – E</b>, three notes, is one of the most useful funk grabs ever.  Hand stays in one position; sounds enormous.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcef76d1" class="outline-3">
+<h3 id="orgcef76d1"><span class="section-number-3">5.3.</span> The Sharp 9th (7#9), the Hendrix Chord</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+A dominant 7 with a sharp 9th.  Sometimes called the Hendrix chord because <i>Purple Haze</i> uses it, but it's all over funk too.  Stevie Wonder reaches for it constantly.
+</p>
+
+<pre class="example" id="orgc9f1551">
+E7#9: E – G# – B – D – G   (the G is technically G## = A, written as G for readability)
+Funk RH voicing: G# – D – G   (3rd, 7th, #9)
+</pre>
+
+<p>
+The clash between the major 3rd (G#) and the #9 (G natural) is the bluesy bite, a major and minor 3rd in the same chord.  This is the single bluesiest sound in funk harmony.
+</p>
+</div>
+</div>
+<div id="outline-container-orge45c9e6" class="outline-3">
+<h3 id="orge45c9e6"><span class="section-number-3">5.4.</span> The Suspended Dominant (7sus4)</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+A dominant 7 with the 3rd replaced by the 4th.  Resolves smoothly to the regular dominant or stays suspended indefinitely.
+</p>
+
+<pre class="example" id="org6ac4efb">
+G7sus4: G – C – D – F   (root, 4th, 5th, b7)
+RH voicing: C – F – A    (rootless: 4th, b7, 9th)
+</pre>
+
+<p>
+<i>I Wish</i> by Stevie Wonder uses sus4 dominants.  They have a softer, more modal funk feel than straight 7ths.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfbfa3b0" class="outline-2">
+<h2 id="orgfbfa3b0"><span class="section-number-2">6.</span> Common Funk Progressions and Vamps</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orga13998c" class="outline-3">
+<h3 id="orga13998c"><span class="section-number-3">6.1.</span> The One-Chord Vamp</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+<code>Dm9</code> (or any minor 9, dominant 7, or dominant 9)
+</p>
+
+<p>
+Hold one chord for many bars.  <i>Watermelon Man</i>, <i>Chameleon</i>, much of James Brown.  All the interest comes from rhythm, voicing changes, and improvisation, not chord motion.
+</p>
+
+<p>
+This is the single most important pattern in funk.  Master it before anything else.
+</p>
+</div>
+</div>
+<div id="outline-container-org955168c" class="outline-3">
+<h3 id="org955168c"><span class="section-number-3">6.2.</span> The i7 → IV7 (Dorian funk)</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+<code>Gm7  ||  C7  ||  Gm7  ||  C7</code>  (in G Dorian)
+<code>Am7  ||  D7  ||  Am7  ||  D7</code>  (in A Dorian)
+<code>Dm7  ||  G7  ||  Dm7  ||  G7</code>  (in D Dorian)
+</p>
+
+<p>
+Two chords, alternating bars.  The most-used two-chord funk loop in existence.  <i>Sunshine of Your Love</i> uses it (in different style).  <i>Use Me</i> by Bill Withers uses it.
+</p>
+</div>
+</div>
+<div id="outline-container-org0c0bb5a" class="outline-3">
+<h3 id="org0c0bb5a"><span class="section-number-3">6.3.</span> The Static Dominant</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+<code>F7</code>  (held)
+<code>E7</code>  (held)
+<code>B♭7</code> (held)
+</p>
+
+<p>
+One dominant 7 chord, no resolution, just groove.  <i>Cold Sweat</i>, <i>Sex Machine</i>, <i>Pick Up the Pieces</i>.  Solo over the top with the Mixolydian scale of that chord (e.g. F Mixolydian over F7 = F G A Bb C D Eb).
+</p>
+</div>
+</div>
+<div id="outline-container-orga25ff61" class="outline-3">
+<h3 id="orga25ff61"><span class="section-number-3">6.4.</span> The ii–V (in funk style)</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+<code>Dm9  ||  G13  ||  Cmaj9  ||  Cmaj9</code>
+</p>
+
+<p>
+The ii–V–I cadence dressed up with extensions.  Less common in pure funk than in jazz-funk and fusion.  But Herbie Hancock, Donald Byrd, and the whole CTI Records catalog used it constantly.
+</p>
+</div>
+</div>
+<div id="outline-container-org1c4ab74" class="outline-3">
+<h3 id="org1c4ab74"><span class="section-number-3">6.5.</span> The James Brown One</h3>
+<div class="outline-text-3" id="text-6-5">
+<p>
+<code>D7  D7  D7  D7  ||  G7  G7  D7  D7  ||  A7  G7  D7  D7</code>
+</p>
+
+<p>
+Funk built on the 12-bar blues form, with the <b>one</b> (the downbeat of every measure) given monumental emphasis.  Hit the chord on beat 1, then leave space.  The bass and drums fill it.  This is the JB Band's blueprint.
+</p>
+</div>
+</div>
+<div id="outline-container-org9cca366" class="outline-3">
+<h3 id="org9cca366"><span class="section-number-3">6.6.</span> The Stevie Wonder Cycle</h3>
+<div class="outline-text-3" id="text-6-6">
+<p>
+<code>Em9  ||  A13  ||  Dmaj9  ||  Bm9</code>
+</p>
+
+<p>
+Or:
+</p>
+
+<p>
+<code>Cm9  ||  F13  ||  Bbmaj9  ||  Gm7</code>
+</p>
+
+<p>
+A descending fourth cycle, all extended chords.  <i>As</i>, <i>Living for the City</i> verses, <i>Sir Duke</i> bridge, all live in this territory.  The voice leading is glassy and smooth; every chord shares notes with the next.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org872f49f" class="outline-2">
+<h2 id="org872f49f"><span class="section-number-2">7.</span> Style Notes</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgf4325f0" class="outline-3">
+<h3 id="orgf4325f0"><span class="section-number-3">7.1.</span> Touch and Dynamics</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li><b>Light is louder</b>.  On a Rhodes, hitting harder doesn't always mean louder, it means harsher.  Lay back on the keys for a fuller, warmer sound.  Use the velocity range deliberately, not as a way to push volume.</li>
+<li><b>Vary attack within a phrase</b>.  Three notes at the same dynamic sound boring.  Three notes that go soft–medium–loud (or any other contour) sound funky.</li>
+<li><b>Comp at half the volume of your solo</b>.  When backing a vocal or solo, you should be <b>under</b> the lead voice.  Resist the urge to fill space, silence is the comping tool.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb2875d5" class="outline-3">
+<h3 id="orgb2875d5"><span class="section-number-3">7.2.</span> Pedal</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li><b>Use the sustain pedal sparingly.</b>  Funk benefits from short, percussive chord stabs.  Holding the pedal down smears the rhythm and kills the groove.  Pedal during ballad sections; lift it during verses and choruses.</li>
+<li><b>On Rhodes specifically</b>: the natural decay of the tine is long enough that you don't usually need pedal at all.  Trust the instrument.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcc51f01" class="outline-3">
+<h3 id="orgcc51f01"><span class="section-number-3">7.3.</span> Octave Doubling and Bass</h3>
+<div class="outline-text-3" id="text-7-3">
+<ul class="org-ul">
+<li>If you have no bass player, double the bass in your left hand.  Octave roots on the downbeat of every chord change carry the song.</li>
+<li>If you have a bass player, <b>stay out of their way</b>.  Right hand only, no left hand at all sometimes.  Or left hand on a held mid-register chord while the right hand stabs.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org44c8756" class="outline-3">
+<h3 id="org44c8756"><span class="section-number-3">7.4.</span> The Clavinet Approach</h3>
+<div class="outline-text-3" id="text-7-4">
+<p>
+If you're playing a Clavinet (Hohner D6 or emulation), the touch is different.  Clavs are percussive, every note sounds like a string being plucked, not struck.  Funk Clav playing is mostly <b>single-note lines and double-stops</b>, not full chords.  Stevie Wonder's <i>Superstition</i> riff is classic Clav: a syncopated single-note line with occasional two-note jabs, no chord voicings at all.
+</p>
+</div>
+</div>
+<div id="outline-container-org0c73d6b" class="outline-3">
+<h3 id="org0c73d6b"><span class="section-number-3">7.5.</span> The Wurlitzer Approach</h3>
+<div class="outline-text-3" id="text-7-5">
+<p>
+Wurlitzers have more bite than Rhodes, a brighter attack, a quicker decay.  They handle harder playing better than Rhodes do.  Joe Zawinul (<i>Mercy Mercy Mercy</i>) and Ray Charles played Wurly.  Funk Wurly tends to be a bit more aggressive, with chord stabs cutting harder.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org842d271" class="outline-2">
+<h2 id="org842d271"><span class="section-number-2">8.</span> Tips for Funky Noodling</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org64393c3" class="outline-3">
+<h3 id="org64393c3"><span class="section-number-3">8.1.</span> Start with the rhythm, not the notes</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+Pick <b>one</b> chord, say Dm9.  Forget the chord for a moment and just clap a syncopated rhythm in 4/4.  When the rhythm feels right, transfer it to the keyboard with that one chord.  You will sound funky immediately, even with no harmonic motion.
+</p>
+</div>
+</div>
+<div id="outline-container-org90db0a1" class="outline-3">
+<h3 id="org90db0a1"><span class="section-number-3">8.2.</span> Use the chromatic approach</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+Want to land on a note?  Approach it from a half-step away.  Going to D?  Play C# first.  Going to F?  Play E first.  This is a horn-player trick that translates perfectly to keyboard.  Especially funky on the off-beats.
+</p>
+</div>
+</div>
+<div id="outline-container-org20522a0" class="outline-3">
+<h3 id="org20522a0"><span class="section-number-3">8.3.</span> Sit on Dorian</h3>
+<div class="outline-text-3" id="text-8-3">
+<p>
+If you remember nothing else from this guide: when you don't know what scale to use, use Dorian on the root of whatever minor chord you're playing.  D Dorian over Dm.  G Dorian over Gm.  E Dorian over Em.  It works for the vast majority of modal funk.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcb10283" class="outline-3">
+<h3 id="orgcb10283"><span class="section-number-3">8.4.</span> Drop the 5th, keep the 3rd and 7th</h3>
+<div class="outline-text-3" id="text-8-4">
+<p>
+Three-note voicings are tighter and funkier than four-note voicings.  Drop the 5th, it's the least informative note in any chord.  <code>3rd + 7th + extension</code> is your trio.  Memorize it; play it everywhere.
+</p>
+</div>
+</div>
+<div id="outline-container-org2fc65fe" class="outline-3">
+<h3 id="org2fc65fe"><span class="section-number-3">8.5.</span> Listen to the silence</h3>
+<div class="outline-text-3" id="text-8-5">
+<p>
+The space between hits is part of the music.  If you find yourself filling every beat with notes, stop, and play half as many notes for the next eight bars.  See if the groove gets stronger or weaker.  It will almost always get stronger.
+</p>
+</div>
+</div>
+<div id="outline-container-org50f03f8" class="outline-3">
+<h3 id="org50f03f8"><span class="section-number-3">8.6.</span> Steal one lick at a time</h3>
+<div class="outline-text-3" id="text-8-6">
+<p>
+Pick a single Stevie Wonder lick, or one Herbie Hancock comp, or one James Brown break.  Learn it slowly.  Play it for a week, in different keys, in different rhythms.  Funk vocabulary is built one phrase at a time, not memorized as scales.
+</p>
+</div>
+</div>
+<div id="outline-container-orgdc0c991" class="outline-3">
+<h3 id="orgdc0c991"><span class="section-number-3">8.7.</span> Play along with records</h3>
+<div class="outline-text-3" id="text-8-7">
+<p>
+Put on <i>Cantaloupe Island</i>, <i>Watermelon Man</i>, <i>Chameleon</i>, <i>Pick Up the Pieces</i>, <i>Use Me</i>, or <i>Higher Ground</i>.  Comp through the whole song without stopping, even when you make mistakes.  Funk is a feel, and feel only develops by playing along with people who already have it.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-#+TITLE: Hurt — Nine Inch Nails
+#+TITLE: Hurt, Nine Inch Nails
 #+SUBTITLE: Piano Cheat Sheet
 #+STARTUP: overview
 
@@ -8,10 +8,10 @@
 
 The song lives in *B minor*, but with two telling departures from the natural minor scale:
 
-- *E major* (instead of Em) — borrowed from B Dorian.  The G# inside E major is foreign to B natural minor; it brightens the iv chord without breaking the gloom.
-- *B major* on the very last chord — a Picardy third.  The minor i becomes major I at the moment of resolution.  The whole song has been promising to fall apart, and instead it lifts.
+- *E major* (instead of Em), borrowed from B Dorian.  The G# inside E major is foreign to B natural minor; it brightens the iv chord without breaking the gloom.
+- *B major* on the very last chord, a Picardy third.  The minor i becomes major I at the moment of resolution.  The whole song has been promising to fall apart, and instead it lifts.
 
-The chord palette is small (six chords) and the same handful of voicings carry the whole song.  The emotional weight comes from how the chords are played — slow, sustained, arpeggiated — not from harmonic complexity.
+The chord palette is small (six chords) and the same handful of voicings carry the whole song.  The emotional weight comes from how the chords are played, slow, sustained, arpeggiated, not from harmonic complexity.
 
 ** B Natural Minor Scale
 
@@ -37,7 +37,7 @@ The chord palette is small (six chords) and the same handful of voicings carry t
 | 6      | G#   |
 | b7     | A    |
 
-The raised 6th (G#) is what turns Em into E major.  G# is not in B natural minor — it is borrowed from Dorian.  That single note is the source of the song's strange, bittersweet brightness inside an otherwise dark progression.
+The raised 6th (G#) is what turns Em into E major.  G# is not in B natural minor, it is borrowed from Dorian.  That single note is the source of the song's strange, bittersweet brightness inside an otherwise dark progression.
 
 ** B Minor Pentatonic (best for improvisation)
 
@@ -53,12 +53,12 @@ Use the pentatonic as the default safe zone.  Add C# and G for natural-minor col
 
 ** Notes to Emphasize Over Each Chord
 
-- Bm :: B, D, F# — D is the most distinctive (the minor 3rd); land on it to anchor the mood
-- D :: D, F#, A — F# bridges Bm and D smoothly; A on top is bright and open
-- E :: E, G#, B — *G# is the magic note* — the raised 6th from Dorian; it lifts the chord
-- A :: A, C#, E — C# is fresh and outside the minor pentatonic; use it for forward motion
-- G :: G, B, D — G is the b6 and the heaviest note in the song; lean on it for weight
-- B (final chord) :: B, D#, F# — D# is the Picardy third; let it ring as a reveal
+- Bm :: B, D, F#, D is the most distinctive (the minor 3rd); land on it to anchor the mood
+- D :: D, F#, A, F# bridges Bm and D smoothly; A on top is bright and open
+- E :: E, G#, B, *G# is the magic note*, the raised 6th from Dorian; it lifts the chord
+- A :: A, C#, E, C# is fresh and outside the minor pentatonic; use it for forward motion
+- G :: G, B, D, G is the b6 and the heaviest note in the song; lean on it for weight
+- B (final chord) :: B, D#, F#, D# is the Picardy third; let it ring as a reveal
 
 * Chord Reference
 
@@ -69,13 +69,13 @@ Use the pentatonic as the default safe zone.  Add C# and G for natural-minor col
 | E     | E – G# – B   | IV (borrowed from B Dorian; G# is key)  |
 | A     | A – C# – E   | VII (natural major subtonic)            |
 | G     | G – B – D    | VI (natural major submediant)           |
-| B     | B – D# – F#  | I (Picardy third — final chord only)    |
+| B     | B – D# – F#  | I (Picardy third, final chord only)    |
 
 ** Tips
 
 - LH plays the root in bass; RH holds or arpeggiates the triad
 - The whole song is built from the first four chords (Bm, D, E, A); G enters only at the chorus; B major appears only once, on the final hold
-- E major is the chord most likely to sound "wrong" if you forget the G# — make sure the middle note is G natural sharp, not G natural
+- E major is the chord most likely to sound "wrong" if you forget the G#, make sure the middle note is G natural sharp, not G natural
 - Bm → D → E is the verse engine.  The bass walks up: B → D → E
 
 * Advanced Inversions
@@ -93,7 +93,7 @@ Inversions let you keep the bass line moving stepwise instead of leaping around 
 | D/F#   | 1st inversion | F# – A – D         | F# in bass walks up smoothly toward E              |
 | D/A    | 2nd inversion | A – D – F#         | A in bass; floatier; ties into A chord later       |
 | E      | Root          | E – G# – B         | Default; the lift moment of the verse              |
-| E/G#   | 1st inversion | G# – B – E         | G# in bass — bright, leading-tone color back to A  |
+| E/G#   | 1st inversion | G# – B – E         | G# in bass, bright, leading-tone color back to A  |
 | E/B    | 2nd inversion | B – E – G#         | B pedal; ties E back to the Bm tonic               |
 
 ** Chorus Chord Inversions (Bm – G – D – A)
@@ -103,7 +103,7 @@ Inversions let you keep the bass line moving stepwise instead of leaping around 
 | Bm     | Root          | B – D – F#         | Default chorus opening                               |
 | Bm/D   | 1st inversion | D – F# – B         | D in bass walks down toward G                        |
 | G      | Root          | G – B – D          | Default; the heaviest chord in the song              |
-| G/B    | 1st inversion | B – D – G          | B in bass — minimal motion from Bm; very smooth      |
+| G/B    | 1st inversion | B – D – G          | B in bass, minimal motion from Bm; very smooth      |
 | G/D    | 2nd inversion | D – G – B          | D pedal underneath; ties G to the next D chord       |
 | D      | Root          | D – F# – A         | Default                                              |
 | D/F#   | 1st inversion | F# – A – D         | F# in bass walks up toward A                         |
@@ -114,25 +114,25 @@ Inversions let you keep the bass line moving stepwise instead of leaping around 
 
 Voice-leading tip for the chorus:
 
-The bass line *B → G → D → A → B* is a series of leaps.  To smooth it out, try *B → B (G/B) → D → A → B*, which keeps the bass on B for the first two chords, then walks D → A → B.  This is closer to how the song often gets played on piano — minimal LH motion, RH doing all the harmonic work.
+The bass line *B → G → D → A → B* is a series of leaps.  To smooth it out, try *B → B (G/B) → D → A → B*, which keeps the bass on B for the first two chords, then walks D → A → B.  This is closer to how the song often gets played on piano, minimal LH motion, RH doing all the harmonic work.
 
 ** The Final B Major Chord
 
-The song ends on a held *B major* (B – D# – F#).  D# is foreign to every other chord in the piece — it is the only sharp in B major that is not also in the B minor / Dorian palette.  When this chord lands, three things happen at once:
+The song ends on a held *B major* (B – D# – F#).  D# is foreign to every other chord in the piece, it is the only sharp in B major that is not also in the B minor / Dorian palette.  When this chord lands, three things happen at once:
 
 - the minor 3rd D resolves up a half-step to D# (the Picardy third)
 - the F# stays put (common tone)
 - the bass stays on B (common tone)
 
-Only one note moves, and it changes everything.  Hold the chord with the sustain pedal down and let it ring — this is the entire emotional payoff of the song.
+Only one note moves, and it changes everything.  Hold the chord with the sustain pedal down and let it ring, this is the entire emotional payoff of the song.
 
 * Performance Notes
 
 - *Tempo*: very slow, around 60–70 BPM.  Resist the urge to push forward.  The song breathes between chords.
-- *Touch*: soft.  Even at the loudest moments (the chorus climax and the final B), don't pound — let the sustain pedal do the work.
+- *Touch*: soft.  Even at the loudest moments (the chorus climax and the final B), don't pound, let the sustain pedal do the work.
 - *Pedal*: change pedal on every chord; let each chord ring fully before the next one enters.
 - *Arpeggiation*: the original is built on a sparse, repeating arpeggiated figure.  On piano, try LH on the root, RH rolling root → 5th → octave → 3rd, then holding.
-- *The G chord in the chorus*: this is the song's gravitational low point.  Lean into it.  The G is the b6 of B minor — the most "hopeless" interval in the scale.
+- *The G chord in the chorus*: this is the song's gravitational low point.  Lean into it.  The G is the b6 of B minor, the most "hopeless" interval in the scale.
 - *The E chord in the verse*: opposite of the G.  The G# inside E major is the only ray of light.  Voice it in the middle of the right hand so it can be heard clearly.
 - *Final B major*: hold it.  Hold it longer than feels natural.  The whole song has been waiting to lift, and this is the moment.  Don't release the pedal until the sound has fully decayed.
 
@@ -219,4 +219,4 @@ Returns the song to verse texture.
 
 Outro note:
 
-The very last chord is *B major* — held.  This is the only place in the song where B is major.  Up to that moment everything has lived in B minor (with brief Dorian color on the E chord).  The final D becomes a half-step pivot — its F# stays for B major, but its D rises to D#.  Let the chord ring out fully before lifting the pedal.  This is the entire emotional arc of the song compressed into one note's worth of motion.
+The very last chord is *B major*, held.  This is the only place in the song where B is major.  Up to that moment everything has lived in B minor (with brief Dorian color on the E chord).  The final D becomes a half-step pivot, its F# stays for B major, but its D rises to D#.  Let the chord ring out fully before lifting the pedal.  This is the entire emotional arc of the song compressed into one note's worth of motion.

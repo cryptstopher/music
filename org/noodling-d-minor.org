@@ -1,0 +1,238 @@
+#+TITLE: Noodling in D Minor
+#+SUBTITLE: A Guide to the Saddest Key
+#+OPTIONS: toc:2 num:t
+
+[[file:index.org][← Back to Index]]
+
+* Why D Minor?
+
+D minor has a reputation.  Spinal Tap called it "the saddest of all keys, really", half-joking, half-true.  Bach put his Toccata and Fugue there.  Mozart wrote his Requiem in it.  Folk balladeers, baroque organists, and indie songwriters keep returning to D minor for the same reason: it sits low enough to feel grave but not so low it muddies on a piano, and it shares a key signature with F major (one flat, Bb), which makes modulating between gloom and warmth almost effortless.
+
+This guide is for noodling, improvising, exploring, finding melodies, not performing a specific song.  The goal is to get comfortable enough with the landscape that you can sit down at the piano, drop into D minor, and have somewhere to wander.
+
+* The Notes
+
+** D Natural Minor
+
+D natural minor uses one black key (Bb) and six white keys.
+
+| Degree | Note |
+|--------+------|
+| 1      | D    |
+| 2      | E    |
+| b3     | F    |
+| 4      | G    |
+| 5      | A    |
+| b6     | Bb   |
+| b7     | C    |
+
+D natural minor is the *relative minor* of F major, same notes, different starting point.  If you already know F major, you already know D minor; you just need to hear D as the home note instead of F.
+
+The notes that give D minor its character (vs. F major) are *D, F, and A*, the tonic triad.  Land on those at the end of phrases and the ear hears "minor."  Land on F instead and the ear drifts toward F major.
+
+** D Harmonic Minor (raises the 7th)
+
+| Degree | Note |
+|--------+------|
+| 1      | D    |
+| 2      | E    |
+| b3     | F    |
+| 4      | G    |
+| 5      | A    |
+| b6     | Bb   |
+| 7      | C#   |
+
+The raised 7th (*C#* instead of C) is the single most important alteration in minor-key music.  It does two things at once:
+
+1. It turns the v chord (Am) into a major *V* chord (A major), and into a *V7* (A7) when you stack the b7 on top.  Major V is what gives a minor key its strongest cadence: =A → Dm= sounds like a door slamming shut.
+2. It introduces a vivid half-step pull from C# up to D.  That semitone is the tension that makes the resolution feel earned.
+
+The price is the gap between b6 (Bb) and 7 (C#), an *augmented 2nd*, three semitones, which sounds Middle-Eastern or vaguely sinister.  Composers usually only use harmonic minor on the way *down* to D, not melodically across that interval.
+
+** D Melodic Minor (raises the 6th and 7th, going up)
+
+| Degree | Note (ascending) | Note (descending) |
+|--------+------------------+-------------------|
+| 1      | D                | D                 |
+| 2      | E                | E                 |
+| b3     | F                | F                 |
+| 4      | G                | G                 |
+| 5      | A                | A                 |
+| 6      | B (ascending)    | Bb                |
+| 7      | C# (ascending)   | C                 |
+
+Melodic minor exists to fix the augmented 2nd in harmonic minor.  Going *up*, it raises both the 6th and 7th (B and C# instead of Bb and C), smooth steps all the way to the octave.  Going *down*, it reverts to natural minor.  In jazz, the ascending form is used in both directions and is just called "melodic minor."
+
+For noodling, the practical takeaway: when a melodic phrase climbs toward D, use B and C#; when it falls away from D, use Bb and C.
+
+** D Dorian (raises only the 6th)
+
+| Degree | Note |
+|--------+------|
+| 1      | D    |
+| 2      | E    |
+| b3     | F    |
+| 4      | G    |
+| 5      | A    |
+| 6      | B    |
+| b7     | C    |
+
+D Dorian is D natural minor with a *natural* 6th (B instead of Bb).  It is the mode of folk songs, jazz tunes, and anything that wants minor color without the heaviness.  "Scarborough Fair" is in D Dorian.  So is "Eleanor Rigby."
+
+The single change, Bb to B, turns the IV chord from *Gm* into *G major*.  That single substitution is enormous: a major IV inside an otherwise minor song is one of the most distinctive sounds in popular music.
+
+** D Minor Pentatonic (the safest five notes)
+
+| Degree | Note |
+|--------+------|
+| 1      | D    |
+| b3     | F    |
+| 4      | G    |
+| 5      | A    |
+| b7     | C    |
+
+Five notes, no half-steps, nothing wrong-sounding ever.  This is your improvising lifeline.  When in doubt, retreat to the pentatonic, every note lands.
+
+Add the b6 (Bb) for full natural-minor color, or the major 7th (C#) for harmonic-minor tension.  But you can build entire solos using only these five notes.
+
+* The Chords
+
+** Diatonic Triads in D Natural Minor
+
+| Degree | Chord  | Notes        | Quality    |
+|--------+--------+--------------+------------|
+| i      | Dm     | D – F – A    | minor      |
+| ii°    | Edim   | E – G – Bb   | diminished |
+| III    | F      | F – A – C    | Major      |
+| iv     | Gm     | G – Bb – D   | minor      |
+| v      | Am     | A – C – E    | minor      |
+| VI     | Bb     | Bb – D – F   | Major      |
+| VII    | C      | C – E – G    | Major      |
+
+This is *the* minor-key chord palette, i, III, iv, v, VI, VII.  Three minor chords (i, iv, v), three major chords (III, VI, VII), and one diminished (ii°, rarely used as a triad).
+
+** Harmonic Minor Adjustments
+
+When you raise the 7th to C#, two chords change and one new chord appears:
+
+| Degree | Chord     | Notes         | Replaces |
+|--------+-----------+---------------+----------|
+| V      | A         | A – C# – E    | Am (v)   |
+| V7     | A7        | A – C# – E – G| Am       |
+| vii°   | C#dim     | C# – E – G    | C (VII)  |
+
+The big one is *A* (or *A7*).  Use A or A7 anywhere you want a strong pull back to Dm.  =Gm → A7 → Dm= is a textbook minor cadence, iv → V7 → i, and it sounds like every Spanish guitar piece you've ever half-remembered.
+
+** Common 7th-Chord Voicings
+
+Stack a 7th on each diatonic triad and the palette gets jazzier:
+
+| Chord     | Notes              | Use                                   |
+|-----------+--------------------+---------------------------------------|
+| Dm7       | D – F – A – C      | Default minor 7 tonic                 |
+| Dm(maj7)  | D – F – A – C#     | Tense minor 7 (James Bond chord)      |
+| Fmaj7     | F – A – C – E      | Lush major 7, the III in jazz tunes  |
+| Gm7       | G – Bb – D – F     | iv7; standard minor 7                 |
+| Am7       | A – C – E – G      | natural minor v7                      |
+| A7        | A – C# – E – G     | dominant V7, pulls hardest to Dm     |
+| Bbmaj7    | Bb – D – F – A     | warm VI; shares 3 notes with Dm       |
+
+* Common Progressions
+
+** i – VII – VI – VII  (the rock minor)
+
+  =Dm – C – Bb – C=
+
+The bass walks down then back up.  This is the engine of countless rock and folk songs in minor.  Easy on the hands, never sounds wrong.  Used in "All Along the Watchtower" feel, much of Nick Cave, lots of Leonard Cohen.
+
+** i – VI – III – VII  (the Andalusian / pop-minor)
+
+  =Dm – Bb – F – C=
+
+Sometimes called the "sensitive female chord progression", countless 90s and 2000s ballads.  Major-key feel inside a minor key.  All four chords are major or minor triads with no tension; the *order* (descending bass D → Bb → F → C) is what makes it work.
+
+** i – iv – V – i  (classical / Spanish)
+
+  =Dm – Gm – A7 – Dm=
+
+The textbook minor cadence.  The *A7* (with raised C#) is what makes it sound formal, like a baroque piece resolving.  Substitute *Am7* for *A7* if you want a softer, modal version.
+
+** i – VII – III – VI – ii° – V – i  (the circle of fifths in minor)
+
+  =Dm – C – F – Bb – Edim – A7 – Dm=
+
+Each chord's root is a perfect 4th above the previous one (or a 5th below).  This is the most "harmonic" thing you can do, every chord pulls naturally to the next.  Bach used it constantly.
+
+** i – VII – VI – V  (the descending minor lament)
+
+  =Dm – C – Bb – A7=
+
+Often loops without resolving, which is what gives it the "lament" quality, the V7 always wants to return to Dm but never quite gets to.  "Stairway to Heaven" intro lives in this territory (transposed).  Hold the loop for as long as you want; resolve to Dm only at the end.
+
+** Dorian alternative: i – IV  (folk modal)
+
+  =Dm – G=  (using the Dorian B natural)
+
+Two chords, back and forth.  The *G major* (not Gm) is the Dorian giveaway.  Try =Dm – G – Dm – G= over and over and you have the bones of "Scarborough Fair" or "Eleanor Rigby."  Add a Bb pentatonic-style melody on top and it becomes Miles Davis.
+
+* Style and Genre Associations
+
+** Classical / Baroque
+
+D minor was J.S. Bach's funeral key.  The Toccata and Fugue, the Chaconne from Partita No. 2, the Art of Fugue, all D minor.  The harmonic minor scale (with C#) is the default; the v chord is almost always voiced as V (major).  Tempo is generally slow to moderate; ornamentation (trills, mordents) is common.
+
+** Folk
+
+D minor sits naturally on guitar (open D string is the tonic) and on dulcimer.  Modal, usually Dorian rather than natural minor, which is why so many folk tunes have that strange, drone-like quality.  Often built over a *D pedal tone* (held bass) with the melody floating above.
+
+** Film score / cinematic
+
+D minor with harmonic-minor inflections is the default for "ominous" cues.  Hans Zimmer, Howard Shore, and just about every modern composer reach for it when something needs to feel weighty.  The augmented 2nd between Bb and C# is part of why.
+
+** Heavy / metal
+
+Detuned guitars often sit in D minor.  Power chords on D, F, G, Bb, C, and the natural minor scale, frequently combined with the b5 (Ab) for the blues/metal scale: D F G Ab A C.
+
+** Singer-songwriter / introspective
+
+Joni Mitchell, Nick Drake, Elliott Smith, all visit D minor regularly.  Often Dorian rather than natural minor; often with extended chords (Dm7, Fmaj7, Gm9) to soften the edges.
+
+* Famous Songs in D Minor
+
+- /Toccata and Fugue in D minor/, J.S. Bach
+- /Requiem/, Mozart
+- /Symphony No. 9/, Beethoven (mostly D minor, ends in D major)
+- /What Shall We Do With the Drunken Sailor/, traditional (Dorian)
+- /Scarborough Fair/, traditional (Dorian)
+- /Eleanor Rigby/, The Beatles (E Dorian, but transpose down a step and the shape is identical)
+- /Mad World/, Tears for Fears / Gary Jules cover
+- /The House of the Rising Sun/, traditional (often played in Am, but the shape works in Dm)
+- /Riders on the Storm/, The Doors
+- /Stairway to Heaven/, Led Zeppelin (Am, but Dm-style harmonic motion)
+- /Bohemian Rhapsody/ (ballad section), Queen
+
+* Tips for Noodling
+
+** Start with three notes
+
+Hold *Dm* in the left hand (D below middle C, then F-A-D in the right hand higher up) and improvise *only on D, F, and A*.  Three notes.  No wrong choices.  Once that feels alive, add G and C, now you have the pentatonic.  Add Bb for full natural minor.  Add C# only when you want to lean toward A7 → Dm.
+
+** Keep one note still
+
+Pick a note, D, A, or F, and let it ring through every chord change.  This is the *pedal tone* approach.  D pedal under Dm → C → Bb → C makes the harmony move while the bass stays anchored.  Very ECM, very Nick Drake.
+
+** Use the 7th as a leading tone
+
+When you want a phrase to land hard on D, approach it from C# (a half-step below).  The pull is irresistible.  Don't overuse it, once or twice per phrase is plenty.
+
+** Borrow from F major
+
+D minor and F major share all their notes.  If your noodling starts feeling stuck in gloom, slip into F major for a few bars (resolve a phrase to F instead of D) and the whole thing brightens without you changing scales.  Then come back to D and the minor color hits harder for the contrast.
+
+** Try the Dorian flip
+
+Halfway through a session, change every Bb to B natural.  Suddenly everything sounds like a sea shanty or an Aphex Twin ambient piece.  The single-note shift is dramatic and completely free, same fingers, different mode.
+
+** Slow down
+
+D minor rarely benefits from speed.  Most of its emotional weight comes from sustained chords, sparse melodies, and silence between phrases.  If you're noodling and it feels thin, slow the tempo by half before adding more notes.

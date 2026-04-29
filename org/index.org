@@ -21,6 +21,14 @@ So I'm going to start out like this:
   
 I'm going to start here and add more as I go.
 
+* Noodling guides
+
+Less about playing a specific song, more about getting comfortable inside a key or a style.
+
+- [[file:noodling-d-minor.org][Noodling in D Minor]], the saddest key
+- [[file:noodling-b-minor.org][Noodling in B Minor]], the brooding key
+- [[file:funky-electric-piano-noodling.org][Funky Noodling on Electric Piano]], comping, vamping, and soloing across keys
+
 * Cheat sheets
 
 

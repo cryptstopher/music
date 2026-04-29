@@ -1,0 +1,245 @@
+#+TITLE: Noodling in B Minor
+#+SUBTITLE: A Guide to the Brooding Key
+#+OPTIONS: toc:2 num:t
+
+[[file:index.org][← Back to Index]]
+
+* Why B Minor?
+
+If D minor is the saddest key, B minor is the *brooding* one, heavier, more mature, less openly mournful.  Schubert's "Unfinished" Symphony is in B minor.  So is Tchaikovsky's "Pathétique."  In modern music, B minor is the natural home of guitar-centered melancholy: "Hurt" by Nine Inch Nails, "Hotel California," large stretches of Radiohead.  The reason is partly mechanical, B minor on guitar gives you the open D string ringing inside the i chord, the open A string inside the iv, and the open low E inside the III.  Half the work is already done.
+
+On piano the key is less ergonomic, two sharps in the tonic triad (F# and a black-key D# in the harmonic-minor V), but the harmonic possibilities are rich.  This guide treats B minor as a noodling sandbox: how the scale behaves, which chords pull where, and what the key sounds like in different stylistic settings.
+
+* The Notes
+
+** B Natural Minor
+
+B natural minor uses two black keys (F# and C#) and five white keys.
+
+| Degree | Note |
+|--------+------|
+| 1      | B    |
+| 2      | C#   |
+| b3     | D    |
+| 4      | E    |
+| 5      | F#   |
+| b6     | G    |
+| b7     | A    |
+
+B natural minor is the *relative minor* of D major.  Same notes, different home.  If you already play in D major, you know B minor, you just need to hear B as the resting tone instead of D.
+
+The defining notes of the key are *B, D, F#*, the tonic triad.  Land on those at phrase endings and the ear hears B minor.  Land on D and the ear pulls toward D major.  This dual-citizenship is useful: you can drift between the two keys without changing scales.
+
+** B Harmonic Minor (raises the 7th)
+
+| Degree | Note |
+|--------+------|
+| 1      | B    |
+| 2      | C#   |
+| b3     | D    |
+| 4      | E    |
+| 5      | F#   |
+| b6     | G    |
+| 7      | A#   |
+
+The raised 7th (*A#*, sometimes written as Bb in casual notation but theoretically A#) creates the strong dominant chord.  *F# major* (with A# as its 3rd) becomes the V chord, and *F#7* (F# – A# – C# – E) becomes V7.  Either resolves powerfully back to Bm.
+
+The G-to-A# gap is an augmented 2nd (three semitones), the same Middle-Eastern flavor as in D harmonic minor.  Useful as a coloristic detail, awkward as a stepwise melody.
+
+** B Dorian (raises only the 6th)
+
+| Degree | Note |
+|--------+------|
+| 1      | B    |
+| 2      | C#   |
+| b3     | D    |
+| 4      | E    |
+| 5      | F#   |
+| 6      | G#   |
+| b7     | A    |
+
+B Dorian replaces G with G#.  This is the mode used in /Hurt/ by Nine Inch Nails, it is *the* alternate B-minor flavor in modern rock.  The single change turns the iv chord from *Em* into *E major*.  An E major chord inside a B minor song is brighter than the natural minor would predict; it is what gives Dorian its "minor with light coming in" quality.
+
+If you have read the [[file:hurt-nine-inch-nails.org][Hurt cheat sheet]], you have already seen this in action.
+
+** B Minor Pentatonic (the safest five notes)
+
+| Degree | Note |
+|--------+------|
+| 1      | B    |
+| b3     | D    |
+| 4      | E    |
+| 5      | F#   |
+| b7     | A    |
+
+Five notes, no half-steps, never wrong.  This is the rock and blues default, every guitar solo in a B minor song is mostly built from these five notes.  Add C# for natural-minor color, G for full natural minor, G# for Dorian brightness, A# for harmonic-minor lift.
+
+** B Blues Scale (pentatonic + the b5)
+
+| Degree | Note |
+|--------+------|
+| 1      | B    |
+| b3     | D    |
+| 4      | E    |
+| b5     | F    |
+| 5      | F#   |
+| b7     | A    |
+
+Add *F natural* (the flat-5, between E and F#) and the pentatonic becomes the blues scale.  F is dissonant against everything in the key, that's the point.  Use it as a passing tone between E and F#, not as a landing note.  Lean on it for one beat and slide off; the discomfort is the flavor.
+
+* The Chords
+
+** Diatonic Triads in B Natural Minor
+
+| Degree | Chord  | Notes        | Quality    |
+|--------+--------+--------------+------------|
+| i      | Bm     | B – D – F#   | minor      |
+| ii°    | C#dim  | C# – E – G   | diminished |
+| III    | D      | D – F# – A   | Major      |
+| iv     | Em     | E – G – B    | minor      |
+| v      | F#m    | F# – A – C#  | minor      |
+| VI     | G      | G – B – D    | Major      |
+| VII    | A      | A – C# – E   | Major      |
+
+The standard minor-key palette: i, III, iv, v, VI, VII.  Three minors, three majors, one diminished.
+
+Notice that *D major* (III) shares two notes with *Bm* (D and F#), the relationship between B minor and D major is so close that the III chord almost feels like a second tonic.
+
+** Harmonic Minor Adjustments
+
+When you raise the 7th to A#, the v chord gains weight:
+
+| Degree | Chord     | Notes              | Replaces |
+|--------+-----------+--------------------+----------|
+| V      | F#        | F# – A# – C#       | F#m (v)  |
+| V7     | F#7       | F# – A# – C# – E   | F#m      |
+| vii°   | A#dim     | A# – C# – E        | A (VII)  |
+
+*F#7* is the strongest chord in the key.  =Em → F#7 → Bm= is a classic minor cadence, iv → V7 → i, that lands harder than any natural-minor progression can.
+
+** Dorian Adjustments
+
+When you raise the 6th from G to G#, the iv chord becomes major:
+
+| Degree | Chord  | Notes        | Replaces |
+|--------+--------+--------------+----------|
+| IV     | E      | E – G# – B   | Em (iv)  |
+
+*This is the single most distinctive sound in B minor music.*  =Bm → E → Bm= or =Bm → D → E → Bm= immediately tells the ear "this is Dorian, not minor."  /Hurt/, /Mad World/ (in F#m, but same concept), and a thousand folk songs live on this substitution.
+
+** Common 7th-Chord Voicings
+
+| Chord     | Notes              | Use                                  |
+|-----------+--------------------+--------------------------------------|
+| Bm7       | B – D – F# – A     | Default minor 7 tonic                |
+| Bm(maj7)  | B – D – F# – A#    | Tense; brief moments only            |
+| Dmaj7     | D – F# – A – C#    | Lush III; shares 3 notes with Bm     |
+| Em7       | E – G – B – D      | iv7 (natural minor)                  |
+| F#m7      | F# – A – C# – E    | natural-minor v7                     |
+| F#7       | F# – A# – C# – E   | V7, strongest pull back to Bm       |
+| Gmaj7     | G – B – D – F#     | warm VI; shares 3 notes with Bm      |
+| A7        | A – C# – E – G     | V7 of D, pulls toward III           |
+
+The shared-tone relationships are striking: *Bm7*, *Dmaj7*, and *Gmaj7* each share three of their four notes with the others.  You can move between them with almost no voice motion in the right hand.
+
+* Common Progressions
+
+** i – VI – III – VII  (the rock-anthem)
+
+  =Bm – G – D – A=
+
+The progression of countless rock and pop hits.  /With or Without You/, /Don't Stop Believin'/ (transposed), /Save Tonight/, half of every rock ballad in the last 40 years.  All four chords are major or minor triads with no tension; the *order* (descending bass-line motion) is what carries it.
+
+** i – VII – VI – VII  (the rock minor)
+
+  =Bm – A – G – A=
+
+A descending–ascending walk.  Sits naturally on guitar (Bm → A → G → A all use open-string voicings).  Loops indefinitely without resolving.
+
+** i – iv – VII – III  (folk modal)
+
+  =Bm – Em – A – D=
+
+The "Wagon Wheel" / "Knockin' on Heaven's Door" shape, in minor.  Resolves to *D major* rather than back to *Bm*, which is why these songs feel hopeful even when they're sad.  Use it when you want B minor to keep promising D major.
+
+** i – iv – V7 – i  (classical / harmonic minor)
+
+  =Bm – Em – F#7 – Bm=
+
+The textbook minor cadence with harmonic-minor V7.  Heavier than the natural-minor version (which would be =Bm – Em – F#m – Bm=).  The A# inside F#7 is the leading tone, half a step below B.
+
+** Dorian: i – IV  (the /Hurt/ engine)
+
+  =Bm – D – E – Bm=
+
+The verse cycle of /Hurt/.  *E major* (not Em) is the Dorian giveaway.  This progression is the most distinctive sound in B minor because the major IV chord doesn't belong in natural minor, borrowing it from Dorian creates that strange, half-bright tension that defines a whole subgenre of moody rock.
+
+** i – VI – iv – V7  (the descending lament)
+
+  =Bm – G – Em – F#7=
+
+Closer to classical balladry.  The bass walks down: B → G → E → F#.  Useful for verses that want to feel like they're falling, with the F#7 catching them at the last moment and tossing them back to Bm.
+
+** Modulation: i (Bm) → I (D)
+
+B minor and D major are *relative keys*, same notes, different home base.  You can pivot between them with almost no warning by simply landing a phrase on D instead of B.  The reverse, sliding from D major back into Bm, is a single-chord move: end on Bm and the ear immediately hears the new tonal center.  Use this freely when noodling; it doubles your harmonic territory at zero cost.
+
+* Style and Genre Associations
+
+** Rock and indie
+
+B minor is the unofficial home key of melancholy guitar music.  Open chord shapes on guitar make Bm, D, G, and A trivially easy.  Dorian inflection (E major instead of Em) is endemic, every other song in the genre uses it.  See: Radiohead, Elliott Smith (often), Nine Inch Nails, Coldplay, The National.
+
+** Classical
+
+Schubert's "Unfinished" Symphony, Tchaikovsky's "Pathétique", B minor as the key of weighty, serious gloom.  The harmonic minor V (F#7) is the default cadence; modulations to D major (relative) or to F# minor (dominant minor) are common.
+
+** Cinematic / film score
+
+B minor lands somewhere between D minor's funeral weight and A minor's unease.  It is the key of "the protagonist is in trouble but will probably make it", somber but not hopeless.  Often used with sustained pedal tones (B in the bass) and slow harmonic motion above.
+
+** Folk
+
+Less common than D minor in folk because B minor is harder on guitar than Dm or Am, but when it appears, it tends to lean Dorian.  Sea shanties, Celtic ballads, and English folk often live in B Dorian.
+
+** Soul / R&B
+
+B minor with the natural 6th (G#) and the b7 (A) gets you into Dorian, which is the mode of much classic soul.  /Killing Me Softly/ (in F minor, but same concept) and many Stevie Wonder verses use minor Dorian patterns that transpose easily to B.
+
+* Famous Songs in B Minor
+
+- /Hurt/, Nine Inch Nails / Johnny Cash (B Dorian, with Picardy-third ending in B major), see the [[file:hurt-nine-inch-nails.org][Hurt cheat sheet]]
+- /Hotel California/, Eagles
+- /Stairway to Heaven/, Led Zeppelin (Am, but Bm voicings on guitar are the same shape transposed)
+- /Symphony No. 8 "Unfinished"/, Schubert
+- /Symphony No. 6 "Pathétique"/, Tchaikovsky
+- /Mad World/, Tears for Fears (in F#m, near-relative)
+- /Wish You Were Here/, Pink Floyd (G major, but the verse leans heavily on B-minor color)
+- /Don't Fear the Reaper/, Blue Öyster Cult (A minor, but Bm-like shape)
+- /Black/, Pearl Jam (E minor, but the same descending lament logic)
+
+* Tips for Noodling
+
+** Anchor on D
+
+Because B minor and D major share all their notes, *D* is a magnetic note inside the key.  Hold a Bm chord in the right hand and let your improvising hand drift to D, the phrase will sound resolved even though you didn't land on B.  Use this when you want minor color without the heaviness of always returning home.
+
+** Use the open-string trick (even on piano)
+
+On guitar, B minor benefits from open-string drones.  You can simulate this on piano by holding the *low B* in the left hand throughout a section while the right hand wanders.  The pedal tone keeps everything tethered.  Try =Bm – D – G – A= over a sustained low B and notice how the harmony continues to make sense even when the bass refuses to move.
+
+** Lean into the F# vs A# distinction
+
+The whole emotional range of B minor lives in this one note.  *F#7* (with A#) sounds formal, strong, classical.  *F#m* (with A natural) sounds folk-modal, gentle, unresolved.  Try the same phrase twice, once cadencing to F#7 → Bm, once cadencing to F#m → Bm, and notice how different they feel.  Both are correct; they belong to different songs.
+
+** Borrow E major for instant /Hurt/
+
+Anywhere a chord progression has Em, try playing E major instead.  The G# inside E major is the Dorian raised 6th, foreign to natural minor, but distinctive enough to redefine the whole mood.  Use it sparingly; if every chord is borrowed, nothing sounds borrowed anymore.
+
+** Practice the Bm → D → G → A loop
+
+Loop these four chords with no melody, just the changes, until the bass line walks itself: B → D → G → A → B → D → G → A.  Once the loop feels automatic, start improvising over it with the pentatonic.  This is the most-used progression in B minor pop music; if it lives in your hands, you can sit in on most rock songs in this key.
+
+** Always try the Picardy third
+
+B minor songs frequently end on *B major*, the Picardy third, raising the minor 3rd (D) to a major 3rd (D#).  Every other note stays the same.  /Hurt/ does this; /Layla/ does this; many classical pieces in B minor do this.  When you're noodling and you reach a final cadence, try landing on Bmaj instead of Bm.  The single semitone of change is one of the most powerful gestures in the key.

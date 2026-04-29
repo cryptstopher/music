@@ -1,4 +1,4 @@
-#+TITLE: Layla — Eric Clapton (Derek and the Dominos)
+#+TITLE: Layla, Eric Clapton (Derek and the Dominos)
 #+SUBTITLE: Piano Cheat Sheet
 #+STARTUP: overview
 
@@ -37,7 +37,7 @@ The intro riff is the song's anchor.  The verse shifts down a semitone to C# min
 | 6      | Bb   |
 | 7      | C#   |
 
-The raised 7th (C#) creates a leading tone that pulls strongly back to D.  This is why the A major chord (with C# inside it) sounds so natural in D minor — it borrows from the harmonic minor.
+The raised 7th (C#) creates a leading tone that pulls strongly back to D.  This is why the A major chord (with C# inside it) sounds so natural in D minor, it borrows from the harmonic minor.
 
 ** D Minor Pentatonic (best for improvisation)
 
@@ -65,12 +65,12 @@ Use the pentatonic as your safe zone over the intro/chorus/instrumental.  Add Bb
 
 ** Notes to Emphasize Over Each Verse Chord
 
-- C#m7 :: C#, E, G#, B — linger on B (the 7th) for a brooding, unresolved feel
-- G#7 :: G#, C (=B#), D#, F# — C natural is the tension note; it aches to resolve up to C#
-- F#m :: F#, A, C# — A is the warm middle note; C# connects back to the key center
-- B :: B, D#, F# — D# is bright against the minor surroundings
-- E :: E, G#, B — stable and open; G# is shared with G#7, smooth voice leading
-- E7 :: E, G#, B, D — the D is the dissonant pull; resolve it down to C# on the next chord
+- C#m7 :: C#, E, G#, B, linger on B (the 7th) for a brooding, unresolved feel
+- G#7 :: G#, C (=B#), D#, F#, C natural is the tension note; it aches to resolve up to C#
+- F#m :: F#, A, C#, A is the warm middle note; C# connects back to the key center
+- B :: B, D#, F#, D# is bright against the minor surroundings
+- E :: E, G#, B, stable and open; G# is shared with G#7, smooth voice leading
+- E7 :: E, G#, B, D, the D is the dissonant pull; resolve it down to C# on the next chord
 
 * Chord Reference
 
@@ -83,7 +83,7 @@ Use the pentatonic as your safe zone over the intro/chorus/instrumental.  Add Bb
 | C     | C – E – G      | VII (natural major)       |
 | A     | A – C# – E     | V (borrowed from harm. minor) |
 
-The Bb → C → Dm motion is the engine of the riff.  A major is a surprise — C# is not in D natural minor, but D harmonic minor supplies it.  That C# is what gives the A chord its urgency.
+The Bb → C → Dm motion is the engine of the riff.  A major is a surprise, C# is not in D natural minor, but D harmonic minor supplies it.  That C# is what gives the A chord its urgency.
 
 ** Verse / Bridge Chords (C# minor world)
 
@@ -98,7 +98,7 @@ The Bb → C → Dm motion is the engine of the riff.  A major is a surprise —
 | D     | D – F# – A        | bII (Neapolitan-adjacent, passing) |
 | A     | A – C# – E        | VI (major submediant)   |
 
-Note: G#7's "C" is enharmonically B# — the raised 7th in C# harmonic minor.  This is what gives the G#7 its classical dominant-seventh pull back to C#m.
+Note: G#7's "C" is enharmonically B#, the raised 7th in C# harmonic minor.  This is what gives the G#7 its classical dominant-seventh pull back to C#m.
 
 * Advanced Inversions
 
@@ -118,7 +118,7 @@ Inversions let you voice-lead smoothly between chords instead of jumping around 
 | C/E      | 1st inversion  | E – G – C           | Bass rises E → F → (Dm root); elegant    |
 | C/G      | 2nd inversion  | G – C – E           | Pedal G under the VII chord              |
 | A        | Root           | A – C# – E          | Full V resolution to Dm                 |
-| A/C#     | 1st inversion  | C# – E – A          | C# in bass — dramatic chromatic descent to D |
+| A/C#     | 1st inversion  | C# – E – A          | C# in bass, dramatic chromatic descent to D |
 | A/E      | 2nd inversion  | E – A – C#          | Lighter dominant; less resolved feel     |
 
 ** Verse / Bridge Chord Inversions
@@ -134,7 +134,7 @@ Inversions let you voice-lead smoothly between chords instead of jumping around 
 | G#7/D#     | 2nd inversion   | D# – F# – G# – C        | Mid-range color; less resolved                   |
 | G#7/F#     | 3rd inversion   | F# – G# – C – D#        | F# in bass creates a descending line from F#m    |
 | F#m        | Root            | F# – A – C#             | Default; solid subdominant                       |
-| F#m/A      | 1st inversion   | A – C# – F#             | A in bass — smooth step from A major chord       |
+| F#m/A      | 1st inversion   | A – C# – F#             | A in bass, smooth step from A major chord       |
 | F#m/C#     | 2nd inversion   | C# – F# – A             | C# connects back to C#m; cyclical feel           |
 | B          | Root            | B – D# – F#             | Default VII chord                                |
 | B/D#       | 1st inversion   | D# – F# – B             | D# in bass, ascending line from D                |
@@ -218,7 +218,7 @@ The bass line C# → G# → F# → B → E → E → C# forms a powerful descend
   [Dm]  [Bb]  [C]  [Dm]   × 8
   #+END_EXAMPLE
 
-The famous piano coda — the Dm riff plays underneath the outro choruses that follow.
+The famous piano coda, the Dm riff plays underneath the outro choruses that follow.
 
 ** Outro
 
@@ -246,9 +246,9 @@ Two final chorus repetitions over the piano coda.  The penultimate iteration end
 
 * Performance Notes
 
-- *Intro riff*: The Bb → C → Dm pattern is everything.  LH holds roots, RH plays the melody line over the top.  Keep the C chord crisp — don't blur it into Dm.
+- *Intro riff*: The Bb → C → Dm pattern is everything.  LH holds roots, RH plays the melody line over the top.  Keep the C chord crisp, don't blur it into Dm.
 - *The A major chord*: That C# is a surprise.  Let it ring.  It resolves the tension built by Bb and C before landing on Dm.
 - *Verse dynamic*: The C#m7 verse should feel tighter and more urgent than the open D minor sections.  Pedal use here is minimal.
 - *G#7 → C#m7*: Classic V7 → i resolution.  The C natural inside G#7 is the knife-edge.  Let it resolve cleanly to C#.
-- *The chorus pivot*: Going from A major (in C# minor, that's the VI) back to Dm for the chorus is a key change up a semitone.  The A chord is the bridge between both keys — it's the V of Dm *and* the VI of C#m.
-- *Piano coda / Outro*: The Dm riff slows and opens up under the final chorus repeats.  Let Bb breathe and ring.  The last line strips back to a bare C → Dm — hold that final Dm and let it decay.
+- *The chorus pivot*: Going from A major (in C# minor, that's the VI) back to Dm for the chorus is a key change up a semitone.  The A chord is the bridge between both keys, it's the V of Dm *and* the VI of C#m.
+- *Piano coda / Outro*: The Dm riff slows and opens up under the final chorus repeats.  Let Bb breathe and ring.  The last line strips back to a bare C → Dm, hold that final Dm and let it decay.

@@ -1,4 +1,4 @@
-#+TITLE: In Dreams — Piano Cheat Sheet
+#+TITLE: In Dreams, Piano Cheat Sheet
 #+AUTHOR: Roy Orbison
 #+STARTUP: overview
 
@@ -24,9 +24,9 @@
 ** Tips
 
 - LH plays root note in bass; RH plays full chord
-- Fm adds dark color — the Ab is the key note (black key, one semitone below A)
+- Fm adds dark color, the Ab is the key note (black key, one semitone below A)
 - G7 resolves strongly to C; lean into that pull
-- D7 is a secondary dominant — it pulls toward G/G7
+- D7 is a secondary dominant, it pulls toward G/G7
 
 * Advanced Techniques
 
@@ -55,7 +55,7 @@ Inversions keep the LH bass moving smoothly instead of jumping around.  Use thes
 | F/C    | 2nd inv.  | C – F – A          | 1 – 3 – 5    | C in bass; leads naturally into G7           |
 |--------+-----------+--------------------+--------------+----------------------------------------------|
 | Fm     | Root      | F – Ab – C         | 1 – 2 – 5    | Gut-punch iv minor; Ab is the dark note      |
-| Fm/Ab  | 1st inv.  | Ab – C – F         | 2 – 3 – 5    | Starts on black key Ab — use index, not thumb|
+| Fm/Ab  | 1st inv.  | Ab – C – F         | 2 – 3 – 5    | Starts on black key Ab, use index, not thumb|
 | Fm/C   | 2nd inv.  | C – F – Ab         | 1 – 3 – 5    | C in bass; softer, less harsh entry into Fm  |
 |--------+-----------+--------------------+--------------+----------------------------------------------|
 | G      | Root      | G – B – D          | 1 – 3 – 5    | Default V chord                              |
@@ -74,7 +74,7 @@ Inversions keep the LH bass moving smoothly instead of jumping around.  Use thes
 | G7      | Root      | G – B – D – F      | 1 – 2 – 4 – 5 | Default V7; strong pull to C                    |
 | G7/B    | 1st inv.  | B – D – F – G      | 1 – 2 – 3 – 5 | B in bass; stepwise descent C → B → A → G      |
 | G7/D    | 2nd inv.  | D – F – G – B      | 1 – 2 – 3 – 5 | D in bass; floatier dominant, less resolved     |
-| G7/F    | 3rd inv.  | F – G – B – D      | 1 – 2 – 4 – 5 | F in bass; most urgent — pulls hardest to C     |
+| G7/F    | 3rd inv.  | F – G – B – D      | 1 – 2 – 4 – 5 | F in bass; most urgent, pulls hardest to C     |
 |---------+-----------+--------------------+---------------+-------------------------------------------------|
 | D7      | Root      | D – F# – A – C     | 1 – 2 – 4 – 5 | Secondary dominant; V7 of G                     |
 | D7/F#   | 1st inv.  | F# – A – C – D     | 1 – 2 – 3 – 5 | F# in bass; chromatic bass line rising into G   |
@@ -83,8 +83,8 @@ Inversions keep the LH bass moving smoothly instead of jumping around.  Use thes
 
 Fingering notes:
 - *1–2–5 on a first inversion triad*: the minor 3rd at the bottom (e.g., E–G, A–C) sits naturally under fingers 1 and 2; pinky stretches to the octave note
-- *2–3–5 for Fm/Ab*: avoid putting the thumb on the black key Ab — index on Ab gives a more stable anchor
-- *D7/F# (1st inv.)*: thumb on black key F# is acceptable here; the 3–5 stretch across C–D at the top is tight — keep the hand relaxed and let the pinky fall naturally
+- *2–3–5 for Fm/Ab*: avoid putting the thumb on the black key Ab, index on Ab gives a more stable anchor
+- *D7/F# (1st inv.)*: thumb on black key F# is acceptable here; the 3–5 stretch across C–D at the top is tight, keep the hand relaxed and let the pinky fall naturally
 
 Voice leading tip:
 
@@ -95,7 +95,7 @@ In the verse progression C → Dm → G7 → C, try this bass line:
 
 ** Extended & Substitution Chords
 
-These add color without changing the harmonic function.  Drop them in wherever the base chord appears — the substitution is always optional and additive.
+These add color without changing the harmonic function.  Drop them in wherever the base chord appears, the substitution is always optional and additive.
 
 | Original | Extended | Full Notes              | Key Addition   | Character                          |
 |----------+----------+-------------------------+----------------+------------------------------------|
@@ -109,30 +109,30 @@ These add color without changing the harmonic function.  Drop them in wherever t
 
 *** G9
 
-G9 takes G7 and adds the 9th (A) — one whole step above the octave.  The A softens the harshness of the tritone inside G7 (B against F) without removing it.
+G9 takes G7 and adds the 9th (A), one whole step above the octave.  The A softens the harshness of the tritone inside G7 (B against F) without removing it.
 
   #+BEGIN_EXAMPLE
   LH: G (bass)
-  RH: B – F – A    (3rd, 7th, 9th — omit D)
+  RH: B – F – A    (3rd, 7th, 9th, omit D)
   Fingering: 1 – 3 – 5
   #+END_EXAMPLE
 
-The D is omitted — context supplies it.  B is the most critical note (it forms the tritone with F), and A on top opens the chord up.  The interval B–F is a tritone (6 semitones), so fingers 1–3 need a slight spread.  Use anywhere G7 appears for a warmer, less abrupt resolution into C.
+The D is omitted, context supplies it.  B is the most critical note (it forms the tritone with F), and A on top opens the chord up.  The interval B–F is a tritone (6 semitones), so fingers 1–3 need a slight spread.  Use anywhere G7 appears for a warmer, less abrupt resolution into C.
 
 *** G13
 
-G13 adds the 13th (E) — count up every other note from G: G–B–D–F–A–C–E, and E is the 13th.  In practice you drop most of the middle to make it playable.
+G13 adds the 13th (E), count up every other note from G: G–B–D–F–A–C–E, and E is the 13th.  In practice you drop most of the middle to make it playable.
 
   #+BEGIN_EXAMPLE
   LH: G (bass)
-  RH: B – F – A – E    (3rd, 7th, 9th, 13th — omit D and C entirely)
+  RH: B – F – A – E    (3rd, 7th, 9th, 13th, omit D and C entirely)
   #+END_EXAMPLE
 
-B and F are the tritone core; A and E are the color tones stacked on top.  The span B → E is a major 7th above a tritone — if the stretch is uncomfortable, arpeggiate upward (B–F–A–E) rather than holding all four simultaneously.  Save this for the climactic G7 before the Bridge's return to C; it makes the resolution feel enormous.
+B and F are the tritone core; A and E are the color tones stacked on top.  The span B → E is a major 7th above a tritone, if the stretch is uncomfortable, arpeggiate upward (B–F–A–E) rather than holding all four simultaneously.  Save this for the climactic G7 before the Bridge's return to C; it makes the resolution feel enormous.
 
 *** Cmaj7
 
-Cmaj7 adds B natural — the leading tone, one semitone below the root.  Because B hovers so close to C it creates gentle suspension without real dissonance.  It doesn't pull; it floats.
+Cmaj7 adds B natural, the leading tone, one semitone below the root.  Because B hovers so close to C it creates gentle suspension without real dissonance.  It doesn't pull; it floats.
 
   #+BEGIN_EXAMPLE
   LH: C (bass)
@@ -140,13 +140,13 @@ Cmaj7 adds B natural — the leading tone, one semitone below the root.  Because
   Fingering: 1 – 2 – 4
   #+END_EXAMPLE
 
-This is the recommended opener for Verse 1 ("A candy colored clown").  Plain C is stable and awake; Cmaj7 sounds half-dreaming.  Let the B ring — it is the most distinctive note.
+This is the recommended opener for Verse 1 ("A candy colored clown").  Plain C is stable and awake; Cmaj7 sounds half-dreaming.  Let the B ring, it is the most distinctive note.
 
 For a fuller sound across both hands: LH plays C–E, RH plays G–B.  The B on top gives the chord its airy, unresolved quality.
 
 *** C6
 
-C6 adds A natural — the major 6th above C.  A already lives inside Am and Dm, so C6 has a nostalgic, blended quality, as if the chord hasn't quite committed to plain C major.
+C6 adds A natural, the major 6th above C.  A already lives inside Am and Dm, so C6 has a nostalgic, blended quality, as if the chord hasn't quite committed to plain C major.
 
   #+BEGIN_EXAMPLE
   LH: C (bass)
@@ -158,7 +158,7 @@ Note: C6 (C–E–G–A) contains the exact same four notes as Am7 (A–C–E–
 
 *** Dm9
 
-Dm9 adds E above the Dm7 chord — the major 9th.  E is a bright, open note that lifts the otherwise closed minor sound of Dm7.
+Dm9 adds E above the Dm7 chord, the major 9th.  E is a bright, open note that lifts the otherwise closed minor sound of Dm7.
 
   #+BEGIN_EXAMPLE
   LH: D (bass)
@@ -166,11 +166,11 @@ Dm9 adds E above the Dm7 chord — the major 9th.  E is a bright, open note that
   Fingering: 1 – 2 – 3 – 5
   #+END_EXAMPLE
 
-Most effective on the Dm7 in the Finale cadence (Dm7 → G7 → C).  Try the extended version: Dm9 → G13 → Cmaj7.  That is a full ii9–V13–Imaj7 jazz resolution — the most sophisticated ending available in this song.
+Most effective on the Dm7 in the Finale cadence (Dm7 → G7 → C).  Try the extended version: Dm9 → G13 → Cmaj7.  That is a full ii9–V13–Imaj7 jazz resolution, the most sophisticated ending available in this song.
 
 *** Am7
 
-Am7 adds G natural — the minor 7th above A.  G is the root of the dominant chord and appears throughout the key, so Am7 sounds like it belongs everywhere.
+Am7 adds G natural, the minor 7th above A.  G is the root of the dominant chord and appears throughout the key, so Am7 sounds like it belongs everywhere.
 
   #+BEGIN_EXAMPLE
   LH: A (bass)
@@ -178,11 +178,11 @@ Am7 adds G natural — the minor 7th above A.  G is the root of the dominant cho
   Fingering: 1 – 3 – 5
   #+END_EXAMPLE
 
-Note: Am7 (A–C–E–G) is the same four notes as C6 (C–E–G–A) — see C6 above.  Over an A bass it sounds fluid and minor; over a C bass it sounds like a warm tonic.  Am7 softens the vi chord and blurs the boundary of the Am → Dm movement, which suits the dreamlike quality of the song.
+Note: Am7 (A–C–E–G) is the same four notes as C6 (C–E–G–A), see C6 above.  Over an A bass it sounds fluid and minor; over a C bass it sounds like a warm tonic.  Am7 softens the vi chord and blurs the boundary of the Am → Dm movement, which suits the dreamlike quality of the song.
 
 *** Fmaj7
 
-Fmaj7 adds E natural — one semitone below the root F.  Like Cmaj7, this creates shimmer rather than tension.  E is also the 3rd of C major, so Fmaj7 shares notes with C and has a luminous, blended quality.
+Fmaj7 adds E natural, one semitone below the root F.  Like Cmaj7, this creates shimmer rather than tension.  E is also the 3rd of C major, so Fmaj7 shares notes with C and has a luminous, blended quality.
 
   #+BEGIN_EXAMPLE
   LH: F (bass)
@@ -201,7 +201,7 @@ Most effective when F appears just before G7 ("Go to sleep, everything is all ri
 
 * Song Structure Note
 
-No conventional verse/chorus — the song flows continuously through a suite of sections. Play through in order.
+No conventional verse/chorus, the song flows continuously through a suite of sections. Play through in order.
 
 * Verse 1
 

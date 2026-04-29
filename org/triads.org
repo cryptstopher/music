@@ -1,4 +1,4 @@
-#+TITLE: Major Triads — Major Key Reference
+#+TITLE: Major Triads, Major Key Reference
 #+SUBTITLE: Learning the triad for each scale degree in all 12 keys
 #+OPTIONS: toc:2 num:t
 
@@ -26,7 +26,7 @@ The scale degree from I to V is a perfect fifth?
 
 - *Major* sounds bright and stable.
 - *minor* sounds darker, but still stable.
-- *diminished* sounds tense and unstable — it wants to resolve.
+- *diminished* sounds tense and unstable, it wants to resolve.
 - *augmented* is rare in diatonic harmony; you'll mostly encounter it in chromatic passages.
 
 * Triads in a Major Key
@@ -53,7 +53,7 @@ Say it until it sticks---it unlocks every key at once.
 
 * How Semitone Distances Work Between Degrees
 
-Music counts intervals *inclusively* — it includes the note you start on.
+Music counts intervals *inclusively*, it includes the note you start on.
 A "third" means you count C(1) D(2) E(3): three note names, but only two steps of motion.
 This makes every interval name one higher than its arithmetic distance.
 
@@ -85,30 +85,30 @@ That uneven spacing is why the semitone distances between degrees are not unifor
 |      7 | vii°  | B    |               11 | Major 7th     |
 
 - The Roman numeral tells you the *interval name* (4th, 5th…), not the semitone count.
-- To find the semitone distance: count every piano key — white and black — between the two roots.
+- To find the semitone distance: count every piano key, white and black, between the two roots.
 - The chord quality (major or minor) does not change the root's semitone distance.
   I to IV and I to iv both have the root F five semitones above C.
 
-** "Major interval" vs "minor chord" — two different uses of the same word
+** "Major interval" vs "minor chord", two different uses of the same word
 
 The word major/minor appears in two separate systems and means something different in each.
 
 - *Interval quality* describes the size of the gap between two notes.
-- *Chord quality* describes the internal structure of a chord — whether its third is raised or lowered.
+- *Chord quality* describes the internal structure of a chord, whether its third is raised or lowered.
 
 When you measure from the tonic of a major scale up to any note within that scale,
-every interval is either major or perfect — never minor.
+every interval is either major or perfect, never minor.
 That is not a coincidence: it is the definition of a major scale.
 
 | From C to | Semitones | Interval name | Chord at that degree |
 |-----------+-----------+---------------+----------------------|
-| D         |         2 | Major 2nd     | Dm — a minor chord   |
-| E         |         4 | Major 3rd     | Em — a minor chord   |
-| A         |         9 | Major 6th     | Am — a minor chord   |
+| D         |         2 | Major 2nd     | Dm, a minor chord   |
+| E         |         4 | Major 3rd     | Em, a minor chord   |
+| A         |         9 | Major 6th     | Am, a minor chord   |
 
 The chord built on D is minor because its internal third (D to F) is a minor third (3 semitones).
 That has nothing to do with how far D sits above C.
-Lowering D to Db would give you a minor 2nd from C — but Db is not in C major.
+Lowering D to Db would give you a minor 2nd from C, but Db is not in C major.
 
 * Chord Chart by Key
 
@@ -132,7 +132,7 @@ Minor chords shown with "m", diminished with "dim".
 
 * Root Position and Inversions
 
-A triad can be played three ways — same three notes, different note on the bottom.
+A triad can be played three ways, same three notes, different note on the bottom.
 
 | Name           | Bottom Note | Example (C major) | Use                            |
 |----------------+-------------+-------------------+--------------------------------|
@@ -142,17 +142,17 @@ A triad can be played three ways — same three notes, different note on the bot
 
 - Root position is your default. Learn all 12 major I chords in root position first.
 - First inversion is how you connect chords without jumping around in the bass.
-- Second inversion sounds less stable — use it deliberately, not as a default.
+- Second inversion sounds less stable, use it deliberately, not as a default.
 
 The notes are always the same. Only the voicing changes.
 
 * Practice Notes
 
 - [ ] Memorise the quality pattern: Major minor minor Major Major minor dim
-- [ ] Play all 12 root-position I (tonic) triads up the chromatic scale — C Db D Eb…
+- [ ] Play all 12 root-position I (tonic) triads up the chromatic scale, C Db D Eb…
 - [ ] In one key (start with C), play all 7 triads in root position, hands together
 - [ ] Say the note names aloud as you play each triad (builds the muscle–theory link)
-- [ ] Practice the I–IV–V triads in G, C, D, and F — these cover most beginner songs
+- [ ] Practice the I–IV–V triads in G, C, D, and F, these cover most beginner songs
 - [ ] Add first inversions: play I then I/3 (first inversion) to hear the difference
 - [ ] Run the 6 most common keys (C G D F Bb Eb) through all 7 triads in one session
 - [ ] Pick one song from your repertoire and identify every chord as a scale degree
