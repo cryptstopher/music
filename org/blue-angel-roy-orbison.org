@@ -1,0 +1,266 @@
+#+TITLE: Blue Angel — Roy Orbison
+#+SUBTITLE: Piano Cheat Sheet
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Introduction
+
+A 1961 single, the follow-up to "Only the Lonely" — same bouncy doo-wop scaffolding, same Orbison soaring vocal on top, but with markedly more sophisticated harmony underneath than the chord chart at first suggests.  Hidden inside the cheerful surface are jazz extensions (*Gm7*, *C13*), a secondary dominant (*G7*), a *Cmaj7-style* coda, and a fully chromatic walk-up at the start of each Bridge.  This is a deceptively rich song.
+
+* Key & Theory
+
+The song is in *F major*.  Most of the chord motion stays diatonic — F, Dm, Bb, C, Gm, Am — but three things make the harmony interesting:
+
+1. *The intro/coda turnaround*: =Am → Gm7 → C13=.  This is iii → ii7 → V13, a classic jazz turnaround that lands back on F.  The *C13* is the big chord — a fully extended dominant.
+2. *The Bridge walk-up*: =F → F# → G → G# → A=.  Five chords in a row, each a half-step higher, played as quarter-note triplets.  F# and G# are *chromatic passing chords* — neither belongs to F major, but they smooth the climb from F up to A.
+3. *The G7 inside the Bridge*: =G7 → C7=.  G7 is a *secondary dominant* — V7 of C — pulling hard toward C7, which is itself V7 of F.  Two dominants in a row stacking tension.
+
+The mood is bright but bittersweet — a major-key song addressed to a sad woman ("don't you cry").  The jazz harmony gives the consolation more weight than a plain three-chord pop song could.
+
+** F Major Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | F    |
+| 2      | G    |
+| 3      | A    |
+| 4      | Bb   |
+| 5      | C    |
+| 6      | D    |
+| 7      | E    |
+
+** Diatonic Triads in F Major
+
+| Degree | Chord  | Notes      | Used in song?              |
+|--------+--------+------------+----------------------------|
+| I      | F      | F – A – C  | yes                        |
+| ii     | Gm     | G – Bb – D | yes (also as Gm7)          |
+| iii    | Am     | A – C – E  | yes                        |
+| IV     | Bb     | Bb – D – F | yes                        |
+| V      | C      | C – E – G  | yes (also as C7, C13)      |
+| vi     | Dm     | D – F – A  | yes                        |
+| vii°   | Edim   | E – G – Bb | no                         |
+
+** Non-Diatonic Chords
+
+| Chord | Notes        | Function                       |
+|-------+--------------+--------------------------------|
+| F#    | F# – A# – C# | chromatic passing (Bridge walk)|
+| G     | G – B – D    | major iii substitute / passing |
+| G#    | G# – C – D#  | chromatic passing (Bridge walk)|
+| A     | A – C# – E   | major iii — V/Dm or passing    |
+| G7    | G – B – D – F| V7 of C — secondary dominant   |
+
+The *G* and *A* major chords (where F major would expect *Gm* and *Am*) inside the chromatic walk-up are the borrowed brightness — they push outside the key for one beat each, then resolve.
+
+* Chord Reference
+
+| Chord  | Notes              | Fingering (RH)    | Function                  |
+|--------+--------------------+-------------------+---------------------------|
+| F      | F – A – C          | 1 – 3 – 5         | I (tonic)                 |
+| Dm     | D – F – A          | 1 – 3 – 5         | vi                        |
+| Bb     | Bb – D – F         | 2 – 3 – 5         | IV (Bb is a black key)    |
+| C      | C – E – G          | 1 – 3 – 5         | V                         |
+| Am     | A – C – E          | 1 – 3 – 5         | iii                       |
+| Gm     | G – Bb – D         | 1 – 2 – 5         | ii                        |
+| Gm7    | G – Bb – D – F     | 1 – 2 – 4 – 5     | ii7                       |
+| C7     | C – E – G – Bb     | 1 – 2 – 4 – 5     | V7                        |
+| C13    | C – E – Bb – D – A | see below         | V13 (full jazz dominant)  |
+| G7     | G – B – D – F      | 1 – 2 – 4 – 5     | V7/V (secondary dominant) |
+| Fmaj7  | F – A – C – E      | 1 – 2 – 3 – 5     | Imaj7 (coda only)         |
+
+** Tips
+
+- LH plays the root in the bass; RH plays the chord
+- *Bb* and *Gm* both have Bb as the bottom or middle note — a black key.  Use *2–3–5* on Bb or *1–2–5* on Gm to avoid putting the thumb on the black key
+- *Gm7* contains the same four notes as *Bb6* (Bb–D–F–G).  Whichever bass note you play under it determines what your ear hears
+- *C7* is a standard dominant 7th; *C13* is the same chord with three more notes stacked on top.  See below for a playable voicing
+- *Fmaj7* in the Coda is one of the few moments the song lingers on a non-dominant 7th chord.  Let the E on top ring
+
+** The C13 Chord
+
+C13 is built by stacking thirds all the way up: C – E – G – Bb – D – F – A.  Playing all seven notes at once is impossible and would sound muddy anyway.  The trick to voicing 13th chords is keeping the three notes that define it (root, 3rd, b7) and adding the 13th on top — drop everything else.
+
+  #+BEGIN_EXAMPLE
+  LH: C (bass)
+  RH: E – Bb – D – A    (3rd, b7, 9th, 13th — omit G and F)
+  Fingering: 1 – 2 – 3 – 5
+  #+END_EXAMPLE
+
+The interval *E → Bb* is a tritone — the engine of every dominant 7th chord.  Adding *D* (the 9th) and *A* (the 13th) on top opens it up and softens the bite.  In context, C13 sits on the last beat of the intro and coda turnaround, just before resolving to F.  If the four-note grab is awkward, drop the D — *E – Bb – A* still sounds like C13.
+
+** The Bridge Walk-Up
+
+Six chords, played as quarter-note triplets — meaning six chords squeezed into the time of four beats:
+
+  #+BEGIN_EXAMPLE
+  Beat:    1   &   2   &   3   &   4
+  Chord:   F   F#  G   G#  A       A
+  Triplet: 1   2   3   4   5       6
+  #+END_EXAMPLE
+
+The bass line rises in half-steps: *F → F# → G → G# → A → A*.  The right hand does the same — every chord is a root-position major triad, sliding up chromatically.  Voiced compactly:
+
+  #+BEGIN_EXAMPLE
+  F:  F – A – C
+  F#: F# – A# – C#
+  G:  G – B – D
+  G#: G# – C – D#
+  A:  A – C# – E
+  #+END_EXAMPLE
+
+Every voice moves up one half-step on each chord.  Don't reposition the hand — let it slide.  This figure is a *direct quote from doo-wop / early-rock vocabulary* (compare the famous chromatic walk-down in "Stand By Me", inverted).  When the climb finally lands on *A* and stops, the next chord is *Bb* — one more half-step up, and now we're back inside the key.
+
+* Inversions for Voice Leading
+
+The song hops between F, Dm, Bb, and C constantly.  Smoothing the bass line with inversions makes every section feel less choppy.  *LH plays the bass note; RH plays the rest.*
+
+| Chord   | Position  | Notes (low → high) | When to Use                                   |
+|---------+-----------+--------------------+-----------------------------------------------|
+| F       | Root      | F – A – C          | Default tonic                                 |
+| F/A     | 1st inv.  | A – C – F          | A in bass connects from Am or Dm              |
+| F/C     | 2nd inv.  | C – F – A          | C in bass leads naturally into Bb (C → Bb)    |
+|---------+-----------+--------------------+-----------------------------------------------|
+| Dm      | Root      | D – F – A          | Default vi                                    |
+| Dm/F    | 1st inv.  | F – A – D          | F pedal — keeps tonic note alive under Dm     |
+| Dm/A    | 2nd inv.  | A – D – F          | A in bass; pivot toward Am                    |
+|---------+-----------+--------------------+-----------------------------------------------|
+| Bb      | Root      | Bb – D – F         | Default IV                                    |
+| Bb/D    | 1st inv.  | D – F – Bb         | D in bass holds from Dm                       |
+| Bb/F    | 2nd inv.  | F – Bb – D         | F pedal under Bb — extremely smooth from F    |
+|---------+-----------+--------------------+-----------------------------------------------|
+| C       | Root      | C – E – G          | Default V                                     |
+| C/E     | 1st inv.  | E – G – C          | E in bass walks down to Dm                    |
+| C/G     | 2nd inv.  | G – C – E          | G pedal — softer V; less final                |
+
+Voice-leading tip:
+
+The verse cycle =F → Dm → Bb → C= jumps F → D → Bb → C in the bass.  To smooth it, try =F → F (Dm/F) → F (Bb/F) → C= — keep the bass on F for three beats, then move only on the final C.  This keeps the harmonic motion in the right hand and lets the left settle.
+
+* Performance Notes
+
+- *Tempo*: medium-bright, around 120 BPM.  This is a doo-wop ballad — buoyant but not rushed
+- *Touch*: light through the verses; firmer through the Bridge.  The chromatic walk-up at the start of each Bridge should feel *deliberate*, almost ceremonial
+- *Pedal*: change on every chord, but in the Bridge walk-up *do not pedal* — the chords need to sound separate, like footsteps
+- *The intro turnaround* (=Am → Gm7 → C13=): voice this slowly the first time the song starts.  This is the song's harmonic signature
+- *N.C. moments*: the chart marks =N.C.= ("no chord") in two spots in Bridge 2 and the Coda.  Drop out completely on those beats — the voice carries the line alone
+- *The Coda*: ends on *Fmaj7*, not plain F.  The E on top is the resolution — let it ring.  This is a softer, more resigned ending than a definitive F major would give
+- *"Sha la la, dooby wah"*: this is the backing-vocal hook.  On solo piano, you can suggest it with a light staccato in the right hand on the upper notes of each chord while the bass holds steady
+
+* Song Structure
+
+** Intro
+
+  #+BEGIN_EXAMPLE
+                       [Am]      [Gm7]       [C13]
+  (Sha... la... la, dooby wah, dum dum dum, yip yip)
+   [F]            [Am]      [Gm7]       [C13]
+  (Fum, sha la la, dooby wah, dum dum dum, yip yip)
+  #+END_EXAMPLE
+
+Intro note:
+
+The =F → Am → Gm7 → C13= turnaround is the harmonic backbone of the whole song — it returns at the Coda.  Treat it as a complete musical thought, not just a setup.  *Am* is the iii chord (a soft, suspended-feeling tonic substitute); *Gm7* is the ii7; *C13* is the dominant pulling back to F.  This is a I → iii → ii7 → V13 pattern — the Great American Songbook turnaround.
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+       [F]              [Dm]
+  Oh, Blue Angel    don't you cry
+  [Bb]                  [C]
+     Just because he said goodbye
+       [F]         [Dm]
+  Oh, ah-ah-aah
+  [Bb]            [C]
+  No, don't cry
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+       [F]              [Dm]
+  Oh, Blue Angel    have no fear, I'll
+       [Bb]              [C]
+  Brush away    lonely teardrops
+  [F]      [Dm]
+  Hey... hey
+  [Bb]              [C]
+  Whoa whoa... ooh...
+
+              [F]   [Bb]          [F]
+  (Yip yip, fum, wah wah wah wah)
+  #+END_EXAMPLE
+
+** Bridge 1
+
+  #+BEGIN_EXAMPLE
+        [F]  [F#]  [G]  [G#]  [A]  [A]    [quarter-note triplets]
+  (...wah)
+
+  [Bb]                          [Gm]
+     Well, love's precious flame
+  [F]                  [Dm]
+     Just burned in vain
+  [Bb]
+  But you're not to blame
+  [G7]                                       [C7]
+     You thought love was a game, it's oh such a shame
+                       [Bb]              [F]
+  But don't you cry, but don't sigh
+                  [Gm]
+  I'll tell you why
+                       [Bb]   [C]
+  I'll never say goodbye
+       [F]
+  Blue Angel
+       [Am]      [Gm7]       [C13]
+  (Sha la la, dooby wah, dum dum dum)
+       [F]   [Bb]              [F]
+  (Yip yip, fum, wah wah wah wah)
+  #+END_EXAMPLE
+
+Bridge 1 note:
+
+The =G7 → C7= move is the most sophisticated harmony in the song.  =G7= is *V7 of C* (a secondary dominant), and =C7= is *V7 of F*.  Two dominants stacked back-to-back means each one resolves to the next.  The lyric "you thought love was a game, it's oh such a shame" sits exactly on this stretched tension.  Linger on the G7 a beat longer than feels natural — the resolution is sweeter for the wait.
+
+** Bridge 2
+
+  #+BEGIN_EXAMPLE
+        [F]  [F#]  [G]  [G#]  [A]  [A]    [quarter-note triplets]
+  (...wah)
+
+  [Bb]                          [Gm]
+     We'll have lovin' so fine
+  [F]                  [Dm]
+     Magic moments divine
+  [Bb]
+  If you'll just say you're mine
+        [G7]                                  [C7] [N.C.]
+     I'll love you till the end of ti-i-ime
+                          [F]      [Bb]              [F]
+  Don't you... worry your pretty head
+                       [Gm]              [Bb]    [Gm]
+  I'll never let you do-ow-ow-ow-ow-own
+                        [Bb]                  [C]
+  I'll always be arou-ou-ou-ou-ound
+            [F]
+  Blue Angel
+  #+END_EXAMPLE
+
+Bridge 2 note:
+
+Identical structure to Bridge 1, but lyrically lifts from grief into promise.  The *N.C.* after C7 ("till the end of ti-i-ime") is a pause — drop the hand entirely and let the singer hold the high note alone.  The *Gm → Bb → Gm* oscillation underneath "I'll never let you down" is a tiny gospel-feel back-and-forth — voice it gently.
+
+** Coda
+
+  #+BEGIN_EXAMPLE
+            [Am]      [Gm7]       [C13]                  [F]
+  (Sha la la, dooby wah, dum dum dum, yip yip, fum)
+       [Bb]   [N.C.]                    [Fmaj7]
+  Blu-ue a-an-gel  (Sha... la... la)
+  #+END_EXAMPLE
+
+Coda note:
+
+The Intro turnaround returns one last time.  Then *Bb → N.C. → Fmaj7* — the song ends not on plain F but on *Fmaj7*.  The added E (the major 7th) sits one half-step below the F root, creating a gentle, suspended shimmer.  Plain F would feel like a door closing; Fmaj7 leaves it ajar.  Hold the chord on the sustain pedal until it fully decays.
