@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-04-30 Thu 09:49 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Loverboy, Billy Ocean</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Loverboy, Billy Ocean</h1>
+<p class="subtitle" role="doc-subtitle">Piano Cheat Sheet</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgefd4982">Introduction</a></li>
+<li><a href="#org85b7a09">Key &amp; Theory</a>
+<ul>
+<li><a href="#org063d241">A Major Scale</a></li>
+<li><a href="#orgd2d42b9">Diatonic Triads in A Major</a></li>
+</ul>
+</li>
+<li><a href="#org0be510d">Chord Reference</a>
+<ul>
+<li><a href="#org0f629ad">Tips</a></li>
+<li><a href="#orgecad1d1">D6sus2</a></li>
+<li><a href="#org3d76689">Bsus4</a></li>
+<li><a href="#org4325b10">E5</a></li>
+</ul>
+</li>
+<li><a href="#orgbac482c">Inversions for Voice Leading</a></li>
+<li><a href="#org7660706">Performance Notes</a></li>
+<li><a href="#orge5ec3d8">Song Structure</a>
+<ul>
+<li><a href="#org0deb1b0">Verse 1</a></li>
+<li><a href="#org1d67779">Chorus</a></li>
+<li><a href="#orgd1f31cf">Verse 2</a></li>
+<li><a href="#org17ef063">Chorus 2</a></li>
+<li><a href="#org025d286">Instrumental</a></li>
+<li><a href="#org7b2b311">Bridge</a></li>
+<li><a href="#org5f676b7">Final Chorus</a></li>
+<li><a href="#org18aa0d7">Outro</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<p>
+<a href="index.html">← Back to Index</a>
+</p>
+<div id="outline-container-orgefd4982" class="outline-2">
+<h2 id="orgefd4982">Introduction</h2>
+<div class="outline-text-2" id="text-orgefd4982">
+<p>
+Released in 1984 on <i>Suddenly</i>, "Loverboy" is one of those songs that sounds harmonically simple on the page, an F#m vamp, an A-D-E chorus, but the texture and the chord choices (D6sus2, Bsus4, E5) give it a shimmering, half-suspended quality that is pure mid-80s production.  The verses brood on the relative minor; the chorus opens up into bright major-key territory.  The whole song rides the tension between F#m (the lonely, longing minor) and A (the confident "I wanna be your lover" major).
+</p>
+</div>
+</div>
+<div id="outline-container-org85b7a09" class="outline-2">
+<h2 id="org85b7a09">Key &amp; Theory</h2>
+<div class="outline-text-2" id="text-org85b7a09">
+<p>
+The song lives in <b>A major</b>.  Almost every chord is diatonic, the few that look exotic (D6sus2, Bsus4, E5) are ordinary diatonic chords with sus and add tones that keep the texture floating.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Role</th>
+<th scope="col" class="org-left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">I</td>
+<td class="org-left">tonic, the "lover" chord of the chorus</td>
+</tr>
+
+<tr>
+<td class="org-left">Bsus4</td>
+<td class="org-left">(V/V) sus</td>
+<td class="org-left">secondary-dominant flavor, but all diatonic</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">IV</td>
+<td class="org-left">the lifting chord</td>
+</tr>
+
+<tr>
+<td class="org-left">D6sus2</td>
+<td class="org-left">IV color</td>
+<td class="org-left">adds 2nd and 6th, omits the 3rd</td>
+</tr>
+
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">V</td>
+<td class="org-left">dominant, pulls back to A</td>
+</tr>
+
+<tr>
+<td class="org-left">E5</td>
+<td class="org-left">V (no 3rd)</td>
+<td class="org-left">open power-chord stab</td>
+</tr>
+
+<tr>
+<td class="org-left">F#m</td>
+<td class="org-left">vi</td>
+<td class="org-left">relative minor, the verse's home</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The verse engine is a slow <b>F#m to E</b> vamp (vi to V), which feels suspended because it never lands on the tonic A.  The pre-chorus moves to <b>D6sus2 to Bsus4</b>, a IV to ii pattern that lifts the energy.  The <code>D6sus2 E5 D E</code> turnaround is a classic 80s-pop "elevator" up to the chorus.
+</p>
+
+<p>
+The chorus is the <b>I, IV, V</b> loop, <code>A, D, E</code>, with F#m sneaking in only at the very end as a transition back to the verse.
+</p>
+</div>
+<div id="outline-container-org063d241" class="outline-3">
+<h3 id="org063d241">A Major Scale</h3>
+<div class="outline-text-3" id="text-org063d241">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">C#</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">G#</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orgd2d42b9" class="outline-3">
+<h3 id="orgd2d42b9">Diatonic Triads in A Major</h3>
+<div class="outline-text-3" id="text-orgd2d42b9">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Used in song?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">I</td>
+<td class="org-left">A</td>
+<td class="org-left">A, C#, E</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">ii</td>
+<td class="org-left">Bm</td>
+<td class="org-left">B, D, F#</td>
+<td class="org-left">replaced by Bsus4</td>
+</tr>
+
+<tr>
+<td class="org-left">iii</td>
+<td class="org-left">C#m</td>
+<td class="org-left">C#, E, G#</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">IV</td>
+<td class="org-left">D</td>
+<td class="org-left">D, F#, A</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">V</td>
+<td class="org-left">E</td>
+<td class="org-left">E, G#, B</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">vi</td>
+<td class="org-left">F#m</td>
+<td class="org-left">F#, A, C#</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">vii°</td>
+<td class="org-left">G#dim</td>
+<td class="org-left">G#, B, D</td>
+<td class="org-left">no</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The most interesting move is <b>Bsus4</b> in place of Bm.  Bm would put a D natural inside the chord (b3 of B); Bsus4 replaces that D with E (the 4th of B).  All three notes of Bsus4 (B, E, F#) are diatonic to A major, and the suspension creates a hanging, unresolved quality before D6sus2 returns.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org0be510d" class="outline-2">
+<h2 id="org0be510d">Chord Reference</h2>
+<div class="outline-text-2" id="text-org0be510d">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Fingering (RH)</th>
+<th scope="col" class="org-left">Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">A, C#, E</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">I</td>
+</tr>
+
+<tr>
+<td class="org-left">Bsus4</td>
+<td class="org-left">B, E, F#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">ii (suspended)</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">D, F#, A</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">IV</td>
+</tr>
+
+<tr>
+<td class="org-left">D6sus2</td>
+<td class="org-left">D, E, A, B</td>
+<td class="org-left">1, 2, 3, 5</td>
+<td class="org-left">IV color</td>
+</tr>
+
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">E, G#, B</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">V</td>
+</tr>
+
+<tr>
+<td class="org-left">E5</td>
+<td class="org-left">E, B (no 3rd)</td>
+<td class="org-left">1, 5</td>
+<td class="org-left">V (power chord)</td>
+</tr>
+
+<tr>
+<td class="org-left">F#m</td>
+<td class="org-left">F#, A, C#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">vi</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-org0f629ad" class="outline-3">
+<h3 id="org0f629ad">Tips</h3>
+<div class="outline-text-3" id="text-org0f629ad">
+<ul class="org-ul">
+<li>LH plays the root in the bass; RH holds the triad</li>
+<li><b>F#m to E</b> is a one-note shift in voice leading.  F#m (F# A C#) → E (E G# B): only F# and C# move down by half-steps; A drops to G#.  Smooth, smooth, smooth.  Keep your hand close</li>
+<li><b>D to A</b> is also tight: D (D F# A) → A (A C# E).  F# drops to E, D drops to C#, A holds.  One common tone (A); two stepwise moves</li>
+<li><b>E to A</b> (V to I) is the cadential resolution.  E (E G# B) → A (A C# E).  G# rises to A; E and B walk to A and C#</li>
+<li>The <b>D6sus2</b> and <b>Bsus4</b> are the song's signature voicings.  See below</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgecad1d1" class="outline-3">
+<h3 id="orgecad1d1">D6sus2</h3>
+<div class="outline-text-3" id="text-orgecad1d1">
+<p>
+The chord D6sus2 stacks the 1, 2, 5, and 6 of D, dropping the 3rd entirely:
+</p>
+
+<pre class="example" id="org8611cbf">
+D6sus2:  D, E, A, B
+D major: D, F#, A    (the diatonic IV)
+D6:      D, F#, A, B (just adds the 6th)
+Dsus2:   D, E, A     (suspended 2nd)
+</pre>
+
+<p>
+By stacking <b>both</b> the sus2 and the 6, you get a chord with no 3rd, no clear major/minor identity, just an open, ringing pad.  This is a quintessential 80s-pop sound, think every chorus pad on a DX7.
+</p>
+
+<pre class="example" id="orgbe85a4a">
+LH: D (bass)
+RH: E, A, B    (2nd, 5th, 6th)
+Fingering: 1, 3, 5 in the right hand (E A B), or 1, 2, 3, 5 if you also hold the D
+</pre>
+
+<p>
+A simpler substitute: just play <b>D</b> as a regular triad.  You lose the shimmer but keep the harmony.  The chart's E5 in <code>D6sus2 E5 D E</code> can likewise be played as plain <b>E</b>.
+</p>
+</div>
+</div>
+<div id="outline-container-org3d76689" class="outline-3">
+<h3 id="org3d76689">Bsus4</h3>
+<div class="outline-text-3" id="text-org3d76689">
+<p>
+Bsus4 stacks the 1, 4, and 5 of B, replacing the 3rd:
+</p>
+
+<pre class="example" id="org4f3913b">
+Bsus4:  B, E, F#
+B maj:  B, D#, F#  (the V of A's V; not diatonic to A major)
+Bm:     B, D, F#   (diatonic ii)
+</pre>
+
+<p>
+Plain B major would inject D# (a non-diatonic note) and turn the chord into a secondary dominant, V/V.  Plain Bm is the diatonic ii.  <b>Bsus4</b> skips the choice entirely: by suspending the 3rd up to the 4th (D# or D natural → E), the chord becomes B, E, F#, all three of those notes are in A major.
+</p>
+
+<p>
+The effect is that the chord sounds like it could resolve to either Bm or B, but it just hangs there, suspended.  Lean into the suspension.  Don't resolve it down to D# or D natural, let the next chord (D6sus2 or E) do the resolving.
+</p>
+
+<pre class="example" id="org8ce00e8">
+LH: B (bass)
+RH: B, E, F#    (1, 4, 5)
+Fingering: 1, 3, 5
+</pre>
+</div>
+</div>
+<div id="outline-container-org4325b10" class="outline-3">
+<h3 id="org4325b10">E5</h3>
+<div class="outline-text-3" id="text-org4325b10">
+<p>
+E5 is just a power chord, the root and the 5th, no 3rd:
+</p>
+
+<pre class="example" id="org0e2efab">
+E5:    E, B
+E maj: E, G#, B
+</pre>
+
+<p>
+Used in the <code>D6sus2 E5 D E</code> turnaround, the E5 is a brief, open stab before the full E major lands two beats later.  On piano you can play E5 as just two notes (E and B), or fatten it with an octave (E, B, E).  The point is the absence of G#, the chord is harmonically ambiguous for one beat.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbac482c" class="outline-2">
+<h2 id="orgbac482c">Inversions for Voice Leading</h2>
+<div class="outline-text-2" id="text-orgbac482c">
+<p>
+The chorus moves <b>A, D, E, A</b> in close succession.  Smoothing this with inversions tightens the right hand and keeps the line singing rather than jumping around.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Position</th>
+<th scope="col" class="org-left">Notes (low to high)</th>
+<th scope="col" class="org-left">When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">Root</td>
+<td class="org-left">A, C#, E</td>
+<td class="org-left">Default tonic</td>
+</tr>
+
+<tr>
+<td class="org-left">A/C#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">C#, E, A</td>
+<td class="org-left">C# in bass walks down toward B (Bsus4) or up</td>
+</tr>
+
+<tr>
+<td class="org-left">A/E</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">E, A, C#</td>
+<td class="org-left">E pedal, ties E chord into A</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">Root</td>
+<td class="org-left">D, F#, A</td>
+<td class="org-left">Default IV</td>
+</tr>
+
+<tr>
+<td class="org-left">D/F#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">F#, A, D</td>
+<td class="org-left">F# in bass continues from F#m</td>
+</tr>
+
+<tr>
+<td class="org-left">D/A</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">A, D, F#</td>
+<td class="org-left">A pedal between A chord and D chord</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">Root</td>
+<td class="org-left">E, G#, B</td>
+<td class="org-left">Default V</td>
+</tr>
+
+<tr>
+<td class="org-left">E/G#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">G#, B, E</td>
+<td class="org-left">G# in bass rises to A</td>
+</tr>
+
+<tr>
+<td class="org-left">E/B</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">B, E, G#</td>
+<td class="org-left">B pedal from Bsus4</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">F#m</td>
+<td class="org-left">Root</td>
+<td class="org-left">F#, A, C#</td>
+<td class="org-left">Default vi</td>
+</tr>
+
+<tr>
+<td class="org-left">F#m/A</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">A, C#, F#</td>
+<td class="org-left">A in bass; ties F#m to A chord</td>
+</tr>
+
+<tr>
+<td class="org-left">F#m/C#</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">C#, F#, A</td>
+<td class="org-left">C# pedal; rare but pretty</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Voice-leading tip:
+</p>
+
+<p>
+The verse's <b>F#m → E</b> alternation is best played with both chords in root position.  The bass walks F# → E (a whole step down), and the right hand barely moves: F# A C# → E G# B, only one common scale-step shift between each note.  Keep the right hand low and close; let the bass do the heavy lifting.
+</p>
+
+<p>
+For the chorus <code>A, D</code>, try <b>A</b> in root position and <b>D</b> in second inversion (<code>A, D, F#</code>).  The A in the bass of D second-inversion creates a pedal effect, the bass holds A while the upper voices brighten from A-C#-E to A-D-F#.
+</p>
+</div>
+</div>
+<div id="outline-container-org7660706" class="outline-2">
+<h2 id="org7660706">Performance Notes</h2>
+<div class="outline-text-2" id="text-org7660706">
+<ul class="org-ul">
+<li><b>Tempo</b>: medium-slow groove, around 95 BPM.  This is a slow-burn pop song, not a ballad and not a banger.  Keep the pulse steady</li>
+<li><b>Touch</b>: the verse should feel restrained, almost hushed.  The chorus opens up into ringing major chords.  Use dynamics to mark the lift</li>
+<li><b>Pedal</b>: change on every chord.  The sus chords (D6sus2, Bsus4) need to ring clearly without smearing into the next chord</li>
+<li><b>The verse vamp</b>: F#m to E, played slowly, with the right hand sustaining each chord for the full bar.  Keep it sparse, this is the singer's section</li>
+<li><b>The pre-chorus lift</b>: <code>D6sus2 ... Bsus4 ... D6sus2 E5 D E</code>.  Each chord should feel like another step up a staircase.  Don't rush; let the suspensions hang</li>
+<li><b>The chorus</b>: <code>A D / E A D / E A D / E A D</code>.  Bright, full chords with the sustain pedal down.  This is the hook, make it shine</li>
+<li><b>The instrumental</b>: <code>F#m E F#m E / F#m E F#m E</code> played four times.  Keep the same restrained verse texture, this is a vamp, not a feature.  In an actual band arrangement this is where the guitar solo lives; on solo piano you can improvise a melody in F# minor pentatonic over the vamp</li>
+<li><b>The bridge</b>: <code>D6sus2 / Bsus4 / D6sus2 E5 D E</code>.  Same shape as the verse pre-chorus, but stretched out.  Lean into the suspended chords; let "Won't you stay, stay, stay" hang in the air</li>
+<li><b>The outro</b>: <code>E F#m D</code> repeated as a vamp.  This is V to vi to IV, an unusual loop that never lands on the tonic.  The song fades on this progression, never resolving to A.  Hold the energy and let your volume taper to zero</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge5ec3d8" class="outline-2">
+<h2 id="orge5ec3d8">Song Structure</h2>
+<div class="outline-text-2" id="text-orge5ec3d8">
+</div>
+<div id="outline-container-org0deb1b0" class="outline-3">
+<h3 id="org0deb1b0">Verse 1</h3>
+<div class="outline-text-3" id="text-org0deb1b0">
+<pre class="example" id="org5eb4666">
+[F#m]
+I don't know, what you've got
+        [E]
+But it plays with my emotions, I want you so much
+[F#m]
+Darling, I wanna hold you near
+     [E]
+Wanna whisper sweet and tender in your ear
+              [D6sus2]
+Can't stand the thought of you of you with somebody else,
+              [Bsus4]
+Gotta have your love, gotta have it all to myself
+[D6sus2]              [E5]    [D]   [E]
+I say yeah, yeah, yeah yeah
+</pre>
+</div>
+</div>
+<div id="outline-container-org1d67779" class="outline-3">
+<h3 id="org1d67779">Chorus</h3>
+<div class="outline-text-3" id="text-org1d67779">
+<pre class="example" id="org7f40f45">
+              [A]                       [D]
+I wanna be your lover, lover, mmm
+              [E A]            [D]
+wanna be your lover, lover, loverboy
+              [E A]              [D]
+I wanna be your lover, lover, yeah
+              [E A]              [D]
+Wanna be your lover, lover, loverboy
+
+[F#m]  [E]
+</pre>
+</div>
+</div>
+<div id="outline-container-orgd1f31cf" class="outline-3">
+<h3 id="orgd1f31cf">Verse 2</h3>
+<div class="outline-text-3" id="text-orgd1f31cf">
+<pre class="example" id="org3176ee9">
+     [F#m]
+I'm too far gone, hard to stop
+     [E]
+Baby you're my dream in motion and I won't give up
+                [F#m]
+Mmmm, you're teasing me, with your fire
+[E]
+Fingers on the trigger, you're the one I desire
+                        [D6sus2]
+'Cause I get this fever feelin' from nobody else
+                [Bsus4]
+Gotta have your tenderness, all to myself
+[D6sus2]              [E5]    [D]   [E]
+I say yeah, yeah, yeah yeah
+</pre>
+</div>
+</div>
+<div id="outline-container-org17ef063" class="outline-3">
+<h3 id="org17ef063">Chorus 2</h3>
+<div class="outline-text-3" id="text-org17ef063">
+<p>
+Same as Chorus 1.
+</p>
+</div>
+</div>
+<div id="outline-container-org025d286" class="outline-3">
+<h3 id="org025d286">Instrumental</h3>
+<div class="outline-text-3" id="text-org025d286">
+<pre class="example" id="org5924f04">
+[F#m]  [E]  [F#m]  [E]
+[F#m]  [E]  [F#m]  [E]
+</pre>
+
+<p>
+Instrumental note:
+</p>
+
+<p>
+In the original recording this is a guitar solo over the verse vamp.  On solo piano, improvise a melody in <b>F# minor pentatonic</b> (F#, A, B, C#, E) over the F#m to E pattern.  Add G# and D# from F# natural minor for color.  Keep the LH playing root-position chords on the downbeats.
+</p>
+</div>
+</div>
+<div id="outline-container-org7b2b311" class="outline-3">
+<h3 id="org7b2b311">Bridge</h3>
+<div class="outline-text-3" id="text-org7b2b311">
+<pre class="example" id="orga2fea9a">
+                [D6sus2]
+And I want you really, but the thing is there's nothing I can say
+              [Bsus4]
+To stop you darling from running, running away
+          [D6sus2]              [E5]    [D]   [E]
+Won't you stay, stay, stay
+</pre>
+</div>
+</div>
+<div id="outline-container-org5f676b7" class="outline-3">
+<h3 id="org5f676b7">Final Chorus</h3>
+<div class="outline-text-3" id="text-org5f676b7">
+<pre class="example" id="orge26fa4f">
+              [A]                       [D]
+I wanna be your lover, lover, yeah
+              [E A]              [D]
+Wanna be your lover, lover, loverboy
+</pre>
+</div>
+</div>
+<div id="outline-container-org18aa0d7" class="outline-3">
+<h3 id="org18aa0d7">Outro</h3>
+<div class="outline-text-3" id="text-org18aa0d7">
+<pre class="example" id="orgee8abb1">
+     [E]   [F#m]                    [D]
+I wanna be your love (oh aah ooh ahh)
+     [E]      [F#m]                 [D]
+I gotta be your love (oh aah ooh ahh)
+     [E]      [F#m]                 [D]
+I wanna be your love (oh aah ooh ahh)
+          [E]            [F#m]              [D]
+And I can't stand it baby ooh (oh aah ooh ahh)
+     [E]            [F#m]                  [D]
+Ooh ooh ooh ooh ooh (oh aah ooh ahh)
+     [E]      [F#m]                       [D]
+Girl I love you
+
+[E]  [F#m]  [D]
+(Fade to end)
+</pre>
+
+<p>
+Outro note:
+</p>
+
+<p>
+The <code>E F#m D</code> loop is V to vi to IV, a progression that never lands on the tonic A.  This creates a sense of yearning that is never resolved, the song ends in suspension.  Match this on piano by keeping the chords ringing with the sustain pedal and slowly fading your volume.  Do not add a tonic A at the end; the song fades on the unresolved loop.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

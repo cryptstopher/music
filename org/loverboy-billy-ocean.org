@@ -1,0 +1,279 @@
+#+TITLE: Loverboy, Billy Ocean
+#+SUBTITLE: Piano Cheat Sheet
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Introduction
+
+Released in 1984 on /Suddenly/, "Loverboy" is one of those songs that sounds harmonically simple on the page, an F#m vamp, an A-D-E chorus, but the texture and the chord choices (D6sus2, Bsus4, E5) give it a shimmering, half-suspended quality that is pure mid-80s production.  The verses brood on the relative minor; the chorus opens up into bright major-key territory.  The whole song rides the tension between F#m (the lonely, longing minor) and A (the confident "I wanna be your lover" major).
+
+* Key & Theory
+
+The song lives in *A major*.  Almost every chord is diatonic, the few that look exotic (D6sus2, Bsus4, E5) are ordinary diatonic chords with sus and add tones that keep the texture floating.
+
+| Chord    | Role          | Comment                                       |
+|----------+---------------+-----------------------------------------------|
+| A        | I             | tonic, the "lover" chord of the chorus        |
+| Bsus4    | (V/V) sus     | secondary-dominant flavor, but all diatonic   |
+| D        | IV            | the lifting chord                             |
+| D6sus2   | IV color      | adds 2nd and 6th, omits the 3rd               |
+| E        | V             | dominant, pulls back to A                     |
+| E5       | V (no 3rd)    | open power-chord stab                         |
+| F#m      | vi            | relative minor, the verse's home              |
+
+The verse engine is a slow *F#m to E* vamp (vi to V), which feels suspended because it never lands on the tonic A.  The pre-chorus moves to *D6sus2 to Bsus4*, a IV to ii pattern that lifts the energy.  The =D6sus2 E5 D E= turnaround is a classic 80s-pop "elevator" up to the chorus.
+
+The chorus is the *I, IV, V* loop, =A, D, E=, with F#m sneaking in only at the very end as a transition back to the verse.
+
+** A Major Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | A    |
+| 2      | B    |
+| 3      | C#   |
+| 4      | D    |
+| 5      | E    |
+| 6      | F#   |
+| 7      | G#   |
+
+** Diatonic Triads in A Major
+
+| Degree | Chord  | Notes        | Used in song? |
+|--------+--------+--------------+---------------|
+| I      | A      | A, C#, E     | yes           |
+| ii     | Bm     | B, D, F#     | replaced by Bsus4 |
+| iii    | C#m    | C#, E, G#    | no            |
+| IV     | D      | D, F#, A     | yes           |
+| V      | E      | E, G#, B     | yes           |
+| vi     | F#m    | F#, A, C#    | yes           |
+| vii°   | G#dim  | G#, B, D     | no            |
+
+The most interesting move is *Bsus4* in place of Bm.  Bm would put a D natural inside the chord (b3 of B); Bsus4 replaces that D with E (the 4th of B).  All three notes of Bsus4 (B, E, F#) are diatonic to A major, and the suspension creates a hanging, unresolved quality before D6sus2 returns.
+
+* Chord Reference
+
+| Chord    | Notes                | Fingering (RH)    | Role             |
+|----------+----------------------+-------------------+------------------|
+| A        | A, C#, E             | 1, 3, 5           | I                |
+| Bsus4    | B, E, F#             | 1, 3, 5           | ii (suspended)   |
+| D        | D, F#, A             | 1, 3, 5           | IV               |
+| D6sus2   | D, E, A, B           | 1, 2, 3, 5        | IV color         |
+| E        | E, G#, B             | 1, 3, 5           | V                |
+| E5       | E, B (no 3rd)        | 1, 5              | V (power chord)  |
+| F#m      | F#, A, C#            | 1, 3, 5           | vi               |
+
+** Tips
+
+- LH plays the root in the bass; RH holds the triad
+- *F#m to E* is a one-note shift in voice leading.  F#m (F# A C#) → E (E G# B): only F# and C# move down by half-steps; A drops to G#.  Smooth, smooth, smooth.  Keep your hand close
+- *D to A* is also tight: D (D F# A) → A (A C# E).  F# drops to E, D drops to C#, A holds.  One common tone (A); two stepwise moves
+- *E to A* (V to I) is the cadential resolution.  E (E G# B) → A (A C# E).  G# rises to A; E and B walk to A and C#
+- The *D6sus2* and *Bsus4* are the song's signature voicings.  See below
+
+** D6sus2
+
+The chord D6sus2 stacks the 1, 2, 5, and 6 of D, dropping the 3rd entirely:
+
+  #+BEGIN_EXAMPLE
+  D6sus2:  D, E, A, B
+  D major: D, F#, A    (the diatonic IV)
+  D6:      D, F#, A, B (just adds the 6th)
+  Dsus2:   D, E, A     (suspended 2nd)
+  #+END_EXAMPLE
+
+By stacking *both* the sus2 and the 6, you get a chord with no 3rd, no clear major/minor identity, just an open, ringing pad.  This is a quintessential 80s-pop sound, think every chorus pad on a DX7.
+
+  #+BEGIN_EXAMPLE
+  LH: D (bass)
+  RH: E, A, B    (2nd, 5th, 6th)
+  Fingering: 1, 3, 5 in the right hand (E A B), or 1, 2, 3, 5 if you also hold the D
+  #+END_EXAMPLE
+
+A simpler substitute: just play *D* as a regular triad.  You lose the shimmer but keep the harmony.  The chart's E5 in =D6sus2 E5 D E= can likewise be played as plain *E*.
+
+** Bsus4
+
+Bsus4 stacks the 1, 4, and 5 of B, replacing the 3rd:
+
+  #+BEGIN_EXAMPLE
+  Bsus4:  B, E, F#
+  B maj:  B, D#, F#  (the V of A's V; not diatonic to A major)
+  Bm:     B, D, F#   (diatonic ii)
+  #+END_EXAMPLE
+
+Plain B major would inject D# (a non-diatonic note) and turn the chord into a secondary dominant, V/V.  Plain Bm is the diatonic ii.  *Bsus4* skips the choice entirely: by suspending the 3rd up to the 4th (D# or D natural → E), the chord becomes B, E, F#, all three of those notes are in A major.
+
+The effect is that the chord sounds like it could resolve to either Bm or B, but it just hangs there, suspended.  Lean into the suspension.  Don't resolve it down to D# or D natural, let the next chord (D6sus2 or E) do the resolving.
+
+  #+BEGIN_EXAMPLE
+  LH: B (bass)
+  RH: B, E, F#    (1, 4, 5)
+  Fingering: 1, 3, 5
+  #+END_EXAMPLE
+
+** E5
+
+E5 is just a power chord, the root and the 5th, no 3rd:
+
+  #+BEGIN_EXAMPLE
+  E5:    E, B
+  E maj: E, G#, B
+  #+END_EXAMPLE
+
+Used in the =D6sus2 E5 D E= turnaround, the E5 is a brief, open stab before the full E major lands two beats later.  On piano you can play E5 as just two notes (E and B), or fatten it with an octave (E, B, E).  The point is the absence of G#, the chord is harmonically ambiguous for one beat.
+
+* Inversions for Voice Leading
+
+The chorus moves *A, D, E, A* in close succession.  Smoothing this with inversions tightens the right hand and keeps the line singing rather than jumping around.
+
+| Chord    | Position  | Notes (low to high)| When to Use                                       |
+|----------+-----------+--------------------+---------------------------------------------------|
+| A        | Root      | A, C#, E           | Default tonic                                     |
+| A/C#     | 1st inv.  | C#, E, A           | C# in bass walks down toward B (Bsus4) or up      |
+| A/E      | 2nd inv.  | E, A, C#           | E pedal, ties E chord into A                      |
+|----------+-----------+--------------------+---------------------------------------------------|
+| D        | Root      | D, F#, A           | Default IV                                        |
+| D/F#     | 1st inv.  | F#, A, D           | F# in bass continues from F#m                     |
+| D/A      | 2nd inv.  | A, D, F#           | A pedal between A chord and D chord               |
+|----------+-----------+--------------------+---------------------------------------------------|
+| E        | Root      | E, G#, B           | Default V                                         |
+| E/G#     | 1st inv.  | G#, B, E           | G# in bass rises to A                             |
+| E/B      | 2nd inv.  | B, E, G#           | B pedal from Bsus4                                |
+|----------+-----------+--------------------+---------------------------------------------------|
+| F#m      | Root      | F#, A, C#          | Default vi                                        |
+| F#m/A    | 1st inv.  | A, C#, F#          | A in bass; ties F#m to A chord                    |
+| F#m/C#   | 2nd inv.  | C#, F#, A          | C# pedal; rare but pretty                         |
+
+Voice-leading tip:
+
+The verse's *F#m → E* alternation is best played with both chords in root position.  The bass walks F# → E (a whole step down), and the right hand barely moves: F# A C# → E G# B, only one common scale-step shift between each note.  Keep the right hand low and close; let the bass do the heavy lifting.
+
+For the chorus =A, D=, try *A* in root position and *D* in second inversion (=A, D, F#=).  The A in the bass of D second-inversion creates a pedal effect, the bass holds A while the upper voices brighten from A-C#-E to A-D-F#.
+
+* Performance Notes
+
+- *Tempo*: medium-slow groove, around 95 BPM.  This is a slow-burn pop song, not a ballad and not a banger.  Keep the pulse steady
+- *Touch*: the verse should feel restrained, almost hushed.  The chorus opens up into ringing major chords.  Use dynamics to mark the lift
+- *Pedal*: change on every chord.  The sus chords (D6sus2, Bsus4) need to ring clearly without smearing into the next chord
+- *The verse vamp*: F#m to E, played slowly, with the right hand sustaining each chord for the full bar.  Keep it sparse, this is the singer's section
+- *The pre-chorus lift*: =D6sus2 ... Bsus4 ... D6sus2 E5 D E=.  Each chord should feel like another step up a staircase.  Don't rush; let the suspensions hang
+- *The chorus*: =A D / E A D / E A D / E A D=.  Bright, full chords with the sustain pedal down.  This is the hook, make it shine
+- *The instrumental*: =F#m E F#m E / F#m E F#m E= played four times.  Keep the same restrained verse texture, this is a vamp, not a feature.  In an actual band arrangement this is where the guitar solo lives; on solo piano you can improvise a melody in F# minor pentatonic over the vamp
+- *The bridge*: =D6sus2 / Bsus4 / D6sus2 E5 D E=.  Same shape as the verse pre-chorus, but stretched out.  Lean into the suspended chords; let "Won't you stay, stay, stay" hang in the air
+- *The outro*: =E F#m D= repeated as a vamp.  This is V to vi to IV, an unusual loop that never lands on the tonic.  The song fades on this progression, never resolving to A.  Hold the energy and let your volume taper to zero
+
+* Song Structure
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+  [F#m]
+  I don't know, what you've got
+          [E]
+  But it plays with my emotions, I want you so much
+  [F#m]
+  Darling, I wanna hold you near
+       [E]
+  Wanna whisper sweet and tender in your ear
+                [D6sus2]
+  Can't stand the thought of you of you with somebody else,
+                [Bsus4]
+  Gotta have your love, gotta have it all to myself
+  [D6sus2]              [E5]    [D]   [E]
+  I say yeah, yeah, yeah yeah
+  #+END_EXAMPLE
+
+** Chorus
+
+  #+BEGIN_EXAMPLE
+                [A]                       [D]
+  I wanna be your lover, lover, mmm
+                [E A]            [D]
+  wanna be your lover, lover, loverboy
+                [E A]              [D]
+  I wanna be your lover, lover, yeah
+                [E A]              [D]
+  Wanna be your lover, lover, loverboy
+
+  [F#m]  [E]
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+       [F#m]
+  I'm too far gone, hard to stop
+       [E]
+  Baby you're my dream in motion and I won't give up
+                  [F#m]
+  Mmmm, you're teasing me, with your fire
+  [E]
+  Fingers on the trigger, you're the one I desire
+                          [D6sus2]
+  'Cause I get this fever feelin' from nobody else
+                  [Bsus4]
+  Gotta have your tenderness, all to myself
+  [D6sus2]              [E5]    [D]   [E]
+  I say yeah, yeah, yeah yeah
+  #+END_EXAMPLE
+
+** Chorus 2
+
+Same as Chorus 1.
+
+** Instrumental
+
+  #+BEGIN_EXAMPLE
+  [F#m]  [E]  [F#m]  [E]
+  [F#m]  [E]  [F#m]  [E]
+  #+END_EXAMPLE
+
+Instrumental note:
+
+In the original recording this is a guitar solo over the verse vamp.  On solo piano, improvise a melody in *F# minor pentatonic* (F#, A, B, C#, E) over the F#m to E pattern.  Add G# and D# from F# natural minor for color.  Keep the LH playing root-position chords on the downbeats.
+
+** Bridge
+
+  #+BEGIN_EXAMPLE
+                  [D6sus2]
+  And I want you really, but the thing is there's nothing I can say
+                [Bsus4]
+  To stop you darling from running, running away
+            [D6sus2]              [E5]    [D]   [E]
+  Won't you stay, stay, stay
+  #+END_EXAMPLE
+
+** Final Chorus
+
+  #+BEGIN_EXAMPLE
+                [A]                       [D]
+  I wanna be your lover, lover, yeah
+                [E A]              [D]
+  Wanna be your lover, lover, loverboy
+  #+END_EXAMPLE
+
+** Outro
+
+  #+BEGIN_EXAMPLE
+       [E]   [F#m]                    [D]
+  I wanna be your love (oh aah ooh ahh)
+       [E]      [F#m]                 [D]
+  I gotta be your love (oh aah ooh ahh)
+       [E]      [F#m]                 [D]
+  I wanna be your love (oh aah ooh ahh)
+            [E]            [F#m]              [D]
+  And I can't stand it baby ooh (oh aah ooh ahh)
+       [E]            [F#m]                  [D]
+  Ooh ooh ooh ooh ooh (oh aah ooh ahh)
+       [E]      [F#m]                       [D]
+  Girl I love you
+
+  [E]  [F#m]  [D]
+  (Fade to end)
+  #+END_EXAMPLE
+
+Outro note:
+
+The =E F#m D= loop is V to vi to IV, a progression that never lands on the tonic A.  This creates a sense of yearning that is never resolved, the song ends in suspension.  Match this on piano by keeping the chords ringing with the sustain pedal and slowly fading your volume.  Do not add a tonic A at the end; the song fades on the unresolved loop.

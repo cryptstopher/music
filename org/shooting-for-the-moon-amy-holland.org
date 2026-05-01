@@ -139,7 +139,7 @@ The most common chorus phrase is *A, F#m, B, E*.  Try this bass line: A, A (F#m/
 ** Verse 1
 
   #+BEGIN_EXAMPLE
-  [E]              [A]
+  [C#m]            [A]
   Funny how sometimes life
   [B]                          [E]
   Just changes overnight
