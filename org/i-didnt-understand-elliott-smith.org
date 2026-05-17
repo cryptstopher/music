@@ -1,0 +1,259 @@
+#+TITLE: I Didn't Understand, Elliott Smith
+#+SUBTITLE: Piano Cheat Sheet
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Introduction
+
+"I Didn't Understand" closes Elliott Smith's 1998 album /XO/, and it is unlike
+anything else in his catalog: it is *entirely a cappella*.  No guitar, no
+piano, no drums, nothing, just Elliott's voice multitracked into a small
+choir, harmonizing with himself.  The Beach-Boys-by-way-of-the-Beatles vocal
+stack carries the entire harmony.
+
+That makes a piano "cheat sheet" a slightly strange object.  You are not
+copying an instrumental part, there isn't one.  You are *reducing a vocal
+arrangement to the keyboard*, the way you'd play a hymn or a choral score at
+the piano.  Treat every chord as a clump of singers, not a strummed shape.
+The reward is that the harmony is gorgeous and the voice leading is the whole
+point.
+
+* Capo & Transposition (read this first)
+
+The guitar chart this is based on is labeled *"Capo 3"* with chords
+=G#m=, =B=, =E=, =F#=, =C#m=.  There is *no* "transpose to X" note (compare
+the Crawlspace sheet, where there was), and the chords are barre-heavy, not
+easy open shapes.  That tells you the capo here is not for easy fingering, it
+is to lift a guitar transcription up to *Elliott's a cappella vocal pitch*.
+
+Under the standard chord-sheet convention, the chords printed are the *shapes
+fingered above the capo*, and the music actually *sounds three semitones
+higher*.  A piano has no capo, so it plays the real, sounding pitches.
+
+| Fingered shape (capo 3) | Sounds as / piano plays |
+|-------------------------+-------------------------|
+| G#m                     | *Bm*                    |
+| B                       | *D*                     |
+| E                       | *G*                     |
+| F#                      | *A*                     |
+| C#m                     | *Em*                    |
+
+⚠️ *Do not play G#m–B–E–F#–C#m on the piano.*  Those are the capo'd guitar
+shapes.  The song actually sounds in *B minor*, and your five chords are
+*Bm, D, G, A, Em*.  Everything in the rest of this sheet is in that real,
+sounding key.
+
+* Key & Theory
+
+The song lives in *B natural minor* (Aeolian), the relative minor of D major.
+Every chord is diatonic to B natural minor, and, crucially, there is *no F#
+major* (no raised leading tone, no dominant V).  That missing leading tone is
+why the song feels permanently unresolved and sad rather than dramatic; it
+never gets the strong V→i pull that would let it land with finality.
+
+| Chord | Role     | Comment                                          |
+|-------+----------+--------------------------------------------------|
+| Bm    | i        | tonic, the home the song keeps circling          |
+| D     | III      | the relative major, a brief warmth               |
+| G     | VI       | the soft, sighing lift                           |
+| A     | VII      | subtonic (not a leading tone), pushes to D or Bm |
+| Em    | iv       | minor subdominant, the ache in the chorus        |
+
+The *verse* runs *Bm → G → A* (i → VI → VII), the quintessential Aeolian
+descent-feel loop, then settles with *Bm → D → G* (i → III → VI) under
+"tonight, tomorrow and every day."  The *chorus* opens *A → D* (VII → III)
+and resolves through *Em → D → Em → Bm* (iv → III → iv → i), a gentle minor
+plagal motion that finally touches home on Bm at "What a fucking joke" /
+"I didn't understand."
+
+** B Natural Minor Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | B    |
+| 2      | C#   |
+| 3      | D    |
+| 4      | E    |
+| 5      | F#   |
+| 6      | G    |
+| 7      | A    |
+
+** Diatonic Triads in B Natural Minor
+
+| Degree | Chord  | Notes      | Used in song? |
+|--------+--------+------------+---------------|
+| i      | Bm     | B, D, F#   | yes           |
+| ii°    | C#dim  | C#, E, G   | no            |
+| III    | D      | D, F#, A   | yes           |
+| iv     | Em     | E, G, B    | yes           |
+| v      | F#m    | F#, A, C#  | no            |
+| VI     | G      | G, B, D    | yes           |
+| VII    | A      | A, C#, E   | yes           |
+
+Note that the chord built on scale degree 5 is *F#m*, not F# major.  The song
+uses neither, the dominant function is simply absent.  This is pure Aeolian,
+and it is a big part of the Elliott Smith sound.
+
+* Chord Reference
+
+| Chord | Notes    | Fingering (RH) | Role |
+|-------+----------+----------------+------|
+| Bm    | B, D, F# | 1, 3, 5        | i    |
+| D     | D, F#, A | 1, 3, 5        | III  |
+| Em    | E, G, B  | 1, 3, 5        | iv   |
+| G     | G, B, D  | 1, 3, 5        | VI   |
+| A     | A, C#, E | 1, 3, 5        | VII  |
+
+** Tips
+
+- Voice these like a *choir*, not a band.  Close, mid-register, four-ish
+  voices, smooth.  This is a vocal arrangement; play it as one
+- *Bm → G* shares two common tones.  Bm (B D F#) → G (G B D): keep *B* and
+  *D* exactly where they are; only F# steps down to G.  The change should
+  barely move
+- *Bm → D* also shares two common tones (the relative-major move).  Bm
+  (B D F#) → D (D F# A): keep *D* and *F#*; only B steps down to A
+- *Em → D* is a clean parallel slide: every voice drops a whole step,
+  E→D, G→F#, B→A.  Let the whole hand fall together, smooth and resigned
+- *G → A* (VI → VII) has no common tones, every voice steps up a whole
+  step together.  This is the one place the harmony actively rises; let it
+  feel like a small, hopeful lift before it sinks back
+- *Em → Bm* (iv → i) shares *B*.  This is the song's resolution, soft, not
+  triumphant.  Don't punch it; let it settle
+
+* Inversions for Voice Leading
+
+The whole piece is small, smooth motion between five chords.  Inversions keep
+the choir tight and the common tones ringing.
+
+| Chord | Position | Notes (low→high) | When to Use                              |
+|-------+----------+------------------+------------------------------------------|
+| Bm    | Root     | B, D, F#         | Default tonic                            |
+| Bm/D  | 1st inv. | D, F#, B         | D in bass ties Bm into D (III)           |
+| Bm/F# | 2nd inv. | F#, B, D         | F# pedal; quiet, hovering tonic          |
+|-------+----------+------------------+------------------------------------------|
+| D     | Root     | D, F#, A         | Default III                              |
+| D/F#  | 1st inv. | F#, A, D         | F# held from Bm; only one voice moves    |
+| D/A   | 2nd inv. | A, D, F#         | A pedal, ties A (VII) into D             |
+|-------+----------+------------------+------------------------------------------|
+| G     | Root     | G, B, D          | Default VI                               |
+| G/B   | 1st inv. | B, D, G          | B & D held from Bm; barely-moving change |
+| G/D   | 2nd inv. | D, G, B          | D pedal between D and G                   |
+|-------+----------+------------------+------------------------------------------|
+| A     | Root     | A, C#, E         | Default VII                              |
+| A/C#  | 1st inv. | C#, E, A         | C# in bass walks up toward D             |
+|-------+----------+------------------+------------------------------------------|
+| Em    | Root     | E, G, B          | Default iv                               |
+| Em/G  | 1st inv. | G, B, E          | G & B held from G chord                   |
+| Em/B  | 2nd inv. | B, E, G          | B pedal; ties Em into Bm resolution       |
+
+Voice-leading recipe for the verse:
+
+Play *Bm* in root position, then *G in first inversion* (=B, D, G=).  The
+right hand keeps B and D dead still and only lifts F# → G.  The choir scarcely
+breathes.  Then *A* in root position for the lift, and back to Bm.  Keep it
+low and close, this is murmured, not projected.
+
+For the chorus resolution, *Em → Bm*: play Em in root position and Bm in
+second inversion (=F#, B, D=), or simply keep B as a common tone between them.
+The arrival on Bm should feel like a held breath let out, not a cadence
+slammed shut.
+
+* Performance Notes
+
+- *This song has no instruments.*  Everything below is your reconstruction of
+  the vocal harmony.  Aim for a choral, sustained sound, not a comping pattern
+- *Tempo*: slow and *rubato*.  There is no drum, no groove, nothing keeping
+  strict time on the record, the phrases breathe with the lyric.  Roughly a
+  slow ~80 BPM feel, but bend it freely.  Follow the words, not a metronome
+- *Touch*: legato and soft throughout.  Connect chords by hand as much as by
+  pedal.  Think of each chord as voices sustaining and resolving into the next
+- *Pedal*: gentle, and change cleanly on every chord so the choir stays clear.
+  No wash.  When in doubt, under-pedal and connect with the fingers instead
+- *Dynamics*: hushed.  This is a confession at the end of the album, not a
+  chorus to belt.  The loudest the harmony ever gets is the resigned "What a
+  fucking joke," and even that is more bitter than loud
+- *The verse* (=Bm G A / Bm D G=): keep it murmured and close.  The
+  =Bm → G → A= loop is the heart of the song; let it cycle without drawing
+  attention to the chord changes
+- *The chorus* (=A D / Em D Em Bm=): the move into *Em* (iv) is the emotional
+  peak, the minor subdominant is where the ache lives.  Lean on it slightly,
+  then let *Em → Bm* sink home.  Do not brighten it; the resolution is sad,
+  not relieved
+- *The repeated tags* ("What a fucking joke", "I didn't understand"): each
+  repetition is =Em → D= then finally =Em → Bm=.  Play them progressively
+  quieter, the song doesn't build, it deflates.  End on Bm with no flourish;
+  let it simply stop, the way the record's voices simply stop
+- *Optional, true to the original*: instead of solid triads, arpeggiate or
+  stagger the chord tones so individual "voices" enter one at a time, the way
+  the vocal stack does.  This is closer to the record than block chords, and
+  it suits the rubato feel
+
+* Song Structure
+
+** Intro
+
+  #+BEGIN_EXAMPLE
+  [Bm]  [D]  [G]
+  #+END_EXAMPLE
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+  [Bm]             [G]          [A]
+  Thought you'd be looking for the next in line to love
+          [Bm]      [D]      [G]
+  then ignore put out and put away
+
+        [Bm]             [G]        [A]
+  And so you'd soon be leaving me alone like I'm supposed to be
+  [Bm]        [D]    [G]
+  tonight, tomorrow and every day
+  #+END_EXAMPLE
+
+** Chorus
+
+  #+BEGIN_EXAMPLE
+  [A]                      [D]
+  There's nothing here that you'll miss
+         [Em]        [D]    [Em]     [Bm]
+  I can guarantee you this is a cloud of smoke
+  [A]               [D]
+  trying to occupy space
+  [Em]             [D]
+  What a fucking joke
+  [Em]             [Bm]
+  What a fucking joke
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+  [Bm]         [G]       [A]
+  I waited for a bus to separate the both of us
+            [Bm]      [D]     [G]
+  and take me off far away from you
+
+          [Bm]           [G]            [A]
+  'cos my feelings never change a bit, I always feel like shit
+          [Bm]      [D]    [G]
+  I don't know why, I guess I 'just do'
+  #+END_EXAMPLE
+
+** Chorus 2
+
+  #+BEGIN_EXAMPLE
+  [A]                         [D]
+  You once talked to me about love
+         [Em]              [D]  [Em]      [Bm]
+  and you painted pictures of a never-never land
+  [A]                      [D]
+  And I could've gone to that place
+        [Em]             [D]
+  but I didn't understand
+     [Em]        [D]
+  I didn't understand
+     [Em]        [Bm]
+  I didn't understand
+  #+END_EXAMPLE

@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-05-17 Sun 14:02 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>I Didn't Understand, Elliott Smith</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">I Didn't Understand, Elliott Smith</h1>
+<p class="subtitle" role="doc-subtitle">Piano Cheat Sheet</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgdfefe83">Introduction</a></li>
+<li><a href="#orge62697b">Capo &amp; Transposition (read this first)</a></li>
+<li><a href="#org00a3708">Key &amp; Theory</a>
+<ul>
+<li><a href="#org5b2a798">B Natural Minor Scale</a></li>
+<li><a href="#orged2227b">Diatonic Triads in B Natural Minor</a></li>
+</ul>
+</li>
+<li><a href="#org31cb55c">Chord Reference</a>
+<ul>
+<li><a href="#orgffd11de">Tips</a></li>
+</ul>
+</li>
+<li><a href="#org5a3d787">Inversions for Voice Leading</a></li>
+<li><a href="#orgc06e03a">Performance Notes</a></li>
+<li><a href="#orgddf2ef9">Song Structure</a>
+<ul>
+<li><a href="#orgbdc7b3a">Intro</a></li>
+<li><a href="#orge4419af">Verse 1</a></li>
+<li><a href="#org4a00397">Chorus</a></li>
+<li><a href="#org31ee80e">Verse 2</a></li>
+<li><a href="#org4dfeb11">Chorus 2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<p>
+<a href="index.html">← Back to Index</a>
+</p>
+<div id="outline-container-orgdfefe83" class="outline-2">
+<h2 id="orgdfefe83">Introduction</h2>
+<div class="outline-text-2" id="text-orgdfefe83">
+<p>
+"I Didn't Understand" closes Elliott Smith's 1998 album <i>XO</i>, and it is unlike
+anything else in his catalog: it is <b>entirely a cappella</b>.  No guitar, no
+piano, no drums, nothing, just Elliott's voice multitracked into a small
+choir, harmonizing with himself.  The Beach-Boys-by-way-of-the-Beatles vocal
+stack carries the entire harmony.
+</p>
+
+<p>
+That makes a piano "cheat sheet" a slightly strange object.  You are not
+copying an instrumental part, there isn't one.  You are <b>reducing a vocal
+arrangement to the keyboard</b>, the way you'd play a hymn or a choral score at
+the piano.  Treat every chord as a clump of singers, not a strummed shape.
+The reward is that the harmony is gorgeous and the voice leading is the whole
+point.
+</p>
+</div>
+</div>
+<div id="outline-container-orge62697b" class="outline-2">
+<h2 id="orge62697b">Capo &amp; Transposition (read this first)</h2>
+<div class="outline-text-2" id="text-orge62697b">
+<p>
+The guitar chart this is based on is labeled <b>"Capo 3"</b> with chords
+<code>G#m</code>, <code>B</code>, <code>E</code>, <code>F#</code>, <code>C#m</code>.  There is <b>no</b> "transpose to X" note (compare
+the Crawlspace sheet, where there was), and the chords are barre-heavy, not
+easy open shapes.  That tells you the capo here is not for easy fingering, it
+is to lift a guitar transcription up to <b>Elliott's a cappella vocal pitch</b>.
+</p>
+
+<p>
+Under the standard chord-sheet convention, the chords printed are the <b>shapes
+fingered above the capo</b>, and the music actually <b>sounds three semitones
+higher</b>.  A piano has no capo, so it plays the real, sounding pitches.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Fingered shape (capo 3)</th>
+<th scope="col" class="org-left">Sounds as / piano plays</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">G#m</td>
+<td class="org-left"><b>Bm</b></td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-left"><b>D</b></td>
+</tr>
+
+<tr>
+<td class="org-left">E</td>
+<td class="org-left"><b>G</b></td>
+</tr>
+
+<tr>
+<td class="org-left">F#</td>
+<td class="org-left"><b>A</b></td>
+</tr>
+
+<tr>
+<td class="org-left">C#m</td>
+<td class="org-left"><b>Em</b></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+⚠️ <b>Do not play G#m–B–E–F#–C#m on the piano.</b>  Those are the capo'd guitar
+shapes.  The song actually sounds in <b>B minor</b>, and your five chords are
+<b>Bm, D, G, A, Em</b>.  Everything in the rest of this sheet is in that real,
+sounding key.
+</p>
+</div>
+</div>
+<div id="outline-container-org00a3708" class="outline-2">
+<h2 id="org00a3708">Key &amp; Theory</h2>
+<div class="outline-text-2" id="text-org00a3708">
+<p>
+The song lives in <b>B natural minor</b> (Aeolian), the relative minor of D major.
+Every chord is diatonic to B natural minor, and, crucially, there is <b>no F#
+major</b> (no raised leading tone, no dominant V).  That missing leading tone is
+why the song feels permanently unresolved and sad rather than dramatic; it
+never gets the strong V→i pull that would let it land with finality.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Role</th>
+<th scope="col" class="org-left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bm</td>
+<td class="org-left">i</td>
+<td class="org-left">tonic, the home the song keeps circling</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">III</td>
+<td class="org-left">the relative major, a brief warmth</td>
+</tr>
+
+<tr>
+<td class="org-left">G</td>
+<td class="org-left">VI</td>
+<td class="org-left">the soft, sighing lift</td>
+</tr>
+
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">VII</td>
+<td class="org-left">subtonic (not a leading tone), pushes to D or Bm</td>
+</tr>
+
+<tr>
+<td class="org-left">Em</td>
+<td class="org-left">iv</td>
+<td class="org-left">minor subdominant, the ache in the chorus</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The <b>verse</b> runs <b>Bm → G → A</b> (i → VI → VII), the quintessential Aeolian
+descent-feel loop, then settles with <b>Bm → D → G</b> (i → III → VI) under
+"tonight, tomorrow and every day."  The <b>chorus</b> opens <b>A → D</b> (VII → III)
+and resolves through <b>Em → D → Em → Bm</b> (iv → III → iv → i), a gentle minor
+plagal motion that finally touches home on Bm at "What a fucking joke" /
+"I didn't understand."
+</p>
+</div>
+<div id="outline-container-org5b2a798" class="outline-3">
+<h3 id="org5b2a798">B Natural Minor Scale</h3>
+<div class="outline-text-3" id="text-org5b2a798">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">C#</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">G</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">A</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orged2227b" class="outline-3">
+<h3 id="orged2227b">Diatonic Triads in B Natural Minor</h3>
+<div class="outline-text-3" id="text-orged2227b">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Used in song?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">i</td>
+<td class="org-left">Bm</td>
+<td class="org-left">B, D, F#</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">ii°</td>
+<td class="org-left">C#dim</td>
+<td class="org-left">C#, E, G</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">III</td>
+<td class="org-left">D</td>
+<td class="org-left">D, F#, A</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">iv</td>
+<td class="org-left">Em</td>
+<td class="org-left">E, G, B</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">v</td>
+<td class="org-left">F#m</td>
+<td class="org-left">F#, A, C#</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">VI</td>
+<td class="org-left">G</td>
+<td class="org-left">G, B, D</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">VII</td>
+<td class="org-left">A</td>
+<td class="org-left">A, C#, E</td>
+<td class="org-left">yes</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Note that the chord built on scale degree 5 is <b>F#m</b>, not F# major.  The song
+uses neither, the dominant function is simply absent.  This is pure Aeolian,
+and it is a big part of the Elliott Smith sound.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org31cb55c" class="outline-2">
+<h2 id="org31cb55c">Chord Reference</h2>
+<div class="outline-text-2" id="text-org31cb55c">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Fingering (RH)</th>
+<th scope="col" class="org-left">Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bm</td>
+<td class="org-left">B, D, F#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">i</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">D, F#, A</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">III</td>
+</tr>
+
+<tr>
+<td class="org-left">Em</td>
+<td class="org-left">E, G, B</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">iv</td>
+</tr>
+
+<tr>
+<td class="org-left">G</td>
+<td class="org-left">G, B, D</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">VI</td>
+</tr>
+
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">A, C#, E</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">VII</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-orgffd11de" class="outline-3">
+<h3 id="orgffd11de">Tips</h3>
+<div class="outline-text-3" id="text-orgffd11de">
+<ul class="org-ul">
+<li>Voice these like a <b>choir</b>, not a band.  Close, mid-register, four-ish
+voices, smooth.  This is a vocal arrangement; play it as one</li>
+<li><b>Bm → G</b> shares two common tones.  Bm (B D F#) → G (G B D): keep <b>B</b> and
+<b>D</b> exactly where they are; only F# steps down to G.  The change should
+barely move</li>
+<li><b>Bm → D</b> also shares two common tones (the relative-major move).  Bm
+(B D F#) → D (D F# A): keep <b>D</b> and <b>F#</b>; only B steps down to A</li>
+<li><b>Em → D</b> is a clean parallel slide: every voice drops a whole step,
+E→D, G→F#, B→A.  Let the whole hand fall together, smooth and resigned</li>
+<li><b>G → A</b> (VI → VII) has no common tones, every voice steps up a whole
+step together.  This is the one place the harmony actively rises; let it
+feel like a small, hopeful lift before it sinks back</li>
+<li><b>Em → Bm</b> (iv → i) shares <b>B</b>.  This is the song's resolution, soft, not
+triumphant.  Don't punch it; let it settle</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5a3d787" class="outline-2">
+<h2 id="org5a3d787">Inversions for Voice Leading</h2>
+<div class="outline-text-2" id="text-org5a3d787">
+<p>
+The whole piece is small, smooth motion between five chords.  Inversions keep
+the choir tight and the common tones ringing.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Position</th>
+<th scope="col" class="org-left">Notes (low→high)</th>
+<th scope="col" class="org-left">When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bm</td>
+<td class="org-left">Root</td>
+<td class="org-left">B, D, F#</td>
+<td class="org-left">Default tonic</td>
+</tr>
+
+<tr>
+<td class="org-left">Bm/D</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">D, F#, B</td>
+<td class="org-left">D in bass ties Bm into D (III)</td>
+</tr>
+
+<tr>
+<td class="org-left">Bm/F#</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">F#, B, D</td>
+<td class="org-left">F# pedal; quiet, hovering tonic</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">Root</td>
+<td class="org-left">D, F#, A</td>
+<td class="org-left">Default III</td>
+</tr>
+
+<tr>
+<td class="org-left">D/F#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">F#, A, D</td>
+<td class="org-left">F# held from Bm; only one voice moves</td>
+</tr>
+
+<tr>
+<td class="org-left">D/A</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">A, D, F#</td>
+<td class="org-left">A pedal, ties A (VII) into D</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">G</td>
+<td class="org-left">Root</td>
+<td class="org-left">G, B, D</td>
+<td class="org-left">Default VI</td>
+</tr>
+
+<tr>
+<td class="org-left">G/B</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">B, D, G</td>
+<td class="org-left">B &amp; D held from Bm; barely-moving change</td>
+</tr>
+
+<tr>
+<td class="org-left">G/D</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">D, G, B</td>
+<td class="org-left">D pedal between D and G</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">Root</td>
+<td class="org-left">A, C#, E</td>
+<td class="org-left">Default VII</td>
+</tr>
+
+<tr>
+<td class="org-left">A/C#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">C#, E, A</td>
+<td class="org-left">C# in bass walks up toward D</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Em</td>
+<td class="org-left">Root</td>
+<td class="org-left">E, G, B</td>
+<td class="org-left">Default iv</td>
+</tr>
+
+<tr>
+<td class="org-left">Em/G</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">G, B, E</td>
+<td class="org-left">G &amp; B held from G chord</td>
+</tr>
+
+<tr>
+<td class="org-left">Em/B</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">B, E, G</td>
+<td class="org-left">B pedal; ties Em into Bm resolution</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Voice-leading recipe for the verse:
+</p>
+
+<p>
+Play <b>Bm</b> in root position, then <b>G in first inversion</b> (<code>B, D, G</code>).  The
+right hand keeps B and D dead still and only lifts F# → G.  The choir scarcely
+breathes.  Then <b>A</b> in root position for the lift, and back to Bm.  Keep it
+low and close, this is murmured, not projected.
+</p>
+
+<p>
+For the chorus resolution, <b>Em → Bm</b>: play Em in root position and Bm in
+second inversion (<code>F#, B, D</code>), or simply keep B as a common tone between them.
+The arrival on Bm should feel like a held breath let out, not a cadence
+slammed shut.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc06e03a" class="outline-2">
+<h2 id="orgc06e03a">Performance Notes</h2>
+<div class="outline-text-2" id="text-orgc06e03a">
+<ul class="org-ul">
+<li><b>This song has no instruments.</b>  Everything below is your reconstruction of
+the vocal harmony.  Aim for a choral, sustained sound, not a comping pattern</li>
+<li><b>Tempo</b>: slow and <b>rubato</b>.  There is no drum, no groove, nothing keeping
+strict time on the record, the phrases breathe with the lyric.  Roughly a
+slow ~80 BPM feel, but bend it freely.  Follow the words, not a metronome</li>
+<li><b>Touch</b>: legato and soft throughout.  Connect chords by hand as much as by
+pedal.  Think of each chord as voices sustaining and resolving into the next</li>
+<li><b>Pedal</b>: gentle, and change cleanly on every chord so the choir stays clear.
+No wash.  When in doubt, under-pedal and connect with the fingers instead</li>
+<li><b>Dynamics</b>: hushed.  This is a confession at the end of the album, not a
+chorus to belt.  The loudest the harmony ever gets is the resigned "What a
+fucking joke," and even that is more bitter than loud</li>
+<li><b>The verse</b> (<code>Bm G A / Bm D G</code>): keep it murmured and close.  The
+<code>Bm → G → A</code> loop is the heart of the song; let it cycle without drawing
+attention to the chord changes</li>
+<li><b>The chorus</b> (<code>A D / Em D Em Bm</code>): the move into <b>Em</b> (iv) is the emotional
+peak, the minor subdominant is where the ache lives.  Lean on it slightly,
+then let <b>Em → Bm</b> sink home.  Do not brighten it; the resolution is sad,
+not relieved</li>
+<li><b>The repeated tags</b> ("What a fucking joke", "I didn't understand"): each
+repetition is <code>Em → D</code> then finally <code>Em → Bm</code>.  Play them progressively
+quieter, the song doesn't build, it deflates.  End on Bm with no flourish;
+let it simply stop, the way the record's voices simply stop</li>
+<li><b>Optional, true to the original</b>: instead of solid triads, arpeggiate or
+stagger the chord tones so individual "voices" enter one at a time, the way
+the vocal stack does.  This is closer to the record than block chords, and
+it suits the rubato feel</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgddf2ef9" class="outline-2">
+<h2 id="orgddf2ef9">Song Structure</h2>
+<div class="outline-text-2" id="text-orgddf2ef9">
+</div>
+<div id="outline-container-orgbdc7b3a" class="outline-3">
+<h3 id="orgbdc7b3a">Intro</h3>
+<div class="outline-text-3" id="text-orgbdc7b3a">
+<pre class="example" id="org621ebd7">
+[Bm]  [D]  [G]
+</pre>
+</div>
+</div>
+<div id="outline-container-orge4419af" class="outline-3">
+<h3 id="orge4419af">Verse 1</h3>
+<div class="outline-text-3" id="text-orge4419af">
+<pre class="example" id="org5a51f95">
+[Bm]             [G]          [A]
+Thought you'd be looking for the next in line to love
+        [Bm]      [D]      [G]
+then ignore put out and put away
+
+      [Bm]             [G]        [A]
+And so you'd soon be leaving me alone like I'm supposed to be
+[Bm]        [D]    [G]
+tonight, tomorrow and every day
+</pre>
+</div>
+</div>
+<div id="outline-container-org4a00397" class="outline-3">
+<h3 id="org4a00397">Chorus</h3>
+<div class="outline-text-3" id="text-org4a00397">
+<pre class="example" id="orgbf39829">
+[A]                      [D]
+There's nothing here that you'll miss
+       [Em]        [D]    [Em]     [Bm]
+I can guarantee you this is a cloud of smoke
+[A]               [D]
+trying to occupy space
+[Em]             [D]
+What a fucking joke
+[Em]             [Bm]
+What a fucking joke
+</pre>
+</div>
+</div>
+<div id="outline-container-org31ee80e" class="outline-3">
+<h3 id="org31ee80e">Verse 2</h3>
+<div class="outline-text-3" id="text-org31ee80e">
+<pre class="example" id="orgf7f0e3d">
+[Bm]         [G]       [A]
+I waited for a bus to separate the both of us
+          [Bm]      [D]     [G]
+and take me off far away from you
+
+        [Bm]           [G]            [A]
+'cos my feelings never change a bit, I always feel like shit
+        [Bm]      [D]    [G]
+I don't know why, I guess I 'just do'
+</pre>
+</div>
+</div>
+<div id="outline-container-org4dfeb11" class="outline-3">
+<h3 id="org4dfeb11">Chorus 2</h3>
+<div class="outline-text-3" id="text-org4dfeb11">
+<pre class="example" id="orgd7199af">
+[A]                         [D]
+You once talked to me about love
+       [Em]              [D]  [Em]      [Bm]
+and you painted pictures of a never-never land
+[A]                      [D]
+And I could've gone to that place
+      [Em]             [D]
+but I didn't understand
+   [Em]        [D]
+I didn't understand
+   [Em]        [Bm]
+I didn't understand
+</pre>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
