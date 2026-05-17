@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-05-17 Sun 11:47 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Crawlspace, White Reaper</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Crawlspace, White Reaper</h1>
+<p class="subtitle" role="doc-subtitle">Piano Cheat Sheet</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgd7d37a1">Introduction</a></li>
+<li><a href="#orgdde08a4">Capo &amp; Transposition (read this first)</a></li>
+<li><a href="#org44e2dff">Key &amp; Theory</a>
+<ul>
+<li><a href="#orgc0612bb">Db Major Scale</a></li>
+<li><a href="#orge658945">Diatonic Triads in Db Major</a></li>
+</ul>
+</li>
+<li><a href="#org08634f6">Chord Reference</a>
+<ul>
+<li><a href="#org35f38f9">Tips</a></li>
+</ul>
+</li>
+<li><a href="#org9e0a28f">Inversions for Voice Leading</a></li>
+<li><a href="#org835753b">Performance Notes</a></li>
+<li><a href="#orgecc7c62">Song Structure</a>
+<ul>
+<li><a href="#org6c498b5">Verse 1</a></li>
+<li><a href="#org6809755">Chorus</a></li>
+<li><a href="#org1efae1d">Verse 2</a></li>
+<li><a href="#org749ec7f">Final Chorus</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<p>
+<a href="index.html">← Back to Index</a>
+</p>
+<div id="outline-container-orgd7d37a1" class="outline-2">
+<h2 id="orgd7d37a1">Introduction</h2>
+<div class="outline-text-2" id="text-orgd7d37a1">
+<p>
+"Crawlspace" is a bright, hook-stuffed cut from White Reaper's 2023 album
+<i>Asking for a Ride</i>, the record where the Louisville band dialed the polish
+back down and leaned into fast, scrappy, guitar-forward power-pop.  The track
+is all sugar on the
+surface, a four-chord pop loop, big handclap energy, a chorus you can shout
+after one listen.  Then you hear the words: "There's no more room in my crawl
+space / I'm gonna have to incinerate you, love."  The whole song runs on that
+contrast, a serial-killer confession sung like a love letter, set to the
+sunniest progression the band could find.  Lean into the brightness when you
+play it; the menace takes care of itself.
+</p>
+
+<p>
+Harmonically there is almost nothing here, which is the point.  Four chords,
+all root-position triads, all diatonic, looped relentlessly.  The work for the
+pianist is rhythmic, not harmonic: make four chords feel like a freight train.
+</p>
+</div>
+</div>
+<div id="outline-container-orgdde08a4" class="outline-2">
+<h2 id="orgdde08a4">Capo &amp; Transposition (read this first)</h2>
+<div class="outline-text-2" id="text-orgdde08a4">
+<p>
+The original guitar chart is labeled <b>"Capo on 6th fret and transpose to G for
+open chords."</b>  Here is exactly what that means, and why it does <b><b>not</b></b> change
+what you play on piano.
+</p>
+
+<ul class="org-ul">
+<li>A guitarist clamps a capo on the 6th fret and plays easy open-position
+shapes as if the song were in <b>G major</b>: <code>G</code>, <code>Em</code>, <code>C</code>, <code>D</code>.</li>
+<li>The capo raises every string 6 semitones, so those shapes do not <b>sound</b>
+like G, Em, C, D.  They sound a tritone higher: <code>C#</code>, <code>A#m</code>, <code>F#</code>, <code>G#</code>.</li>
+<li>Those sounding pitches, <b>not</b> the shapes, are what the chart prints above
+the lyrics.  The chart is already in concert pitch.</li>
+<li>A piano has no capo and no "shapes."  The pianist just plays the real,
+sounding chords.  To avoid a thicket of sharps, respell them in flats.</li>
+</ul>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Guitar shape (capo 6)</th>
+<th scope="col" class="org-left">Sounds as</th>
+<th scope="col" class="org-left">Piano spelling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">G</td>
+<td class="org-left">C#</td>
+<td class="org-left"><b>Db</b></td>
+</tr>
+
+<tr>
+<td class="org-left">Em</td>
+<td class="org-left">A#m</td>
+<td class="org-left"><b>Bbm</b></td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">F#</td>
+<td class="org-left"><b>Gb</b></td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">G#</td>
+<td class="org-left"><b>Ab</b></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+⚠️ <b>Do not play G–Em–C–D on the piano.</b>  That is the guitarist's capo
+illusion.  The actual music is in <b>Db major</b>, and your four chords are
+<b>Db, Bbm, Gb, Ab</b>.  A capo-6 guitarist and a no-capo pianist playing these
+side by side will be in perfect unison.
+</p>
+</div>
+</div>
+<div id="outline-container-org44e2dff" class="outline-2">
+<h2 id="org44e2dff">Key &amp; Theory</h2>
+<div class="outline-text-2" id="text-org44e2dff">
+<p>
+The song lives in <b>Db major</b> (= C# major; flats are far kinder to read).
+Every chord is diatonic.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Role</th>
+<th scope="col" class="org-left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Db</td>
+<td class="org-left">I</td>
+<td class="org-left">tonic, the home of the verse and chorus</td>
+</tr>
+
+<tr>
+<td class="org-left">Bbm</td>
+<td class="org-left">vi</td>
+<td class="org-left">the relative minor, the "sad" pivot</td>
+</tr>
+
+<tr>
+<td class="org-left">Gb</td>
+<td class="org-left">IV</td>
+<td class="org-left">the lift</td>
+</tr>
+
+<tr>
+<td class="org-left">Ab</td>
+<td class="org-left">V</td>
+<td class="org-left">the dominant, only appears on "incinerate"</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The verse pairs <b>Db ↔ Bbm</b> (I ↔ vi) and then <b>Gb ↔ Bbm</b> (IV ↔ vi), ending
+each half on a <b>Gb → Ab</b> (IV → V) push under "send you my love."  The chorus
+is the same <b>Db ↔ Bbm</b> with a single <b>Gb Ab Db Gb</b> turnaround on "incinerate
+you, love," then a hypnotic <b>Db ↔ Gb</b> (I ↔ IV) rock on the word "Love."  The
+final chorus extends that I ↔ IV oscillation under the closing "There's no
+more room in my crawl space" tag.
+</p>
+
+<p>
+Notice the song never resolves <b>V → I</b> in a cadential way.  The dominant Ab is
+a quick passing stab, not an arrival.  The home of the song is the I ↔ vi and
+I ↔ IV rocking; it feels perpetually mid-motion, which suits a song about
+never quite finishing the job.
+</p>
+</div>
+<div id="outline-container-orgc0612bb" class="outline-3">
+<h3 id="orgc0612bb">Db Major Scale</h3>
+<div class="outline-text-3" id="text-orgc0612bb">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Db</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Eb</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">F</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Gb</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">Ab</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">Bb</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">C</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orge658945" class="outline-3">
+<h3 id="orge658945">Diatonic Triads in Db Major</h3>
+<div class="outline-text-3" id="text-orge658945">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Used in song?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">I</td>
+<td class="org-left">Db</td>
+<td class="org-left">Db, F, Ab</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">ii</td>
+<td class="org-left">Ebm</td>
+<td class="org-left">Eb, Gb, Bb</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">iii</td>
+<td class="org-left">Fm</td>
+<td class="org-left">F, Ab, C</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">IV</td>
+<td class="org-left">Gb</td>
+<td class="org-left">Gb, Bb, Db</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">V</td>
+<td class="org-left">Ab</td>
+<td class="org-left">Ab, C, Eb</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">vi</td>
+<td class="org-left">Bbm</td>
+<td class="org-left">Bb, Db, F</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">vii°</td>
+<td class="org-left">Cdim</td>
+<td class="org-left">C, Eb, Gb</td>
+<td class="org-left">no</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Four of the seven triads, the I, IV, V, and vi, do all the work.  This is the
+"four chords that built pop music" set, just sitting on Db instead of C or G.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org08634f6" class="outline-2">
+<h2 id="org08634f6">Chord Reference</h2>
+<div class="outline-text-2" id="text-org08634f6">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Fingering (RH)</th>
+<th scope="col" class="org-left">Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Db</td>
+<td class="org-left">Db, F, Ab</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">I</td>
+</tr>
+
+<tr>
+<td class="org-left">Bbm</td>
+<td class="org-left">Bb, Db, F</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">vi</td>
+</tr>
+
+<tr>
+<td class="org-left">Gb</td>
+<td class="org-left">Gb, Bb, Db</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">IV</td>
+</tr>
+
+<tr>
+<td class="org-left">Ab</td>
+<td class="org-left">Ab, C, Eb</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">V</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-org35f38f9" class="outline-3">
+<h3 id="org35f38f9">Tips</h3>
+<div class="outline-text-3" id="text-org35f38f9">
+<ul class="org-ul">
+<li>LH plays the root in the bass; RH holds the triad.  No extensions, no
+sevenths, this is a triad song.  Resist the urge to jazz it up</li>
+<li><b>Db → Bbm</b> is two common tones.  Db (Db F Ab) → Bbm (Bb Db F): keep <b>Db</b>
+and <b>F</b> exactly where they are; only Ab nudges up to Bb.  Your right hand
+barely moves.  Let the bass (Db → Bb) carry the change</li>
+<li><b>Gb → Bbm</b> is also two common tones.  Gb (Gb Bb Db) → Bbm (Bb Db F): keep
+<b>Bb</b> and <b>Db</b>; only Gb steps down to F.  Again, the right hand is nearly
+still</li>
+<li><b>Gb → Ab</b> (IV → V, the "incinerate" push) has no common tones, every voice
+jumps.  This is intentional; it is the one place the harmony lurches.  Hit
+it hard and let it feel like a shove</li>
+<li><b>Db → Gb</b> (the "Love" rock) shares <b>Db</b>.  Keep Db on top, swing the rest:
+Db F Ab → Db Gb Bb is a tidy way to oscillate without leaping all over the
+keyboard</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9e0a28f" class="outline-2">
+<h2 id="org9e0a28f">Inversions for Voice Leading</h2>
+<div class="outline-text-2" id="text-org9e0a28f">
+<p>
+The whole song rocks between two or three chords in tight succession.
+Inversions keep the right hand from sprinting up and down the keyboard and
+let the common tones ring.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Position</th>
+<th scope="col" class="org-left">Notes (low→high)</th>
+<th scope="col" class="org-left">When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Db</td>
+<td class="org-left">Root</td>
+<td class="org-left">Db, F, Ab</td>
+<td class="org-left">Default tonic</td>
+</tr>
+
+<tr>
+<td class="org-left">Db/F</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">F, Ab, Db</td>
+<td class="org-left">F in bass walks toward Gb</td>
+</tr>
+
+<tr>
+<td class="org-left">Db/Ab</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">Ab, Db, F</td>
+<td class="org-left">Ab pedal, ties Db into Ab (V)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Bbm</td>
+<td class="org-left">Root</td>
+<td class="org-left">Bb, Db, F</td>
+<td class="org-left">Default vi</td>
+</tr>
+
+<tr>
+<td class="org-left">Bbm/Db</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">Db, F, Bb</td>
+<td class="org-left">Db &amp; F held from Db chord; only top moves</td>
+</tr>
+
+<tr>
+<td class="org-left">Bbm/F</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">F, Bb, Db</td>
+<td class="org-left">F pedal from Gb chord</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Gb</td>
+<td class="org-left">Root</td>
+<td class="org-left">Gb, Bb, Db</td>
+<td class="org-left">Default IV</td>
+</tr>
+
+<tr>
+<td class="org-left">Gb/Bb</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">Bb, Db, Gb</td>
+<td class="org-left">Bb &amp; Db held from Bbm</td>
+</tr>
+
+<tr>
+<td class="org-left">Gb/Db</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">Db, Gb, Bb</td>
+<td class="org-left">Db pedal, ties Db into Gb on "Love"</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Ab</td>
+<td class="org-left">Root</td>
+<td class="org-left">Ab, C, Eb</td>
+<td class="org-left">Default V; play it punchy in root position</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Voice-leading recipe for the verse:
+</p>
+
+<p>
+Play <b>Db</b> in root position, then <b>Bbm in first inversion</b> (<code>Db, F, Bb</code>).  The
+right hand keeps Db and F dead still and only lifts Ab → Bb.  The bass moves
+Db → Bb.  The chord changes but the texture does not flinch, perfect for a
+verse that needs to drive without distracting from the vocal.
+</p>
+
+<p>
+For the "Love" tag, sit <b>Db</b> in root position and play <b>Gb in second
+inversion</b> (<code>Db, Gb, Bb</code>).  Db stays on top of both chords as a pedal; the
+inner voices rock F/Ab → Gb/Bb.  Minimal motion, maximum hypnosis.
+</p>
+</div>
+</div>
+<div id="outline-container-org835753b" class="outline-2">
+<h2 id="org835753b">Performance Notes</h2>
+<div class="outline-text-2" id="text-org835753b">
+<ul class="org-ul">
+<li><b>Tempo</b>: fast and driving, roughly <b>150 BPM</b>.  This is a runaway pop song,
+not a ballad.  The energy is the instrument</li>
+<li><b>Touch</b>: percussive and rhythmic.  Think eighth-note or steady quarter-note
+chord stabs, not held pads.  On piano this song is closer to a drummer's
+job than a balladeer's.  Punch the chords, release them, punch again</li>
+<li><b>Pedal</b>: use it sparingly or not at all.  A garage-pop track wants clarity
+and bite, not a wash.  If you pedal, change it cleanly on every chord and
+keep it shallow</li>
+<li><b>Dynamics</b>: there is almost no quiet section.  Verse and chorus sit at
+nearly the same loud, bright level.  The lift into the chorus is energy and
+density, not volume, fill in more of the beat, widen the voicing, maybe
+add an octave in the left hand</li>
+<li><b>The verse</b> (<code>Db Bbm / Db Bbm / Gb Bbm / Gb Bbm / Gb Ab</code>): keep it
+relentless and even.  The <code>Gb → Ab</code> at the end of each half ("send you my
+love") is the only harmonic surprise, give it a little extra weight so it
+pops out of the loop</li>
+<li><b>The chorus</b> (<code>Db Bbm / Db Bbm / Db Bbm / Gb Ab Db Gb</code>): the
+<code>Gb Ab Db Gb</code> under "incinerate you, love" moves fast, four chords in two
+bars.  Lock those changes tight; this is the hook's payoff</li>
+<li><b>The "Love" tag</b> (<code>Db Gb / Db Gb / Db Gb</code>): a hypnotic I ↔ IV rock.  Keep
+it dead steady, almost mechanical.  This is a chant, not a phrase</li>
+<li><b>The outro</b> extends the chorus, adding four bars of <code>Db Gb</code> under "There's
+no more room in my crawl space."  Same I ↔ IV rock as the "Love" tag.
+Ride it out at full energy and let the band (or your left hand) cut off
+abruptly rather than fading, this song stops, it does not dissolve</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgecc7c62" class="outline-2">
+<h2 id="orgecc7c62">Song Structure</h2>
+<div class="outline-text-2" id="text-orgecc7c62">
+</div>
+<div id="outline-container-org6c498b5" class="outline-3">
+<h3 id="org6c498b5">Verse 1</h3>
+<div class="outline-text-3" id="text-org6c498b5">
+<pre class="example" id="org0214b79">
+[Db]                                              [Bbm]
+Thought it would be different, but it always feels the same coming down
+[Db]                                              [Bbm]
+You know it's easier for me to feel alone with someone like you around
+[Gb]               [Bbm]
+Digging in for all you want
+[Gb]                       [Bbm]
+I've learned from you, you have my heart
+[Gb]
+So I'll send you my, send you my, send you my
+        [Ab]
+Send you my love
+[Db]                                       [Bbm]
+Out of all the faces and the names, I can remember a few
+[Db]                                    [Bbm]
+Most of them were red, but I can promise that a couple were blue
+[Gb]               [Bbm]
+We're digging in to fall apart
+[Gb]                  [Bbm]
+You know me well, you have my heart
+[Gb]
+So I'll send you my, send you my, send you my
+        [Ab]
+Send you my love
+</pre>
+</div>
+</div>
+<div id="outline-container-org6809755" class="outline-3">
+<h3 id="org6809755">Chorus</h3>
+<div class="outline-text-3" id="text-org6809755">
+<pre class="example" id="org55ffa98">
+[Db]                      [Bbm]
+There's no more room in my crawl space
+[Db]                      [Bbm]
+I'm gonna have to incinerate you
+[Db]                      [Bbm]
+There's no more room in my crawl space
+[Gb]            [Ab]            [Db]     [Gb]
+I'm gonna have to incinerate you, love
+[Db]    [Gb]
+Love
+[Db]    [Gb]
+Love
+[Db]    [Gb]
+Love
+</pre>
+</div>
+</div>
+<div id="outline-container-org1efae1d" class="outline-3">
+<h3 id="org1efae1d">Verse 2</h3>
+<div class="outline-text-3" id="text-org1efae1d">
+<pre class="example" id="orgede3f54">
+[Db]                                                      [Bbm]
+Thought it would be different, but it wasn't really different at all
+[Db]                                              [Bbm]
+Yeah, knock 'em down, turn around, keep yourself in front of the ball
+[Gb]                      [Bbm]
+I'm digging in for all your salt
+[Gb]                          [Bbm]
+For what it's worth, it's not my fault
+[Gb]
+But I'll send you my, send you my, send you my
+        [Ab]
+Send you my love
+</pre>
+</div>
+</div>
+<div id="outline-container-org749ec7f" class="outline-3">
+<h3 id="org749ec7f">Final Chorus</h3>
+<div class="outline-text-3" id="text-org749ec7f">
+<pre class="example" id="org6b6832a">
+[Db]                      [Bbm]
+There's no more room in my crawl space
+[Db]                      [Bbm]
+I'm gonna have to incinerate you
+[Db]                      [Bbm]
+There's no more room in my crawl space
+[Gb]            [Ab]            [Db]     [Gb]
+I'm gonna have to incinerate you, love
+[Db]    [Gb]
+Love
+[Db]    [Gb]
+Love
+[Db]    [Gb]
+Love
+[Db]                              [Gb]
+There's no more room in my crawl space
+[Db]                              [Gb]
+There's no more room in my crawl space
+[Db]                              [Gb]
+There's no more room in my crawl space
+[Db]                              [Gb]
+There's no more room in my crawl space
+</pre>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

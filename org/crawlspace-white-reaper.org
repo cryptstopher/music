@@ -1,0 +1,281 @@
+#+TITLE: Crawlspace, White Reaper
+#+SUBTITLE: Piano Cheat Sheet
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Introduction
+
+"Crawlspace" is a bright, hook-stuffed cut from White Reaper's 2023 album
+/Asking for a Ride/, the record where the Louisville band dialed the polish
+back down and leaned into fast, scrappy, guitar-forward power-pop.  The track
+is all sugar on the
+surface, a four-chord pop loop, big handclap energy, a chorus you can shout
+after one listen.  Then you hear the words: "There's no more room in my crawl
+space / I'm gonna have to incinerate you, love."  The whole song runs on that
+contrast, a serial-killer confession sung like a love letter, set to the
+sunniest progression the band could find.  Lean into the brightness when you
+play it; the menace takes care of itself.
+
+Harmonically there is almost nothing here, which is the point.  Four chords,
+all root-position triads, all diatonic, looped relentlessly.  The work for the
+pianist is rhythmic, not harmonic: make four chords feel like a freight train.
+
+* Capo & Transposition (read this first)
+
+The original guitar chart is labeled *"Capo on 6th fret and transpose to G for
+open chords."*  Here is exactly what that means, and why it does **not** change
+what you play on piano.
+
+- A guitarist clamps a capo on the 6th fret and plays easy open-position
+  shapes as if the song were in *G major*: =G=, =Em=, =C=, =D=.
+- The capo raises every string 6 semitones, so those shapes do not *sound*
+  like G, Em, C, D.  They sound a tritone higher: =C#=, =A#m=, =F#=, =G#=.
+- Those sounding pitches, *not* the shapes, are what the chart prints above
+  the lyrics.  The chart is already in concert pitch.
+- A piano has no capo and no "shapes."  The pianist just plays the real,
+  sounding chords.  To avoid a thicket of sharps, respell them in flats.
+
+| Guitar shape (capo 6) | Sounds as | Piano spelling |
+|-----------------------+-----------+----------------|
+| G                     | C#        | *Db*           |
+| Em                    | A#m       | *Bbm*          |
+| C                     | F#        | *Gb*           |
+| D                     | G#        | *Ab*           |
+
+⚠️ *Do not play G–Em–C–D on the piano.*  That is the guitarist's capo
+illusion.  The actual music is in *Db major*, and your four chords are
+*Db, Bbm, Gb, Ab*.  A capo-6 guitarist and a no-capo pianist playing these
+side by side will be in perfect unison.
+
+* Key & Theory
+
+The song lives in *Db major* (= C# major; flats are far kinder to read).
+Every chord is diatonic.
+
+| Chord | Role | Comment                                  |
+|-------+------+------------------------------------------|
+| Db    | I    | tonic, the home of the verse and chorus  |
+| Bbm   | vi   | the relative minor, the "sad" pivot      |
+| Gb    | IV   | the lift                                 |
+| Ab    | V    | the dominant, only appears on "incinerate" |
+
+The verse pairs *Db ↔ Bbm* (I ↔ vi) and then *Gb ↔ Bbm* (IV ↔ vi), ending
+each half on a *Gb → Ab* (IV → V) push under "send you my love."  The chorus
+is the same *Db ↔ Bbm* with a single *Gb Ab Db Gb* turnaround on "incinerate
+you, love," then a hypnotic *Db ↔ Gb* (I ↔ IV) rock on the word "Love."  The
+final chorus extends that I ↔ IV oscillation under the closing "There's no
+more room in my crawl space" tag.
+
+Notice the song never resolves *V → I* in a cadential way.  The dominant Ab is
+a quick passing stab, not an arrival.  The home of the song is the I ↔ vi and
+I ↔ IV rocking; it feels perpetually mid-motion, which suits a song about
+never quite finishing the job.
+
+** Db Major Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | Db   |
+| 2      | Eb   |
+| 3      | F    |
+| 4      | Gb   |
+| 5      | Ab   |
+| 6      | Bb   |
+| 7      | C    |
+
+** Diatonic Triads in Db Major
+
+| Degree | Chord | Notes      | Used in song? |
+|--------+-------+------------+---------------|
+| I      | Db    | Db, F, Ab  | yes           |
+| ii     | Ebm   | Eb, Gb, Bb | no            |
+| iii    | Fm    | F, Ab, C   | no            |
+| IV     | Gb    | Gb, Bb, Db | yes           |
+| V      | Ab    | Ab, C, Eb  | yes           |
+| vi     | Bbm   | Bb, Db, F  | yes           |
+| vii°   | Cdim  | C, Eb, Gb  | no            |
+
+Four of the seven triads, the I, IV, V, and vi, do all the work.  This is the
+"four chords that built pop music" set, just sitting on Db instead of C or G.
+
+* Chord Reference
+
+| Chord | Notes      | Fingering (RH) | Role |
+|-------+------------+----------------+------|
+| Db    | Db, F, Ab  | 1, 3, 5        | I    |
+| Bbm   | Bb, Db, F  | 1, 3, 5        | vi   |
+| Gb    | Gb, Bb, Db | 1, 3, 5        | IV   |
+| Ab    | Ab, C, Eb  | 1, 3, 5        | V    |
+
+** Tips
+
+- LH plays the root in the bass; RH holds the triad.  No extensions, no
+  sevenths, this is a triad song.  Resist the urge to jazz it up
+- *Db → Bbm* is two common tones.  Db (Db F Ab) → Bbm (Bb Db F): keep *Db*
+  and *F* exactly where they are; only Ab nudges up to Bb.  Your right hand
+  barely moves.  Let the bass (Db → Bb) carry the change
+- *Gb → Bbm* is also two common tones.  Gb (Gb Bb Db) → Bbm (Bb Db F): keep
+  *Bb* and *Db*; only Gb steps down to F.  Again, the right hand is nearly
+  still
+- *Gb → Ab* (IV → V, the "incinerate" push) has no common tones, every voice
+  jumps.  This is intentional; it is the one place the harmony lurches.  Hit
+  it hard and let it feel like a shove
+- *Db → Gb* (the "Love" rock) shares *Db*.  Keep Db on top, swing the rest:
+  Db F Ab → Db Gb Bb is a tidy way to oscillate without leaping all over the
+  keyboard
+
+* Inversions for Voice Leading
+
+The whole song rocks between two or three chords in tight succession.
+Inversions keep the right hand from sprinting up and down the keyboard and
+let the common tones ring.
+
+| Chord | Position | Notes (low→high) | When to Use                                |
+|-------+----------+------------------+--------------------------------------------|
+| Db    | Root     | Db, F, Ab        | Default tonic                              |
+| Db/F  | 1st inv. | F, Ab, Db        | F in bass walks toward Gb                  |
+| Db/Ab | 2nd inv. | Ab, Db, F        | Ab pedal, ties Db into Ab (V)              |
+|-------+----------+------------------+--------------------------------------------|
+| Bbm   | Root     | Bb, Db, F        | Default vi                                 |
+| Bbm/Db| 1st inv. | Db, F, Bb        | Db & F held from Db chord; only top moves  |
+| Bbm/F | 2nd inv. | F, Bb, Db        | F pedal from Gb chord                       |
+|-------+----------+------------------+--------------------------------------------|
+| Gb    | Root     | Gb, Bb, Db       | Default IV                                 |
+| Gb/Bb | 1st inv. | Bb, Db, Gb       | Bb & Db held from Bbm                       |
+| Gb/Db | 2nd inv. | Db, Gb, Bb       | Db pedal, ties Db into Gb on "Love"        |
+|-------+----------+------------------+--------------------------------------------|
+| Ab    | Root     | Ab, C, Eb        | Default V; play it punchy in root position |
+
+Voice-leading recipe for the verse:
+
+Play *Db* in root position, then *Bbm in first inversion* (=Db, F, Bb=).  The
+right hand keeps Db and F dead still and only lifts Ab → Bb.  The bass moves
+Db → Bb.  The chord changes but the texture does not flinch, perfect for a
+verse that needs to drive without distracting from the vocal.
+
+For the "Love" tag, sit *Db* in root position and play *Gb in second
+inversion* (=Db, Gb, Bb=).  Db stays on top of both chords as a pedal; the
+inner voices rock F/Ab → Gb/Bb.  Minimal motion, maximum hypnosis.
+
+* Performance Notes
+
+- *Tempo*: fast and driving, roughly *150 BPM*.  This is a runaway pop song,
+  not a ballad.  The energy is the instrument
+- *Touch*: percussive and rhythmic.  Think eighth-note or steady quarter-note
+  chord stabs, not held pads.  On piano this song is closer to a drummer's
+  job than a balladeer's.  Punch the chords, release them, punch again
+- *Pedal*: use it sparingly or not at all.  A garage-pop track wants clarity
+  and bite, not a wash.  If you pedal, change it cleanly on every chord and
+  keep it shallow
+- *Dynamics*: there is almost no quiet section.  Verse and chorus sit at
+  nearly the same loud, bright level.  The lift into the chorus is energy and
+  density, not volume, fill in more of the beat, widen the voicing, maybe
+  add an octave in the left hand
+- *The verse* (=Db Bbm / Db Bbm / Gb Bbm / Gb Bbm / Gb Ab=): keep it
+  relentless and even.  The =Gb → Ab= at the end of each half ("send you my
+  love") is the only harmonic surprise, give it a little extra weight so it
+  pops out of the loop
+- *The chorus* (=Db Bbm / Db Bbm / Db Bbm / Gb Ab Db Gb=): the
+  =Gb Ab Db Gb= under "incinerate you, love" moves fast, four chords in two
+  bars.  Lock those changes tight; this is the hook's payoff
+- *The "Love" tag* (=Db Gb / Db Gb / Db Gb=): a hypnotic I ↔ IV rock.  Keep
+  it dead steady, almost mechanical.  This is a chant, not a phrase
+- *The outro* extends the chorus, adding four bars of =Db Gb= under "There's
+  no more room in my crawl space."  Same I ↔ IV rock as the "Love" tag.
+  Ride it out at full energy and let the band (or your left hand) cut off
+  abruptly rather than fading, this song stops, it does not dissolve
+
+* Song Structure
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+  [Db]                                              [Bbm]
+  Thought it would be different, but it always feels the same coming down
+  [Db]                                              [Bbm]
+  You know it's easier for me to feel alone with someone like you around
+  [Gb]               [Bbm]
+  Digging in for all you want
+  [Gb]                       [Bbm]
+  I've learned from you, you have my heart
+  [Gb]
+  So I'll send you my, send you my, send you my
+          [Ab]
+  Send you my love
+  [Db]                                       [Bbm]
+  Out of all the faces and the names, I can remember a few
+  [Db]                                    [Bbm]
+  Most of them were red, but I can promise that a couple were blue
+  [Gb]               [Bbm]
+  We're digging in to fall apart
+  [Gb]                  [Bbm]
+  You know me well, you have my heart
+  [Gb]
+  So I'll send you my, send you my, send you my
+          [Ab]
+  Send you my love
+  #+END_EXAMPLE
+
+** Chorus
+
+  #+BEGIN_EXAMPLE
+  [Db]                      [Bbm]
+  There's no more room in my crawl space
+  [Db]                      [Bbm]
+  I'm gonna have to incinerate you
+  [Db]                      [Bbm]
+  There's no more room in my crawl space
+  [Gb]            [Ab]            [Db]     [Gb]
+  I'm gonna have to incinerate you, love
+  [Db]    [Gb]
+  Love
+  [Db]    [Gb]
+  Love
+  [Db]    [Gb]
+  Love
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+  [Db]                                                      [Bbm]
+  Thought it would be different, but it wasn't really different at all
+  [Db]                                              [Bbm]
+  Yeah, knock 'em down, turn around, keep yourself in front of the ball
+  [Gb]                      [Bbm]
+  I'm digging in for all your salt
+  [Gb]                          [Bbm]
+  For what it's worth, it's not my fault
+  [Gb]
+  But I'll send you my, send you my, send you my
+          [Ab]
+  Send you my love
+  #+END_EXAMPLE
+
+** Final Chorus
+
+  #+BEGIN_EXAMPLE
+  [Db]                      [Bbm]
+  There's no more room in my crawl space
+  [Db]                      [Bbm]
+  I'm gonna have to incinerate you
+  [Db]                      [Bbm]
+  There's no more room in my crawl space
+  [Gb]            [Ab]            [Db]     [Gb]
+  I'm gonna have to incinerate you, love
+  [Db]    [Gb]
+  Love
+  [Db]    [Gb]
+  Love
+  [Db]    [Gb]
+  Love
+  [Db]                              [Gb]
+  There's no more room in my crawl space
+  [Db]                              [Gb]
+  There's no more room in my crawl space
+  [Db]                              [Gb]
+  There's no more room in my crawl space
+  [Db]                              [Gb]
+  There's no more room in my crawl space
+  #+END_EXAMPLE
