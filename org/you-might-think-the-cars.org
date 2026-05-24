@@ -1,0 +1,349 @@
+#+TITLE: You Might Think, The Cars
+#+SUBTITLE: Piano Cheat Sheet
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Introduction
+
+"You Might Think" is the opening single from The Cars' 1984 album /Heartbeat
+City/, the record that completed the band's pivot from skinny-tie new wave to
+glossy, MTV-ready synth pop.  Ric Ocasek wrote it; Mutt Lange co-produced it;
+and the cartoon-collage video (with Ocasek pestering a woman from inside a
+toothpaste tube, a fly, a King Kong arm) won the very first MTV Video Music
+Award for Video of the Year.  The song is a love-as-mild-stalking pep talk
+delivered with a grin: "you might think I'm crazy / but all I want is you."
+
+Harmonically the song is almost stubbornly plain.  Four diatonic chords do
+nearly everything: *D, G, A, Bm*.  The single move that lifts it out of
+campfire territory is the chorus turnaround =Bm → Bm/C# → D=, where the bass
+walks up chromatically =B → C# → D= under what is essentially the same vi
+chord.  Get that walk-up tight and the song sings; miss it and the chorus
+goes flat.
+
+* Key & Theory
+
+The song lives in *D major*.  Every chord is diatonic except for the bass
+note of =Bm/C#=, which is a passing tone, not a real chromatic chord.
+
+| Chord  | Role    | Comment                                            |
+|--------+---------+----------------------------------------------------|
+| D      | I       | tonic, home of the verse, chorus, and outro        |
+| G      | IV      | the lift, paired with D throughout                 |
+| A      | V       | the dominant, drives back into D                   |
+| Bm     | vi      | the relative minor, the pre-chorus's home          |
+| Bm/C#  | vi (inv.) | passing inversion; C# in bass walks Bm → D       |
+
+The verse is a straight *D → G → A → D* loop, I IV V I, the most generic
+progression in pop music, used here without apology.  The pre-chorus shifts
+to *Bm → A → G*, vi V IV, a descending walk that pulls the energy down so
+the chorus can pop back up.  The chorus opens with the same *D → G* loop but
+ends each line with *Bm → Bm/C# → D*, that chromatic bass walk-up which is
+the song's harmonic signature.
+
+The bridge stretches *Bm → G → A* into longer phrases and then strips down
+to two =N.C.= (no chord) hits on G and A under "but you kept it going till
+the sun fell down."  This is the only place in the song where the harmony
+breathes, every other section is wall-to-wall chords.
+
+** D Major Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | D    |
+| 2      | E    |
+| 3      | F#   |
+| 4      | G    |
+| 5      | A    |
+| 6      | B    |
+| 7      | C#   |
+
+** Diatonic Triads in D Major
+
+| Degree | Chord  | Notes      | Used in song? |
+|--------+--------+------------+---------------|
+| I      | D      | D, F#, A   | yes           |
+| ii     | Em     | E, G, B    | no            |
+| iii    | F#m    | F#, A, C#  | no            |
+| IV     | G      | G, B, D    | yes           |
+| V      | A      | A, C#, E   | yes           |
+| vi     | Bm     | B, D, F#   | yes           |
+| vii°   | C#dim  | C#, E, G   | no            |
+
+Four chords, the I, IV, V, and vi, do all the work.  This is the "four
+chords" pop set sitting on D.  Notice that C# never appears as a chord, only
+as a bass note inside =Bm/C#=.  That single passing tone is the closest the
+song gets to chromaticism.
+
+* Chord Reference
+
+| Chord  | Notes      | Fingering (RH) | Role          |
+|--------+------------+----------------+---------------|
+| D      | D, F#, A   | 1, 3, 5        | I             |
+| G      | G, B, D    | 1, 3, 5        | IV            |
+| A      | A, C#, E   | 1, 3, 5        | V             |
+| Bm     | B, D, F#   | 1, 3, 5        | vi            |
+| Bm/C#  | B, D, F#   | 1, 3, 5 (RH)   | vi, C# in bass |
+
+** Tips
+
+- LH plays the root in the bass; RH holds the triad.  This is a triad song,
+  no sevenths, no extensions.  The shimmer comes from the rhythm and the
+  bass walk, not from clever voicings
+- *D → G* shares one common tone, D.  D (D F# A) → G (G B D): keep D as the
+  top note; F# and A drop a step to G and B.  Right hand barely moves
+- *G → A* shares no common tones; every voice steps up by a whole step.
+  Move the whole hand together.  This is a "shove" change, lean into it
+- *A → D* (V → I) is the cadence.  A (A C# E) → D (D F# A): C# rises to D,
+  E rises to F#, A holds.  Smooth and final
+- *Bm → A → G* (the pre-chorus walk-down) has stepwise bass motion B → A →
+  G.  Let the bass do the work and keep the right-hand triads in close
+  position.  The descending bass is the hook of the pre-chorus
+- *Bm → Bm/C# → D* is the song's signature move.  See below
+
+** Bm/C# (the chorus walk-up)
+
+The =Bm/C#= notation looks fancy but the right hand does not change.  Only
+the bass note moves.
+
+  #+BEGIN_EXAMPLE
+  Bm:     LH = B    RH = B, D, F#
+  Bm/C#:  LH = C#   RH = B, D, F#   (same RH; bass walks up)
+  D:      LH = D    RH = D, F#, A   (RH shifts up one step)
+  #+END_EXAMPLE
+
+The bass line =B → C# → D= is a smooth chromatic ascent that pulls the ear
+into the tonic D.  The C# is the leading tone of D major, so the listener
+hears it as "almost home, then home."  Without that C# the move from Bm
+straight to D feels lumpy; with it, the chorus glides.
+
+  #+BEGIN_EXAMPLE
+  LH:   B   →   C#   →   D
+  RH:  B D F#  B D F#  D F# A
+  #+END_EXAMPLE
+
+If you skip the inversion and just play =Bm → D=, the song still works but
+loses its signature lift.  This is the one piece of the arrangement worth
+not skipping.
+
+* Inversions for Voice Leading
+
+The chorus moves *D, G, A, Bm, Bm/C#, D* in tight succession.  Inversions
+keep the right hand from sprinting up and down the keyboard.
+
+| Chord  | Position | Notes (low→high) | When to Use                                |
+|--------+----------+------------------+--------------------------------------------|
+| D      | Root     | D, F#, A         | Default tonic                              |
+| D/F#   | 1st inv. | F#, A, D         | F# in bass walks toward G                  |
+| D/A    | 2nd inv. | A, D, F#         | A pedal between A chord and D chord         |
+|--------+----------+------------------+--------------------------------------------|
+| G      | Root     | G, B, D          | Default IV                                 |
+| G/B    | 1st inv. | B, D, G          | B in bass; ties G to Bm                    |
+| G/D    | 2nd inv. | D, G, B          | D pedal from D chord                       |
+|--------+----------+------------------+--------------------------------------------|
+| A      | Root     | A, C#, E         | Default V                                  |
+| A/C#   | 1st inv. | C#, E, A         | C# in bass walks toward D                  |
+| A/E    | 2nd inv. | E, A, C#         | E pedal; rare here                         |
+|--------+----------+------------------+--------------------------------------------|
+| Bm     | Root     | B, D, F#         | Default vi                                 |
+| Bm/D   | 1st inv. | D, F#, B         | D pedal; ties Bm into D chord              |
+| Bm/F#  | 2nd inv. | F#, B, D         | F# in bass; rare here                      |
+| Bm/C#  | (passing) | C# bass, B D F# above | the chorus walk-up; not a true inversion |
+
+Voice-leading recipe for the verse:
+
+Play *D* in root position, then *G in second inversion* (=D, G, B=).  The
+right hand keeps D dead still on top and only nudges F# → G and A → B.  The
+bass moves D → G, a perfect fourth, but the right hand barely flinches.
+This keeps the verse texture even and lets the vocal sit on top.
+
+For the chorus walk-up, the cleanest path is:
+
+  #+BEGIN_EXAMPLE
+  Bm    (root)      LH B   RH B D F#
+  Bm/C# (passing)   LH C#  RH B D F#   (RH unchanged, bass up a half-step)
+  D     (root)      LH D   RH D F# A   (RH up one step)
+  #+END_EXAMPLE
+
+Bass walks =B → C# → D=, three half-steps that pull straight into the tonic.
+
+* Performance Notes
+
+- *Tempo*: bright and bouncy, around *134 BPM*.  This is a synth-pop pep
+  song, not a ballad.  Keep the pulse even and the energy up
+- *Touch*: percussive on the verses (think eighth-note chord stabs, like a
+  Linn drum's snare), more sustained on the chorus.  The original is
+  arpeggiated synth; on piano you can either stab the chords or arpeggiate
+  them, both work, pick one and stay with it
+- *Pedal*: light.  This is a clean, punchy track, not a wash.  Change the
+  pedal on every chord and keep it shallow.  On the =Bm → Bm/C# → D= walk,
+  consider lifting the pedal entirely so the bass line stays articulate
+- *Dynamics*: verses are medium, pre-chorus pulls back slightly (the
+  descending Bm A G walk should feel like a coiling spring), chorus opens
+  up to full volume.  The bridge is the only quiet moment, especially the
+  two =N.C.= bars
+- *The intro* (=D G A D / D G A Bm / G A D D=): set the tempo and the
+  texture.  Play it like a drum fill, all rhythm, no embellishment.  Land
+  hard on the final D so the verse can start
+- *The verse* (=D G A D=): keep it simple and even.  Every measure gets
+  the same I IV V I.  The drummer's job, not the harmonist's
+- *The pre-chorus* (=Bm A G=): bass walks down B → A → G.  Let that
+  descending line be the hook; keep the right-hand triads close and
+  unobtrusive.  This is the song coiling before the chorus springs
+- *The chorus* (=D G / A Bm Bm/C# / D G / A D G A=): the =Bm Bm/C# D= walk
+  is the moment.  Lock the bass: B (downbeat) → C# (and-of-beat) → D
+  (next downbeat).  The right hand can stay still on B D F# through the
+  Bm and Bm/C#, then shift to D F# A on the D.  Practice this slowly
+  until the chromatic bass feels automatic
+- *The bridge* (=Bm G A Bm / G A Bm G A G=): same chord palette, stretched
+  into longer phrases.  Then the =G N.C.= and =A N.C.= under "but you kept
+  it going till the sun fell down" are the only stop-time moments in the
+  song.  Hit the chord, kill it, let the vocal sit in silence.  Then hit
+  the next chord
+- *The instrumental* (=D G A D / D G A Bm / G A D=): same as the intro.
+  In the original this is a guitar solo over the verse changes; on solo
+  piano, improvise a melody in D major pentatonic (D E F# A B) over the
+  changes, or play the chords as bright eighth-note stabs and let the
+  rhythm carry it
+- *The final chorus* extends the standard chorus with an extra =G A Bm / G
+  A D= tag at the end on "all I want is you / all I want is you."  Ride
+  the energy out at full volume and land hard on the final D.  Like
+  "Crawlspace," this song *stops*, it does not dissolve
+
+* Song Structure
+
+** Intro
+
+  #+BEGIN_EXAMPLE
+  [D] [G] [A] [D]   [D] [G] [A] [Bm]   [G] [A] [D] [D]
+  #+END_EXAMPLE
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+                [D]                                  [G]
+  Ah well, you might think I'm crazy
+        [A]                            [D]
+  To hang around with you
+  [D]                          [G]
+  Maybe you think I'm lucky
+        [A]                              [D]
+  To have something to do
+  #+END_EXAMPLE
+
+** Pre-Chorus
+
+  #+BEGIN_EXAMPLE
+            [Bm]      [A]                       [G]
+  but I think that you're wild
+            [Bm]               [A]            [G]
+  And inside me is some child
+  #+END_EXAMPLE
+
+** Chorus
+
+  #+BEGIN_EXAMPLE
+  [D]                                  [G]
+  You might think I'm foolish
+        [A]                  [Bm]   [Bm/C#]
+  Or maybe it's untrue (you might think)
+  [D]                                  [G]
+  You might think I'm crazy (all I want)
+        [A]                   [D]   [G]   [A]
+  But all I want is you
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+  [D]                                          [G]
+  You might think it's hysterical
+        [A]                       [D]
+  But I know when you're weak
+  [D]                              [G]
+  You think you're in the movies
+        [A]                       [D]
+  And everything's so deep
+  #+END_EXAMPLE
+
+** Pre-Chorus
+
+  #+BEGIN_EXAMPLE
+            [Bm]      [A]                       [G]
+  But I think that you're wild
+            [Bm]                  [A]                  [G]
+  When you flash that fragile smile
+  #+END_EXAMPLE
+
+** Chorus
+
+  #+BEGIN_EXAMPLE
+  [D]                                  [G]
+  You might think it's foolish
+  [A]                              [Bm]   [Bm/C#]
+  What you put me through (you might think)
+  [D]                                  [G]
+  You might think I'm crazy (all I want)
+        [A]                   [D]   [D]
+  But all I want is you
+  #+END_EXAMPLE
+
+** Bridge
+
+  #+BEGIN_EXAMPLE
+              [Bm]    [G]   [A]                 [Bm]
+  And it was hard, so hard to take
+  [G]            [A]    [Bm]
+   There's no escape,
+  [G]            [A]    [Bm]   [G] [A] [G]
+   Without a scrape
+  [G]  N.C.
+       But you kept it going till the sun fell down
+  [A]  N.C.
+       You kept it going
+  #+END_EXAMPLE
+
+** Instrumental
+
+  #+BEGIN_EXAMPLE
+  [D] [G] [A] [D]   [D] [G] [A] [Bm]   [G] [A] [D]
+  #+END_EXAMPLE
+
+** Verse 3
+
+  #+BEGIN_EXAMPLE
+                [D]                                         [G]
+  Ah well, you might think I'm delirious
+        [A]                       [D]
+  The way I run you down
+        [D]                                          [G]
+  But somewhere, sometime, when you're curious
+  [A]                       [D]
+  I'll be back around
+  #+END_EXAMPLE
+
+** Pre-Chorus
+
+  #+BEGIN_EXAMPLE
+            [Bm]      [A]                       [G]
+  And I think that you're wild
+        [Bm]         [A]    [G]
+  And so uniquely styled
+  #+END_EXAMPLE
+
+** Final Chorus
+
+  #+BEGIN_EXAMPLE
+  [D]                                  [G]
+  You might think it's foolish
+        [A]                          [Bm]   [Bm/C#]
+  This chancey rendezvous (you might think)
+  [D]                                  [G]
+  You might think I'm crazy (all I want)
+        [A]                   [D]
+  But all I want is you
+  [G]   [A]      [Bm]
+  All I want is you
+        [G] [A] [D]
+  all I want is you
+  #+END_EXAMPLE
