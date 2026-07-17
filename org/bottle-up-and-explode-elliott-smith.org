@@ -1,0 +1,270 @@
+#+TITLE: Bottle Up and Explode!, Elliott Smith
+#+SUBTITLE: Piano Cheat Sheet
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Introduction
+
+"Bottle Up and Explode!" is track 11 on Elliott Smith's 1998 album /XO/, his
+first release for a major label (DreamWorks) after three albums of
+lo-fi, mostly solo-acoustic recording. Where a lot of /XO/ sits close to a
+whisper, this one is a full-band, driving rock arrangement, drums, bass, and
+a steady eighth-note pulse under the vocal, closer in energy to "Baby
+Britain" than to the hushed a cappella of "I Didn't Understand" at the
+album's close.
+
+The title is the thesis: the harmony spends most of its time circling *C#
+minor* (the relative minor of the song's home key, E major) rather than
+resolving cleanly to E, and it keeps reaching for chromatic, "wrong note"
+major chords, G# major and F# major, that don't belong to the home key at
+all. That tension between a minor-feeling center and bright, borrowed major
+chords pushing against it is a very Elliott Smith harmonic fingerprint, and
+it mirrors the lyric's theme of repression and eventual eruption.
+
+* Key & Theory
+
+The song's home key is *E major*, but it rarely lands there for long. The
+verse's gravitational center is *C#m* (vi), and the harmony repeatedly
+detours through *G# major* and *F# major*, chords borrowed from *outside*
+the E major scale, functioning as *secondary dominants* pointing at C#m and
+B respectively.
+
+| Chord | Role                    | Comment                                             |
+|-------+-------------------------+------------------------------------------------------|
+| E     | I                       | home key, mostly passed through, never lingered on  |
+| A     | IV                      | the harmonic "resting point" between phrases        |
+| B     | V                       | true dominant, arrives at the hook ("seeing stars") |
+| C#m   | vi                      | the real tonal center of the verse                  |
+| G#m   | iii                     | diatonic, but only used briefly (the hook's cadence) |
+| G#    | V/vi (borrowed)         | secondary dominant, pulls hard toward C#m           |
+| F#    | V/V (borrowed)          | secondary dominant, pulls toward B                  |
+| Esus4 | Isus4                   | suspended color chord, decorates E                  |
+| B/C#  | V (bass walk-up)        | B major held while the bass steps up to C#          |
+
+The *verse* opens *C#m → A → E* (vi → IV → I), a descending motion away from
+the minor center that never quite resolves the way a I-based song would.
+It then reaches for *G# → A* (V/vi → IV), a chromatic pull toward C#m that
+deceptively resolves to IV instead, and *F# → A → Esus4* (V/V → IV → Isus4),
+the same trick aimed at B instead. The pattern repeats, then the hook lands
+on *B → B/C# → C#m → G#m* (V → V(bass walk) → vi → iii), the closest thing
+the song has to a cadence, resolving downward into the minor rather than up
+into the major.
+
+** E Major Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | E    |
+| 2      | F#   |
+| 3      | G#   |
+| 4      | A    |
+| 5      | B    |
+| 6      | C#   |
+| 7      | D#   |
+
+** Diatonic Triads in E Major
+
+| Degree | Chord  | Notes      | Used in song?                                |
+|--------+--------+------------+-----------------------------------------------|
+| I      | E      | E, G#, B   | yes                                           |
+| ii     | F#m    | F#, A, C#  | *no* — replaced by borrowed F# major          |
+| iii    | G#m    | G#, B, D#  | yes, briefly (the hook's cadence)             |
+| IV     | A      | A, C#, E   | yes                                           |
+| V      | B      | B, D#, F#  | yes                                           |
+| vi     | C#m    | C#, E, G#  | yes, the real tonal center                    |
+| vii°   | D#dim  | D#, F#, A  | no                                             |
+
+Note that the song never plays the diatonic *ii* (F#m); it uses *F# major*
+instead, a chromatic secondary dominant of B. Likewise *G# major* (not
+diatonic at all in E major) is used far more than the diatonic *iii* (G#m),
+which only shows up once, briefly, as part of the hook's cadence. This
+substitution of borrowed major chords for their diatonic minor relatives is
+what gives the song its restless, can't-settle-down harmonic character.
+
+* Chord Reference
+
+| Chord | Notes         | Fingering (RH) | Role            |
+|-------+---------------+-----------------+-----------------|
+| E     | E, G#, B      | 1, 3, 5         | I               |
+| A     | A, C#, E      | 1, 3, 5         | IV              |
+| B     | B, D#, F#     | 1, 3, 5         | V               |
+| C#m   | C#, E, G#     | 1, 3, 5         | vi              |
+| G#m   | G#, B, D#     | 1, 3, 5         | iii             |
+| G#    | G#, C, D#     | 1, 3, 5         | V/vi (borrowed) |
+| F#    | F#, A#, C#    | 1, 3, 5         | V/V (borrowed)  |
+| Esus4 | E, A, B       | 1, 4, 5         | Isus4           |
+
+/(The "C" in the G# chord is the enharmonic spelling of B#, easier to read
+and finger at the keyboard than a double-sharp-adjacent B#.)/
+
+** Tips
+
+- *C#m → A*: two common tones. C#m (C# E G#) → A (A C# E): keep *C#* and *E*
+  exactly where they are, only *G#* steps up a half step to *A*
+- *A → E*: only one common tone (*E*), but it's worth holding steady in the
+  same voice while the rest of the hand resets underneath it
+- *G# → A*: this is the "wrong note pulling home" moment. G# (G# C D#) → A
+  (A C# E): the *G#* itself resolves up a half step into the *A* that
+  follows, textbook secondary-dominant motion. Lean into it slightly
+- *F# → A*: F# (F# A# C#) → A (A C# E): keep *C#* common, *F#* falls to *E*
+  eventually across the phrase, and *A#* resolves up to *B* if you voice it
+  that way in a later chord. Treat F# as a brief, bright detour, not a
+  destination
+- *B → B/C#*: the right hand doesn't move at all, only the bass steps up a
+  whole step from B to C#, setting up the vi chord that follows
+- *C#m → G#m*: both are minor triads a fourth apart; C#m (C# E G#) and G#m
+  (G# B D#) share the single common tone *G#* — keep it anchored while the
+  other two voices shift
+
+** Esus4
+
+#+BEGIN_EXAMPLE
+LH: E   (root, low)
+RH: E - A - B   (root, 4th, 5th — the suspended 4th replaces the 3rd)
+
+The song doesn't resolve this down to a full E triad; it's left hanging as
+a color chord before the next line picks back up. Don't rush it.
+#+END_EXAMPLE
+
+** B/C#
+
+#+BEGIN_EXAMPLE
+LH: C#   (bass note — NOT the chord root)
+RH: B - D# - F#   (full B major triad, unchanged from the B chord before it)
+
+Only the bass moves, stepping up from B to C#. The right hand holds the
+same B major shape both chords; the moving bass is what sets up C#m.
+#+END_EXAMPLE
+
+* Inversions for Voice Leading
+
+| Chord | Position | Notes (low→high) | When to Use                                 |
+|-------+----------+-------------------+----------------------------------------------|
+| C#m   | Root     | C#, E, G#         | Default vi, verse opening                    |
+| C#m/E | 1st inv. | E, G#, C#         | E held from the previous E chord             |
+| C#m/G#| 2nd inv. | G#, C#, E         | G# pedal, ties into a following G#/G#m       |
+|-------+----------+-------------------+------------------------------------------------|
+| A     | Root     | A, C#, E          | Default IV, the phrase's resting point       |
+| A/C#  | 1st inv. | C#, E, A          | C# held from C#m; only one voice moves       |
+| A/E   | 2nd inv. | E, A, C#          | E pedal between two E-containing chords      |
+|-------+----------+-------------------+------------------------------------------------|
+| E     | Root     | E, G#, B          | Default I, mostly passed through             |
+| E/G#  | 1st inv. | G#, B, E          | G# held from A or G#/G#m                     |
+| E/B   | 2nd inv. | B, E, G#          | B pedal, sets up the following B chord       |
+|-------+----------+-------------------+------------------------------------------------|
+| B     | Root     | B, D#, F#         | Default V, arrives at the hook               |
+| B/D#  | 1st inv. | D#, F#, B         | smoother top voice into C#m (D# ~ E neighbor) |
+| B/F#  | 2nd inv. | F#, B, D#         | F# pedal, echoes the F# chord before it      |
+|-------+----------+-------------------+------------------------------------------------|
+| G#    | Root     | G#, C, D#         | Default borrowed V/vi                        |
+| G#/C  | 1st inv. | C, D#, G#         | smoother resolution, C steps to C# (C#m root) |
+|-------+----------+-------------------+------------------------------------------------|
+| F#    | Root     | F#, A#, C#        | Default borrowed V/V                         |
+| F#/C# | 1st inv. | C#, F#, A#        | C# held from the surrounding C#m/A chords    |
+
+Voice-leading recipe for the verse: play *C#m* in root position, then *A* in
+first inversion (=C#, E, A=) so only one voice moves (G# up to nothing new,
+C# and E just hold), then *E* in second inversion (=B, E, G#=) so the B
+carries straight into the next phrase. When *G#* or *F#* show up, treat them
+as brief leaning-tones, resolve the top voice down or up by a half step into
+the chord that follows rather than jumping to a fresh root-position shape.
+
+For the hook (*B → B/C# → C#m → G#m*), keep the right hand's B major shape
+completely still across the first two chords and let the left-hand bass do
+all the work walking up from B to C#. Then let the top voice fall from F# to
+G at the C#m, and finally to a *G#m* voicing that shares its G# with the
+chord before it.
+
+* Performance Notes
+
+- *Tempo*: a driving, moderate rock tempo, roughly *130-140 BPM*, with a
+  steady eighth-note feel, unlike the rubato ballads elsewhere on /XO/
+- *Touch*: firmer and more rhythmic than a ballad voicing. This is a full
+  band arrangement; don't be shy about a percussive left hand
+- *Pedal*: light, clear it on every chord change, especially through the
+  G# and F# secondary dominants so they don't blur into the chord before
+  or after them
+- *Dynamics*: the verses sit at a controlled, simmering mezzo-forte; the
+  title's whole idea is something held down, so don't let it boil over
+  until the hook
+- *The verse* (=C#m A E / G# A / F# A Esus4=): keep the left hand steady
+  and metronomic under the chromatic G#/F# detours, they should feel like
+  reaching, not arriving
+- *The hook* (=B B/C# C#m G#m=): this is the closest thing to a release the
+  song offers, lean into the bass walk-up under "seeing stars" / "if you're
+  gonna hide," it's the emotional high point of each verse
+- *The solo* (=B B/C# C#m G#m / E A / E F# G#=, repeating on "becoming
+  you"): let the repeated E-F#-G# figure climb and build with each pass,
+  it's the closest the song gets to its own explosion
+
+* Song Structure
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+  [C#m]                    [A]                  [E]
+  Bottle up and explode over and over
+          [G#]                    [A]
+  Keep the troublemaker below
+       [F#]    [A]                [Esus4]
+  Put it away and check out for the day
+  [C#m]        [A]      [E]
+  And in for a round of overexposure
+        [G#]                     [A]                    [F#]
+  The thing mother nature provides to get up and go
+
+  [B]           [B/C#]     [C#m]      [G#m]
+  Bottle up and explode seeing stars
+  [E]     [A]
+  Surrounding you
+
+     [E]      [F#]    [G#]
+  Red white and blue
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+  [C#m]              [A]                [E]
+  You look at him like you've never known him
+          [G#]                    [A]
+  But I know for a fact that you have
+        [F#]
+  The last time you cried
+  [A]                          [Esus4]
+  Who'd you think was inside?
+  [C#m]              [A]           [E]
+  Thinking that you were about to come over
+         [G#]                [A]
+  But I'm tired now waiting for you
+        [F#]
+  You never show
+
+  [B]           [B/C#]           [C#m]     [G#m]
+  Bottle up and go if you're gonna hide
+  [E]     [A]
+  It's up to you
+
+     [E]      [F#]    [G#]
+  I'm coming through
+  #+END_EXAMPLE
+
+** Solo
+
+  /(the source chart runs out partway through this section — treat the last
+  line as an open vamp/repeat rather than a written ending)/
+
+  #+BEGIN_EXAMPLE
+  [B]           [B/C#]      [C#m]     [G#m]
+  Bottle up and go I can make it outside
+  [E]     [A]
+  I'll get through
+
+      [E]   [F#]   [G#]
+     becoming you
+  [A]  [E]   [F#]   [G#]
+    Becoming you
+  [A]  [E]   [F#]
+    Becoming you
+  #+END_EXAMPLE
