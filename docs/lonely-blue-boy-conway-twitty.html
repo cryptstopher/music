@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-07-24 Fri 19:13 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lonely Blue Boy, Piano Cheat Sheet</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Lonely Blue Boy, Piano Cheat Sheet</h1>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgfc8a361">Introduction</a></li>
+<li><a href="#orgc5494d3">Key &amp; Theory</a>
+<ul>
+<li><a href="#orge4da127">F Major Scale</a></li>
+<li><a href="#org246ec3d">Diatonic Triads in F Major</a></li>
+</ul>
+</li>
+<li><a href="#orgf18aa25">Chord Reference</a>
+<ul>
+<li><a href="#org846135f">Tips</a></li>
+<li><a href="#org46322b4">Fm</a></li>
+<li><a href="#orga6f34a0">Ab</a></li>
+</ul>
+</li>
+<li><a href="#org3047521">Inversions for Voice Leading</a></li>
+<li><a href="#org5c1d418">Performance Notes</a></li>
+<li><a href="#orgb6bb5b8">Song Structure</a>
+<ul>
+<li><a href="#org777bd63">Intro</a></li>
+<li><a href="#org389b296">Verse 1</a></li>
+<li><a href="#orga4f72c0">Verse 2</a></li>
+<li><a href="#orgf1a4ece">Bridge</a></li>
+<li><a href="#org1999e64">Verse 3</a></li>
+<li><a href="#org17668dc">Outro</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<p>
+<a href="index.html">← Back to Index</a>
+</p>
+<div id="outline-container-orgfc8a361" class="outline-2">
+<h2 id="orgfc8a361">Introduction</h2>
+<div class="outline-text-2" id="text-orgfc8a361">
+<p>
+"Lonely Blue Boy" rides a classic late-50s ballad move: a mostly diatonic F major progression colored by two tricks that make it sound sadder than the key signature suggests. First, a secondary dominant (A major) keeps pulling the verse toward the relative minor (Dm) instead of settling on the tonic. Second, and most distinctively, the hook itself alternates between F major and F minor, the tonic chord literally going "blue" every time the title is sung.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc5494d3" class="outline-2">
+<h2 id="orgc5494d3">Key &amp; Theory</h2>
+<div class="outline-text-2" id="text-orgc5494d3">
+<p>
+The song lives in <b>F major</b>, but leans hard on chords borrowed from F minor for color, plus two secondary dominants that briefly tonicize other chords.
+</p>
+</div>
+<div id="outline-container-orge4da127" class="outline-3">
+<h3 id="orge4da127">F Major Scale</h3>
+<div class="outline-text-3" id="text-orge4da127">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">F</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">G</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Bb</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">C</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">E</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org246ec3d" class="outline-3">
+<h3 id="org246ec3d">Diatonic Triads in F Major</h3>
+<div class="outline-text-3" id="text-org246ec3d">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Used in song?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">I</td>
+<td class="org-left">F</td>
+<td class="org-left">F, A, C</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">ii</td>
+<td class="org-left">Gm</td>
+<td class="org-left">G, Bb, D</td>
+<td class="org-left">yes (outro tag only)</td>
+</tr>
+
+<tr>
+<td class="org-left">iii</td>
+<td class="org-left">Am</td>
+<td class="org-left">A, C, E</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">IV</td>
+<td class="org-left">Bb</td>
+<td class="org-left">Bb, D, F</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">V</td>
+<td class="org-left">C</td>
+<td class="org-left">C, E, G</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">vi</td>
+<td class="org-left">Dm</td>
+<td class="org-left">D, F, A</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">vii°</td>
+<td class="org-left">Edim</td>
+<td class="org-left">E, G, Bb</td>
+<td class="org-left">no</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Two chords do all the emotional work. <b>A major</b> (not the diatonic Am) shows up right before every Dm, functioning as <b>V/vi</b>, a secondary dominant that makes the drop into Dm feel earned rather than accidental. And <b>Fm</b>, the parallel-minor tonic borrowed from F minor, steps in for F itself at the end of every verse, right on "lonely, lonely blue boy", so the tonic chord itself carries the song's sadness.
+</p>
+
+<p>
+The bridge briefly tonicizes A major: <code>A E A Am</code>, where E functions as V/A before Am (A's own parallel minor) darkens the color. Then <b>G major</b> (not diatonic Gm) appears as <b>V/V</b>, a secondary dominant pulling hard into C (V) and back toward the next verse.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf18aa25" class="outline-2">
+<h2 id="orgf18aa25">Chord Reference</h2>
+<div class="outline-text-2" id="text-orgf18aa25">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Fingering (RH)</th>
+<th scope="col" class="org-left">Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">F, A, C</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">I, tonic</td>
+</tr>
+
+<tr>
+<td class="org-left">Bb</td>
+<td class="org-left">Bb, D, F</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">IV</td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">C, E, G</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">V</td>
+</tr>
+
+<tr>
+<td class="org-left">Dm</td>
+<td class="org-left">D, F, A</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">vi</td>
+</tr>
+
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">A, C#, E</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">V/vi (secondary dominant)</td>
+</tr>
+
+<tr>
+<td class="org-left">Fm</td>
+<td class="org-left">F, Ab, C</td>
+<td class="org-left">1, 2, 5</td>
+<td class="org-left">i (borrowed, parallel minor)</td>
+</tr>
+
+<tr>
+<td class="org-left">Ab</td>
+<td class="org-left">Ab, C, Eb</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">bIII (borrowed, intro color)</td>
+</tr>
+
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">E, G#, B</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">V/A (in the tonicized bridge)</td>
+</tr>
+
+<tr>
+<td class="org-left">Am</td>
+<td class="org-left">A, C, E</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">i of A (borrowed, bridge)</td>
+</tr>
+
+<tr>
+<td class="org-left">G</td>
+<td class="org-left">G, B, D</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">V/V (secondary dominant)</td>
+</tr>
+
+<tr>
+<td class="org-left">Gm</td>
+<td class="org-left">G, Bb, D</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">ii (outro color)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-org846135f" class="outline-3">
+<h3 id="org846135f">Tips</h3>
+<div class="outline-text-3" id="text-org846135f">
+<ul class="org-ul">
+<li>LH plays the root in the bass; RH holds the triad</li>
+<li><b>A to Dm</b> is the verse's signature pull: A (A C# E) resolves down a fifth into Dm (D F A). Let the C# in A lean strongly into the D of Dm, that half-step tension-and-release is the whole point of the secondary dominant</li>
+<li><b>F to Fm</b> is a one-note change: only the A moves down a half-step to Ab. Keep the rest of your hand still and let that single note do all the emotional work</li>
+<li><b>G to C</b> (V/V to V) is the bridge's release valve, the B in G major pulls up into C, echoing the same secondary-dominant logic as A to Dm</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org46322b4" class="outline-3">
+<h3 id="org46322b4">Fm</h3>
+<div class="outline-text-3" id="text-org46322b4">
+<p>
+Fm is the tonic chord's parallel-minor twin, borrowed straight from F minor:
+</p>
+
+<pre class="example" id="org70df406">
+Fm:      F, Ab, C
+F major: F, A, C     (the diatonic tonic)
+</pre>
+
+<p>
+The only difference between F and Fm is one note: A drops a half-step to Ab. That single semitone is the entire "lonely blue boy" effect, the chord goes from bright to bruised without changing its bass note or its function. This is why it works so well as a tag: the ear hears the same harmonic "home" each time, just recolored.
+</p>
+
+<pre class="example" id="org3cb9896">
+LH: F (bass)
+RH: Ab, C     (b3rd, 5th)
+Fingering: 1, 2, 5
+</pre>
+
+<p>
+Play the F/Fm alternation (<code>F Fm F Fm F Fm F</code>) slowly and let each chord ring, this is the hook of the song and deserves space. Don't rush the alternation, it should feel like the singer is second-guessing himself in real time.
+</p>
+</div>
+</div>
+<div id="outline-container-orga6f34a0" class="outline-3">
+<h3 id="orga6f34a0">Ab</h3>
+<div class="outline-text-3" id="text-orga6f34a0">
+<p>
+Ab opens the song, a chord entirely outside F major, borrowed as the bIII of F minor:
+</p>
+
+<pre class="example" id="org81a99e5">
+Ab major: Ab, C, Eb
+</pre>
+
+<p>
+Landing on Ab before F gives the intro a bluesy dip right out of the gate, it signals "this key isn't going to stay purely major" before a single lyric is sung. Think of it as a preview of the Fm color that will define the whole song.
+</p>
+
+<pre class="example" id="orgcd6bffc">
+LH: Ab (bass)
+RH: C, Eb    (3rd, 5th)
+Fingering: 1, 3, 5
+</pre>
+
+<p>
+Play it plainly, root position, no need to dress it up. Its job is just to darken the doorway before the verse chords (F A Bb C) walk in.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3047521" class="outline-2">
+<h2 id="org3047521">Inversions for Voice Leading</h2>
+<div class="outline-text-2" id="text-org3047521">
+<p>
+The verse loop (F, Bb, C, Dm, A) benefits from smooth bass movement rather than jumping root to root every chord.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Position</th>
+<th scope="col" class="org-left">Notes (low to high)</th>
+<th scope="col" class="org-left">When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">Root</td>
+<td class="org-left">F, A, C</td>
+<td class="org-left">Default tonic</td>
+</tr>
+
+<tr>
+<td class="org-left">F/A</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">A, C, F</td>
+<td class="org-left">A in bass ties smoothly from the A chord</td>
+</tr>
+
+<tr>
+<td class="org-left">F/C</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">C, F, A</td>
+<td class="org-left">C pedal, flows naturally from or into C</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Bb</td>
+<td class="org-left">Root</td>
+<td class="org-left">Bb, D, F</td>
+<td class="org-left">Default IV</td>
+</tr>
+
+<tr>
+<td class="org-left">Bb/D</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">D, F, Bb</td>
+<td class="org-left">D in bass connects toward Dm</td>
+</tr>
+
+<tr>
+<td class="org-left">Bb/F</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">F, Bb, D</td>
+<td class="org-left">F pedal between the two surrounding F chords</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">Root</td>
+<td class="org-left">C, E, G</td>
+<td class="org-left">Default V</td>
+</tr>
+
+<tr>
+<td class="org-left">C/E</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">E, G, C</td>
+<td class="org-left">E in bass, smooth step from Dm's F or A</td>
+</tr>
+
+<tr>
+<td class="org-left">C/G</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">G, C, E</td>
+<td class="org-left">G pedal, sets up the G (V/V) chord in bridge</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Dm</td>
+<td class="org-left">Root</td>
+<td class="org-left">D, F, A</td>
+<td class="org-left">Default vi, landing point after A</td>
+</tr>
+
+<tr>
+<td class="org-left">Dm/F</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">F, A, D</td>
+<td class="org-left">F in bass, ties Dm back into the F that follows</td>
+</tr>
+
+<tr>
+<td class="org-left">Dm/A</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">A, D, F</td>
+<td class="org-left">A pedal, smooth from the preceding A chord</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Voice-leading tip:
+</p>
+
+<p>
+The <b>A to Dm</b> move is tightest with A in root position resolving to Dm in root position: A (A C# E) to Dm (D F A). The C# rises a half-step to D, E falls a whole-step to F, and A is a common tone held in both chords. Keep the right hand anchored on that shared A and let the other two fingers do the small moves around it.
+</p>
+</div>
+</div>
+<div id="outline-container-org5c1d418" class="outline-2">
+<h2 id="org5c1d418">Performance Notes</h2>
+<div class="outline-text-2" id="text-org5c1d418">
+<ul class="org-ul">
+<li><b>Tempo</b>: a slow, late-50s ballad feel, unhurried. This is a torch song, not a shuffle</li>
+<li><b>Touch</b>: keep the verses restrained and intimate, this is a confessional lyric ("my name should be trouble&#x2026; my name should be woe")</li>
+<li><b>The F/Fm hook</b>: the emotional core of the song. Let the pedal sustain through each chord change so the Ab-to-A semitone shift is heard clearly, not blurred</li>
+<li><b>The bridge</b>: brighter and more urgent, the tonicized A major section should feel like a momentary lift out of the gloom before G pulls it back down to C and the next verse</li>
+<li><b>The intro</b>: the Ab-to-F opening should sound like a held breath, let the Ab ring before resolving</li>
+<li><b>The outro</b>: <code>Gm Fm Gm F</code> is a fade-out tag, not a cadence. Keep the dynamic soft and let the chords blur together as the volume tapers, there's no strong resolution here by design</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb6bb5b8" class="outline-2">
+<h2 id="orgb6bb5b8">Song Structure</h2>
+<div class="outline-text-2" id="text-orgb6bb5b8">
+</div>
+<div id="outline-container-org777bd63" class="outline-3">
+<h3 id="org777bd63">Intro</h3>
+<div class="outline-text-3" id="text-org777bd63">
+<pre class="example" id="orga7eaa7f">
+[Ab]  [F]  [A]  [Bb] . [C]  [F]  [A]  [Bb] . [C]
+</pre>
+</div>
+</div>
+<div id="outline-container-org389b296" class="outline-3">
+<h3 id="org389b296">Verse 1</h3>
+<div class="outline-text-3" id="text-org389b296">
+<pre class="example" id="org57b295a">
+[C]                    [F]           [A]
+My name should be trouble..my name should
+    [Dm]  [F]
+be woe.
+[F]                [Bb]                                 [F]
+For trouble and heartache is all that I know.
+      [C]                [Bb]                                 [F]      [Fm] [F] [Fm] [F] [Fm] [F]
+Yeah, lonely, lonely blue boy, is my name.
+</pre>
+</div>
+</div>
+<div id="outline-container-orga4f72c0" class="outline-3">
+<h3 id="orga4f72c0">Verse 2</h3>
+<div class="outline-text-3" id="text-orga4f72c0">
+<pre class="example" id="orgcf7ee5d">
+[F]                              [A]                           [Dm] [F]
+My life has been empty..my heart has been torn.
+[F]                [Bb]                                 [F]
+It must have been raining, the night I was born.
+      [C]                [Bb]                                 [F]   [Fm] [F] [Fm] [F] [Fm] [F]
+Yeah, lonely, lonely blue boy is my name.
+</pre>
+</div>
+</div>
+<div id="outline-container-orgf1a4ece" class="outline-3">
+<h3 id="orgf1a4ece">Bridge</h3>
+<div class="outline-text-3" id="text-orgf1a4ece">
+<pre class="example" id="orgc505800">
+[F]          [C]
+Well, I'm so..I'm so afraid of tomorrow.
+     [F]
+And so tired, so tired of today.
+[A]          [E]                           [A]     [Am]
+They say that love is the answer..but love never
+[G]      [C]
+came my wayyyy.
+</pre>
+
+<p>
+Bridge note:
+</p>
+
+<p>
+The E-A-Am move briefly tonicizes A major before darkening to its parallel minor. The G that follows is not the diatonic Gm, it's a secondary dominant (V/V) pulling hard back into C to launch the next verse.
+</p>
+</div>
+</div>
+<div id="outline-container-org1999e64" class="outline-3">
+<h3 id="org1999e64">Verse 3</h3>
+<div class="outline-text-3" id="text-org1999e64">
+<pre class="example" id="orgb62b2cd">
+[C]                    [F]           [A]                [Dm] [F]
+I'm writing this letter, to someone unknown.
+[F]                [Bb]                                 [F]
+So, if you should find it, and if you're alone.
+      [C]                [Bb]                                 [F]      [Fm] [F] [Fm] [F]
+Well, lonely, lonely blue boy is my name.
+</pre>
+</div>
+</div>
+<div id="outline-container-org17668dc" class="outline-3">
+<h3 id="org17668dc">Outro</h3>
+<div class="outline-text-3" id="text-org17668dc">
+<pre class="example" id="org325c72e">
+[F]           [C]                [Bb]            [C]      [F]
+Remember, lonely, lonely blue boy is my name.
+
+.....[Gm] [Fm] [Gm] [F].....(Fade.)
+</pre>
+
+<p>
+Outro note:
+</p>
+
+<p>
+The closing <code>Gm Fm Gm F</code> loop never resolves to a firm cadence, it's a fade tag built from the same borrowed-minor color (Fm) that colored the whole song. Let it trail off rather than landing hard.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

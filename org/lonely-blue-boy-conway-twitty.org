@@ -1,0 +1,209 @@
+#+TITLE: Lonely Blue Boy, Piano Cheat Sheet
+#+AUTHOR: Conway Twitty
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Introduction
+
+"Lonely Blue Boy" rides a classic late-50s ballad move: a mostly diatonic F major progression colored by two tricks that make it sound sadder than the key signature suggests. First, a secondary dominant (A major) keeps pulling the verse toward the relative minor (Dm) instead of settling on the tonic. Second, and most distinctively, the hook itself alternates between F major and F minor, the tonic chord literally going "blue" every time the title is sung.
+
+* Key & Theory
+
+The song lives in *F major*, but leans hard on chords borrowed from F minor for color, plus two secondary dominants that briefly tonicize other chords.
+
+** F Major Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | F    |
+| 2      | G    |
+| 3      | A    |
+| 4      | Bb   |
+| 5      | C    |
+| 6      | D    |
+| 7      | E    |
+
+** Diatonic Triads in F Major
+
+| Degree | Chord  | Notes     | Used in song?          |
+|--------+--------+-----------+-------------------------|
+| I      | F      | F, A, C   | yes                     |
+| ii     | Gm     | G, Bb, D  | yes (outro tag only)    |
+| iii    | Am     | A, C, E   | no                      |
+| IV     | Bb     | Bb, D, F  | yes                     |
+| V      | C      | C, E, G   | yes                     |
+| vi     | Dm     | D, F, A   | yes                     |
+| vii°   | Edim   | E, G, Bb  | no                      |
+
+Two chords do all the emotional work. *A major* (not the diatonic Am) shows up right before every Dm, functioning as *V/vi*, a secondary dominant that makes the drop into Dm feel earned rather than accidental. And *Fm*, the parallel-minor tonic borrowed from F minor, steps in for F itself at the end of every verse, right on "lonely, lonely blue boy", so the tonic chord itself carries the song's sadness.
+
+The bridge briefly tonicizes A major: =A E A Am=, where E functions as V/A before Am (A's own parallel minor) darkens the color. Then *G major* (not diatonic Gm) appears as *V/V*, a secondary dominant pulling hard into C (V) and back toward the next verse.
+
+* Chord Reference
+
+| Chord | Notes        | Fingering (RH) | Role                          |
+|-------+--------------+-----------------+-------------------------------|
+| F     | F, A, C      | 1, 3, 5         | I, tonic                      |
+| Bb    | Bb, D, F     | 1, 3, 5         | IV                             |
+| C     | C, E, G      | 1, 3, 5         | V                              |
+| Dm    | D, F, A      | 1, 3, 5         | vi                             |
+| A     | A, C#, E     | 1, 3, 5         | V/vi (secondary dominant)     |
+| Fm    | F, Ab, C     | 1, 2, 5         | i (borrowed, parallel minor)  |
+| Ab    | Ab, C, Eb    | 1, 3, 5         | bIII (borrowed, intro color)  |
+| E     | E, G#, B     | 1, 3, 5         | V/A (in the tonicized bridge) |
+| Am    | A, C, E      | 1, 3, 5         | i of A (borrowed, bridge)     |
+| G     | G, B, D      | 1, 3, 5         | V/V (secondary dominant)      |
+| Gm    | G, Bb, D     | 1, 3, 5         | ii (outro color)              |
+
+** Tips
+
+- LH plays the root in the bass; RH holds the triad
+- *A to Dm* is the verse's signature pull: A (A C# E) resolves down a fifth into Dm (D F A). Let the C# in A lean strongly into the D of Dm, that half-step tension-and-release is the whole point of the secondary dominant
+- *F to Fm* is a one-note change: only the A moves down a half-step to Ab. Keep the rest of your hand still and let that single note do all the emotional work
+- *G to C* (V/V to V) is the bridge's release valve, the B in G major pulls up into C, echoing the same secondary-dominant logic as A to Dm
+
+** Fm
+
+Fm is the tonic chord's parallel-minor twin, borrowed straight from F minor:
+
+  #+BEGIN_EXAMPLE
+  Fm:      F, Ab, C
+  F major: F, A, C     (the diatonic tonic)
+  #+END_EXAMPLE
+
+The only difference between F and Fm is one note: A drops a half-step to Ab. That single semitone is the entire "lonely blue boy" effect, the chord goes from bright to bruised without changing its bass note or its function. This is why it works so well as a tag: the ear hears the same harmonic "home" each time, just recolored.
+
+  #+BEGIN_EXAMPLE
+  LH: F (bass)
+  RH: Ab, C     (b3rd, 5th)
+  Fingering: 1, 2, 5
+  #+END_EXAMPLE
+
+Play the F/Fm alternation (=F Fm F Fm F Fm F=) slowly and let each chord ring, this is the hook of the song and deserves space. Don't rush the alternation, it should feel like the singer is second-guessing himself in real time.
+
+** Ab
+
+Ab opens the song, a chord entirely outside F major, borrowed as the bIII of F minor:
+
+  #+BEGIN_EXAMPLE
+  Ab major: Ab, C, Eb
+  #+END_EXAMPLE
+
+Landing on Ab before F gives the intro a bluesy dip right out of the gate, it signals "this key isn't going to stay purely major" before a single lyric is sung. Think of it as a preview of the Fm color that will define the whole song.
+
+  #+BEGIN_EXAMPLE
+  LH: Ab (bass)
+  RH: C, Eb    (3rd, 5th)
+  Fingering: 1, 3, 5
+  #+END_EXAMPLE
+
+Play it plainly, root position, no need to dress it up. Its job is just to darken the doorway before the verse chords (F A Bb C) walk in.
+
+* Inversions for Voice Leading
+
+The verse loop (F, Bb, C, Dm, A) benefits from smooth bass movement rather than jumping root to root every chord.
+
+| Chord | Position | Notes (low to high) | When to Use                                    |
+|-------+----------+----------------------+-------------------------------------------------|
+| F     | Root     | F, A, C              | Default tonic                                  |
+| F/A   | 1st inv. | A, C, F              | A in bass ties smoothly from the A chord       |
+| F/C   | 2nd inv. | C, F, A              | C pedal, flows naturally from or into C        |
+|-------+----------+----------------------+-------------------------------------------------|
+| Bb    | Root     | Bb, D, F             | Default IV                                     |
+| Bb/D  | 1st inv. | D, F, Bb             | D in bass connects toward Dm                   |
+| Bb/F  | 2nd inv. | F, Bb, D             | F pedal between the two surrounding F chords   |
+|-------+----------+----------------------+-------------------------------------------------|
+| C     | Root     | C, E, G              | Default V                                      |
+| C/E   | 1st inv. | E, G, C              | E in bass, smooth step from Dm's F or A        |
+| C/G   | 2nd inv. | G, C, E              | G pedal, sets up the G (V/V) chord in bridge   |
+|-------+----------+----------------------+-------------------------------------------------|
+| Dm    | Root     | D, F, A              | Default vi, landing point after A              |
+| Dm/F  | 1st inv. | F, A, D              | F in bass, ties Dm back into the F that follows|
+| Dm/A  | 2nd inv. | A, D, F              | A pedal, smooth from the preceding A chord     |
+
+Voice-leading tip:
+
+The *A to Dm* move is tightest with A in root position resolving to Dm in root position: A (A C# E) to Dm (D F A). The C# rises a half-step to D, E falls a whole-step to F, and A is a common tone held in both chords. Keep the right hand anchored on that shared A and let the other two fingers do the small moves around it.
+
+* Performance Notes
+
+- *Tempo*: a slow, late-50s ballad feel, unhurried. This is a torch song, not a shuffle
+- *Touch*: keep the verses restrained and intimate, this is a confessional lyric ("my name should be trouble... my name should be woe")
+- *The F/Fm hook*: the emotional core of the song. Let the pedal sustain through each chord change so the Ab-to-A semitone shift is heard clearly, not blurred
+- *The bridge*: brighter and more urgent, the tonicized A major section should feel like a momentary lift out of the gloom before G pulls it back down to C and the next verse
+- *The intro*: the Ab-to-F opening should sound like a held breath, let the Ab ring before resolving
+- *The outro*: =Gm Fm Gm F= is a fade-out tag, not a cadence. Keep the dynamic soft and let the chords blur together as the volume tapers, there's no strong resolution here by design
+
+* Song Structure
+
+** Intro
+
+  #+BEGIN_EXAMPLE
+  [Ab]  [F]  [A]  [Bb] . [C]  [F]  [A]  [Bb] . [C]
+  #+END_EXAMPLE
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+  [C]                    [F]           [A]
+  My name should be trouble..my name should
+      [Dm]  [F]
+  be woe.
+  [F]                [Bb]                                 [F]
+  For trouble and heartache is all that I know.
+        [C]                [Bb]                                 [F]      [Fm] [F] [Fm] [F] [Fm] [F]
+  Yeah, lonely, lonely blue boy, is my name.
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+  [F]                              [A]                           [Dm] [F]
+  My life has been empty..my heart has been torn.
+  [F]                [Bb]                                 [F]
+  It must have been raining, the night I was born.
+        [C]                [Bb]                                 [F]   [Fm] [F] [Fm] [F] [Fm] [F]
+  Yeah, lonely, lonely blue boy is my name.
+  #+END_EXAMPLE
+
+** Bridge
+
+  #+BEGIN_EXAMPLE
+  [F]          [C]
+  Well, I'm so..I'm so afraid of tomorrow.
+       [F]
+  And so tired, so tired of today.
+  [A]          [E]                           [A]     [Am]
+  They say that love is the answer..but love never
+  [G]      [C]
+  came my wayyyy.
+  #+END_EXAMPLE
+
+Bridge note:
+
+The E-A-Am move briefly tonicizes A major before darkening to its parallel minor. The G that follows is not the diatonic Gm, it's a secondary dominant (V/V) pulling hard back into C to launch the next verse.
+
+** Verse 3
+
+  #+BEGIN_EXAMPLE
+  [C]                    [F]           [A]                [Dm] [F]
+  I'm writing this letter, to someone unknown.
+  [F]                [Bb]                                 [F]
+  So, if you should find it, and if you're alone.
+        [C]                [Bb]                                 [F]      [Fm] [F] [Fm] [F]
+  Well, lonely, lonely blue boy is my name.
+  #+END_EXAMPLE
+
+** Outro
+
+  #+BEGIN_EXAMPLE
+  [F]           [C]                [Bb]            [C]      [F]
+  Remember, lonely, lonely blue boy is my name.
+
+  .....[Gm] [Fm] [Gm] [F].....(Fade.)
+  #+END_EXAMPLE
+
+Outro note:
+
+The closing =Gm Fm Gm F= loop never resolves to a firm cadence, it's a fade tag built from the same borrowed-minor color (Fm) that colored the whole song. Let it trail off rather than landing hard.

@@ -1,0 +1,207 @@
+#+TITLE: All I Have to Do Is Dream, Piano Cheat Sheet
+#+AUTHOR: The Everly Brothers
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Introduction
+
+The guitar chart for this song is written capo IV, using C-shaped chords. On piano there's no capo, so this sheet is transposed up a major third to the real sounding key: *E major*. Every capo-shape chord in the original chart lands cleanly on a diatonic (or secondary-dominant) chord in E major, confirming this is the correct reading of the recording.
+
+* Key & Theory
+
+  :PROPERTIES:
+  :NOTE: Guitar original is capo IV with C-shape chords; this sheet is written in the real sounding key, E major
+  :END:
+
+The verse is the classic 1950s "doo-wop changes" loop, *I - vi - IV - V* (E - C#m - A - B), the same progression underneath "Stand By Me" and countless other late-50s ballads. The bridge moves IV - iii - ii - V (A - G#m - F#m - B), colored by two secondary-dominant 7th chords that sharpen the turnarounds.
+
+** E Major Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | E    |
+| 2      | F#   |
+| 3      | G#   |
+| 4      | A    |
+| 5      | B    |
+| 6      | C#   |
+| 7      | D#   |
+
+** Diatonic Triads in E Major
+
+| Degree | Chord  | Notes      | Used in song?                         |
+|--------+--------+------------+-----------------------------------------|
+| I      | E      | E, G#, B   | yes                                     |
+| ii     | F#m    | F#, A, C#  | yes                                     |
+| iii    | G#m    | G#, B, D#  | yes                                     |
+| IV     | A      | A, C#, E   | yes                                     |
+| V      | B      | B, D#, F#  | yes                                     |
+| vi     | C#m    | C#, E, G#  | yes                                     |
+| vii°   | D#dim  | D#, F#, A  | no                                       |
+
+** Capo Reference
+
+The chart's capo-shape chords map to these real pitches (capo IV, up 4 semitones):
+
+| Chart (capo shape) | Real chord | Function     |
+|---------------------+------------+---------------|
+| C                    | E          | I             |
+| Am                   | C#m        | vi            |
+| F                    | A          | IV            |
+| G                    | B          | V             |
+| Em                   | G#m        | iii           |
+| Dm                   | F#m        | ii            |
+| D7                   | F#7        | V7/V          |
+| C7                   | E7         | V7/IV         |
+
+* Chord Reference
+
+| Chord | Notes           | Fingering (RH) | Role         |
+|-------+-----------------+-----------------+---------------|
+| E     | E, G#, B        | 1, 3, 5         | I             |
+| C#m   | C#, E, G#       | 1, 3, 5         | vi            |
+| A     | A, C#, E        | 1, 3, 5         | IV            |
+| B     | B, D#, F#       | 1, 3, 5         | V             |
+| G#m   | G#, B, D#       | 1, 3, 5         | iii           |
+| F#m   | F#, A, C#       | 1, 3, 5         | ii            |
+| F#7   | F#, A#, C#, E   | 1, 2, 4, 5      | V7/V          |
+| E7    | E, G#, B, D     | 1, 2, 4, 5      | V7/IV         |
+
+** Tips
+
+- LH plays the root in the bass; RH plays the full chord
+- E major has four sharps (F# C# G# D#), so most of these triads naturally sit under the hand with a black key in the middle, don't be intimidated by the key signature
+- *F#7 to B* (V7/V to V) is the bridge's first release: the A# in F#7 pulls up into B, lean into it
+- *E7 to A* (V7/IV to IV) is the bridge's second release: the G# stays put as a common tone while D pulls down into C#, giving A its color
+
+* Inversions for Voice Leading
+
+The verse loops through E, C#m, A, B repeatedly at a bright tempo, smooth voice leading keeps the right hand from jumping around on every repeat.
+
+| Chord | Position | Notes (low to high) | When to Use                                    |
+|-------+----------+----------------------+-------------------------------------------------|
+| E     | Root     | E, G#, B             | Default tonic landing                          |
+| E/G#  | 1st inv. | G#, B, E             | G# in bass, smooth from C#m                    |
+| E/B   | 2nd inv. | B, E, G#             | B pedal, ties E to the following B chord       |
+|-------+----------+----------------------+-------------------------------------------------|
+| A     | Root     | A, C#, E             | Default IV                                     |
+| A/C#  | 1st inv. | C#, E, A             | C# in bass, ties from C#m or E                 |
+| A/E   | 2nd inv. | E, A, C#             | E pedal, common tone with the tonic            |
+|-------+----------+----------------------+-------------------------------------------------|
+| B     | Root     | B, D#, F#            | Default V                                      |
+| B/D#  | 1st inv. | D#, F#, B            | D# in bass, smooth stepwise descent from E     |
+| B/F#  | 2nd inv. | F#, B, D#            | F# pedal, connects from F#m                    |
+|-------+----------+----------------------+-------------------------------------------------|
+| C#m   | Root     | C#, E, G#            | Default vi                                     |
+| C#m/E | 1st inv. | E, G#, C#            | E in bass, common tone with the tonic          |
+| C#m/G#| 2nd inv. | G#, C#, E            | G# pedal, smooth from E or G#m                 |
+
+Voice-leading tip:
+
+For the verse's *E - C#m - A - B* loop, try E in root position, C#m in root position (they share two common tones: E and G#), then A/C# (first inversion) so the bass steps up smoothly from C# to... actually let the bass simply walk E - C# - A - B, root position throughout, and focus your smoothing on the right hand: E (E G# B) to C#m (C# E G#) moves by a single common-tone shift, and A (A C# E) to B (B D# F#) is a stepwise rise in every voice.
+
+* Performance Notes
+
+- *Feel*: light, bouncy 12/8 doo-wop triplet feel, this is a bright, romantic ballad, not a dirge
+- *Touch*: block chords under the "dream, dream, dream, dream" hook should be warm and rung out, not clipped
+- *The verse*: keep the I-vi-IV-V loop steady and metronomic, it's the engine of the whole song
+- *The bridge*: lean into the F#7 to B and E7 to A resolutions, these are the song's only chromatic color and deserve a little extra weight
+- *Dynamics*: soften slightly on "Only trouble is, gee whiz" before opening back up on the "I'm dreamin' my life away" cadence
+
+* Song Structure
+
+** Intro
+
+  #+BEGIN_EXAMPLE
+  [E]
+  #+END_EXAMPLE
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+  [E]                    [C#m]  [A]          [B]
+  Drea-ea-ea-eam, dream, dream, dream
+  [E]                  [C#m]  [A]          [B]
+  Drea-ea-ea-eam, dream, dream, dream
+
+     [E]      [C#m] [A]     [B]
+  When I want you, in my arms
+     [E]      [C#m] [A]     [B]
+  When I want you, and all your charms
+     [E]        [C#m]     [A]          [B]
+  Whenever I want you, all I have to do is
+  [E]        [C#m] [A]          [B]
+  Drea-ea-ea-eam, dream, dream, dream
+
+     [E]      [C#m]  [A]      [B]
+  When I feel blue, in the night
+     [E]      [C#m]  [A]        [B]
+  And I need you, to hold me tight
+     [E]        [C#m]     [A]          [B]
+  Whenever I want you, all I have to do is
+  [E]        [A]  [E]  [E7]
+  Drea-ea-ea-eam
+  #+END_EXAMPLE
+
+** Bridge
+
+  #+BEGIN_EXAMPLE
+  [A]                  [G#m]
+  I can make you mine, taste your lips of wine
+  [F#m]      [B]       [E]   [E7]
+  Anytime, night or day
+  [A]                 [G#m]
+  Only trouble is, gee whiz
+        [F#7]                [B]  [A] [G#m] [F#m]
+  I'm dreamin' my life away
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+     [E]      [C#m] [A]     [B]
+  I need you so,  that I could die
+     [E]      [C#m] [A]     [B]
+  I love you so,  and that is why
+     [E]        [C#m]     [A]          [B]
+  Whenever I want you, all I have to do is
+  [E]        [C#m]     [A]          [B]
+  Drea-ea-ea-eam, dream, dream, dream
+  [E]        [A]  [E]  [E7]
+  Drea-ea-ea-eam
+  #+END_EXAMPLE
+
+** Bridge
+
+Same as the first bridge.
+
+  #+BEGIN_EXAMPLE
+  [A]                  [G#m]
+  I can make you mine, taste your lips of wine
+  [F#m]      [B]       [E]   [E7]
+  Anytime, night or day
+  [A]                 [G#m]
+  Only trouble is, gee whiz
+        [F#7]                [B]  [A] [G#m] [F#m]
+  I'm dreamin' my life away
+  #+END_EXAMPLE
+
+** Final Verse
+
+  #+BEGIN_EXAMPLE
+     [E]      [C#m] [A]     [B]
+  I need you so,  that I could die
+     [E]      [C#m] [A]     [B]
+  I love you so,  and that is why
+  [E]        [C#m]     [A]          [B]
+  Whenever I want you, all I have to do is
+  [E]        [C#m]     [A]          [B]
+  Drea-ea-ea-eam, dream, dream, dream
+  [E]        [C#m]     [A]          [B]
+  Drea-ea-ea-eam, dream, dream, dream
+  [E]        [C#m]     [A]          [B]
+  Drea-ea-ea-eam, dream, dream, dream
+  [E]        [A]  [E]
+  Drea-ea-ea-eam
+  #+END_EXAMPLE

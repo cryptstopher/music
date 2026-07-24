@@ -33,6 +33,7 @@ Less about playing a specific song, more about getting comfortable inside a key 
 
 *Easy*
 
+- "[[file:all-i-have-to-do-is-dream-everly-brothers.org][All I Have to Do Is Dream]]" by The Everly Brothers (capo 4; piano plays it in E)
 - "[[file:crawlspace-white-reaper.org][Crawlspace]]" by White Reaper (guitar capo 6; piano plays it in Db)
 - "[[file:hurt-nine-inch-nails.org][Hurt]]" by Nine Inch Nails
 
@@ -42,6 +43,7 @@ Less about playing a specific song, more about getting comfortable inside a key 
 - "[[file:i-didnt-understand-elliott-smith.org][I Didn't Understand]]" by Elliott Smith (a cappella original; guitar capo 3, piano plays it in Bm)
 - "[[file:~/deep_thoughts/8080_music/org/in-dreams-roy-orbison.org][In Dreams]]" by Roy Orbison
 - "[[file:life-fades-away-roy-orbison.org][Life Fades Away]]" by Roy Orbison (written by Glenn Danzig)
+- "[[file:lonely-blue-boy-conway-twitty.org][Lonely Blue Boy]]" by Conway Twitty
 - "[[file:loverboy-billy-ocean.org][Loverboy]]" by Billy Ocean
 - "[[file:shooting-for-the-moon-amy-holland.org][Shooting For the Moon]]" by Amy Holland (from /Teen Wolf/)
 - "[[file:twilight-elliott-smith.org][Twilight]]" by Elliott Smith
