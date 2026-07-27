@@ -35,6 +35,7 @@ Less about playing a specific song, more about getting comfortable inside a key 
 
 - "[[file:all-i-have-to-do-is-dream-everly-brothers.org][All I Have to Do Is Dream]]" by The Everly Brothers (capo 4; piano plays it in E)
 - "[[file:crawlspace-white-reaper.org][Crawlspace]]" by White Reaper (guitar capo 6; piano plays it in Db)
+- "[[file:glycerine-bush.org][Glycerine]]" by Bush (F major; classic I-V-vi-IV loop, quiet-verse/loud-chorus dynamics)
 - "[[file:hurt-nine-inch-nails.org][Hurt]]" by Nine Inch Nails
 
 *Medium*

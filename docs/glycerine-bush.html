@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-07-27 Mon 10:13 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Glycerine, Bush</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Glycerine, Bush</h1>
+<p class="subtitle" role="doc-subtitle">Piano Cheat Sheet</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org33f17db">Key &amp; Theory</a>
+<ul>
+<li><a href="#orgbc03191">F Major Scale</a></li>
+<li><a href="#org945f311">Diatonic Triads in F Major</a></li>
+</ul>
+</li>
+<li><a href="#org469ca14">Chord Reference</a>
+<ul>
+<li><a href="#orgbb67c4c">Tips</a></li>
+</ul>
+</li>
+<li><a href="#orgd90909e">Inversions for Voice Leading</a></li>
+<li><a href="#org53f43b6">Performance Notes</a></li>
+<li><a href="#org59a3b5b">Song Structure</a>
+<ul>
+<li><a href="#org8549dfe">Intro</a></li>
+<li><a href="#org23999cd">Verse 1</a></li>
+<li><a href="#org672e565">Chorus</a></li>
+<li><a href="#org55f88f7">Verse 2</a></li>
+<li><a href="#orge0bb0aa">Chorus (extended)</a></li>
+<li><a href="#orgc03a21a">Bridge</a></li>
+<li><a href="#orgfcb4949">Verse 3</a></li>
+<li><a href="#org44f8363">Chorus (final)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<p>
+<a href="index.html">← Back to Index</a>
+</p>
+<div id="outline-container-org33f17db" class="outline-2">
+<h2 id="org33f17db">Key &amp; Theory</h2>
+<div class="outline-text-2" id="text-org33f17db">
+<p>
+Glycerine lives entirely inside one key: F major.  The whole song is built from a single four-chord loop, F – C – Dm – Bb, which is the classic I – V – vi – IV pop progression, the same family as "Let It Be" and "Don't Stop Believin'."  What makes the song interesting isn't harmonic complexity, it's arrangement: the verses stay hushed and sparse, then the exact same four chords open up into the full-band chorus.
+</p>
+</div>
+<div id="outline-container-orgbc03191" class="outline-3">
+<h3 id="orgbc03191">F Major Scale</h3>
+<div class="outline-text-3" id="text-orgbc03191">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">F</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">G</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Bb</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">C</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">E</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org945f311" class="outline-3">
+<h3 id="org945f311">Diatonic Triads in F Major</h3>
+<div class="outline-text-3" id="text-org945f311">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Used in song?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">I</td>
+<td class="org-left">F</td>
+<td class="org-left">F – A – C</td>
+<td class="org-left">Yes</td>
+</tr>
+
+<tr>
+<td class="org-left">ii</td>
+<td class="org-left">Gm</td>
+<td class="org-left">G – Bb – D</td>
+<td class="org-left">No</td>
+</tr>
+
+<tr>
+<td class="org-left">iii</td>
+<td class="org-left">Am</td>
+<td class="org-left">A – C – E</td>
+<td class="org-left">No</td>
+</tr>
+
+<tr>
+<td class="org-left">IV</td>
+<td class="org-left">Bb</td>
+<td class="org-left">Bb – D – F</td>
+<td class="org-left">Yes</td>
+</tr>
+
+<tr>
+<td class="org-left">V</td>
+<td class="org-left">C</td>
+<td class="org-left">C – E – G</td>
+<td class="org-left">Yes</td>
+</tr>
+
+<tr>
+<td class="org-left">vi</td>
+<td class="org-left">Dm</td>
+<td class="org-left">D – F – A</td>
+<td class="org-left">Yes</td>
+</tr>
+
+<tr>
+<td class="org-left">vii°</td>
+<td class="org-left">Edim</td>
+<td class="org-left">E – G – Bb</td>
+<td class="org-left">No</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The verse/chorus loop cycles I → V → vi → IV (F → C → Dm → Bb).  The Bridge strips this back to just vi → IV (Dm → Bb), which is part of why it feels more unsettled, there's no I chord to land on.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org469ca14" class="outline-2">
+<h2 id="org469ca14">Chord Reference</h2>
+<div class="outline-text-2" id="text-org469ca14">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">RH Fingering</th>
+<th scope="col" class="org-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">F – A – C</td>
+<td class="org-left">1 – 3 – 5</td>
+<td class="org-left">I</td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">C – E – G</td>
+<td class="org-left">1 – 3 – 5</td>
+<td class="org-left">V</td>
+</tr>
+
+<tr>
+<td class="org-left">Dm</td>
+<td class="org-left">D – F – A</td>
+<td class="org-left">1 – 3 – 5</td>
+<td class="org-left">vi</td>
+</tr>
+
+<tr>
+<td class="org-left">Bb</td>
+<td class="org-left">Bb – D – F</td>
+<td class="org-left">1 – 3 – 5</td>
+<td class="org-left">IV</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-orgbb67c4c" class="outline-3">
+<h3 id="orgbb67c4c">Tips</h3>
+<div class="outline-text-3" id="text-orgbb67c4c">
+<ul class="org-ul">
+<li>All four chords are simple root-position triads, no exotic voicings needed.</li>
+<li>LH can hold single roots or root+fifth; RH carries block chords or arpeggiates for the sparser verses.</li>
+<li>Keep the <b>same hand shape</b> moving F → C → Dm → Bb, this loop repeats for almost the entire song, so economy of motion matters more than fancy voicings.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd90909e" class="outline-2">
+<h2 id="orgd90909e">Inversions for Voice Leading</h2>
+<div class="outline-text-2" id="text-orgd90909e">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Position</th>
+<th scope="col" class="org-left">Notes (low to high)</th>
+<th scope="col" class="org-left">When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">Root</td>
+<td class="org-left">F – A – C</td>
+<td class="org-left">Default; strong landing on the I chord</td>
+</tr>
+
+<tr>
+<td class="org-left">F/A</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">A – C – F</td>
+<td class="org-left">Smooths the move into or out of Dm</td>
+</tr>
+
+<tr>
+<td class="org-left">F/C</td>
+<td class="org-left">2nd inversion</td>
+<td class="org-left">C – F – A</td>
+<td class="org-left">Pedal C in the bass under the tonic</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">Root</td>
+<td class="org-left">C – E – G</td>
+<td class="org-left">Default V chord</td>
+</tr>
+
+<tr>
+<td class="org-left">C/E</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">E – G – C</td>
+<td class="org-left">Walks up smoothly from F</td>
+</tr>
+
+<tr>
+<td class="org-left">C/G</td>
+<td class="org-left">2nd inversion</td>
+<td class="org-left">G – C – E</td>
+<td class="org-left">Pedal G; sets up the move to Dm</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Dm</td>
+<td class="org-left">Root</td>
+<td class="org-left">D – F – A</td>
+<td class="org-left">Default vi chord</td>
+</tr>
+
+<tr>
+<td class="org-left">Dm/F</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">F – A – D</td>
+<td class="org-left">Shares F with the tonic; smooth link</td>
+</tr>
+
+<tr>
+<td class="org-left">Dm/A</td>
+<td class="org-left">2nd inversion</td>
+<td class="org-left">A – D – F</td>
+<td class="org-left">Pedal A; matches the Bridge's darker feel</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Bb</td>
+<td class="org-left">Root</td>
+<td class="org-left">Bb – D – F</td>
+<td class="org-left">Default IV chord</td>
+</tr>
+
+<tr>
+<td class="org-left">Bb/D</td>
+<td class="org-left">1st inversion</td>
+<td class="org-left">D – F – Bb</td>
+<td class="org-left">Keeps the bass stepping down from Dm</td>
+</tr>
+
+<tr>
+<td class="org-left">Bb/F</td>
+<td class="org-left">2nd inversion</td>
+<td class="org-left">F – Bb – D</td>
+<td class="org-left">Pedal F; leads right back into the tonic</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org53f43b6" class="outline-2">
+<h2 id="org53f43b6">Performance Notes</h2>
+<div class="outline-text-2" id="text-org53f43b6">
+<ul class="org-ul">
+<li><b>Tempo</b>: Mid-tempo, roughly 76–80 BPM, steady and unhurried.</li>
+<li><b>Dynamics</b>: This is the whole arrangement.  Verses are hushed, almost a whisper, hands close to the keys.  Choruses open up to full block chords with more pedal.</li>
+<li><b>Touch</b>: Play the verse voicings soft and legato; let the chorus voicings ring out.</li>
+<li><b>Pedal</b>: Sparing in the verses (or none at all); a full sustain wash under the chorus.</li>
+<li><b>The tag</b>: The "Glycerine, Glycerine" hook rides the same F–C–Bb shape every time, it's the song's emotional release valve, let it breathe.</li>
+<li><b>Bridge</b>: The Dm–Bb-only bridge should feel like it's floating, there's no I chord to resolve to, it's the most unsettled moment in the song.</li>
+<li><b>Practice loop</b>:
+<ol class="org-ol">
+<li>Loop just F → C → Dm → Bb slowly until the hand shape is automatic.</li>
+<li>Add the verse dynamic (quiet, sparse).</li>
+<li>Play the same four chords with the chorus dynamic (full, pedaled).</li>
+<li>Layer in the Bridge's Dm–Bb-only section.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org59a3b5b" class="outline-2">
+<h2 id="org59a3b5b">Song Structure</h2>
+<div class="outline-text-2" id="text-org59a3b5b">
+</div>
+<div id="outline-container-org8549dfe" class="outline-3">
+<h3 id="org8549dfe">Intro</h3>
+<div class="outline-text-3" id="text-org8549dfe">
+<pre class="example" id="orgc765ff8">
+[F]  [C]  [Dm]  [Bb]   × 2
+</pre>
+</div>
+</div>
+<div id="outline-container-org23999cd" class="outline-3">
+<h3 id="org23999cd">Verse 1</h3>
+<div class="outline-text-3" id="text-org23999cd">
+<pre class="example" id="org62e4f9a">
+[F]                [C]
+Must be your skin, I'm sinkin' in.
+[Dm]              [Bb]      [F]
+Must be for real, 'cause now I can feel.
+
+[C]              [Dm]
+I didn't mind, it's not my kind.
+[Bb]                [F]
+It's not my time, to wonder why.
+
+[C]                       [Dm]
+Everything's gone white, everything's gone gray.
+[Bb]              [F]
+Now you're here, now you're away.
+
+[C]              [Dm]
+Don't want this, remember that.
+[Bb]                  [F]
+I'll never forget, where you're at.
+</pre>
+</div>
+</div>
+<div id="outline-container-org672e565" class="outline-3">
+<h3 id="org672e565">Chorus</h3>
+<div class="outline-text-3" id="text-org672e565">
+<pre class="example" id="orgb7a78e0">
+[C]              [Dm]  [Bb]
+  Don't let the days go by.
+
+[F]  [C]  [Bb]     [F]  [C]  [Bb]
+Glycerine          Glycerine
+</pre>
+</div>
+</div>
+<div id="outline-container-org55f88f7" class="outline-3">
+<h3 id="org55f88f7">Verse 2</h3>
+<div class="outline-text-3" id="text-org55f88f7">
+<pre class="example" id="orgcf5b91b">
+[F]              [C]
+I'm never alone, I'm alone all the time.
+[Dm]            [Bb]        [F]
+Are you at one, do you lie.
+
+[C]                          [Dm]
+We live on a wheel, where everyone steals.
+[Bb]                                  [F]
+And when we rise, it's like strawberry fields.
+
+[C]                        [Dm]
+Treated you bad, you bruise my face.
+[Bb]                                          [F]
+Couldn't love you more, you've got a beautiful taste.
+</pre>
+</div>
+</div>
+<div id="outline-container-orge0bb0aa" class="outline-3">
+<h3 id="orge0bb0aa">Chorus (extended)</h3>
+<div class="outline-text-3" id="text-orge0bb0aa">
+<pre class="example" id="org5af6b79">
+[C]              [Dm]  [Bb]
+  Don't let the days go by,
+[F]              [C]  [Dm]
+Could've been easier on you.
+            [Bb]                      [F]
+I couldn't change, though I wanted to.
+
+[C]                             [Dm]
+Should've been easier by three,
+[Bb]        [F]      [C]  [Bb]
+Our old friend fear, and you and me.
+
+[F]  [C]  [Bb]  [F]
+Glycerine          Glycerine
+
+[C]              [Dm]  [Bb]  [F]
+  Don't let the days go by      Glycerine
+
+[C]              [Dm]  [Bb]  [F]  [C]  [Dm]  [Bb]
+  Don't let the days go by
+
+[F]  [C]  [Dm]         [Bb]
+      Glycerine    Glycerine
+[F]  [C]  [Dm]         [Bb]
+      Glycerine    Glycerine
+</pre>
+</div>
+</div>
+<div id="outline-container-orgc03a21a" class="outline-3">
+<h3 id="orgc03a21a">Bridge</h3>
+<div class="outline-text-3" id="text-orgc03a21a">
+<pre class="example" id="orgab31f80">
+[Dm]              [Bb]          [Dm]              [Bb]
+   Bad moon white again,      Bad moon white again.
+              [Bb]
+As she falls around me.
+</pre>
+</div>
+</div>
+<div id="outline-container-orgfcb4949" class="outline-3">
+<h3 id="orgfcb4949">Verse 3</h3>
+<div class="outline-text-3" id="text-orgfcb4949">
+<pre class="example" id="org7dcfa98">
+[F]                [C]
+I needed you more, you wanted us less.
+[Dm]          [Bb]        [F]
+Could not kiss, just regress.
+
+[C]                           [Dm]
+It might just be, clear simple and plain.
+[Bb]                                [F]
+Well that's just fine, that's just one of my names.
+</pre>
+</div>
+</div>
+<div id="outline-container-org44f8363" class="outline-3">
+<h3 id="org44f8363">Chorus (final)</h3>
+<div class="outline-text-3" id="text-org44f8363">
+<pre class="example" id="org06b7e66">
+[C]              [Dm]  [Bb]
+  Don't let the days go by,
+[F]                [C]      [Dm]           [Bb]
+Could have been easier on you...you...you
+
+[F]  [C]  [Bb]     [F]  [C]  [Bb]
+Glycerine          Glycerine
+[F]  [C]  [Bb]     [F]  [C]  [Bb]  [F]
+Glycerine          Glycerine
+</pre>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

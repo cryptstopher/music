@@ -1,0 +1,212 @@
+#+TITLE: Glycerine, Bush
+#+SUBTITLE: Piano Cheat Sheet
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Key & Theory
+
+Glycerine lives entirely inside one key: F major.  The whole song is built from a single four-chord loop, F – C – Dm – Bb, which is the classic I – V – vi – IV pop progression, the same family as "Let It Be" and "Don't Stop Believin'."  What makes the song interesting isn't harmonic complexity, it's arrangement: the verses stay hushed and sparse, then the exact same four chords open up into the full-band chorus.
+
+** F Major Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | F    |
+| 2      | G    |
+| 3      | A    |
+| 4      | Bb   |
+| 5      | C    |
+| 6      | D    |
+| 7      | E    |
+
+** Diatonic Triads in F Major
+
+| Degree | Chord | Notes      | Used in song? |
+|--------+-------+------------+---------------|
+| I      | F     | F – A – C  | Yes           |
+| ii     | Gm    | G – Bb – D | No            |
+| iii    | Am    | A – C – E  | No            |
+| IV     | Bb    | Bb – D – F | Yes           |
+| V      | C     | C – E – G  | Yes           |
+| vi     | Dm    | D – F – A  | Yes           |
+| vii°   | Edim  | E – G – Bb | No            |
+
+The verse/chorus loop cycles I → V → vi → IV (F → C → Dm → Bb).  The Bridge strips this back to just vi → IV (Dm → Bb), which is part of why it feels more unsettled, there's no I chord to land on.
+
+* Chord Reference
+
+| Chord | Notes      | RH Fingering | Function |
+|-------+------------+--------------+----------|
+| F     | F – A – C  | 1 – 3 – 5    | I        |
+| C     | C – E – G  | 1 – 3 – 5    | V        |
+| Dm    | D – F – A  | 1 – 3 – 5    | vi       |
+| Bb    | Bb – D – F | 1 – 3 – 5    | IV       |
+
+** Tips
+
+- All four chords are simple root-position triads, no exotic voicings needed.
+- LH can hold single roots or root+fifth; RH carries block chords or arpeggiates for the sparser verses.
+- Keep the *same hand shape* moving F → C → Dm → Bb, this loop repeats for almost the entire song, so economy of motion matters more than fancy voicings.
+
+* Inversions for Voice Leading
+
+| Chord | Position      | Notes (low to high) | When to Use                              |
+|-------+---------------+----------------------+-------------------------------------------|
+| F     | Root          | F – A – C            | Default; strong landing on the I chord   |
+| F/A   | 1st inversion | A – C – F            | Smooths the move into or out of Dm       |
+| F/C   | 2nd inversion | C – F – A            | Pedal C in the bass under the tonic      |
+|-------+---------------+----------------------+-------------------------------------------|
+| C     | Root          | C – E – G            | Default V chord                          |
+| C/E   | 1st inversion | E – G – C            | Walks up smoothly from F                 |
+| C/G   | 2nd inversion | G – C – E            | Pedal G; sets up the move to Dm          |
+|-------+---------------+----------------------+-------------------------------------------|
+| Dm    | Root          | D – F – A            | Default vi chord                         |
+| Dm/F  | 1st inversion | F – A – D            | Shares F with the tonic; smooth link     |
+| Dm/A  | 2nd inversion | A – D – F            | Pedal A; matches the Bridge's darker feel|
+|-------+---------------+----------------------+-------------------------------------------|
+| Bb    | Root          | Bb – D – F           | Default IV chord                         |
+| Bb/D  | 1st inversion | D – F – Bb           | Keeps the bass stepping down from Dm     |
+| Bb/F  | 2nd inversion | F – Bb – D           | Pedal F; leads right back into the tonic |
+
+* Performance Notes
+
+- *Tempo*: Mid-tempo, roughly 76–80 BPM, steady and unhurried.
+- *Dynamics*: This is the whole arrangement.  Verses are hushed, almost a whisper, hands close to the keys.  Choruses open up to full block chords with more pedal.
+- *Touch*: Play the verse voicings soft and legato; let the chorus voicings ring out.
+- *Pedal*: Sparing in the verses (or none at all); a full sustain wash under the chorus.
+- *The tag*: The "Glycerine, Glycerine" hook rides the same F–C–Bb shape every time, it's the song's emotional release valve, let it breathe.
+- *Bridge*: The Dm–Bb-only bridge should feel like it's floating, there's no I chord to resolve to, it's the most unsettled moment in the song.
+- *Practice loop*:
+  1. Loop just F → C → Dm → Bb slowly until the hand shape is automatic.
+  2. Add the verse dynamic (quiet, sparse).
+  3. Play the same four chords with the chorus dynamic (full, pedaled).
+  4. Layer in the Bridge's Dm–Bb-only section.
+
+* Song Structure
+
+** Intro
+
+  #+BEGIN_EXAMPLE
+  [F]  [C]  [Dm]  [Bb]   × 2
+  #+END_EXAMPLE
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+  [F]                [C]
+  Must be your skin, I'm sinkin' in.
+  [Dm]              [Bb]      [F]
+  Must be for real, 'cause now I can feel.
+
+  [C]              [Dm]
+  I didn't mind, it's not my kind.
+  [Bb]                [F]
+  It's not my time, to wonder why.
+
+  [C]                       [Dm]
+  Everything's gone white, everything's gone gray.
+  [Bb]              [F]
+  Now you're here, now you're away.
+
+  [C]              [Dm]
+  Don't want this, remember that.
+  [Bb]                  [F]
+  I'll never forget, where you're at.
+  #+END_EXAMPLE
+
+** Chorus
+
+  #+BEGIN_EXAMPLE
+  [C]              [Dm]  [Bb]
+    Don't let the days go by.
+
+  [F]  [C]  [Bb]     [F]  [C]  [Bb]
+  Glycerine          Glycerine
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+  [F]              [C]
+  I'm never alone, I'm alone all the time.
+  [Dm]            [Bb]        [F]
+  Are you at one, do you lie.
+
+  [C]                          [Dm]
+  We live on a wheel, where everyone steals.
+  [Bb]                                  [F]
+  And when we rise, it's like strawberry fields.
+
+  [C]                        [Dm]
+  Treated you bad, you bruise my face.
+  [Bb]                                          [F]
+  Couldn't love you more, you've got a beautiful taste.
+  #+END_EXAMPLE
+
+** Chorus (extended)
+
+  #+BEGIN_EXAMPLE
+  [C]              [Dm]  [Bb]
+    Don't let the days go by,
+  [F]              [C]  [Dm]
+  Could've been easier on you.
+              [Bb]                      [F]
+  I couldn't change, though I wanted to.
+
+  [C]                             [Dm]
+  Should've been easier by three,
+  [Bb]        [F]      [C]  [Bb]
+  Our old friend fear, and you and me.
+
+  [F]  [C]  [Bb]  [F]
+  Glycerine          Glycerine
+
+  [C]              [Dm]  [Bb]  [F]
+    Don't let the days go by      Glycerine
+
+  [C]              [Dm]  [Bb]  [F]  [C]  [Dm]  [Bb]
+    Don't let the days go by
+
+  [F]  [C]  [Dm]         [Bb]
+        Glycerine    Glycerine
+  [F]  [C]  [Dm]         [Bb]
+        Glycerine    Glycerine
+  #+END_EXAMPLE
+
+** Bridge
+
+  #+BEGIN_EXAMPLE
+  [Dm]              [Bb]          [Dm]              [Bb]
+     Bad moon white again,      Bad moon white again.
+                [Bb]
+  As she falls around me.
+  #+END_EXAMPLE
+
+** Verse 3
+
+  #+BEGIN_EXAMPLE
+  [F]                [C]
+  I needed you more, you wanted us less.
+  [Dm]          [Bb]        [F]
+  Could not kiss, just regress.
+
+  [C]                           [Dm]
+  It might just be, clear simple and plain.
+  [Bb]                                [F]
+  Well that's just fine, that's just one of my names.
+  #+END_EXAMPLE
+
+** Chorus (final)
+
+  #+BEGIN_EXAMPLE
+  [C]              [Dm]  [Bb]
+    Don't let the days go by,
+  [F]                [C]      [Dm]           [Bb]
+  Could have been easier on you...you...you
+
+  [F]  [C]  [Bb]     [F]  [C]  [Bb]
+  Glycerine          Glycerine
+  [F]  [C]  [Bb]     [F]  [C]  [Bb]  [F]
+  Glycerine          Glycerine
+  #+END_EXAMPLE
