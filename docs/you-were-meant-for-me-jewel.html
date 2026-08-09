@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-08-08 Sat 20:54 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>You Were Meant for Me, Jewel</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">You Were Meant for Me, Jewel</h1>
+<p class="subtitle" role="doc-subtitle">Piano Cheat Sheet</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org34fc7e9">Introduction</a></li>
+<li><a href="#orgd68863e">Key &amp; Theory</a>
+<ul>
+<li><a href="#orge55e53b">B Major Scale</a></li>
+<li><a href="#org1f881da">Diatonic Triads in B Major</a></li>
+</ul>
+</li>
+<li><a href="#orgb77657e">Chord Reference</a>
+<ul>
+<li><a href="#org9effebe">Tips</a></li>
+</ul>
+</li>
+<li><a href="#org19cd5f5">Inversions for Voice Leading</a></li>
+<li><a href="#org99c0ce1">Performance Notes</a></li>
+<li><a href="#org211174b">Song Structure</a>
+<ul>
+<li><a href="#org9f858bb">Intro</a></li>
+<li><a href="#orgda78183">Verse 1</a></li>
+<li><a href="#org7c6bb03">Chorus</a></li>
+<li><a href="#org584dc6f">Verse 2</a></li>
+<li><a href="#orgae61c7c">Chorus</a></li>
+<li><a href="#orgb99fea8">Bridge</a></li>
+<li><a href="#orgc78a479">Instrumental</a></li>
+<li><a href="#orgc96606e">Verse 3</a></li>
+<li><a href="#org2ad0aff">Chorus</a></li>
+<li><a href="#org5478f20">Outro</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<p>
+<a href="index.html">← Back to Index</a>
+</p>
+<div id="outline-container-org34fc7e9" class="outline-2">
+<h2 id="org34fc7e9">Introduction</h2>
+<div class="outline-text-2" id="text-org34fc7e9">
+<p>
+"You Were Meant for Me" is the breakout single from Jewel's 1995 debut
+album <i>Pieces of You</i>, co-written with her one-time tour partner Steve
+Poltz.  Re-released in 1996 as a double A-side with "Foolish Games," it
+became one of the longest-charting singles in Billboard Hot 100 history,
+a slow-burn hit for an album that had been out for over a year.
+</p>
+
+<p>
+No capo is indicated on the source chart, so the chords below are the
+real, sounding pitches, no transposition needed.  The one thing worth
+knowing going in: this is not a plain four-chord folk song.  There is a
+secondary-dominant slash chord, <code>C#/F</code>, that drives a chromatic bass
+walk-down in the chorus and bridge, and it is the harmonic detail that
+makes the song feel like it is gently pulling itself forward.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd68863e" class="outline-2">
+<h2 id="orgd68863e">Key &amp; Theory</h2>
+<div class="outline-text-2" id="text-orgd68863e">
+<p>
+The song lives in <b>B major</b>.  Most of the harmony is diatonic, but the
+chart also borrows one chord, <code>C#</code>, from outside the key as a secondary
+dominant, plus a passing <code>A#m</code> in the bridge.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Role</th>
+<th scope="col" class="org-left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Badd9</td>
+<td class="org-left">I</td>
+<td class="org-left">tonic, colored with an added 9th (C#)</td>
+</tr>
+
+<tr>
+<td class="org-left">F#6/A#</td>
+<td class="org-left">V (1st inv)</td>
+<td class="org-left">dominant, A# (the 3rd) in the bass, 6th = D#</td>
+</tr>
+
+<tr>
+<td class="org-left">D#m</td>
+<td class="org-left">iii</td>
+<td class="org-left">diatonic, closes off the intro/verse loop</td>
+</tr>
+
+<tr>
+<td class="org-left">C#</td>
+<td class="org-left">V/V</td>
+<td class="org-left"><b>borrowed</b>, secondary dominant of F#</td>
+</tr>
+
+<tr>
+<td class="org-left">C#/F</td>
+<td class="org-left">V/V (inv.)</td>
+<td class="org-left">same chord, E# ("F") in the bass, passing tone</td>
+</tr>
+
+<tr>
+<td class="org-left">A#m</td>
+<td class="org-left">vi of C#</td>
+<td class="org-left"><b>borrowed</b>, brief color chord in the bridge</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The verse/intro loop is <b>Badd9 → F#6/A# → B → D#m</b>, essentially I → V → I
+→ iii, kept in constant motion by the inverted V chord in the bass.  The
+chorus and bridge both lean on <b>B → C# → F# → C#/F → D#m</b>: the C# is not
+the diatonic ii (which would be C#m), it is a <b>secondary dominant</b>, the V
+of F#, borrowed to intensify the pull toward the V chord.  Landing on
+<code>C#/F</code> right after F# puts E# (spelled "F" on the chart) in the bass, and
+the bass line quietly walks <b>F# → E# → D#</b>, three descending half/whole
+steps that glide straight into D#m.  This one move is the harmonic
+signature of the song, the same role the "Bm → Bm/C# → D" walk-up plays
+in The Cars' "You Might Think," just descending instead of ascending.
+</p>
+</div>
+<div id="outline-container-orge55e53b" class="outline-3">
+<h3 id="orge55e53b">B Major Scale</h3>
+<div class="outline-text-3" id="text-orge55e53b">
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Degree</th>
+<th scope="col" class="org-left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">C#</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">D#</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">F#</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">G#</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">A#</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org1f881da" class="outline-3">
+<h3 id="org1f881da">Diatonic Triads in B Major</h3>
+<div class="outline-text-3" id="text-org1f881da">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Degree</th>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Used in song?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">I</td>
+<td class="org-left">B</td>
+<td class="org-left">B, D#, F#</td>
+<td class="org-left">yes (as Badd9)</td>
+</tr>
+
+<tr>
+<td class="org-left">ii</td>
+<td class="org-left">C#m</td>
+<td class="org-left">C#, E, G#</td>
+<td class="org-left">no, replaced by borrowed C#</td>
+</tr>
+
+<tr>
+<td class="org-left">iii</td>
+<td class="org-left">D#m</td>
+<td class="org-left">D#, F#, A#</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">IV</td>
+<td class="org-left">E</td>
+<td class="org-left">E, G#, B</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">V</td>
+<td class="org-left">F#</td>
+<td class="org-left">F#, A#, C#</td>
+<td class="org-left">yes (as F#6/A#)</td>
+</tr>
+
+<tr>
+<td class="org-left">vi</td>
+<td class="org-left">G#m</td>
+<td class="org-left">G#, B, D#</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">vii°</td>
+<td class="org-left">A#dim</td>
+<td class="org-left">A#, C#, E</td>
+<td class="org-left">no, borrowed A#m used instead</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Two chords step outside the key: <code>C#</code> major (V/V, borrowed to push
+toward F#) and <code>A#m</code> (borrowed as the relative minor of that same C#,
+used briefly in the bridge).  Everything else is straightforwardly
+diatonic to B major.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb77657e" class="outline-2">
+<h2 id="orgb77657e">Chord Reference</h2>
+<div class="outline-text-2" id="text-orgb77657e">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Notes</th>
+<th scope="col" class="org-left">Fingering (RH)</th>
+<th scope="col" class="org-left">Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Badd9</td>
+<td class="org-left">B, C#, D#, F#</td>
+<td class="org-left">1, 2, 3, 5</td>
+<td class="org-left">I (add9)</td>
+</tr>
+
+<tr>
+<td class="org-left">F#6/A#</td>
+<td class="org-left">F#, A#, C#, D#</td>
+<td class="org-left">1, 2, 3, 5 (RH)</td>
+<td class="org-left">V, 1st inv</td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-left">B, D#, F#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">I</td>
+</tr>
+
+<tr>
+<td class="org-left">D#m</td>
+<td class="org-left">D#, F#, A#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">iii</td>
+</tr>
+
+<tr>
+<td class="org-left">C#</td>
+<td class="org-left">C#, E#(F), G#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">V/V</td>
+</tr>
+
+<tr>
+<td class="org-left">C#/F</td>
+<td class="org-left">C#, E#(F), G#</td>
+<td class="org-left">1, 3, 5 (RH)</td>
+<td class="org-left">V/V, inv.</td>
+</tr>
+
+<tr>
+<td class="org-left">F#</td>
+<td class="org-left">F#, A#, C#</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">V</td>
+</tr>
+
+<tr>
+<td class="org-left">A#m</td>
+<td class="org-left">A#, C#, E#(F)</td>
+<td class="org-left">1, 3, 5</td>
+<td class="org-left">vi of V/V</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outline-container-org9effebe" class="outline-3">
+<h3 id="org9effebe">Tips</h3>
+<div class="outline-text-3" id="text-org9effebe">
+<ul class="org-ul">
+<li>LH takes the bass note (root, or the slash-chord bass tone for the
+inversions); RH carries the triad. <code>Badd9</code> is the only chord that
+needs a 4th right-hand finger, for the added 9th (C#)</li>
+<li><code>F#6/A#</code> : keep the RH shape F# A# C# D# (or just A# C# D# if you
+drop the low F#) and put A# in the LH.  This is what keeps the
+intro/verse loop feeling like it is gently rocking rather than
+changing chords</li>
+<li><code>C#</code> and <code>C#/F</code> are the <b>same right hand</b>, C# E# G#.  Only the bass
+note moves, F# in the LH for the F# chord that comes just before,
+then E# (written "F" on the chart), then D# for the D#m that follows.
+Practice that LH line alone: F# → E# → D#, slow half/whole steps</li>
+<li><code>B → C#</code> (I → V/V) has one common tone, F#.  B (B D# F#) → C# (C# E#
+G#): F# moves down a half step to E#, D# moves up a half step to E#
+too? no, keep it simple: think of it as the whole hand sliding up a
+whole step, B→C#, D#→E#, F#→G#</li>
+<li><code>A#m</code> is a passing color chord.  Don't linger, it resolves quickly
+down into D#m; think of it as leaning briefly into a darker color
+before settling back home</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org19cd5f5" class="outline-2">
+<h2 id="org19cd5f5">Inversions for Voice Leading</h2>
+<div class="outline-text-2" id="text-org19cd5f5">
+<p>
+The signature move in this song is the <b>F# → C#/F → D#m</b> bass walk, so
+the inversions below are built to keep that line smooth and the right
+hand as still as possible.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chord</th>
+<th scope="col" class="org-left">Position</th>
+<th scope="col" class="org-left">Notes (low→high)</th>
+<th scope="col" class="org-left">When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">B</td>
+<td class="org-left">Root</td>
+<td class="org-left">B, D#, F#</td>
+<td class="org-left">Default tonic</td>
+</tr>
+
+<tr>
+<td class="org-left">B/D#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">D#, F#, B</td>
+<td class="org-left">D# pedal, ties B into D#m</td>
+</tr>
+
+<tr>
+<td class="org-left">B/F#</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">F#, B, D#</td>
+<td class="org-left">F# held from the F# chord</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">F#</td>
+<td class="org-left">Root</td>
+<td class="org-left">F#, A#, C#</td>
+<td class="org-left">Default V</td>
+</tr>
+
+<tr>
+<td class="org-left">F#/A#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">A#, C#, F#</td>
+<td class="org-left">matches the chart's "F#6/A#" bass</td>
+</tr>
+
+<tr>
+<td class="org-left">F#6</td>
+<td class="org-left">Root+6th</td>
+<td class="org-left">F#, A#, C#, D#</td>
+<td class="org-left">adds D# on top for extra color</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">C#</td>
+<td class="org-left">Root</td>
+<td class="org-left">C#, E#, G#</td>
+<td class="org-left">Default V/V</td>
+</tr>
+
+<tr>
+<td class="org-left">C#/F</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">E#(F), G#, C#</td>
+<td class="org-left">the chart's passing walk chord</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">D#m</td>
+<td class="org-left">Root</td>
+<td class="org-left">D#, F#, A#</td>
+<td class="org-left">Default iii, resolution point</td>
+</tr>
+
+<tr>
+<td class="org-left">D#m/F#</td>
+<td class="org-left">1st inv.</td>
+<td class="org-left">F#, A#, D#</td>
+<td class="org-left">F# held over from F# or C#/F</td>
+</tr>
+
+<tr>
+<td class="org-left">D#m/A#</td>
+<td class="org-left">2nd inv.</td>
+<td class="org-left">A#, D#, F#</td>
+<td class="org-left">A# pedal, ties in from A#m</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Voice-leading recipe for the chorus turnaround:
+</p>
+
+<p>
+Play <b>F#</b> in root position (F# A# C#), then slide the bass down a half
+step to E# for <b>C#/F</b> while the right hand barely moves, C# and A# stay
+in the neighborhood, G# is a half step from A#.  Then walk the bass down
+another half/whole step to D# for <b>D#m</b>, and let the right hand settle
+into D# F# A#.  The whole gesture should feel like one continuous
+downward slide, not three separate chord grabs.
+</p>
+</div>
+</div>
+<div id="outline-container-org99c0ce1" class="outline-2">
+<h2 id="org99c0ce1">Performance Notes</h2>
+<div class="outline-text-2" id="text-org99c0ce1">
+<ul class="org-ul">
+<li><b>Tempo</b>: mid-tempo, a gentle folk-pop pulse around <b>76 BPM</b>.  Nothing
+here should feel rushed, the verses are almost spoken-word in places</li>
+<li><b>Touch</b>: legato throughout.  This is a strummed-acoustic-guitar song
+on the record, but on piano let the chords sustain into one another,
+especially through the <code>F# → C#/F → D#m</code> walk</li>
+<li><b>Pedal</b>: light-to-moderate.  Change it on every chord in the verse to
+keep the words clear, and let it breathe a little more under the
+chorus once the vocal opens up</li>
+<li><b>Dynamics</b>: verses are conversational and a little wry (the eggs, the
+pancakes, the wet towels), keep them light and almost talky. The
+chorus should open up and warm, without turning into a belt, this
+song stays intimate even at its biggest moments</li>
+<li><b>The intro/verse loop</b> (<code>Badd9 F#6/A# B D#m</code>): keep the left hand's
+rocking bass steady, it is the engine of the whole song</li>
+<li><b>The chorus</b> (<code>B C# F# C#/F D#m ... B C# D#m</code>): lean into the
+<code>F# → C#/F → D#m</code> bass walk, it is the emotional hinge of the
+progression.  Let "you were meant for me" land softly on the bare B
+chord, this is the one moment the harmony simplifies</li>
+<li><b>The bridge</b>: the <code>A#m</code> is the only chord in the whole song that
+isn't diatonic to B major or a straightforward secondary dominant,
+treat it as a brief shadow before "hearts are broken every day"
+settles back onto D#m</li>
+<li><b>The outro</b>: let the final <code>Badd9 F#6/A# B D#m</code> loop trail off, the
+recording fades rather than ending on a hard cadence, so don't force
+a big final chord</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org211174b" class="outline-2">
+<h2 id="org211174b">Song Structure</h2>
+<div class="outline-text-2" id="text-org211174b">
+</div>
+<div id="outline-container-org9f858bb" class="outline-3">
+<h3 id="org9f858bb">Intro</h3>
+<div class="outline-text-3" id="text-org9f858bb">
+<pre class="example" id="org6ae95d2">
+[Badd9]  [F#6/A#]  [B]  [D#m]
+[Badd9]  [F#6/A#]  [B]  [D#m]
+</pre>
+</div>
+</div>
+<div id="outline-container-orgda78183" class="outline-3">
+<h3 id="orgda78183">Verse 1</h3>
+<div class="outline-text-3" id="text-orgda78183">
+<pre class="example" id="orga1173af">
+[Badd9]                  [F#6/A#]
+ I hear the clock, it's six a.m.
+[B]                [D#m]
+ I feel so far from where I've been
+[Badd9]                  [F#6/A#]
+ I got my eggs, I got my pancakes too
+      [B]                    [C#]
+I've got my maple syrup, everything but you
+[Badd9]                  [F#6/A#]
+ I break the yolks, and make a smiley face
+[B]                [D#m]
+ I kinda like it in my brand new place
+
+[Badd9]
+Wipe the spots off of the mirror,
+              [F#6/A#]
+don't leave my keys in the door
+  [B]                    [C#]
+I never put wet towels on the floor anymore 'cause
+</pre>
+</div>
+</div>
+<div id="outline-container-org7c6bb03" class="outline-3">
+<h3 id="org7c6bb03">Chorus</h3>
+<div class="outline-text-3" id="text-org7c6bb03">
+<pre class="example" id="org028f22b">
+[B]                [C#]
+  Dreams last so long
+[F#]    [C#/F]           [D#m]
+Even after you're gone
+[B]                [C#]
+  I know that you love me
+    [F#]    [C#/F]        [D#m]
+And soon you will see
+        [B]
+You were meant for me
+    [C#]              [D#m]
+And I was meant for you
+</pre>
+</div>
+</div>
+<div id="outline-container-org584dc6f" class="outline-3">
+<h3 id="org584dc6f">Verse 2</h3>
+<div class="outline-text-3" id="text-org584dc6f">
+<pre class="example" id="org7014d2a">
+[Badd9]                  [F#6/A#]
+ I called my momma, she was out for a walk
+    [B]                    [D#m]
+Consoled a cup of coffee but it didn't wanna
+talk so I
+[Badd9]                  [F#6/A#]
+ Picked up a paper, it was more bad news
+    [B]                    [C#]
+More hearts being broken or people being used
+[Badd9]                  [F#6/A#]
+ Put on my coat in the pouring rain
+[B]                [D#m]
+ I saw a movie, it just wasn't the same
+        [Badd9]               [F#6/A#]
+'Cause it was happy oh, I was sad and
+[B]                [C#]
+ It made me miss you, oh so bad 'cause
+</pre>
+</div>
+</div>
+<div id="outline-container-orgae61c7c" class="outline-3">
+<h3 id="orgae61c7c">Chorus</h3>
+<div class="outline-text-3" id="text-orgae61c7c">
+<pre class="example" id="org68a86e6">
+[B]                [C#]
+  Dreams last so long
+[F#]    [C#/F]           [D#m]
+Even after you're gone
+[B]                [C#]
+  I know that you love me
+    [F#]    [C#/F]        [D#m]
+And soon you will see
+        [B]
+You were meant for me
+    [C#]              [D#m]
+And I was meant for you
+</pre>
+</div>
+</div>
+<div id="outline-container-orgb99fea8" class="outline-3">
+<h3 id="orgb99fea8">Bridge</h3>
+<div class="outline-text-3" id="text-orgb99fea8">
+<pre class="example" id="org2014176">
+  [B]                        [C#]
+I go about my business, I'm doin' fine
+         [F#]                    [C#/F]        [D#m]
+Besides, what would I say if I had you on the
+line
+[B]                [C#]
+ Same old story, not much to say
+[A#m]                [D#m]
+  Hearts are broken every day
+</pre>
+</div>
+</div>
+<div id="outline-container-orgc78a479" class="outline-3">
+<h3 id="orgc78a479">Instrumental</h3>
+<div class="outline-text-3" id="text-orgc78a479">
+<pre class="example" id="org69f6684">
+[Badd9]  [F#6/A#]  [B]  [D#m]
+[Badd9]  [F#6/A#]  [B]  [D#m]
+</pre>
+</div>
+</div>
+<div id="outline-container-orgc96606e" class="outline-3">
+<h3 id="orgc96606e">Verse 3</h3>
+<div class="outline-text-3" id="text-orgc96606e">
+<pre class="example" id="org387ef4b">
+[Badd9]                  [F#6/A#]
+ I brush my teeth, I put the cap back on
+[B]                [D#m]
+ I know you hate it when I leave the light on
+  [Badd9]                  [F#6/A#]
+I pick a book up, and then I turn the sheets
+down
+        [B]                [C#]
+And then I take a deep breath, a good look
+around
+[Badd9]                  [F#6/A#]
+ Put on my pj's and hop into bed
+[B]                [D#m]
+ I'm half alive but I feel mostly dead
+    [Badd9]                  [F#6/A#]
+I, I try and tell myself it'll all be alright
+[B]                [C#]
+ I just shouldn't think anymore tonight 'cause
+</pre>
+</div>
+</div>
+<div id="outline-container-org2ad0aff" class="outline-3">
+<h3 id="org2ad0aff">Chorus</h3>
+<div class="outline-text-3" id="text-org2ad0aff">
+<pre class="example" id="org0e3a7ca">
+[B]                [C#]
+  Dreams last so long
+[F#]    [C#/F]           [D#m]
+Even after you're gone
+[B]                [C#]
+  I know that you love me
+    [F#]    [C#/F]        [D#m]
+And soon you will see
+        [B]
+You were meant for me
+    [C#]              [D#m]
+And I was meant for you
+</pre>
+</div>
+</div>
+<div id="outline-container-org5478f20" class="outline-3">
+<h3 id="org5478f20">Outro</h3>
+<div class="outline-text-3" id="text-org5478f20">
+<pre class="example" id="org9fb51a1">
+                [B]
+Yeah, you were meant for me
+    [C#]
+and I was meant for
+[Badd9]  [F#6/A#]  [B]  [D#m]
+You .............
+</pre>
+<p>
+&lt;/content&gt;
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

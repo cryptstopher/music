@@ -1,0 +1,331 @@
+#+TITLE: You Were Meant for Me, Jewel
+#+SUBTITLE: Piano Cheat Sheet
+#+STARTUP: overview
+
+[[file:index.org][← Back to Index]]
+
+* Introduction
+
+"You Were Meant for Me" is the breakout single from Jewel's 1995 debut
+album /Pieces of You/, co-written with her one-time tour partner Steve
+Poltz.  Re-released in 1996 as a double A-side with "Foolish Games," it
+became one of the longest-charting singles in Billboard Hot 100 history,
+a slow-burn hit for an album that had been out for over a year.
+
+No capo is indicated on the source chart, so the chords below are the
+real, sounding pitches, no transposition needed.  The one thing worth
+knowing going in: this is not a plain four-chord folk song.  There is a
+secondary-dominant slash chord, =C#/F=, that drives a chromatic bass
+walk-down in the chorus and bridge, and it is the harmonic detail that
+makes the song feel like it is gently pulling itself forward.
+
+* Key & Theory
+
+The song lives in *B major*.  Most of the harmony is diatonic, but the
+chart also borrows one chord, =C#=, from outside the key as a secondary
+dominant, plus a passing =A#m= in the bridge.
+
+| Chord   | Role       | Comment                                        |
+|---------+------------+-------------------------------------------------|
+| Badd9   | I          | tonic, colored with an added 9th (C#)          |
+| F#6/A#  | V (1st inv)| dominant, A# (the 3rd) in the bass, 6th = D#   |
+| D#m     | iii        | diatonic, closes off the intro/verse loop      |
+| C#      | V/V        | *borrowed*, secondary dominant of F#           |
+| C#/F    | V/V (inv.) | same chord, E# ("F") in the bass, passing tone |
+| A#m     | vi of C#   | *borrowed*, brief color chord in the bridge    |
+
+The verse/intro loop is *Badd9 → F#6/A# → B → D#m*, essentially I → V → I
+→ iii, kept in constant motion by the inverted V chord in the bass.  The
+chorus and bridge both lean on *B → C# → F# → C#/F → D#m*: the C# is not
+the diatonic ii (which would be C#m), it is a *secondary dominant*, the V
+of F#, borrowed to intensify the pull toward the V chord.  Landing on
+=C#/F= right after F# puts E# (spelled "F" on the chart) in the bass, and
+the bass line quietly walks *F# → E# → D#*, three descending half/whole
+steps that glide straight into D#m.  This one move is the harmonic
+signature of the song, the same role the "Bm → Bm/C# → D" walk-up plays
+in The Cars' "You Might Think," just descending instead of ascending.
+
+** B Major Scale
+
+| Degree | Note |
+|--------+------|
+| 1      | B    |
+| 2      | C#   |
+| 3      | D#   |
+| 4      | E    |
+| 5      | F#   |
+| 6      | G#   |
+| 7      | A#   |
+
+** Diatonic Triads in B Major
+
+| Degree | Chord  | Notes      | Used in song?               |
+|--------+--------+------------+------------------------------|
+| I      | B      | B, D#, F#  | yes (as Badd9)               |
+| ii     | C#m    | C#, E, G#  | no, replaced by borrowed C#  |
+| iii    | D#m    | D#, F#, A# | yes                          |
+| IV     | E      | E, G#, B   | no                           |
+| V      | F#     | F#, A#, C# | yes (as F#6/A#)              |
+| vi     | G#m    | G#, B, D#  | no                           |
+| vii°   | A#dim  | A#, C#, E  | no, borrowed A#m used instead|
+
+Two chords step outside the key: =C#= major (V/V, borrowed to push
+toward F#) and =A#m= (borrowed as the relative minor of that same C#,
+used briefly in the bridge).  Everything else is straightforwardly
+diatonic to B major.
+
+* Chord Reference
+
+| Chord  | Notes         | Fingering (RH) | Role       |
+|--------+---------------+-----------------+------------|
+| Badd9  | B, C#, D#, F# | 1, 2, 3, 5      | I (add9)   |
+| F#6/A# | F#, A#, C#, D#| 1, 2, 3, 5 (RH) | V, 1st inv |
+| B      | B, D#, F#     | 1, 3, 5         | I          |
+| D#m    | D#, F#, A#    | 1, 3, 5         | iii        |
+| C#     | C#, E#(F), G# | 1, 3, 5         | V/V        |
+| C#/F   | C#, E#(F), G# | 1, 3, 5 (RH)    | V/V, inv.  |
+| F#     | F#, A#, C#    | 1, 3, 5         | V          |
+| A#m    | A#, C#, E#(F) | 1, 3, 5         | vi of V/V  |
+
+** Tips
+
+- LH takes the bass note (root, or the slash-chord bass tone for the
+  inversions); RH carries the triad. =Badd9= is the only chord that
+  needs a 4th right-hand finger, for the added 9th (C#)
+- =F#6/A#= : keep the RH shape F# A# C# D# (or just A# C# D# if you
+  drop the low F#) and put A# in the LH.  This is what keeps the
+  intro/verse loop feeling like it is gently rocking rather than
+  changing chords
+- =C#= and =C#/F= are the *same right hand*, C# E# G#.  Only the bass
+  note moves, F# in the LH for the F# chord that comes just before,
+  then E# (written "F" on the chart), then D# for the D#m that follows.
+  Practice that LH line alone: F# → E# → D#, slow half/whole steps
+- =B → C#= (I → V/V) has one common tone, F#.  B (B D# F#) → C# (C# E#
+  G#): F# moves down a half step to E#, D# moves up a half step to E#
+  too? no, keep it simple: think of it as the whole hand sliding up a
+  whole step, B→C#, D#→E#, F#→G#
+- =A#m= is a passing color chord.  Don't linger, it resolves quickly
+  down into D#m; think of it as leaning briefly into a darker color
+  before settling back home
+
+* Inversions for Voice Leading
+
+The signature move in this song is the *F# → C#/F → D#m* bass walk, so
+the inversions below are built to keep that line smooth and the right
+hand as still as possible.
+
+| Chord  | Position | Notes (low→high) | When to Use                        |
+|--------+----------+-------------------+--------------------------------------|
+| B      | Root     | B, D#, F#         | Default tonic                      |
+| B/D#   | 1st inv. | D#, F#, B         | D# pedal, ties B into D#m           |
+| B/F#   | 2nd inv. | F#, B, D#         | F# held from the F# chord           |
+|--------+----------+-------------------+--------------------------------------|
+| F#     | Root     | F#, A#, C#        | Default V                          |
+| F#/A#  | 1st inv. | A#, C#, F#        | matches the chart's "F#6/A#" bass  |
+| F#6    | Root+6th | F#, A#, C#, D#    | adds D# on top for extra color     |
+|--------+----------+-------------------+--------------------------------------|
+| C#     | Root     | C#, E#, G#        | Default V/V                        |
+| C#/F   | 1st inv. | E#(F), G#, C#     | the chart's passing walk chord     |
+|--------+----------+-------------------+--------------------------------------|
+| D#m    | Root     | D#, F#, A#        | Default iii, resolution point      |
+| D#m/F# | 1st inv. | F#, A#, D#        | F# held over from F# or C#/F        |
+| D#m/A# | 2nd inv. | A#, D#, F#        | A# pedal, ties in from A#m          |
+
+Voice-leading recipe for the chorus turnaround:
+
+Play *F#* in root position (F# A# C#), then slide the bass down a half
+step to E# for *C#/F* while the right hand barely moves, C# and A# stay
+in the neighborhood, G# is a half step from A#.  Then walk the bass down
+another half/whole step to D# for *D#m*, and let the right hand settle
+into D# F# A#.  The whole gesture should feel like one continuous
+downward slide, not three separate chord grabs.
+
+* Performance Notes
+
+- *Tempo*: mid-tempo, a gentle folk-pop pulse around *76 BPM*.  Nothing
+  here should feel rushed, the verses are almost spoken-word in places
+- *Touch*: legato throughout.  This is a strummed-acoustic-guitar song
+  on the record, but on piano let the chords sustain into one another,
+  especially through the =F# → C#/F → D#m= walk
+- *Pedal*: light-to-moderate.  Change it on every chord in the verse to
+  keep the words clear, and let it breathe a little more under the
+  chorus once the vocal opens up
+- *Dynamics*: verses are conversational and a little wry (the eggs, the
+  pancakes, the wet towels), keep them light and almost talky. The
+  chorus should open up and warm, without turning into a belt, this
+  song stays intimate even at its biggest moments
+- *The intro/verse loop* (=Badd9 F#6/A# B D#m=): keep the left hand's
+  rocking bass steady, it is the engine of the whole song
+- *The chorus* (=B C# F# C#/F D#m ... B C# D#m=): lean into the
+  =F# → C#/F → D#m= bass walk, it is the emotional hinge of the
+  progression.  Let "you were meant for me" land softly on the bare B
+  chord, this is the one moment the harmony simplifies
+- *The bridge*: the =A#m= is the only chord in the whole song that
+  isn't diatonic to B major or a straightforward secondary dominant,
+  treat it as a brief shadow before "hearts are broken every day"
+  settles back onto D#m
+- *The outro*: let the final =Badd9 F#6/A# B D#m= loop trail off, the
+  recording fades rather than ending on a hard cadence, so don't force
+  a big final chord
+
+* Song Structure
+
+** Intro
+
+  #+BEGIN_EXAMPLE
+  [Badd9]  [F#6/A#]  [B]  [D#m]
+  [Badd9]  [F#6/A#]  [B]  [D#m]
+  #+END_EXAMPLE
+
+** Verse 1
+
+  #+BEGIN_EXAMPLE
+  [Badd9]                  [F#6/A#]
+   I hear the clock, it's six a.m.
+  [B]                [D#m]
+   I feel so far from where I've been
+  [Badd9]                  [F#6/A#]
+   I got my eggs, I got my pancakes too
+        [B]                    [C#]
+  I've got my maple syrup, everything but you
+  [Badd9]                  [F#6/A#]
+   I break the yolks, and make a smiley face
+  [B]                [D#m]
+   I kinda like it in my brand new place
+
+  [Badd9]
+  Wipe the spots off of the mirror,
+                [F#6/A#]
+  don't leave my keys in the door
+    [B]                    [C#]
+  I never put wet towels on the floor anymore 'cause
+  #+END_EXAMPLE
+
+** Chorus
+
+  #+BEGIN_EXAMPLE
+  [B]                [C#]
+    Dreams last so long
+  [F#]    [C#/F]           [D#m]
+  Even after you're gone
+  [B]                [C#]
+    I know that you love me
+      [F#]    [C#/F]        [D#m]
+  And soon you will see
+          [B]
+  You were meant for me
+      [C#]              [D#m]
+  And I was meant for you
+  #+END_EXAMPLE
+
+** Verse 2
+
+  #+BEGIN_EXAMPLE
+  [Badd9]                  [F#6/A#]
+   I called my momma, she was out for a walk
+      [B]                    [D#m]
+  Consoled a cup of coffee but it didn't wanna
+  talk so I
+  [Badd9]                  [F#6/A#]
+   Picked up a paper, it was more bad news
+      [B]                    [C#]
+  More hearts being broken or people being used
+  [Badd9]                  [F#6/A#]
+   Put on my coat in the pouring rain
+  [B]                [D#m]
+   I saw a movie, it just wasn't the same
+          [Badd9]               [F#6/A#]
+  'Cause it was happy oh, I was sad and
+  [B]                [C#]
+   It made me miss you, oh so bad 'cause
+  #+END_EXAMPLE
+
+** Chorus
+
+  #+BEGIN_EXAMPLE
+  [B]                [C#]
+    Dreams last so long
+  [F#]    [C#/F]           [D#m]
+  Even after you're gone
+  [B]                [C#]
+    I know that you love me
+      [F#]    [C#/F]        [D#m]
+  And soon you will see
+          [B]
+  You were meant for me
+      [C#]              [D#m]
+  And I was meant for you
+  #+END_EXAMPLE
+
+** Bridge
+
+  #+BEGIN_EXAMPLE
+    [B]                        [C#]
+  I go about my business, I'm doin' fine
+           [F#]                    [C#/F]        [D#m]
+  Besides, what would I say if I had you on the
+  line
+  [B]                [C#]
+   Same old story, not much to say
+  [A#m]                [D#m]
+    Hearts are broken every day
+  #+END_EXAMPLE
+
+** Instrumental
+
+  #+BEGIN_EXAMPLE
+  [Badd9]  [F#6/A#]  [B]  [D#m]
+  [Badd9]  [F#6/A#]  [B]  [D#m]
+  #+END_EXAMPLE
+
+** Verse 3
+
+  #+BEGIN_EXAMPLE
+  [Badd9]                  [F#6/A#]
+   I brush my teeth, I put the cap back on
+  [B]                [D#m]
+   I know you hate it when I leave the light on
+    [Badd9]                  [F#6/A#]
+  I pick a book up, and then I turn the sheets
+  down
+          [B]                [C#]
+  And then I take a deep breath, a good look
+  around
+  [Badd9]                  [F#6/A#]
+   Put on my pj's and hop into bed
+  [B]                [D#m]
+   I'm half alive but I feel mostly dead
+      [Badd9]                  [F#6/A#]
+  I, I try and tell myself it'll all be alright
+  [B]                [C#]
+   I just shouldn't think anymore tonight 'cause
+  #+END_EXAMPLE
+
+** Chorus
+
+  #+BEGIN_EXAMPLE
+  [B]                [C#]
+    Dreams last so long
+  [F#]    [C#/F]           [D#m]
+  Even after you're gone
+  [B]                [C#]
+    I know that you love me
+      [F#]    [C#/F]        [D#m]
+  And soon you will see
+          [B]
+  You were meant for me
+      [C#]              [D#m]
+  And I was meant for you
+  #+END_EXAMPLE
+
+** Outro
+
+  #+BEGIN_EXAMPLE
+                  [B]
+  Yeah, you were meant for me
+      [C#]
+  and I was meant for
+  [Badd9]  [F#6/A#]  [B]  [D#m]
+  You .............
+  #+END_EXAMPLE
+</content>
